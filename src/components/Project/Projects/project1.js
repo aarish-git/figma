@@ -27,7 +27,7 @@ export default function () {
                   style={{ fontFamily: "Exo2-Regular" }}
                   class="text-[20px] font-[400] tracking-wide uppercase text-[#0087FF] mb-3"
                 >
-                  Mannheim, Germany, February 2022
+                  Mannheim, Germany, February 2023
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Regular" }}
