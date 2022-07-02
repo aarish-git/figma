@@ -1,4 +1,9 @@
 import React from "react";
+import Grananue from "../../../assest/Images/project/GruneAue1.jpg";
+import Sun from "../../../assest/Icons/Sun.png"
+
+import ChartLine from "../../../assest/Icons/ChartLine.png"
+
 
 export default function GA2() {
   return (
@@ -9,24 +14,24 @@ export default function GA2() {
             <img
               alt="feature"
               class="object-cover object-center h-full w-full"
-              src="https://dummyimage.com/460x500"
+              src={Grananue}
             />
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-left">
             <div class="flex flex-col mb-4 lg:items-start items-left">
               <div class="w-full h-12 inline-flex items-center justify-left uppercase"></div>
-              <div class="flex-grow ">
+              <div class="flex-grow mt-14">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-gray-600 text-[50px] font-bold mb-2"
+                  class="text-gray-900 text-[50px] font-bold mb-2"
                 >
                   Project Brief
                 </h2>
-                <p class="leading-relaxed text-[20px] font-[400]">
+                <p class="leading-relaxed text-[20px] font-[400] my-3 text-[#2F2F2F]">
                   The heating energy to the residential units is mainly provided
                   by a central, gas-powered CHP in combination with a heat pump.
                 </p>
-                <p>
+                <p class="text-[20px] font-[400] leading-relaxed text-[#000000]	">
                   To ensure a transition towards a sustainable and secure source
                   of energy supply for the buildings, the client wanted to
                   assess the onsite local energy generation potential to further
@@ -40,9 +45,9 @@ export default function GA2() {
               <div class="flex-grow">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-gray-900 text-[20px] font-medium mb-3 uppercase tracking-widest"
+                  class="text-gray-900 text-[20px] font-medium mb-4 uppercase tracking-widest"
                 >
-                  Leaftech was tasked to provide
+                  Leaftech was tasked to provide:
                 </h2>
                 {/* <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
@@ -55,9 +60,9 @@ export default function GA2() {
                   for the building to heat up were:
                 </p> */}
 
-                <ul class="my-3 leading-9">
-                  <li>Photovoltaic potential assessment </li>
-                  <li>Data for optimal PV system layout. </li>
+                <ul class="my-3 space-y-5">
+                  <li class="flex space-x-3"><img src={Sun} /><p>Photovoltaic potential assessment</p> </li>
+                  <li class="flex space-x-3"><img src={ChartLine} /><p>Data for optimal PV system layout.</p> </li>
                 </ul>
               </div>
             </div>
