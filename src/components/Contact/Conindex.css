@@ -1,0 +1,16 @@
+.contact-desk {
+  display: block;
+}
+
+.contact-mob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contact-desk {
+    display: none;
+  }
+  .contact-mob {
+    display: block;
+  }
+}

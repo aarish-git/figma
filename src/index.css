@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Exo2-Italic-VariableFont_wght";
+  src: url("../src/assest/font/Exo_2/Exo2-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Black";
+  src: url("../src/assest/font/Exo_2/static/Exo2-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Regular";
+  src: url("../src/assest/font/Exo_2/static/Exo2-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url("../src/assest/font/Nunito_Sans/NunitoSans-Regular.ttf") format("truetype");
+}
+
+
+/* @font-face {
+  font-family: "Exo2-BlackItalic";
+  src: url("./assest/font/static/Exo2-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("./assest/font/static/Exo2-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-ExtraBoldItalic";
+  src: url("./assest/font/static/Exo2-ExtraBoldItalic.ttf") format("truetype");
+}  */

@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.grayscale {
+  width: 100px;
+  height:auto;
+  cursor: pointer;
+}
+
+.grayscale:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+}

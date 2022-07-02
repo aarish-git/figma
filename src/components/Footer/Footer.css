@@ -1,0 +1,9 @@
+.myfooter{
+    display: block;
+}
+
+@media (max-width:768px) {
+    .myfooter{
+        display: block;
+    }
+}

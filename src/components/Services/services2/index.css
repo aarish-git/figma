@@ -1,0 +1,31 @@
+.service2_d{
+    display: block;
+}
+.service2_t{
+    display: none;
+}
+.service2_m{
+    display: none;
+}
+@media (max-width:768px) {
+    .service2_d{
+        display: none;
+    }
+    .service2_t{
+        display: block;
+    }
+    .service2_m{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .service2_d{
+        display: none;
+    }
+    .service2_t{
+        display: none;
+    }
+    .service2_m{
+        display: block;
+    }
+}

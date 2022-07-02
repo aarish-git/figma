@@ -1,0 +1,150 @@
+.arun_container {
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  position: fixed;
+  background-color:#fff;
+  z-index: 20;
+}
+
+.arun_container .arun_logo {
+  font-size: 2rem;
+  margin: auto 0px;
+  color: #0087ff;
+  text-transform: capitalize;
+}
+
+.arun_container .arun_menuList ul {
+  display: flex;
+  gap: 3.8rem;
+  align-items: center;
+  font-size: 113%;
+  /* font-weight: 400; */
+}
+
+.active {
+  /* background-color: rgb(248, 248, 248); */
+  font-weight: bolder;
+}
+/* to override the existing css for "a" tag */
+#sub-header .active a {
+  color: #fff;
+}
+
+.arun_container .arun_menuList {
+  display: block;
+  margin: 0.5rem 4rem;
+}
+
+.Contact_btn {
+  background-color: #0087FF;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+  /* border: 1px solid rgb(29, 29, 29); */
+  padding: 5px;
+  width: 106px;
+  /* position:absolute;
+  right: 2rem; */
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+.contactandLanguage {
+  position: absolute;
+  right: 2rem;
+  margin: auto;
+  gap: 1rem;
+}
+
+.arun_container .mobile_menubutton {
+  display: none;
+}
+.arun_container .arun_mobilemenuList {
+  display: none;
+  position: relative;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  /* background-color: #4CAF50; */
+  /* color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+@media (max-width: 768px) {
+  .arun_container {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0;
+    display: flex;
+    position: relative;
+  }
+
+  
+  .arun_container .mobile_menubutton {
+    display: block;
+    width: inherit;
+    text-align: end;
+  }
+
+  .arun_container .arun_menuList ul {
+    display: none;
+  }
+
+  .arun_container .arun_mobilemenuList {
+    display: block;
+    height: fit-content;
+    width: 100%;
+    margin: 20% 0%;
+    /* justify-content: center; */
+    line-height: 50px;
+  }
+
+  .dropbtn {
+    padding: 0%;
+  }
+}
