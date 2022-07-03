@@ -19,9 +19,9 @@ export default function clients() {
               We are supported by
             </h1>
           </div>
-          <div class=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
+          <div class=" grid grid-cols-1 gap-y-10 gap-x-4 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
             <div class="flex  grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-              <img id="colorImage" class=" h-fit	" src={C1} />
+              <img class=" h-fit	" src={C1} />
             </div>
             <div class="flex grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
               <img class=" h-fit" src={C2} />
