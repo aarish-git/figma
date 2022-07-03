@@ -6,7 +6,7 @@ export default function projectFoot() {
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-20 mx-auto">
           <div class="flex flex-wrap w-full flex-col items-center text-center">
-            <p style={{ fontFamily: "Exo2-Regular" }} class="lg:w-1/3 w-full leading-relaxed w-[664px] tracking-widest uppercase">
+            <p style={{ fontFamily: "Exo2-Regular" }} class=" leading-relaxed lg:w-[664px] md:w-[664px] sm:w-[664px] tracking-widest uppercase">
               Get in touch to learn more about our project portfolio and the
               solutions we’ve delivered.
             </p>
