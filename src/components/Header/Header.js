@@ -84,20 +84,20 @@ export default function Header({ history }) {
                 <div class="dropdown">
                   <button class="dropbtn">Services</button>
                   <div class="dropdown-content">
-                    <NavLink to="/service" activeClassName="active-link">
-                      Services 1
+                    <NavLink to="/modeling" activeClassName="active-link">
+                      Modeling
                     </NavLink>
-                    <NavLink to="/service" activeClassName="active-link">
-                      Services 2
+                    <NavLink to="/analytics" activeClassName="active-link">
+                      Analytics
                     </NavLink>
-                    <NavLink to="/service" activeClassName="active-link">
-                      Services 3
+                    <NavLink to="/control" activeClassName="active-link">
+                      Control
                     </NavLink>
                   </div>
                 </div>
               </li>
               <div className="contactandLanguage">
-                <ul style={{gap:"2rem"}}>
+                <ul style={{ gap: "2rem" }}>
                   <li className="Contact_btn">
                     <NavLink to="/contact" activeClassName="active-link">
                       <button type="button">Contact</button>

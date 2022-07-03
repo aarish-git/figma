@@ -27,7 +27,7 @@ export default function () {
                   style={{ fontFamily: "Exo2-Regular" }}
                   class="text-[20px] font-[400] tracking-wide uppercase text-[#0087FF] mb-3"
                 >
-                  Mannheim, Germany, February 2023
+                  Mannheim, Germany, February 2022
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -192,7 +192,7 @@ export default function () {
       </section>
       {/* 3rd */}
       <section class="text-gray-600 body-font overflow-hidden">
-        <Link style={{all:"unset"}} to="/wago">
+        <Link style={{all:"unset"}} to="/phoenix">
           <div class="container py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
               <img
@@ -280,7 +280,7 @@ export default function () {
       </section>
       {/* 4th */}
       <section class="text-gray-600 body-font overflow-hidden">
-        <Link style={{all:"unset"}} to="/phoenix">
+        <Link style={{all:"unset"}} to="/wago">
           <div class="container py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
               <img

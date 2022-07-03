@@ -20,17 +20,17 @@ export default function p1() {
             </h1>
             <h1
               style={{ fontFamily: "Exo2-Regular" }}
-              class=" text-[58px] font-bold"
+              class=" text-[58px] font-bold mb-2"
             >
               Phoenix Contact
             </h1>
             <p
               style={{ fontFamily: "Exo2-Regular" }}
-              class="mb-3 text-[#4EA0FD] uppercase tracking-[2px]	"
+              class="mb-3 text-[#4EA0FD] uppercase tracking-widest"
             >
               Blomberg Germany, April 2022
             </p>
-            <p class="mb-8 leading-relaxed w-3/5 ">
+            <p style={{fontFamily:"NunitoSans-Regular"}} class="mb-8 leading-relaxed w-3/5 ">
               Leaftech serviced the office facility of Phoenix Contact, a
               building automation/smart home provider. This building uses
               Phoenix Contact's in-house building automation system called
@@ -39,7 +39,7 @@ export default function p1() {
               shading system for maximum efficiency and comfort.
             </p>
             <div class="flex ">
-              <section class="text-gray-600 body-font">
+              <section class="text-gray-900 body-font">
                 <div class="container  ">
                   <div class="flex flex-wrap space-x-14 ">
                     <div class="sm:2/3 space-y-2">
@@ -67,26 +67,19 @@ export default function p1() {
                         style={{ fontFamily: "Exo2-Regular" }}
                         class="title-font font-bold sm:text-2xl text-3xl text-[40px]"
                       >
-                        1,500 € + 67 €/month
+                        1,500 € + 67 €<span class=" text-[15px] font-bold">/month</span>
                       </h2>
-                      <p class="leading-relaxed text-[14px]">
+                      <p class="leading-relaxed text-[14px] ">
                       Total price phase two (2022)
                       </p>
                     </div>
-                    {/* <div class="p-4 sm:w-1/4 w-5">
-                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-                      4
-                    </h2>
-                    <p class="leading-relaxed">Products</p>
-                  </div> */}
+                    
                   </div>
                 </div>
               </section>
             </div>
           </div>
-          {/* <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-    </div> */}
+          
         </div>
       </section>
     </div>

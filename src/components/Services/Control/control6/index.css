@@ -1,0 +1,15 @@
+.service6_d{
+    display: block;
+}
+.service6_t{
+    display: none;
+}
+
+@media (max-width:768px){
+    .service6_d{
+        display: none;
+    }
+    .service6_t{
+        display: block;
+    }
+}

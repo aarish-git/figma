@@ -1,0 +1,15 @@
+.service1_d {
+  display: block;
+}
+.service1_t {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .service1_d {
+    display: none;
+  }
+  .service1_t {
+    display: block;
+  }
+}

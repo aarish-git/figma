@@ -1,0 +1,15 @@
+.service7_d {
+    display:block;
+}
+
+.service7_t{
+    display: none;
+}
+@media (max-width:768px){
+    .service7_d {
+        display:none;
+    }
+    .service7_t{
+        display: block;
+    }
+}

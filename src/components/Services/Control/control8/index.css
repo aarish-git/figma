@@ -1,0 +1,9 @@
+.services8_t{
+    display: none;
+}
+@media (max-width:768px){
+
+    .services8_t{
+        display: block;
+    }
+}

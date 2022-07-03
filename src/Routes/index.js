@@ -1,6 +1,8 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import React from "react";
-import Services from "../components/Services/ServicesSection";
+import AServices from "../components/Services/Analytics/ServicesAnalytis";
+import CServices from "../components/Services/Control/ServicesControl";
+import MServices from "../components/Services/Modelling/ServicesModeling";
 import Home from "../App";
 import Project from "../components/Project/Project";
 import Contact from "../components/Contact/Contact";
@@ -16,12 +18,17 @@ export default function index() {
           {/* <Route path="/" element={<Layout />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/Project" element={<Project />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+
           <Route path="/mannhiem" element={<Mannhiem />} />
           <Route path="/granue" element={<Granue />} />
           <Route path="/wago" element={<Wago />} />
           <Route path="/phoenix" element={<Phoenix />} />
+
+          <Route path="/analytics" element={<AServices />} />
+          <Route path="/control" element={<CServices />} />
+          <Route path="/modeling" element={<MServices />} />
+
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>

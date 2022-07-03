@@ -20,7 +20,7 @@ export default function wago1() {
             </h1>
             <h1
               style={{ fontFamily: "Exo2-Regular" }}
-              class=" text-[58px] font-bold"
+              class=" text-[58px] font-bold mb-2"
             >
               Wago Headquarters
             </h1>
@@ -30,7 +30,7 @@ export default function wago1() {
             >
               Minden, Germany, June 2021
             </p>
-            <p class="mb-8 leading-relaxed w-3/5 ">
+            <p style={{fontFamily:"NunitoSans-Regular"}} class="mb-8 leading-relaxed w-3/5 font-[20px] bold-[400] ">
               Wago is a building automation and technical system provider. Its
               office facility in Minden, called V1, was constructed in the early
               2000s. For this building, we provided digital twin-based control
@@ -38,12 +38,12 @@ export default function wago1() {
             </p>
             <div class="flex ">
               <section class="body-font">
-                <div class="container  ">
-                  <div class="flex flex-wrap space-x-14 ">
+                <div class="container">
+                  <div class="flex flex-wrap space-x-14 -ml-2">
                     <div class="sm:2/3 space-y-2">
                       <h2
                         style={{ fontFamily: "Exo2-Regular" }}
-                        class="title-font font-bold sm:text-2xl text-3xl text-[40px]"
+                        class="font-[700] text-[40px]"
                       >
                         3,800 sqm
                       </h2>
@@ -54,7 +54,7 @@ export default function wago1() {
                     <div class="sm:2/3 space-y-2">
                       <h2
                         style={{ fontFamily: "Exo2-Regular" }}
-                        class="title-font font-bold sm:text-2xl text-3xl text-[40px]"
+                        class="font-[700] text-[40px]"
                       >
                         2,970 €
                       </h2>
@@ -67,7 +67,7 @@ export default function wago1() {
                     <div class="sm:2/3 space-y-2">
                       <h2
                         style={{ fontFamily: "Exo2-Regular" }}
-                        class="title-font font-bold sm:text-2xl text-3xl text-[40px]"
+                        class="font-[700] text-[40px]"
                       >
                         250 +
                       </h2>
