@@ -14,7 +14,7 @@ export default function indexs() {
       <Header />
       <Grune1 />
       <Grune2 />
-      {/* <Grune3 /> */}
+      <Grune3 />
       <Grune4 />
       <Grune5 />
       <Grune6 />

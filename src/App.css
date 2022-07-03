@@ -50,18 +50,26 @@
 }
 
 .MuiStepLabel-root {
-  width: 120%;
+  width: 160%;
+  height: 50px;
 }
 
 .MuiStepContent-root {
   border-left: none !important;
 }
 
+.MuiStepContent-root {
+  width: 150%;
+}
+
+
 .stepper_desc_head {
   font-size: 30px;
     margin-bottom: 20px;
 }
 
-.MuiStepContent-root {
-  width: 150%;
+
+.phoenix_stepper{ 
+  padding: 0px 80px;
 }
+
