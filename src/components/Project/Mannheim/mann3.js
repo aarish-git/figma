@@ -8,7 +8,7 @@ function mann3() {
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex flex-wrap w-full">
-            <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div className="steeper">
               <Stepper />
               {/* <div class="flex relative pb-12">
                 <div class="flex-grow pl-4">
@@ -46,14 +46,14 @@ function mann3() {
                 </div>
               </div> */}
             </div>
-            <div class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12">
+            {/* <div class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12">
               <p>Digital Twin Creation</p>
               <img
                 class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
                 src="https://dummyimage.com/1200x500"
                 alt="step"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

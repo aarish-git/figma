@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import slick from "slick-carousel";
 import $ from "jquery";
-import Horn from "../assest/Images/home/weCreate/Horn_Grundbesitz.png";
-import Phoenix from "../assest/Images/home/weCreate/Phoenix_Contact_Logo.png";
-import Hosch from "../assest/Images/home/weCreate/hosch_logo1.png";
-import Bauer from "../assest/Images/home/weCreate/bauer-logo1.png";
-import Bim from "../assest/Images/home/weCreate/Berliner_Immobilienmanagement1.png";
-import Lubbing from "../assest/Images/home/weCreate/LÜBBING1.png";
-import Wago from "../assest/Images/home/weCreate/Wago1.png";
-import Selve from "../assest/Images/home/weCreate/selve1.png";
+import Horn from "../assest/Images/home/weCreate2/Horn_colour.svg";
+import Phoenix from "../assest/Images/home/weCreate2/Phoenix_Contact_Logo_Original.svg";
+import Hosch from "../assest/Images/home/weCreate2/hosch_logo Original.svg";
+import Bauer from "../assest/Images/home/weCreate2/bauer-logo Original.svg";
+import Bim from "../assest/Images/home/weCreate2/Berliner_Immobilienmanagement_Original.svg";
+import Lubbing from "../assest/Images/home/weCreate2/LÜBBING REMADE Original Colour.svg";
+import Wago from "../assest/Images/home/weCreate2/Logo_WAGO_2020 Original.svg";
+import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
 export default function Wecreated() {
   useEffect(() => {
@@ -54,29 +54,29 @@ export default function Wecreated() {
         </h1>
         <div class="container px-5 py-24 mx-auto ">
           <div id="mycenter" class="flex flex-wrap -m-4 text-center">
-            <div class="p-4  sm:w-1/6 w-1/2 ">
-              <img class="grayscale hover:grayscale-0 " src={Horn} />
+            <div class="p-4"  style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0 horn" src={Horn} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Phoenix} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Phoenix} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Hosch} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Hosch} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Bauer} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Bauer} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Bim} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Bim} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Lubbing} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Lubbing} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Wago} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Wago} />
             </div>
-            <div class="p-4  sm:w-1/6 w-1/2">
-              <img class="grayscale hover:grayscale-0" src={Selve} />
+            <div class="p-4" style={{width:'50%'}}>
+              <img class="build_twins grayscale hover:grayscale-0" src={Selve} />
             </div>
           </div>
         </div>

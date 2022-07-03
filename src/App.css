@@ -2,11 +2,24 @@
   text-align: center;
 }
 
-.grayscale {
-  width: 100px;
+.build_twins {
+  /* width: 100px; */
   height:auto;
   cursor: pointer;
 }
+
+.horn {
+
+   width: 140px;
+   margin-top: 5px;
+}
+
+.build_twins:hover {
+  -ms-transform: scale(10); 
+  -webkit-transform: scale(10); 
+  transform: scale(10); 
+}
+
 
 .grayscale:hover {
   -ms-transform: scale(1.2); 
@@ -20,4 +33,35 @@
 
 .home-first-content {
   width: 60%;
+}
+
+.MuiStep-root{
+  display: flex;
+}
+
+.steeper {
+  width: 100% !important;
+}
+
+.MuiBox-root  {
+  width: 100% !important;
+  max-width: 100% !important;
+
+}
+
+.MuiStepLabel-root {
+  width: 120%;
+}
+
+.MuiStepContent-root {
+  border-left: none !important;
+}
+
+.stepper_desc_head {
+  font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.MuiStepContent-root {
+  width: 150%;
 }
