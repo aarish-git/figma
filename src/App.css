@@ -13,3 +13,11 @@
   -webkit-transform: scale(1.2); 
   transform: scale(1.2); 
 }
+
+.home_first_row {
+  display: flex;
+}
+
+.home-first-content {
+  width: 60%;
+}
