@@ -88,3 +88,135 @@ cursor: pointer;
   padding: 0px 80px;
 }
 
+.allsteper {
+  display: flex;
+}
+
+.stepLabel {
+  width: 50%;
+  display: flex;
+}
+
+.tab-content{
+  width: 50%;
+}
+
+.nav-pills .nav-link {
+  /* background-color: transparent !important; */
+  color: black !important;
+  font-style: italic;
+}
+
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.subcontent {
+  width: 100%;
+  margin-left: 25px;
+}
+
+.subcontent img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.subcontent p {
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.step {
+  
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+  /* top: 115px; */
+/*   visibility: visible; */
+}
+
+
+/* regular step */
+.step .circle {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 100%;
+  margin-top: 55px;
+  width: 20px;    /* +6 for border */
+  height: 20px;
+  display: inline-block;
+}
+
+.v-stepper:first-child .circle {
+  margin-top: 0px;
+}
+
+.v-stepper:first-child .line {
+  top: 20px;
+}
+
+.step .line {
+  top: 75px;
+  left: 9px;
+/*   height: 120px; */
+  height: 62px;
+    
+    position: absolute;
+    border-left: 3px solid gray;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: rgb(6,150,215);
+  border-color: rgb(6,150,215);
+}
+
+.step.completed .line {
+  border-left: 3px dotted rgb(6,150,215);
+}
+
+.step.active .circle {
+visibility: visible;
+  border-color: rgb(6,150,215);
+}
+
+.step.empty .circle {
+    visibility: hidden;
+}
+
+.step.empty .line {
+/*     visibility: hidden; */
+/*   height: 150%; */
+  top: 0;
+  height: 150%;
+}
+
+
+.step:last-child .line {
+  border-left: 3px dotted blue;
+  z-index: -1; /* behind the circle to completely hide */
+}
+
+
+
