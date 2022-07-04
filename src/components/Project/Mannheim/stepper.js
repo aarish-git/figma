@@ -8,34 +8,41 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 // import modelSetup from "../assest/Images/project/trio/Mask group.png";
-// import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
+import m1 from "../../../assest/Images/project/manheim/Mask_group.png";
+import m2 from "../../../assest/Images/project/manheim/Group_1078.png";
+import m3 from "../../../assest/Images/project/manheim/Vertical_Bar_chart.png";
+import m4 from "../../../assest/Images/project/manheim/Graph_Trio.png";
+
 
 
 const steps = [
   {
     label: 'Digital twin setup',
     description: `Created a detailed 3D model of the target building along with the surroundings, using building plans, satellite images, lidar scans, and CityGML data. `,
-    img: 'src/assest/Images/project/trio/Mask group.png'
+    img: `${m1}`
   },
   {
     label: 'Building & weather data integration',
     description:
       'Integrated the TRY weather data files and building-specific inputs like material properties, building systems, and user information to create a thermal model of the building. ',
-      img: './../assest/Images/project/trio/24 1.png'
+      
     },
   {
     label: 'Energy balance calculation',
     description: `Using Leaftech's in-house algorithm, we calculated all the relevant factors of the energy balance equation to simulate real operating conditions. We assessed in detail the solar heat gains through the glass facades. These simulations were based on relevant DIN and VDI standards. `,
+    img: `${m2}`
   },
   {
     label: 'Cooling load assessment',
     description:
       'Calculated the yearly cooling load for every room in the office space and the minimum HVAC capacity required, after considering the differential weather conditions throughout the year.',
+      img: `${m3}`
   },
   {
     label: 'Optimization recommendations',
     description:
       'Identified optimization potential to minimise the operational and investment cost while maintaining the comfort level inside the building (e.g. impact of different shading scenarios on the cooling load). ',
+      img: `${m4}`
   },
 ];
 
@@ -81,7 +88,7 @@ export default function VerticalLinearStepper() {
               <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>{step.label}</b></h1>
               <Typography>
                 {step.description}
-                <img src={step.img} alt="stepimg" />
+                {step.img?<img src={step.img} alt="stepimg" />:null}
               </Typography>
               {/* <div>
               <img
