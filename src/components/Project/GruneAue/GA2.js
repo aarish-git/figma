@@ -25,7 +25,7 @@ export default function GA2() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   class="text-gray-900 text-[50px] font-bold mb-2"
                 >
-                  Project Brief
+                  Project brief
                 </h2>
                 <p class="leading-relaxed text-[20px] font-[400] my-3 text-[#2F2F2F]">
                   The heating energy to the residential units is mainly provided

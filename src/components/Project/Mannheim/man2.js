@@ -18,13 +18,13 @@ export default function man2() {
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-left space-y-5">
             <div class="flex flex-col lg:items-start items-left">
-              <div class="w-full h-12 inline-flex items-center justify-left uppercase"></div>
+              {/* <div class="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div class="flex-grow">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-gray-900 text-[50px] font-bold mb-3"
+                  class="text-gray-900 text-[50px] font-bold mb-1"
                 >
-                  Project Brief
+                  Project brief
                 </h2>
                 <p class="leading-relaxed text-[20px] font-[400]">
                   Our client renovated and repurposed the top 3 floors of a
@@ -43,11 +43,7 @@ export default function man2() {
                   style={{ fontFamily: "NunitoSans-Regular" }}
                   class="leading-relaxed text-[20px] font-[400]"
                 >
-                  The building architecture and the proposed modernization posed
-                  a risk of the building interiors heating up unevenly. Also,
-                  there was uncertainty about the existing HVAC system's
-                  capacity to supply the required cooling load. The main reasons
-                  for the building to heat up were:
+                  The building architecture and the proposed modernization posed a risk of the building interiors heating up unevenly. Also, there was uncertainty about the existing HVAC system's capacity to supply the required cooling load. Addressing these challenges was key to ensuring that the contractual obligation with the tenant to maintain a comfortable temperature was fulfilled. 
                 </p>
 
                 <ul class="mt-20 space-y-5">

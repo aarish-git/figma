@@ -7,7 +7,7 @@ import Project1 from "./Projects/project1";
 
 export default function Project() {
   return (
-    <div>
+    <div >
       <Header />
       <ProjH />
       <Project1 />

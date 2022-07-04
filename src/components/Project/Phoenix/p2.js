@@ -20,7 +20,7 @@ export default function p2() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   class="text-[#2F2F2F] text-[50px] font-bold mb-4"
                 >
-                  Project Brief
+                  Project brief
                 </h2>
                 <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[20px] font-[400] mb-3">
                   Phoenix Contact's new office building called 17a is located on
