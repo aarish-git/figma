@@ -1,5 +1,5 @@
 import React from "react";
-
+import Building from "../../../assest/Images/project/projectb.png"
 export default function index() {
   return (
     <div>
@@ -39,7 +39,7 @@ export default function index() {
             <img
               class="object-cover object-center rounded"
               alt="hero"
-              src="https://dummyimage.com/720x600"
+              src={Building}
             />
           </div>
         </div>
