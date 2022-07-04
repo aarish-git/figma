@@ -31,7 +31,7 @@ export default function () {
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-[40px] text-[#2F2F2F] font-bold mb-1 "
+                  class="project_name_head text-[40px] text-[#2F2F2F] font-bold mb-1 "
                 >
                   Trio Mannheim
                 </h1>
@@ -116,7 +116,7 @@ export default function () {
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-[40px] text-[#2F2F2F] font-bold mb-1"
+                  class="project_name_head text-[40px] text-[#2F2F2F] font-bold mb-1"
                 >
                   Grüne Aue
                 </h1>
@@ -207,7 +207,7 @@ export default function () {
                 >
                   Blomberg, Germany, April 2022
                 </h2>
-                <h1 style={{ fontFamily: "Exo2-Regular" }} class="text-[40px] text-[#2F2F2F] font-bold mb-1">
+                <h1 style={{ fontFamily: "Exo2-Regular" }} class="project_name_head text-[40px] text-[#2F2F2F] font-bold mb-1">
                   Pheonix Contact
                 </h1>
                 <div class="flex mb-4"></div>
@@ -297,7 +297,7 @@ export default function () {
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-[40px] text-[#2F2F2F] font-bold mb-1 "
+                  class="project_name_head text-[40px] text-[#2F2F2F] font-bold mb-1 "
                 >
                   Wago Headquarters
                 </h1>

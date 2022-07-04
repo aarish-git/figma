@@ -1,141 +1,124 @@
-import React from "react";
-import "./index.css";
-import Accormob from "./Accordmobile";
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+import StepContent from '@mui/material/StepContent';
+import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+// import modelSetup from "./../../../assest/Images/project/trio/24 1.png";
+// import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
-export default function index() {
+
+const steps = [
+  {
+    label: 'The target building',
+    description: `Access your accurate digital models through our digital twin platform. We build these 3D models using advanced tools, and they come with different Levels of Detail (LoD 2 to LoD4) based on your specific requirements. We use 2D plans, pictures, satellite scans, etc. to build your model.`,
+    img: './../../../assest/Images/project/trio/Mask group.png'
+  },
+  {
+    label: 'Site context',
+    description:
+      'Gain a better understanding of your building and its interaction with the immediate environment using neighbourhood context site-specific models. This includes the neighbouring infrastructures like buildings, bridges, vegetation, and terrain. We use the latest geo datasets, digital surface models, LIDAR scans, and terrain models, to gain this contextual site analysis, and integrate them with our in-house software.',
+      img: './../../../assest/Images/project/trio/24 1.png'
+    },
+  {
+    label: 'Access your 3D models',
+    description: `Access your 3D models, interactive building plans, and all related information through our platform, and even export/share this with your relevant stakeholders.  No additional software, licences, or tools are needed when you use Leaftech's platform, as we take care of everything for you.`,
+  },
+];
+
+export default function VerticalLinearStepper() {
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleReset = () => {
+    setActiveStep(0);
+  };
+
   return (
-    <div>
-      <section class="service2_d text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex-row w-full  flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0">
-              Master Cleanse Reliac Heirloom
-            </h1>
-          </div>
-          <div>
-            <p class="mx-auto py-10 leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
-            </p>
-          </div>
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/4">
-              <div class="md:p-2 p-1 w-full bg-neutral-200	">
-                <ul class=" p-2 capitalize leading-10">
-                  <li>the target building</li>
-                  <li>site context</li>
-                  <li>model compability</li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex flex-wrap p-5 w-3/4">
-              <div>
-                <h3 class="text-2xl font-medium title-font capitalize">
-                  the target building
-                </h3>
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <p>
-                  Nisi enim laborum do amet officia ullamco labore magna ad. Est
-                  culpa voluptate excepteur sint mollit commodo quis labore elit
-                  reprehenderit aliquip aliqua duis pariatur. Ea labore aliquip
-                  veniam eiusmod. Laborum anim sint laboris cupidatat nisi duis
-                  aliquip mollit consectetur. Do tempor ad ex ut exercitation
-                  culpa cillum consectetur ex minim esse nisi id. Occaecat ad do
-                  eu consequat reprehenderit ex velit amet commodo incididunt
-                  magna culpa.
-                </p>
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/502x302"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* tablet */}
-
-      <section class="service2_t text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex-row w-full  flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0">
-              Master Cleanse Reliac Heirloom
-            </h1>
-          </div>
-          <div>
-            <p class="mx-auto py-10 leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
-            </p>
-          </div>
-          <div class="m-auto flex">
-            <button class=" ml-auto text-white bg-gray-400 border-1 border-black py-2 px-6 focus:outline-none hover:bg-slate-600 ">
-              The Target building
-            </button>
-            <button class=" ml-auto text-white bg-gray-400 border-1 border-black py-2 px-6 focus:outline-none hover:bg-slate-600 ">
-              Site Context
-            </button>
-            <button class=" ml-auto text-white bg-gray-400 border-1 border-black py-2 px-6 focus:outline-none hover:bg-slate-600">
-              Access your 3D Models
-            </button>
-          </div>
-          <div class="flex flex-wrap p-5">
-            <div>
-              <h3 class="text-2xl font-medium title-font capitalize">
-                the target building
-              </h3>
-            </div>
-            <div class="md:p-2 p-1 w-full">
-              <p>
-                Nisi enim laborum do amet officia ullamco labore magna ad. Est
-                culpa voluptate excepteur sint mollit commodo quis labore elit
-                reprehenderit aliquip aliqua duis pariatur. Ea labore aliquip
-                veniam eiusmod. Laborum anim sint laboris cupidatat nisi duis
-                aliquip mollit consectetur. Do tempor ad ex ut exercitation
-                culpa cillum consectetur ex minim esse nisi id. Occaecat ad do
-                eu consequat reprehenderit ex velit amet commodo incididunt
-                magna culpa.
-              </p>
-            </div>
-            <div class="md:p-2 p-1 ">
+    <Box sx={{ maxWidth: 400 }} className="phoenix_stepper" style={{ marginTop: '80px', marginBottom: '100px'}}>
+         {/* <h2
+            style={{ fontFamily: "Exo2-Regular" }}
+            class="text-[#2F2F2F] text-[50px] font-bold mb-4"
+        >
+            Our solution
+        </h2>
+        <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[20px] font-[400] mb-3">
+             Our solution included the following steps.
+        </p> */}
+      <Stepper  activeStep={activeStep} orientation="vertical">
+        {steps.map((step, index) => (
+          <Step key={step.label}>
+            <StepLabel className="steplabel"
+              optional={
+                index === 2 ? (
+                  <Typography variant="caption">Last step</Typography>
+                ) : null
+              }
+            >
+              {step.label}
+            </StepLabel>
+            <StepContent>
+              <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>{step.label}</b></h1>
+              <Typography>
+                {step.description}
+                <img src={step.img} alt="stepimg" />
+              </Typography>
+              {/* <div>
               <img
-                alt="ecommerce"
-                class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-                src="https://dummyimage.com/400x100"
+                class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                src={step.img}
+                alt="step"
               />
-            </div>
-          </div>
-        </div>
-      </section>
+              </div> */}
+              <Box sx={{ mb: 2 }}>
 
-      {/* mobile */}
-
-      <section class="service2_m text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex-row w-full  flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0">
-              Master Cleanse Reliac Heirloom
-            </h1>
-          </div>
-          <div>
-            <p class="mx-auto py-10 leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
-            </p>
-          </div>
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <Accormob />
-          </div>
-        </div>
-      </section>
-    </div>
+                <div>
+                  <Button
+                    variant="contained"
+                    onClick={handleNext}
+                    sx={{ mt: 1, mr: 1 }}
+                  >
+                    {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                  </Button>
+                  <Button
+                    disabled={index === 0}
+                    onClick={handleBack}
+                    sx={{ mt: 1, mr: 1 }}
+                  >
+                    Back
+                  </Button>
+                </div>
+              </Box>
+            </StepContent>
+          </Step>
+        ))}
+      </Stepper>
+      {/* <div class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12">
+              <p>Digital Twin Creation</p>
+              <img
+                class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                src="https://dummyimage.com/1200x500"
+                alt="step"
+              />
+            </div> */}
+      {activeStep === steps.length && (
+        <Paper square elevation={0} sx={{ p: 3 }}>
+          <Typography>All steps completed - you&apos;re finished</Typography>
+          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+            Reset
+          </Button>
+        </Paper>
+      )}
+    </Box>
   );
 }

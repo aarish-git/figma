@@ -46,6 +46,10 @@
   width: 60%;
 }
 
+.project_name_head {
+cursor: pointer;
+}
+
 .MuiStep-root{
   display: flex;
 }
