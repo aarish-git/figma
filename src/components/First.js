@@ -23,6 +23,7 @@ import Recycle from "../assest/Icons/Recycle.png";
 import CloudSun from "../assest/Icons/CloudSun.png";
 import PresentationChart from "../assest/Icons/PresentationChart.png";
 import CheckSquare from "../assest/Icons/CheckSquare.png";
+import Home from "../assest/Icons/Home.png";
 
 export default function First() {
   return (
@@ -71,7 +72,7 @@ export default function First() {
             <div class="flex justify-center">
               <ul class="space-y-5">
                 <li class="flex space-x-3">
-                  <img src={Tree} />
+                  <img src={Home  } />
                   <p>Digitise your real estate</p>
                 </li>
                 <li class="flex space-x-3">

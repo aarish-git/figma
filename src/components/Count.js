@@ -12,7 +12,7 @@ export default function Count() {
               <div class="text-left w-full mb-20">
                 <h1
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class=" text-[#2F2F2F] lg:text-[46px] font-[700] leading-[70px] mb-4"
+                  class=" text-[#2F2F2F] lg:text-[46px] md:text-[46px] sm:text-[46px] font-[700] leading-[50px] mb-4"
                 >
                   Make data-driven decisions.
                   <br />

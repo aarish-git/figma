@@ -17,14 +17,14 @@
 .build_twins:hover {
   -ms-transform: scale(10); 
   -webkit-transform: scale(10); 
-  transform: scale(3.5); 
+  transform: scale(3.0); 
 }
 
 
-.grayscale:hover {
+.abc:hover {
   -ms-transform: scale(1.2); 
   -webkit-transform: scale(1.2); 
-  transform: scale(3.5); 
+  transform: scale(1.2); 
 }
 
 .home_first_row {
