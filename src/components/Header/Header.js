@@ -32,6 +32,7 @@
 import React, { useState, useEffect } from "react";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
+import Downarrow from "../../assest/Icons/chevron.png"
 import "./Header.css";
 import { Outlet, NavLink } from "react-router-dom";
 import $ from "jquery";
@@ -82,15 +83,15 @@ export default function Header({ history }) {
               <li>
                 {/* <NavLink to="/service">Services</NavLink> */}
                 <div class="dropdown">
-                  <button class="dropbtn">Services</button>
+                  <button class="dropbtn"> <p class="rotate-0">Services</p><img class="mt-1.5 ml-2 hover:rotate-180" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
-                    <NavLink to="/modeling" activeClassName="active-link">
+                    <NavLink to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                       Modeling
                     </NavLink>
-                    <NavLink to="/analytics" activeClassName="active-link">
+                    <NavLink to="/building-analytics" activeClassName="active-link">
                       Analytics
                     </NavLink>
-                    <NavLink to="/control" activeClassName="active-link">
+                    <NavLink to="/smart-building-control" activeClassName="active-link">
                       Control
                     </NavLink>
                   </div>

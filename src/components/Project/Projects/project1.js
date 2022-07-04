@@ -16,7 +16,7 @@ export default function () {
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/mannhiem">
           <div class="container py-24 ">
-            <div class="lg:w-full flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
+            <div class="lg:w-full flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
                 class="lg:w-1/2  w-full lg:h-auto h-64 object-cover object-center rounded"
@@ -64,7 +64,7 @@ export default function () {
                       <div class="flex flex-wrap -m-4">
                         <div class="p-4 sm:w-1/3 w-1/2 space-y-1">
                           <h2 style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
-                            12000 sqm
+                            12,000 sqm
                           </h2>
                           <p class="leading-relaxed">Total project area</p>
                         </div>
@@ -76,7 +76,7 @@ export default function () {
                         </div>
                         <div class="p-4 sm:w-1/3 w-1/2 space-y-1">
                           <h2  style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
-                            ~8000 sqm
+                            ~8,000 sqm
                           </h2>
                           <p class="leading-relaxed w-full">
                             Building area under assessment 
@@ -101,7 +101,7 @@ export default function () {
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/granue">
           <div class="container py-24  ">
-            <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
+            <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
                 class="lg:w-1/2  w-full lg:h-auto h-64 object-cover object-center rounded"
@@ -194,7 +194,7 @@ export default function () {
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/phoenix">
           <div class="container py-24  ">
-            <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
+            <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
                 class="lg:w-1/2  w-full lg:h-auto h-64 object-cover object-center rounded"
@@ -282,7 +282,7 @@ export default function () {
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/wago">
           <div class="container py-24  ">
-            <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
+            <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
                 class="lg:w-1/2  w-full lg:h-auto h-64 object-cover object-center rounded"

@@ -24,9 +24,9 @@ export default function index() {
           <Route path="/wago" element={<Wago />} />
           <Route path="/phoenix" element={<Phoenix />} />
 
-          <Route path="/analytics" element={<AServices />} />
-          <Route path="/control" element={<CServices />} />
-          <Route path="/modeling" element={<MServices />} />
+          <Route path="/building-analytics" element={<AServices />} />
+          <Route path="/smart-building-control" element={<CServices />} />
+          <Route path="/services/3d-digital-models-of-buildings" element={<MServices />} />
 
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -35,7 +35,7 @@ export default function services() {
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
-                  class="leading-relaxed text-base text-center px-5"
+                  class="leading-relaxed text-base text-center lg:px-5 "
                 >
                   Take the step to digitise your real estate with our unique
                   building 3D modelling <br />

@@ -18,7 +18,7 @@ export default function Wecreated() {
         centerMode: true,
         centerPadding: "60px",
         slidesToShow: 4,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
           {
