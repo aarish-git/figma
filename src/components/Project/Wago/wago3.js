@@ -10,34 +10,43 @@ import Typography from '@mui/material/Typography';
 // import modelSetup from "./../../../assest/Images/project/trio/24 1.png";
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
+import wimg from "../../../assest/Images/project/wago/Mask.png";
+import wimg1 from "../../../assest/Images/project/wago/w1.png"
+import wimg2 from "../../../assest/Images/project/wago/w2.png"
+import wimg3 from "../../../assest/Images/project/wago/w3.png"
+import wimg4 from "../../../assest/Images/project/wago/w4.png"
+
 
 const steps = [
   {
     label: 'Digital twin setup',
     description: `We received the 3D model of the target building from the customer and created and merged it with the surroundings using satellite images and scans, and Leaftech’s in-house tool.`,
-    img: './../../../assest/Images/project/trio/Mask group.png'
+    img:`${wimg}`
   },
   {
     label: 'Created the target surfaces & virtual sensor placement',
     description:
       'The rooftop and the windows were the target surfaces for sensor placement and shading control assessment respectively. We positioned the virtual sensors, i.e the calculation points on target surfaces, to simulate the influencing factors for every minute.',
-      img: './../../../assest/Images/project/trio/24 1.png'
+      img: `${wimg2}`
     },
   {
     label: 'Solar analysis',
     description: `Next, we did a detailed solar analysis for each virtual sensor 
     on the rooftop and the windows. This solar analysis included a solar radiation analysis, annual sunshine hours analysis, and shading analysis for the whole year.
     `,
+    img: `${wimg1}`
   },
   {
     label: 'Wind flow analysis',
     description:
       'Using the digital twin model and local wind profile, we did a detailed CFD analysis to derive the wind flow pattern, pressure zone, and wakes for each calculation point around the building. ',
+      img: `${wimg4}`
   },
   {
     label: 'Location for sensor placement',
     description:
       'Next, we derived the optimal location for rooftop weather sensors to ensure uninterrupted and stable measurements using the results from the solar analysis, wind flow analysis, and the local site-specific requirements',
+      img: `${wimg3}`
   },
   {
     label: 'Shading control data for each window',

@@ -10,18 +10,21 @@ import Typography from '@mui/material/Typography';
 // import modelSetup from "./../../../assest/Images/project/trio/24 1.png";
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
+import PImage from "../../../assest/Images/project/trio/p1.png";
+import PImage1 from "../../../assest/Images/project/trio/p2.png"
+
 
 const steps = [
   {
     label: '3D model setup',
     description: `Using building plans and geospatial data, we created a highly detailed 3D model of the target building (LOD 4) and merged it with models of surrounding buildings, vegetation, and terrain.`,
-    img: './../../../assest/Images/project/trio/Mask group.png'
+    img: `${PImage}`
   },
   {
     label: 'Weather data integration & solar analysis*',
     description:
       'We used the resulting model to conduct a detailed shading analysis for multiple points on each window. Our algorithm calculated shading conditions and incident angles for each calculation point (virtual sensor*) for the sun position for the entire year. Embedding local TRY weather data, we quantified the annual energy intake for each calculation point.',
-      img: './../../../assest/Images/project/trio/24 1.png'
+      img: `${PImage1}`
     },
   {
     label: 'Shading correction data for each window',
@@ -79,7 +82,7 @@ export default function VerticalLinearStepper() {
               <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>{step.label}</b></h1>
               <Typography>
                 {step.description}
-                <img src={step.img} alt="stepimg" />
+                {step.img?<img src={step.img} alt="stepimg" />:null}
               </Typography>
               {/* <div>
               <img

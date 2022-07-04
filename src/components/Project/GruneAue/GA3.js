@@ -9,19 +9,21 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 // import modelSetup from "./../../../assest/Images/project/trio/24 1.png";
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
-
+import G1 from "../../../assest/Images/project/grune/Grune.png"
+import G2 from "../../../assest/Images/project/grune/Grune1.png"
+// import G3 from "../../../assest/Images/project/grune.png"
 
 const steps = [
   {
     label: 'Digital twin setup',
     description: `Using the LIDAR raw scans and images, Leaftech created a 3D model of all buildings with the rooftops accurately shaped. This model also included the neighbouring buildings and vegetation.`,
-    img: './../../../assest/Images/project/trio/Mask group.png'
+    img: `${G1}`
   },
   {
     label: 'Solar radiation analysis',
     description:
       'We gathered solar radiation measurements from a nearby weather station and combined them with Leaftech’s shading analysis to conduct a detailed assessment of solar radiation intake on each roof. The data was provided for 2019-2021 as well as 2022 in 15-minute steps.',
-      img: './../../../assest/Images/project/trio/24 1.png'
+      img: `${G2}`
     },
   {
     label: 'Photovoltaic yield assessment',
@@ -76,7 +78,7 @@ export default function VerticalLinearStepper() {
               <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>{step.label}</b></h1>
               <Typography>
                 {step.description}
-                <img src={step.img} alt="stepimg" />
+                {step.img?<img src={step.img} alt="stepimg" />:null}
               </Typography>
               {/* <div>
               <img
