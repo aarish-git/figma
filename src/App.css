@@ -7,6 +7,11 @@
   height:auto;
   cursor: pointer;
 }
+.build_twins_horn{
+  height:auto;
+  cursor: pointer;
+}
+
 
 .horn {
 
@@ -17,7 +22,7 @@
 .build_twins:hover {
   -ms-transform: scale(10); 
   -webkit-transform: scale(10); 
-  transform: scale(3.0); 
+  transform: scale(2.5); 
 }
 
 
@@ -25,6 +30,12 @@
   -ms-transform: scale(1.2); 
   -webkit-transform: scale(1.2); 
   transform: scale(1.2); 
+}
+
+.build_twins_horn:hover{
+  -ms-transform: scale(10); 
+  -webkit-transform: scale(10); 
+  transform: scale(1.5) !important; 
 }
 
 .home_first_row {
@@ -50,18 +61,26 @@
 }
 
 .MuiStepLabel-root {
-  width: 120%;
+  width: 160%;
+  height: 50px;
 }
 
 .MuiStepContent-root {
   border-left: none !important;
 }
 
+.MuiStepContent-root {
+  width: 150%;
+}
+
+
 .stepper_desc_head {
   font-size: 30px;
     margin-bottom: 20px;
 }
 
-.MuiStepContent-root {
-  width: 150%;
+
+.phoenix_stepper{ 
+  padding: 0px 80px;
 }
+

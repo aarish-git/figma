@@ -54,8 +54,8 @@ export default function Wecreated() {
         </h1>
         <div class="container px-5 py-24 mx-auto ">
           <div id="mycenter" class="flex flex-wrap -m-4 text-center">
-            <div class="p-4"  style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0 horn" src={Horn} />
+            <div class="p-4 "  style={{width:'50%'}}>
+              <img class="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
               <img class="build_twins grayscale hover:grayscale-0" src={Phoenix} />

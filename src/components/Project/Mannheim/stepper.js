@@ -13,27 +13,29 @@ import Typography from '@mui/material/Typography';
 
 const steps = [
   {
-    label: '3D model setup',
-    description: `Using building plans and geospatial data, we created a highly detailed 3D model of the target building (LOD 4) and merged it with models of surrounding buildings, vegetation, and terrain.`,
+    label: 'Digital twin setup',
+    description: `Created a detailed 3D model of the target building along with the surroundings, using building plans, satellite images, lidar scans, and CityGML data. `,
     img: 'src/assest/Images/project/trio/Mask group.png'
   },
   {
-    label: 'Weather data integration & solar analysis*',
+    label: 'Building & weather data integration',
     description:
-      'We used the resulting model to conduct a detailed shading analysis for multiple points on each window. Our algorithm calculated shading conditions and incident angles for each calculation point (virtual sensor*) for the sun position for the entire year. Embedding local TRY weather data, we quantified the annual energy intake for each calculation point.',
+      'Integrated the TRY weather data files and building-specific inputs like material properties, building systems, and user information to create a thermal model of the building. ',
       img: './../assest/Images/project/trio/24 1.png'
     },
   {
-    label: 'Shading correction data for each window',
-    description: `Next, we calculated the shading progression on each window 
-    for the whole year and converted it into a shading correction data file. 
-    This file was then integrated with the building controller and merged with measurements from the local weather sensor data to provide a time-based shading position. With this, we delivered the phase-one results.
-    `,
+    label: 'Energy balance calculation',
+    description: `Using Leaftech's in-house algorithm, we calculated all the relevant factors of the energy balance equation to simulate real operating conditions. We assessed in detail the solar heat gains through the glass facades. These simulations were based on relevant DIN and VDI standards. `,
   },
   {
-    label: 'Cloud-based control data',
+    label: 'Cooling load assessment',
     description:
-      'We are enhancing the digital twin with additional system-specific data. Each calculation point, i.e virtual sensor on the window, is connected to the local weather forecast data. This uses the resulting forecast of solar radiation for each virtual sensor to quantify the expected solar radiation intake and accordingly, determines the best shading position to maximise comfort and efficiency.',
+      'Calculated the yearly cooling load for every room in the office space and the minimum HVAC capacity required, after considering the differential weather conditions throughout the year.',
+  },
+  {
+    label: 'Optimization recommendations',
+    description:
+      'Identified optimization potential to minimise the operational and investment cost while maintaining the comfort level inside the building (e.g. impact of different shading scenarios on the cooling load). ',
   },
 ];
 
@@ -54,6 +56,15 @@ export default function VerticalLinearStepper() {
 
   return (
     <Box sx={{ maxWidth: 400 }}>
+       <h2
+            style={{ fontFamily: "Exo2-Regular" }}
+            class="text-[#2F2F2F] text-[50px] font-bold mb-4"
+        >
+            Our solution
+        </h2>
+        <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[20px] font-[400] mb-3">
+             Our solution included the following steps.
+        </p>
       <Stepper  activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
@@ -67,7 +78,7 @@ export default function VerticalLinearStepper() {
               {step.label}
             </StepLabel>
             <StepContent>
-              <h1 className="stepper_desc_head"><b>{step.label}</b></h1>
+              <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>{step.label}</b></h1>
               <Typography>
                 {step.description}
                 <img src={step.img} alt="stepimg" />
