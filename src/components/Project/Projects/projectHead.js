@@ -21,7 +21,7 @@ export default function index() {
             >
               Our success stories
             </h1>
-            <p style={{fontFamily: "NunitoSans-Regular"}} class="mb-8 text-[20px] font-[400] w-[400] leading-relaxed">
+            <p style={{fontFamily: "NunitoSans-Regular", width: '635px'}} class="mb-8 text-[20px] font-[400] w-[400] leading-relaxed">
               We have gained experience working with a wide range of industry
               partners. Take a glance at our project portfolio to learn more
               about the value we created for our clients and their buildings.

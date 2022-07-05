@@ -11,6 +11,7 @@ import User from "../../../assest/Icons/User.png";
 import Default from "../../../assest/Icons/Default.png";
 
 export default function () {
+  
   return (
     <div>
       <section class="text-gray-600 body-font overflow-hidden">
@@ -24,7 +25,7 @@ export default function () {
               />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
+                  style={{ fontFamily: "Exo2-Regular", marginTop:'55px'}}
                   class="text-[20px] font-[400] tracking-wide uppercase text-[#0087FF] mb-3"
                 >
                   Mannheim, Germany, February 2022
@@ -58,7 +59,7 @@ export default function () {
                     </div>
                   </div>
                 </div>
-                <div class=" text-left">
+                <div class=" text-left project_nums">
                   <section class="text-gray-600 body-font">
                     <div class="container py-10 mx-auto">
                       <div class="flex flex-wrap -m-4">
@@ -109,7 +110,7 @@ export default function () {
               />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 ">
                 <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
+                  style={{ fontFamily: "Exo2-Regular",  marginTop:'55px'}}
                   class="text-[20px] font-[400] tracking-wide uppercase text-[#0087FF] mb-3"
                 >
                   Berlin, germany, March 2022
@@ -144,10 +145,10 @@ export default function () {
                     </div>
                   </div>
                 </div>
-                <div class=" text-center">
+                <div class=" text-center project_nums">
                   <section class="text-gray-600 body-font">
                     <div class="container py-10 mx-auto">
-                      <div class="flex flex-wrap text-left -m-4">
+                      <div class="flex flex-wrap text-left project_nums -m-4">
                         <div class="p-4 sm:w-1/3 w-1/2 space-y-1">
                           <h2
                             style={{ fontFamily: "Exo2-Regular" }}
@@ -202,7 +203,7 @@ export default function () {
               />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
+                  style={{ fontFamily: "Exo2-Regular",  marginTop:'55px'}}
                   class="text-[20px] font-[400] tracking-wide uppercase text-[#0087FF] mb-3"
                 >
                   Blomberg, Germany, April 2022
@@ -237,17 +238,17 @@ export default function () {
                     </div>
                   </div>
                 </div>
-                <div class=" text-center">
+                <div class=" text-center project_nums2">
                   <section class="text-gray-600 body-font">
                     <div class="container py-10 ">
-                      <div class="flex flex-wrap -m-2 text-left ">
+                      <div class="flex flex-wrap -m-2 text-left project_nums ">
                         <div class=" sm:w-1/3 w-1/2  space-y-1">
                           <h2 style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
                             -1,965 sqm
                           </h2>
                           <p class="leading-relaxed">Total project area</p>
                         </div>
-                        <div class=" sm:w-1/3 w-1/2 space-y-1">
+                        <div class=" sm:w-1/3 w-1/2 space-y-1" style={{ marginLeft:'-35px' }}>
                           <h2 style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
                             3,000 €
                           </h2>
@@ -256,7 +257,7 @@ export default function () {
                           </p>
                         </div>
                         <div class="sm:w-1/3 w-1/2 space-y-1">
-                          <h2 style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
+                          <h2 style={{ fontFamily: "Exo2-Regular", width: '207px' }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
                             1,500 € + 67 €<span class="text-[15px] font-medium">/Month</span>
                           </h2>
                           <p class="leading-relaxed">
@@ -290,7 +291,7 @@ export default function () {
               />
               <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)]">
                 <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
+                  style={{ fontFamily: "Exo2-Regular",  marginTop:'55px'}}
                   class="text-[#0087FF] text-[20px] mb-3 tracking-widest uppercase"
                 >
                   Minden, Germany, June 2021
@@ -315,19 +316,17 @@ export default function () {
                         <li class="flex space-x-5"><img src ={Default} />
                           <p style={{ fontFamily: "NunitoSans-Regular" }} class="text-[16px] font -[400]">Building type: Commercial, Wago's own office facility</p>{" "}
                         </li>
-                        <li class="flex space-x-5"><img src ={Sun} />
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} class="text-[16px] font -[400]">Services: Digital twin set-up, data for shading
-                          automation and sensor placement l</p>
+                        <li class="flex space-x-5"><img src ={Sun} style={{height:'30px'}}/>
+                          <p style={{ fontFamily: "NunitoSans-Regular" }} class="text-[16px] font -[400]">System information: Wago’s automation system with individual shading control</p>
                         </li>
-                        <li class="flex space-x-5"><img src ={Wrench} />
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} class="text-[16px] font -[400]">Additional Information: Wago automation system with
-                          individual shading control</p>
+                        <li class="flex space-x-5"><img src ={Wrench} style={{height:'30px'}}/>
+                          <p style={{ fontFamily: "NunitoSans-Regular" }} class="text-[16px] font -[400]">Services: Digital twin set-up, data for shading automation and sensor placement </p>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div class=" text-left">
+                <div class=" text-left project_nums2">
                   <section class="text-gray-600 body-font">
                     <div class="container mx-auto">
                       <div class="flex flex-wrap  ">

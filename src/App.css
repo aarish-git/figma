@@ -38,13 +38,32 @@
   transform: scale(1.5) !important; 
 }
 
- .home_first_image{
+.project_nums {
+  margin-top: -65px;
+  /* padding-bottom: 45px; */
+  width: 585px;
+}
+
+.project_nums2 {
+  margin-top: -25px;
+  padding-bottom: 25px;
+  width: 645px;
+}
+
+ 
   @media only screen and (max-width: 1300px) {
-    body {
+    .home_first_image{
       margin-left: 105px;
     }
+
+    .project_nums {
+      width: 100%;  
+    }
+
+    .project_nums2 {
+      width: 100%;  
+    }
   }
- }
 
 .home_first_row {
   display: flex;
