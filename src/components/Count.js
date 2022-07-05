@@ -86,7 +86,7 @@ export default function Count() {
               </div>
               <div class="">
               <img
-                class="object-cover object-center rounded "
+                class="object-cover object-center rounded home_first_image"
                 alt="hero"
                 src={image}
               />
