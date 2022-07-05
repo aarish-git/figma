@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Conindex.css";
 // import Countryflag from "./countryFlag";
-import relaxed from "../../assest/Images/contact/contact1.png"
-import building from "../../assest/Images/contact/contact2.png"
+import relaxed from "../../assest/Images/contact/contact1.png";
+import building from "../../assest/Images/contact/contact2.png";
+import ReCAPTCHA from "react-google-recaptcha";
 
+export default function Index() {
+  const [verified, setverified] = useState(false);
 
-export default function index() {
+  function handleContact(value) {
+    console.log("Captcha value:", value);
+    setverified(true);
+  }
   return (
     <div>
       <section
@@ -92,10 +98,10 @@ export default function index() {
               </div>
               <div class="grid grid-cols-2 gap-4 place-content-end ">
                 <div class="align-self-end">
-                <img src={relaxed} />
+                  <img src={relaxed} />
                 </div>
                 <div class="justify-end w-full">
-                <img src={building} />
+                  <img src={building} />
                 </div>
               </div>
             </div>
@@ -199,14 +205,23 @@ export default function index() {
                 class="bg-white drop-shadow-sm rounded-[2px] w-[26px] h-[26px]  border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
               />
               <p class="text-[12px] text-gray-500 ">
-              I agree to the Privacy Policy and to receive other communications from Leaftech*
+                I agree to the Privacy Policy and to receive other
+                communications from Leaftech*
               </p>
             </div>
             <div class=" flex space-x-4 justify-center">
               {/* <button class="w-1/3 text-black bg-slate-50	 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Go Back
               </button> */}
-              <button class=" w-1/3 text-white bg-[#0087FF] border-0 my-3 py-2 px-8 focus:outline-none hover:bg-zinc-600 rounded-[10px] text-lg">
+              {/* <ReCAPTCHA
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={handleContact}
+              /> */}
+              
+              <button
+                disabled={!verified}
+                class=" w-1/3 text-white bg-[#0087FF] border-0 my-3 py-2 px-8 focus:outline-none hover:bg-zinc-600 rounded-[10px] text-lg"
+              >
                 Submit
               </button>
             </div>
