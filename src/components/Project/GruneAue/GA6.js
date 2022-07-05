@@ -7,7 +7,7 @@ export default function GA6() {
   return (
     <div>
       {/* <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div class=" px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 sm:w-1/2 w-1/2 text-left">
               <Link to="/mannhiem">
@@ -24,7 +24,7 @@ export default function GA6() {
         </div>
       </section> */}
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div class=" px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 w-1/2 text-left">
               <Link

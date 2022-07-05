@@ -4,7 +4,7 @@ export default function man1() {
   return (
     <div>
       <section style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}} class="py-5 m-0 body-font ">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
+        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
             <h1
               style={{ fontFamily: "Exo2-Regular" }}
@@ -33,7 +33,7 @@ export default function man1() {
             </p>
             <div class="flex ">
               <section class="text-gray-900 body-font -mb-10">
-                <div class="container  ">
+                <div class=" ">
                   <div class="flex flex-wrap space-x-14 ">
                     <div class="sm:2/3 space-y-2">
                       <h2 style={{ fontFamily: "Exo2-Regular"  }} class="title-font font-bold sm:text-2xl text-3xl text-[40px]">

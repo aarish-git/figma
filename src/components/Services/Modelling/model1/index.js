@@ -8,7 +8,7 @@ export default function services1() {
           background:
             "linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)",
         }} class="service1_d body-font">
-        <div class="container  py-24 mx-auto">
+        <div style={{padding:'107px 47px'}} class="py-24 mx-auto">
           <div class="flex flex-col text-left w-full mb-2 px-2 mt-5">
             <p
               style={{ fontFamily: "Exo2-Regular" }}
@@ -43,7 +43,7 @@ export default function services1() {
 
       {/* tablet */}
       <section class="service1_t bg-gray-200	 text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
+        <div style={{padding:'107px 47px'}} class="x-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-2">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 capitalize">
               leaftech's serives: your

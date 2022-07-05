@@ -6,7 +6,7 @@ export default function Count() {
   return (
     <div>
       <section class=" body-font">
-        <div class="container flex  py-24 md:flex-row flex-col items-center ">
+        <div style={{padding:'107px 47px'}} class=" flex  py-24 md:flex-row flex-col items-center ">
           <div class="row py-10 mx-auto  w-full">
             <div className="home_first_row"> 
             <div className="home-first-content">
@@ -30,7 +30,7 @@ export default function Count() {
                 </p>
               </div>
               <section class="body-font">
-                <div class="container text-left mx-auto">
+                <div style={{padding:'107px 47px'}} class=" text-left mx-auto">
                   <div class="flex flex-col text-left w-full ">
                     <h1
                       style={{ fontFamily: "Exo2-Regular" }}
