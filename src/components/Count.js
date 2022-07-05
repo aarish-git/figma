@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../assest/Images/home/Isometric2.png"
+import { Link } from "react-router-dom";
 
 export default function Count() {
   return (
@@ -49,16 +50,17 @@ export default function Count() {
                       <h2 style={{fontFamily:"Exo2-Regular"}} class="font-[700] text-[30px] text-gray-900">
                         500,000 +
                       </h2>
-                      <p class="leading-relaxed">sqm served</p>
+                      <p class="leading-relaxed">Sqm served</p>
                     </div>
                     <div class="py-4 md:w-1/3 sm:w-1/2 w-full">
                       <h2 style={{fontFamily:"Exo2-Regular"}} class="font-[700] text-[30px] text-gray-900">
                         1,500 +
                       </h2>
-                      <p class="leading-relaxed">devices in control </p>
+                      <p class="leading-relaxed">Devices in control </p>
                     </div>
                   </div>
                   <div class="relative top-10">
+                    <Link style={{all:"unset"}} to="/contact">
                     <button
                       style={{
                         // background: "",
@@ -77,6 +79,7 @@ export default function Count() {
                     >
                       Contact Us
                     </button>
+                    </Link>
                   </div>
                 </div>
               </section>

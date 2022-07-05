@@ -34,7 +34,7 @@ import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import Downarrow from "../../assest/Icons/chevron.png"
 import "./Header.css";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink,Link } from "react-router-dom";
 import $ from "jquery";
 
 export default function Header({ history }) {
@@ -100,7 +100,7 @@ export default function Header({ history }) {
               <div className="contactandLanguage">
                 <ul style={{ gap: "2rem" }}>
                   <li className="Contact_btn">
-                    <NavLink to="/contact" activeClassName="active-link">
+                    <NavLink style={{all:"unset"}} to="/contact" activeClassName="active-link">
                       <button type="button">Contact</button>
                     </NavLink>
                   </li>

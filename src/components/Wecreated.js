@@ -18,7 +18,7 @@ export default function Wecreated() {
         centerMode: true,
         centerPadding: "60px",
         slidesToShow: 4,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
           {
@@ -52,8 +52,8 @@ export default function Wecreated() {
         >
           WE CREATED BUILDING TWINS FOR
         </h1>
-        <div class="container px-5 py-24 mx-auto ">
-          <div id="mycenter" class="flex flex-wrap -m-4 text-center">
+        <div class="container px-5 py-14 mx-auto ">
+          <div id="mycenter" class="flex flex-wrap m-4 text-center">
             <div class="p-4 "  style={{width:'50%'}}>
               <img class="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
             </div>
