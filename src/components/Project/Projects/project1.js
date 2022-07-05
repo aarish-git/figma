@@ -15,7 +15,7 @@ export default function project() {
   return (
     <div>
       <section class="text-gray-600 body-font overflow-hidden">
-        <Link style={{all:"unset"}} to="/mannhiem">
+        <a style={{all:"unset"}} href="/mannhiem">
           <div style={{padding: '42px 40px'}} class=" py-24 ">
             <div class="lg:w-full flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
@@ -96,11 +96,11 @@ export default function project() {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </section>
       {/* 2nd */}
       <section class="text-gray-600 body-font overflow-hidden">
-        <Link style={{all:"unset"}} to="/granue">
+        <a style={{all:"unset"}} href="/granue">
           <div style={{padding: '42px 40px'}} class=" py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
@@ -189,11 +189,11 @@ export default function project() {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </section>
       {/* 3rd */}
       <section class="text-gray-600 body-font overflow-hidden">
-        <Link style={{all:"unset"}} to="/phoenix">
+        <a style={{all:"unset"}} href="/phoenix">
           <div style={{padding: '42px 40px'}} class=" py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
@@ -277,11 +277,11 @@ export default function project() {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </section>
       {/* 4th */}
       <section class="text-gray-600 body-font overflow-hidden">
-        <Link style={{all:"unset"}} to="/wago">
+        <a style={{all:"unset"}} href="/wago">
           <div style={{padding: '42px 40px'}} class=" py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
@@ -370,7 +370,7 @@ export default function project() {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </section>
     </div>
   );

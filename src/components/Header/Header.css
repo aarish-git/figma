@@ -84,6 +84,13 @@
   position: relative;
   display: inline-block;
 }
+#dropbtnimg{
+  display: block;
+}
+
+.dropbtn:hover > #dropbtnimg{
+  transform: rotate(180deg);
+}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {

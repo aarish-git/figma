@@ -27,12 +27,15 @@ export default function index() {
               about the value we created for our clients and their buildings.
             </p>
             <div class="flex justify-center">
+              <a style={{all:"unset"}} href="/contact">
               <button
                 style={{ fontFamily: "NunitoSans-Regular" }}
                 class="inline-flex  py-2 px-6  rounded-[20px] text-lg text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
               >
                 Contact us
+                
               </button>
+              </a>
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-5">

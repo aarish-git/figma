@@ -109,9 +109,9 @@ export default function Index() {
           <div class="lg:w-2/6 md:w-1/2 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
             <div class="flex justify-end text-[12px] space-x-4 py-5 ">
               <p class="uppercase tracking-widest">Meeting Language</p>
-              <input class="mt-1" type="checkbox" />
+              <input class="" type="checkbox" />
               <label>English</label>
-              <input class="mt-1" type="checkbox" />
+              <input class="" type="checkbox" />
               <label>German</label>
             </div>
             <div class="relative mb-4 text-left">

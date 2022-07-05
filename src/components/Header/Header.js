@@ -71,29 +71,29 @@ export default function Header({ history }) {
           <div className="arun_menuList" id="sub-header">
             <ul>
               <li>
-                <NavLink to="/" activeClassName="active-link">
+                <a href="/" activeClassName="active-link">
                   Home
-                </NavLink>
+                </a>
               </li>
               <li>
-                <NavLink to="/Project" activeClassName="active-link">
+                <a href="/Project" activeClassName="active-link">
                   Project
-                </NavLink>{" "}
+                </a>{" "}
               </li>
               <li>
                 {/* <NavLink to="/service">Services</NavLink> */}
                 <div class="dropdown">
-                  <button class="dropbtn"> <p class="rotate-0">Services</p><img class="mt-1.5 ml-2 hover:rotate-180" src={Downarrow} width="15" height="30" /></button>
+                  <button class="dropbtn"> <p class="">Services</p><img id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
-                    <NavLink to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    <a href="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                       Modeling
-                    </NavLink>
-                    <NavLink to="/building-analytics" activeClassName="active-link">
+                    </a>
+                    <a href="/building-analytics" activeClassName="active-link">
                       Analytics
-                    </NavLink>
-                    <NavLink to="/smart-building-control" activeClassName="active-link">
+                    </a>
+                    <a href="/smart-building-control" activeClassName="active-link">
                       Control
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </li>

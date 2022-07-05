@@ -11,9 +11,11 @@ export default function projectFoot() {
               solutions we’ve delivered.
             </p>
           </div>
+          <a style={{all:"unset"}} href="/contact">
           <button class="flex mx-auto mt-16 text-white bg-[#0087FF]  py-2 px-8 rounded-[20px] shadow-[0_4px_4px_rgba(0,135,225,0.25)]  text-lg">
             Contact us
           </button>
+          </a>
         </div>
       </section>
     </div>

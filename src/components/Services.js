@@ -28,9 +28,9 @@ export default function services() {
             {/* card1 */}
 
             <div class="p-4 md:w-1/3 flex cursor-pointer">
-              <Link
+              <a
                 style={{ all: "unset" }}
-                to="/services/3d-digital-models-of-buildings"
+                href="/services/3d-digital-models-of-buildings"
               >
                 <div class="flex-grow m-auto py-3 shadow-[0_4px_4px_rgba(0,135,225,0.25)] rounded-[20px]">
                   <h2
@@ -47,13 +47,13 @@ export default function services() {
                     building 3D modelling services.
                   </p>
                 </div>
-              </Link>
+              </a>
             </div>
 
             {/* card2 */}
 
             <div class="p-4 md:w-1/3 flex cursor-pointer">
-              <Link style={{ all: "unset" }} to="/building-analytics">
+              <a style={{ all: "unset" }} href="/building-analytics">
                 <div class="flex-grow m-auto py-3 shadow-[0_4px_4px_rgba(0,135,225,0.25)] rounded-[20px]">
                   <h2
                     style={{ fontFamily: "Exo2-Regular" }}
@@ -69,13 +69,13 @@ export default function services() {
                     performance with our advanced building analytics services.
                   </p>
                 </div>
-              </Link>
+              </a>
             </div>
 
             {/* card3 */}
 
             <div class="p-4 md:w-1/3 flex cursor-pointer">
-              <Link style={{ all: "unset" }} to="/smart-building-control">
+              <a style={{ all: "unset" }} href="/smart-building-control">
                 <div class="flex-grow m-auto py-3 shadow-[0_4px_4px_rgba(0,135,225,0.25)] rounded-[20px]">
                   <h2
                     style={{ fontFamily: "Exo2-Regular" }}
@@ -91,7 +91,7 @@ export default function services() {
                     with our accurate building control data.
                   </p>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

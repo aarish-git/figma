@@ -10,24 +10,24 @@ export default function mann6() {
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 w-1/2 text-left">
-              <Link
-                to="/wago"
+              <a
+                href="/wago"
                 class="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <img src={leftArrow} />
                 <p class="leading-relaxed underline underline-offset-4">Wago Headquarters Project</p>
-              </Link>
+              </a>
             </div>
             <div class="p-4 w-1/2 text-right">
-              <Link
-                to="/granue"
+              <a
+                href="/granue"
                 class="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <p class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
                 <img src={rightArrow} />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

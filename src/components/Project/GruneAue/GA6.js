@@ -10,13 +10,13 @@ export default function GA6() {
         <div class=" px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 sm:w-1/2 w-1/2 text-left">
-              <Link to="/mannhiem">
+              <Link href="/mannhiem">
                 {" "}
                 <p class="leading-relaxed">Trio Mannheim Project</p>
               </Link>
             </div>
             <div class="p-4 sm:w-1/2 w-1/2 text-right">
-              <Link to="/phoenix">
+              <Link href="/phoenix">
                 <p class="leading-relaxed">Phoenix Contract Project</p>
               </Link>
             </div>
@@ -27,24 +27,24 @@ export default function GA6() {
         <div class=" px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 w-1/2 text-left">
-              <Link
-                to="/mannhiem"
+              <a
+                href="/mannhiem"
                 class="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <img src={leftArrow} />
                 <p class="leading-relaxed underline underline-offset-4">Trio Mannheim Project</p>
-              </Link>
+              </a>
             </div>
             <div class="p-4 w-1/2 text-right">
-              <Link
-                to="/phoenix"
+              <a
+                href="/phoenix"
                 class="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <p class="leading-relaxed underline underline-offset-4">Phoenix Contract Project</p>
                 <img src={rightArrow} />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

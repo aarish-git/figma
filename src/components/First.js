@@ -147,11 +147,11 @@ export default function First() {
               </ul>
             </div>
             <div class="flex mt-5">
-              <Link style={{all:"unset"}} to="/mannhiem">
+              <a style={{all:"unset"}} href="/mannhiem">
               <button class="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                 Take a look at our Trio Mannheim project
               </button>
-              </Link>
+              </a>
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -217,11 +217,11 @@ export default function First() {
               </ul>
             </div>
             <div class="flex mt-5">
-            <Link style={{all:"unset"}} to="/wago">
+            <a style={{all:"unset"}} href="/wago">
               <button class="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                 Know more about our data control project
               </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -277,11 +277,11 @@ export default function First() {
               </ul>
             </div>
             <div class="flex mt-5">
-            <Link style={{all:"unset"}} to="/granue">
+            <a style={{all:"unset"}} href="/granue">
               <button class="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                 Know more about our residential project
               </button>
-              </Link>
+              </a>
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
