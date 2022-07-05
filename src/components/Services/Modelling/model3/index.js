@@ -62,6 +62,7 @@ export default function index() {
             <img
               class="object-cover object-center rounded"
               alt="hero"
+              style={{marginLeft: '25px'}}
               src={Mac}
             />
           </div>
