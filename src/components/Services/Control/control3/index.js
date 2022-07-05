@@ -7,55 +7,55 @@ import Tree from "../../../../assest/Icons/Default.png";
 import GlobeHemisphereEast from "../../../../assest/Icons/CircleHalf.png";
 import ClockAfternoon from "../../../../assest/Icons/ClockAfternoon.png";
 
-import Mac from "../../../../assest/Images/services/macbook_blank.jpg"
+import Mac from "../../../../assest/Images/services/Control/control_laptop.gif";
 export default function index() {
   return (
     <div>
-       <section class="service3_d text-gray-600 body-font ">
+      <section class="service3_d text-gray-600 body-font ">
         <div class="container mx-auto flex  md:flex-row flex-col items-center">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left">
             <h1
               style={{ fontFamily: "Exo2-Regular" }}
               class="w-[780px] mb-4 text-[36px] text-[#2F2F2F] font-[900] capitalize"
             >
-              Unlock multiple benefits from our digital twin-based control services to:
+              Unlock multiple benefits from our digital twin-based control
+              services to:
             </h1>
             <ul class="space-y-5 mb-5">
               <li class="flex space-x-5">
                 <img src={Slider} />
                 <p class="">
-                Avoid the expensive and strenuous implementation of hardware sensors
+                  Avoid the expensive and strenuous implementation of hardware
+                  sensors
                 </p>
               </li>
               <li class="flex space-x-5">
                 <img src={ChartPie} />
                 <p class="">
-                Obtain high-quality and accurate control data for each shading device
+                  Obtain high-quality and accurate control data for each shading
+                  device
                 </p>
               </li>
               <li class="flex space-x-5">
                 <img src={BatteryCharging} />
-                <p class="">
-                Easy and cost-effective implementation
-                </p>
+                <p class="">Easy and cost-effective implementation</p>
               </li>
               <li class="flex space-x-5">
                 <img src={Tree} />
                 <p class="">
-                Save up to 28% energy in operation by upgrading to model-based proactive control
+                  Save up to 28% energy in operation by upgrading to model-based
+                  proactive control
                 </p>
               </li>
               <li class="flex space-x-5">
                 <img src={GlobeHemisphereEast} />
                 <p class="">
-                Empower healthy living by balancing thermal and visual comfort
+                  Empower healthy living by balancing thermal and visual comfort
                 </p>
               </li>
               <li class="flex space-x-5">
                 <img src={ClockAfternoon} />
-                <p class="">
-                Predictive and safe maintenance
-                </p>
+                <p class="">Predictive and safe maintenance</p>
               </li>
             </ul>
             <div class="flex w-full md:justify-start justify-center items-end">

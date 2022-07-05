@@ -5,7 +5,7 @@ import ChartPie from "../../../../assest/Icons/ChartPie.png";
 import BatteryCharging from "../../../../assest/Icons/BatteryCharging.png";
 import Tree from "../../../../assest/Icons/Tree.png";
 import GlobeHemisphereEast from "../../../../assest/Icons/GlobeHemisphereEast.png";
-import Mac from "../../../../assest/Images/services/macbook_blank.jpg"
+import Mac from "../../../../assest/Images/services/Analytics/analytics_laptop.gif"
 export default function index() {
   return (
     <div>

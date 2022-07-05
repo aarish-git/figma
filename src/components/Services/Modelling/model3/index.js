@@ -5,7 +5,7 @@ import Cursor from "../../../../assest/Icons/Cursor.png";
 import ArrowSquareIn from "../../../../assest/Icons/ArrowSquareIn.png";
 import Tree from "../../../../assest/Icons/Tree.png";
 import ChartTv from "../../../../assest/Icons/ChartTv.png";
-import Mac from "../../../../assest/Images/services/macbook_blank.jpg"
+import Mac from "../../../../assest/Images/services/Model/model3.gif"
 export default function index() {
   return (
     <div>
