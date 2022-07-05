@@ -38,6 +38,14 @@
   transform: scale(1.5) !important; 
 }
 
+ .home_first_image{
+  @media only screen and (max-width: 1300px) {
+    body {
+      margin-left: 105px;
+    }
+  }
+ }
+
 .home_first_row {
   display: flex;
 }

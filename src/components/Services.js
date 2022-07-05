@@ -11,10 +11,10 @@ export default function services() {
             class="font-bold text-[40px] title-font text-center text-gray-900 "
           >
             Move towards a net-zero building <br /> stock with our data
-            services.
+            services
             <p
               style={{ fontFamily: "NunitoSans-Regular" }}
-              class="xl:w-[1000px] lg:w-[1000px] md:w-1/2 font-medium text-[20px] text-center mx-auto my-4 leading-relaxed"
+              class="xl:w-[1115px] lg:w-[1000px] md:w-1/2 font-medium text-[20px] text-center mx-auto my-4 leading-relaxed"
             >
               Our Digital Twin for buildings is based on a highly standardised
               and automated set of processes that span modelling, analytics, and
@@ -40,7 +40,7 @@ export default function services() {
                     Modelling
                   </h2>
                   <p
-                    style={{ fontFamily: "NunitoSans-Regular" }}
+                    style={{ fontFamily: "NunitoSans-Regular", padding:'0px 34px' }}
                     class="leading-relaxed text-base text-center xl:px-5 lg:px-1 "
                   >
                     Take the step to digitise your real estate with our unique
@@ -62,7 +62,7 @@ export default function services() {
                     Ananlytics
                   </h2>
                   <p
-                    style={{ fontFamily: "NunitoSans-Regular" }}
+                    style={{ fontFamily: "NunitoSans-Regular", padding:'0px 34px' }}
                     class="leading-relaxed text-base text-center xl:px-5 lg:px-1 "
                   >
                     Get a holistic view of your building's design and
@@ -84,7 +84,7 @@ export default function services() {
                     control
                   </h2>
                   <p
-                    style={{ fontFamily: "NunitoSans-Regular" }}
+                    style={{ fontFamily: "NunitoSans-Regular", padding:'0px 34px' }}
                     class="leading-relaxed text-base text-center 2xl:px-5 xl:px-5 lg:px-1"
                   >
                     Operate and optimise your building and individual systems

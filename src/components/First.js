@@ -44,7 +44,7 @@ export default function First() {
               src={img1}
             />
           </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
+          <div style={{paddingLeft: '10px', marginLeft: '25px'}} class="lg:flex-grow md:w-1/2 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
             <span
               style={{ fontFamily: "Exo2-Regular" }}
               class="uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
@@ -320,10 +320,7 @@ export default function First() {
               style={{ fontFamily: "NunitoSans-Regular" }}
               class="mb-8 leading-relaxed"
             >
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+              Make the most of our digital twin for your design’s full-energy assessments. With Leaftech, no more worries about losing data or switching between multiple tools, as we take care of all your assessments holistically.
             </p>
             <div class="flex justify-center">
               <ul class="space-y-5">
