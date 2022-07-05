@@ -6,6 +6,7 @@
   position: fixed;
   background-color:#fff;
   /* z-index: 0.0; */
+  z-index: 121;
   opacity:0.9
 }
 

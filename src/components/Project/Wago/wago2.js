@@ -23,7 +23,7 @@ export default function wago2() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   class=" text-[50px] font-bold mb-4"
                 >
-                  Project Brief
+                  Project brief
                 </h2>
                 <p style={{fontfamily:"NunitoSans-Regular"}} class="leading-relaxed text-[20px] font-[400]">
                   The building V1 hosts many offices, including the board of
