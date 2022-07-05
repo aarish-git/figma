@@ -40,7 +40,7 @@ export default function p1() {
             </p>
             <div class="flex ">
               <section class="text-gray-900 body-font">
-                <div class="container  ">
+                <div class="  ">
                   <div class="flex flex-wrap space-x-14 ">
                     <div class="sm:2/3 space-y-2">
                       <h2

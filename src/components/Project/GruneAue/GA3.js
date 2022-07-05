@@ -52,7 +52,7 @@ export default function VerticalLinearStepper() {
   // };
 
   return (
-    <div className="container">
+    <div className="">
       <h2
         style={{ fontFamily: "Exo2-Regular", marginLeft: '35px' }}
         class="text-[#2F2F2F] text-[50px] font-bold mb-4"

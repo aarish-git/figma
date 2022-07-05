@@ -10,7 +10,7 @@ export default function gran() {
         }}
         class="py-5 m-0 body-font "
       >
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
+        <div class=" mx-auto flex px-5 py-24 md:flex-row flex-col items-center ">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
             <h1
               style={{ fontFamily: "Exo2-Regular" }}
@@ -40,7 +40,7 @@ export default function gran() {
             </p>
             <div class="flex ">
               <section class="text-gray-900 body-font">
-                <div class="container  ">
+                <div class="  ">
                   <div class="flex flex-wrap space-x-14 ">
                     <div class="sm:2/3 space-y-2">
                       <h2

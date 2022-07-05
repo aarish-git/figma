@@ -10,13 +10,13 @@ import Wrench from "../../../assest/Icons/Wrench.png";
 import User from "../../../assest/Icons/User.png";
 import Default from "../../../assest/Icons/Default.png";
 
-export default function () {
+export default function project() {
   
   return (
     <div>
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/mannhiem">
-          <div class="container py-24 ">
+          <div style={{padding: '42px 40px'}} class=" py-24 ">
             <div class="lg:w-full flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
@@ -61,7 +61,7 @@ export default function () {
                 </div>
                 <div class=" text-left project_nums">
                   <section class="text-gray-600 body-font">
-                    <div class="container py-10 mx-auto">
+                    <div style={{padding: '42px 40px'}} class=" py-10 mx-auto">
                       <div class="flex flex-wrap -m-4">
                         <div class="p-4 sm:w-1/3 w-1/2 space-y-1">
                           <h2 style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
@@ -101,7 +101,7 @@ export default function () {
       {/* 2nd */}
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/granue">
-          <div class="container py-24  ">
+          <div style={{padding: '42px 40px'}} class=" py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
@@ -147,7 +147,7 @@ export default function () {
                 </div>
                 <div class=" text-center project_nums">
                   <section class="text-gray-600 body-font">
-                    <div class="container py-10 mx-auto">
+                    <div style={{padding: '42px 40px'}} class=" py-10 mx-auto">
                       <div class="flex flex-wrap text-left project_nums -m-4">
                         <div class="p-4 sm:w-1/3 w-1/2 space-y-1">
                           <h2
@@ -194,7 +194,7 @@ export default function () {
       {/* 3rd */}
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/phoenix">
-          <div class="container py-24  ">
+          <div style={{padding: '42px 40px'}} class=" py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
@@ -240,7 +240,7 @@ export default function () {
                 </div>
                 <div class=" text-center project_nums2">
                   <section class="text-gray-600 body-font">
-                    <div class="container py-10 ">
+                    <div style={{padding: '42px 40px'}} class=" py-10 ">
                       <div class="flex flex-wrap -m-2 text-left project_nums ">
                         <div class=" sm:w-1/3 w-1/2  space-y-1">
                           <h2 style={{ fontFamily: "Exo2-Regular" }} class="title-font font-bold sm:text-2xl text-3xl text-gray-900">
@@ -282,7 +282,7 @@ export default function () {
       {/* 4th */}
       <section class="text-gray-600 body-font overflow-hidden">
         <Link style={{all:"unset"}} to="/wago">
-          <div class="container py-24  ">
+          <div style={{padding: '42px 40px'}} class=" py-24  ">
             <div class="lg:w-full  flex flex-wrap shadow-[0px_4px_4px_0px_rgba(0,135,255,0.25)] rounded-[20px]">
               <img
                 alt="ecommerce"
@@ -328,7 +328,7 @@ export default function () {
                 </div>
                 <div class=" text-left project_nums2">
                   <section class="text-gray-600 body-font">
-                    <div class="container mx-auto">
+                    <div style={{padding: '42px 40px'}} class=" mx-auto">
                       <div class="flex flex-wrap  ">
                         <div class=" sm:w-1/3 w-1/2 space-y-1">
                           <h2

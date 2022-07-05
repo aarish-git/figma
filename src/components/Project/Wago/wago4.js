@@ -10,7 +10,7 @@ export default function wago4() {
   return (
     <div>
       <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class=" mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img
               class="object-cover object-center rounded"
