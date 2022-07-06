@@ -3,7 +3,7 @@ import "./Conindex.css";
 // import Countryflag from "./countryFlag";
 import relaxed from "../../assest/Images/contact/contact1.png";
 import building from "../../assest/Images/contact/contact2.png";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Index() {
   const [verified, setverified] = useState(false);
