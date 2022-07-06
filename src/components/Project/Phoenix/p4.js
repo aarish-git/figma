@@ -42,12 +42,12 @@ export default function p4() {
                 Client's benefits:
               </p>
               <ul class="space-y-5">
-                <li class="flex space-x-5"><img src ={Battery} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings were more than 7% </p></li>
-                <li class="flex space-x-5"><img src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort </p></li>
-                <li class="flex space-x-5"><img src ={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data for predictive maintenance of shading systems</p></li>
-                <li class="flex space-x-5"><img src ={HardDrive} /><p style={{fontfamily:"NunitoSans-Regular"}}>Avoidance of expensive and strenuous hardware sensor-based systems</p> </li>
-                <li class="flex space-x-5"><img src ={LockOpen} /><p style={{fontfamily:"NunitoSans-Regular"}}>Unlocked potential to improve building certification label</p> </li>
-                <li class="flex space-x-5"><img src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={Battery} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings were more than 7% </p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort </p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data for predictive maintenance of shading systems</p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={HardDrive} /><p style={{fontfamily:"NunitoSans-Regular"}}>Avoidance of expensive and strenuous hardware sensor-based systems</p> </li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={LockOpen} /><p style={{fontfamily:"NunitoSans-Regular"}}>Unlocked potential to improve building certification label</p> </li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
               </ul>
             </div>
           </div>

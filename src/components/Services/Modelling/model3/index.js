@@ -20,31 +20,31 @@ export default function index() {
             </h1>
             <ul class="space-y-5 mb-5">
               <li class="flex space-x-5">
-                <img src={Cube} />
+                <img class="h-fit" alt="model" src={Cube} />
                 <p class="">
                 Extract geometrical information in 2D and 3D.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={Cursor} />
+                <img class="h-fit" alt="model" src={Cursor} />
                 <p class="">
                 Get interactive 2D and 3D plans.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={ArrowSquareIn} />
+                <img class="h-fit" alt="model" src={ArrowSquareIn} />
                 <p class="">
                 Get the inputs required to better utilise and optimise your real estate.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={Tree} />
+                <img class="h-fit" alt="model" src={Tree} />
                 <p class="">
                 Understand your building's surroundings and their impact.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={ChartTv} />
+                <img class="h-fit" alt="model" src={ChartTv} />
                 <p class="">
                 Use the 3D models to conduct further analysis.
                 </p>

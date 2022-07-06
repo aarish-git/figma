@@ -20,35 +20,35 @@ export default function index() {
             </h1>
             <ul class="space-y-5 mb-5">
               <li class="flex space-x-5">
-                <img src={Slider} />
+                <img class="h-fit" alt="service" src={Slider} />
                 <p class="">
                   Make informed decisions to design & plan your building
                   project.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={ChartPie} />
+                <img class="h-fit" alt="service" src={ChartPie} />
                 <p class="">
                   Select the appropriate modernization measures to improve the
                   building’s efficiency and comfort.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={BatteryCharging} />
+                <img class="h-fit" alt="service" src={BatteryCharging} />
                 <p class="">
                   Conduct energy design risk assessment and test different
                   scenarios.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={Tree} />
+                <img class="h-fit" alt="service" src={Tree} />
                 <p class="">
                   Design ecologically and economically sustainable energy
                   systems.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={GlobeHemisphereEast} />
+                <img class="h-fit" alt="service" src={GlobeHemisphereEast} />
                 <p class="">
                   Meet local or national building codes and standards.
                 </p>

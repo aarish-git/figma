@@ -39,9 +39,9 @@ export default function GA4() {
                 Client's benefits:
               </p>
               <ul class="space-y-3">
-                <li class="flex space-x-5"><img src={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Fast and accurate results</p> </li>
-                <li class="flex space-x-5"><img src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data-based decision making</p> </li>
-                <li class="flex space-x-5"><img src={Coin} /><p style={{fontfamily:"NunitoSans-Regular"}}>Made recommendations to reduce energy costs by up to 8%</p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Line" src={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Fast and accurate results</p> </li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data-based decision making</p> </li>
+                <li class="flex space-x-5"><img class="h-fit" alt="Coin" src={Coin} /><p style={{fontfamily:"NunitoSans-Regular"}}>Made recommendations to reduce energy costs by up to 8%</p></li>
               </ul>
             </div>
           </div>

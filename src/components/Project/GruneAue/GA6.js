@@ -32,7 +32,7 @@ export default function GA6() {
                 class="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <img src={leftArrow} />
+                <img alt="leftArrow" src={leftArrow} />
                 <p class="leading-relaxed underline underline-offset-4">Trio Mannheim Project</p>
               </a>
             </div>
@@ -43,7 +43,7 @@ export default function GA6() {
               >
                 {" "}
                 <p class="leading-relaxed underline underline-offset-4">Phoenix Contract Project</p>
-                <img src={rightArrow} />
+                <img alt="rightArrow" src={rightArrow} />
               </a>
             </div>
           </div>

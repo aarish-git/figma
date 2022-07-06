@@ -83,7 +83,7 @@ export default function Header({ history }) {
               <li>
                 {/* <NavLink to="/service">Services</NavLink> */}
                 <div class="dropdown">
-                  <button class="dropbtn"> <p class="">Services</p><img id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <button class="dropbtn"> <p class="">Services</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
                     <a href="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                       Modeling

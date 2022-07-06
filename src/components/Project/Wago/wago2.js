@@ -46,8 +46,8 @@ export default function wago2() {
                   We provided:
                 </h2> */}
                 <ul class="my-3 space-y-4">
-                  <li class="flex space-x-5"><img src={Sun} /><p>Recommendations for weather sensor placement</p></li>
-                  <li class="flex space-x-5"><img src={Circle} /><p>
+                  <li class="flex space-x-5"><img class="h-fit" alt="Sun" src={Sun} /><p>Recommendations for weather sensor placement</p></li>
+                  <li class="flex space-x-5"><img class="h-fit" alt="Circle" src={Circle} /><p>
                     Shading correction data for shading/sun protection control{" "}</p>
                   </li>
                   {/* <li>

@@ -23,38 +23,38 @@ export default function index() {
             </h1>
             <ul class="space-y-5 mb-5">
               <li class="flex space-x-5">
-                <img src={Slider} />
+                <img class="h-fit" alt="control" src={Slider} />
                 <p class="">
                   Avoid the expensive and strenuous implementation of hardware
                   sensors
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={ChartPie} />
+                <img class="h-fit" alt="control" src={ChartPie} />
                 <p class="">
                   Obtain high-quality and accurate control data for each shading
                   device
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={BatteryCharging} />
+                <img class="h-fit" alt="control" src={BatteryCharging} />
                 <p class="">Easy and cost-effective implementation</p>
               </li>
               <li class="flex space-x-5">
-                <img src={Tree} />
+                <img class="h-fit" alt="control" src={Tree} />
                 <p class="">
                   Save up to 28% energy in operation by upgrading to model-based
                   proactive control
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={GlobeHemisphereEast} />
+                <img class="h-fit" alt="control" src={GlobeHemisphereEast} />
                 <p class="">
                   Empower healthy living by balancing thermal and visual comfort
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img src={ClockAfternoon} />
+                <img class="h-fit" alt="control" src={ClockAfternoon} />
                 <p class="">Predictive and safe maintenance</p>
               </li>
             </ul>

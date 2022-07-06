@@ -39,10 +39,10 @@ export default function wago4() {
                 Client's benefits:
               </p>
               <ul class="space-y-3">
-                <li class="flex space-x-5"><img src ={Arrow} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings of more than 7% </p></li>
-                <li class="flex space-x-5"><img src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort</p> </li>
-                <li class="flex space-x-5"><img src ={CheckSquare} /><p style={{fontfamily:"NunitoSans-Regular"}}>Hassle-free facility management</p></li>
-                <li class="flex space-x-5"><img src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={Arrow} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings of more than 7% </p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort</p> </li>
+                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={CheckSquare} /><p style={{fontfamily:"NunitoSans-Regular"}}>Hassle-free facility management</p></li>
+                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
               </ul>
             </div>
           </div>

@@ -47,10 +47,10 @@ export default function man2() {
                 </p>
 
                 <ul class="mt-20 space-y-5">
-                  <li class="flex space-x-4"><img src={sun} /><p>High solar heat gain from the large glass façade</p></li>
-                  <li class="flex space-x-4"><img src={Wind} /><p>A non-uniform airflow in the office area </p></li>
+                  <li class="flex space-x-4"><img class="h-fit" alt="sun" src={sun} /><p>High solar heat gain from the large glass façade</p></li>
+                  <li class="flex space-x-4"><img class="h-fit" alt="Wind" src={Wind} /><p>A non-uniform airflow in the office area </p></li>
                   <li class="flex space-x-4">
-                  <img src={Battery} /><p>Changes in the energy balance due to the inner courtyard..</p>
+                  <img class="h-fit" alt="Battery" src={Battery} /><p>Changes in the energy balance due to the inner courtyard..</p>
                   </li>
                 </ul>
               </div>

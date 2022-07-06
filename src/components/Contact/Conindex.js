@@ -98,10 +98,10 @@ export default function Index() {
               </div>
               <div class="grid grid-cols-2 gap-4 place-content-end ">
                 <div class="align-self-end">
-                  <img src={relaxed} />
+                  <img  alt="relaxed" src={relaxed} />
                 </div>
                 <div class="justify-end w-full">
-                  <img src={building} />
+                  <img  alt="building" src={building} />
                 </div>
               </div>
             </div>
@@ -127,13 +127,13 @@ export default function Index() {
               />
             </div>
             <div class="relative mb-4 text-left">
-              <label for="email" class="leading-7 text-[16px] font-[600]">
+              <label for="text" class="leading-7 text-[16px] font-[600]">
                 Job Title*
               </label>
               <input
-                type="email"
-                id="email"
-                name="email"
+                type="text"
+                id="text"
+                name="Job Title"
                 placeholder="Role"
                 class="w-full drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
@@ -164,19 +164,32 @@ export default function Index() {
                 />
               </div>
             </div>
-            <div class=" space-x-4 text-left">
-              <div class="w-1/2 relative mb-4 ">
+            {/* <div class=" flex space-x-4 text-left">
+             
+            </div>
+            <div class="relative mb-4 ">
                 <label for="email" class="leading-7 text-[16px] font-[600]">
                   Phone
-                </label>
+                </label><br />
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="tel"
+                  id="phone"
+                  name="phone"
                   placeholder="+46"
-                  class="w-full drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1  leading-8 transition-colors duration-200 ease-in-out"
+                  class=" drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1  leading-8 transition-colors duration-200 ease-in-out"
                 />
-              </div>
+              </div> */}
+            <div class="relative mb-4 text-left">
+              <label for="text" class="leading-7 text-[16px] font-[600]">
+               Phone
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+46"
+                class="w-full drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
             </div>
             <div class="relative mb-4 text-left">
               <label for="email" class="leading-7 text-[16px] font-[600]">
@@ -189,7 +202,7 @@ export default function Index() {
                 class="w-full bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               /> */}
               <textarea
-                class="drop-shadow-md rounded-[10px] p-1"
+                class="drop-shadow-md rounded-[10px] p-1 w-[-webkit-fill-available]"
                 id="w3review"
                 name="w3review"
                 rows="4"
@@ -220,7 +233,7 @@ export default function Index() {
               
               <button
                 disabled={!verified}
-                class=" w-1/3 text-white bg-[#0087FF] border-0 my-3 py-2 px-8 focus:outline-none hover:bg-zinc-600 rounded-[10px] text-lg"
+                class="xl:w-1/3 lg:w-fit md:w-fit sm:w-fit text-white bg-[#0087FF] border-0 my-3 py-2 px-8 focus:outline-none hover:bg-zinc-600 rounded-[10px] text-lg"
               >
                 Submit
               </button>

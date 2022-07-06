@@ -15,7 +15,7 @@ export default function p6() {
                 class="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <img src={leftArrow} />
+                <img alt="Project" src={leftArrow} />
                 <p class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
               </a>
             </div>
@@ -26,7 +26,7 @@ export default function p6() {
               >
                 {" "}
                 <p class="leading-relaxed underline underline-offset-4">Wago Project</p>
-                <img src={rightArrow} />
+                <img alt="Project" src={rightArrow} />
               </a>
             </div>
           </div>

@@ -61,8 +61,8 @@ export default function GA2() {
                 </p> */}
 
                 <ul class="my-3 space-y-5">
-                  <li class="flex space-x-3"><img src={Sun} /><p>Photovoltaic potential assessment</p> </li>
-                  <li class="flex space-x-3"><img src={ChartLine} /><p>Data for optimal PV system layout.</p> </li>
+                  <li class="flex space-x-3"><img class="h-fit"  alt ="Sun" src={Sun} /><p>Photovoltaic potential assessment</p> </li>
+                  <li class="flex space-x-3"><img class="h-fit"  alt ="ChartLine" src={ChartLine} /><p>Data for optimal PV system layout.</p> </li>
                 </ul>
               </div>
             </div>

@@ -73,19 +73,19 @@ export default function First() {
             <div class="flex justify-center">
               <ul class="space-y-5">
                 <li class="flex space-x-3">
-                  <img src={Home  } />
+                  <img class="h-fit	"  alt="home" src={Home  } />
                   <p>Digitise your real estate</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={ChartLine} />
+                  <img class="h-fit	"  alt="ChartLine" src={ChartLine} />
                   <p>Benchmarking for investment decisions </p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Tree} />
+                  <img class="h-fit" alt="Tree" src={Tree} />
                   <p>Decarbonize your building</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Medal} />
+                  <img class="h-fit	"  alt="Girl in a Medal" src={Medal} />
                   <p>Improve your ESG rating</p>
                 </li>
               </ul>
@@ -129,19 +129,19 @@ export default function First() {
             <div class="flex justify-center">
               <ul class="space-y-5">
                 <li class="flex space-x-3">
-                  <img src={ChartBar} />
+                  <img class="h-fit" alt="ChartBar" src={ChartBar} />
                   <p>Make decisions using analytic data</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Coins} />
+                  <img class="h-fit" alt="Coins" src={Coins} />
                   <p>Reduce building operating expenses</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={BatteryCharging} />
+                  <img class="h-fit" alt="BatteryCharging" src={BatteryCharging} />
                   <p>Mitigate energy design risks</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Medal} />
+                  <img class="h-fit" alt="Medal" src={Medal} />
                   <p>Data for energy performance certificates </p>
                 </li>
               </ul>
@@ -199,19 +199,19 @@ export default function First() {
             <div class="flex justify-center">
               <ul class="space-y-5">
                 <li class="flex space-x-3">
-                  <img src={Default} />
+                  <img class="h-fit" alt="Default" src={Default} />
                   <p>Digital Twin based system design and layout</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={CircleHalf} />
+                  <img class="h-fit" alt="CircleHalf" src={CircleHalf} />
                   <p>Best-in-class data services for shading automation </p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={ClockAfternoon} />
+                  <img class="h-fit" alt="ClockAfternoon" src={ClockAfternoon} />
                   <p>Data-driven predictive maintenance</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Armchair} />
+                  <img class="h-fit" alt="Armchair" src={Armchair} />
                   <p>Anticipate upcoming operating conditions of each room </p>
                 </li>
               </ul>
@@ -255,23 +255,23 @@ export default function First() {
             <div class="flex justify-center">
               <ul class="space-y-5">
                 <li class="flex space-x-3">
-                  <img src={ChartLine} />
+                  <img class="h-fit" alt="ChartLine" src={ChartLine} />
                   <p>Offer analytic insights to your clients</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Thermometer} />
+                  <img class="h-fit" alt="Thermometer" src={Thermometer} />
                   <p>Assess local cooling and heating load </p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={Recycle} />
+                  <img class="h-fit" alt="Recycle" src={Recycle} />
                   <p>Assess onsite renewable energy generation potential</p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={BatteryCharging} />
+                  <img class="h-fit" alt="BatteryCharging" src={BatteryCharging} />
                   <p>Design integrated low-impact energy systems </p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={CloudSun} />
+                  <img class="h-fit" alt="CloudSun" src={CloudSun} />
                   <p>Forecast data to increase building’s energy efficiency</p>
                 </li>
               </ul>
@@ -325,15 +325,15 @@ export default function First() {
             <div class="flex justify-center">
               <ul class="space-y-5">
                 <li class="flex space-x-3">
-                  <img src={Thermometer} />
+                  <img class="h-fit" alt="Thermometer" src={Thermometer} />
                   <p>Building site analysis, climate analysis </p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={CheckSquare} />
+                  <img class="h-fit" alt="CheckSquare" src={CheckSquare} />
                   <p>Verify your design assumptions </p>
                 </li>
                 <li class="flex space-x-3">
-                  <img src={PresentationChart} />
+                  <img class="h-fit" alt="PresentationChart" src={PresentationChart} />
                   <p>Data for Energy design </p>
                 </li>
               </ul>

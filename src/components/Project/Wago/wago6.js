@@ -28,7 +28,7 @@ export default function wago6() {
                 class="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <img src={leftArrow} />
+                <img alt="arrow" src={leftArrow} />
                 <p class="leading-relaxed underline underline-offset-4">
                   Trio Mannheim Project
                 </p>
@@ -43,7 +43,7 @@ export default function wago6() {
                 <p class="leading-relaxed underline underline-offset-4">
                   Pheonix Contact Project
                 </p>
-                <img src={rightArrow} />
+                <img alt="arrow" src={rightArrow} />
               </a>
             </div>
           </div>

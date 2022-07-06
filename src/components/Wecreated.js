@@ -55,28 +55,28 @@ export default function Wecreated() {
         <div class="px-5 py-14 mx-auto ">
           <div id="mycenter" class="flex flex-wrap m-4 text-center">
             <div class="p-4 "  style={{width:'50%'}}>
-              <img class="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
+              <img  alt="Horn" class="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Phoenix} />
+              <img  alt="Phoenix" class="build_twins grayscale hover:grayscale-0" src={Phoenix} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Hosch} />
+              <img  alt="Hosch" class="build_twins grayscale hover:grayscale-0" src={Hosch} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Bauer} />
+              <img  alt="Bauer" class="build_twins grayscale hover:grayscale-0" src={Bauer} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Bim} />
+              <img  alt="Bim" class="build_twins grayscale hover:grayscale-0" src={Bim} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Lubbing} />
+              <img  alt="Lubbing" class="build_twins grayscale hover:grayscale-0" src={Lubbing} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Wago} />
+              <img  alt="Wago" class="build_twins grayscale hover:grayscale-0" src={Wago} />
             </div>
             <div class="p-4" style={{width:'50%'}}>
-              <img class="build_twins grayscale hover:grayscale-0" src={Selve} />
+              <img  alt="Selve" class="build_twins grayscale hover:grayscale-0" src={Selve} />
             </div>
           </div>
         </div>
