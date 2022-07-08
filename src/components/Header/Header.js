@@ -1,35 +1,4 @@
-// import Navbar from "react-bootstrap/Navbar";
-// import Nav from "react-bootstrap/Nav";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-// import Container from "react-bootstrap/Container";
-// import Button from "react-bootstrap/Button";
-// import Form from "react-bootstrap/Form";
-// export default function header() {
-//   return (
-//     <Navbar bg="light" expand="lg">
-//       <Container fluid>
-//         <Navbar.Brand href="#">LeafTech</Navbar.Brand>
-//         <Navbar.Toggle aria-controls="navbarScroll" />
-//         <Navbar.Collapse id="navbarScroll">
-//           <Nav
-//             className="me-auto my-2 my-lg-0"
-//             style={{ maxHeight: "100px" }}
-//             navbarScroll
-//           >
-//             <Nav.NavLink href="#action1">Home</Nav.NavLink>
-//             <Nav.NavLink href="#action2">Project</Nav.NavLink>
-//             <Nav.NavLink href="#action2">Services</Nav.NavLink>
-//           </Nav>
-//           <Form className="d-flex">
-//             <Button variant="outline-secondary">Contact</Button>
-//           </Form>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useLayoutEffect } from "react";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import Downarrow from "../../assest/Icons/chevron.png"
@@ -40,6 +9,10 @@ import $ from "jquery";
 export default function Header({ history }) {
   const [showMenu, setMenu] = useState(false);
   console.log(history);
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0)
+}); 
 
   useEffect(() => {
     $(function () {
@@ -63,7 +36,7 @@ export default function Header({ history }) {
     <div>
       <div className="arun_container">
         <div className="arun_logo">
-          <h1 style={{ fontFamily: "Exo2-Regular" }} class="uppercase">
+          <h1 style={{ fontFamily: "Exo2-Regular" }} class="uppercase font-bold tracking-wide">
             LeafTech
           </h1>
         </div>
@@ -71,29 +44,29 @@ export default function Header({ history }) {
           <div className="arun_menuList" id="sub-header">
             <ul>
               <li>
-                <a href="/" activeClassName="active-link">
+                <NavLink style={{textDecoration:"unset",color:"unset"}} to="/" >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/Project" activeClassName="active-link">
+                <NavLink style={{textDecoration:"unset",color:"unset"}} to="/Project">
                   Project
-                </a>{" "}
+                </NavLink>{" "}
               </li>
               <li>
                 {/* <NavLink to="/service">Services</NavLink> */}
                 <div class="dropdown">
                   <button class="dropbtn"> <p class="">Services</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
-                    <a href="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    <NavLink to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                       Modeling
-                    </a>
-                    <a href="/building-analytics" activeClassName="active-link">
+                    </NavLink>
+                    <NavLink to="/building-analytics" activeClassName="active-link">
                       Analytics
-                    </a>
-                    <a href="/smart-building-control" activeClassName="active-link">
+                    </NavLink>
+                    <NavLink to="/smart-building-control" activeClassName="active-link">
                       Control
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
               </li>

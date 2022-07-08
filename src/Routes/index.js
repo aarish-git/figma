@@ -16,8 +16,8 @@ export default function index() {
       <Router>
         <Routes>
           {/* <Route path="/" element={<Layout />} /> */}
-          <Route path="/" element={<Home />} />
-          <Route path="/Project" element={<Project />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="Project" element={<Project />} />
 
           <Route path="/mannhiem" element={<Mannhiem />} />
           <Route path="/granue" element={<Granue />} />
