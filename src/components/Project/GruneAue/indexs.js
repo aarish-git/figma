@@ -10,14 +10,16 @@ import Grune6 from "./GA6";
 
 export default function indexs() {
   return (
-    <div>
-      <Header />
+    <div className="App" >
+    <Header />
+    <div className="container">
       <Grune1 />
       <Grune2 />
       <Grune3 />
       <Grune4 />
       <Grune5 />
       <Grune6 />
+      </div>
       <Footer />
     </div>
   );

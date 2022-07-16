@@ -10,52 +10,49 @@ import ClockAfternoon from "../../../../assest/Icons/ClockAfternoon.png";
 import Mac from "../../../../assest/Images/services/Control/control_laptop.gif";
 export default function index() {
   return (
-    <div>
-      <section class="service3_d text-gray-600 body-font ">
-        <div class="container mx-auto flex  md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left">
-            <h1
-              style={{ fontFamily: "Exo2-Regular" }}
-              class="w-[780px] mb-4 text-[36px] text-[#2F2F2F] font-[900] capitalize"
-            >
+    <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
+    <div className="text-gray-600 body-font">
+      <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
+        <div className="flex flex-col md:items-start md:text-left items-center"  style={{width:'762px', height:'455px'}}>
+            <h1 style={{fontFamily:"Exo2-Bold"}} className="service_3d_head">
               Unlock multiple benefits from our digital twin-based control
               services to:
             </h1>
-            <ul class="space-y-5 mb-5">
+            <ul class="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="control" src={Slider} />
-                <p class="">
+                <img class="h-fit project_icons" alt="control" src={Slider} />
+                <p class="project_icon_text">
                   Avoid the expensive and strenuous implementation of hardware
                   sensors
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="control" src={ChartPie} />
-                <p class="">
+                <img class="h-fit project_icons" alt="control" src={ChartPie} />
+                <p class="project_icon_text">
                   Obtain high-quality and accurate control data for each shading
                   device
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="control" src={BatteryCharging} />
-                <p class="">Easy and cost-effective implementation</p>
+                <img class="h-fit project_icons" alt="control" src={BatteryCharging} />
+                <p class="project_icon_text">Easy and cost-effective implementation</p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="control" src={Tree} />
-                <p class="">
+                <img class="h-fit project_icons" alt="control" src={Tree} />
+                <p class="project_icon_text">
                   Save up to 28% energy in operation by upgrading to model-based
                   proactive control
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="control" src={GlobeHemisphereEast} />
-                <p class="">
+                <img class="h-fit project_icons" alt="control" src={GlobeHemisphereEast} />
+                <p class="project_icon_text">
                   Empower healthy living by balancing thermal and visual comfort
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="control" src={ClockAfternoon} />
-                <p class="">Predictive and safe maintenance</p>
+                <img class="h-fit project_icons" alt="control" src={ClockAfternoon} />
+                <p class="project_icon_text">Predictive and safe maintenance</p>
               </li>
             </ul>
             <div class="flex w-full md:justify-start justify-center items-end">
@@ -66,7 +63,7 @@ export default function index() {
               </div>
             </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div style={{width:'661px', height:'451px'}}>
             <img
               class="object-cover object-center rounded"
               alt="hero"
@@ -74,10 +71,10 @@ export default function index() {
             />
           </div>
         </div>
-      </section>
+      </div>
 
       {/* tablet */}
-      <section class="service3_t text-gray-600 body-font ">
+      <div class="service3_t text-gray-600 body-font ">
         <div class="container px-3 py-5 mx-auto items-center bg-gray-100">
           <div class=" items-center text-left">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 capitalize">
@@ -105,7 +102,7 @@ export default function index() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

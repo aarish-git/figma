@@ -7,11 +7,13 @@ import Project1 from "./Projects/project1";
 
 export default function Project() {
   return (
-    <div >
+    <div className="App" >
       <Header />
-      <ProjH />
-      <Project1 />
-      <ProjF />
+      <div className="container">
+        <ProjH />
+        <Project1 />
+        <ProjF />
+      </div>
       <Footer />
     </div>
   );

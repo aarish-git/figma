@@ -11,76 +11,62 @@ import Wago from "../assest/Images/home/weCreate2/Logo_WAGO_2020 Original.svg";
 import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
 export default function Wecreated() {
-  useEffect(() => {
-    $("#mycenter")
-      .not(".slick-initialized")
-      .slick({
-        centerMode: true,
-        centerPadding: "60px",
-        slidesToShow: 4,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-  }, []);
+  // useEffect(() => {
+  //   $("#mycenter")
+  //     .not(".slick-initialized")
+  //     .slick({
+  //       centerMode: true,
+  //       centerPadding: "60px",
+  //       slidesToShow: 4,
+  //       autoplay: true,
+  //       autoplaySpeed: 2000,
+  //       variableWidth: true,
+  //       responsive: [
+  //         {
+  //           breakpoint: 768,
+  //           settings: {
+  //             arrows: false,
+  //             centerMode: true,
+  //             centerPadding: "40px",
+  //             slidesToShow: 3,
+  //             variableWidth: true
+  //           },
+  //         },
+  //         {
+  //           breakpoint: 480,
+  //           settings: {
+  //             arrows: false,
+  //             centerMode: true,
+  //             centerPadding: "40px",
+  //             slidesToShow: 1,
+  //             variableWidth: true
+  //           },
+  //         },
+  //       ],
+  //     });
+  // }, []);
 
   return (
-    <div>
-      <section class="body-font bg-zinc-100">
+    <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px'}}>
         <h1
           style={{ fontFamily: "Exo2-Regular" }}
-          class="title-font text-2xl pt-5 font-large capitalize font-bold"
+          className="title-font text-2xl pt-5 font-large capitalize font-bold"
         >
           WE CREATED BUILDING TWINS FOR
         </h1>
-        <div class="px-5 py-14 mx-auto ">
-          <div id="mycenter" class="flex flex-wrap m-4 text-center">
-            <div class="p-4 "  style={{width:'50%'}}>
-              <img  alt="Horn" class="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Phoenix" class="build_twins grayscale hover:grayscale-0" src={Phoenix} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Hosch" class="build_twins grayscale hover:grayscale-0" src={Hosch} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Bauer" class="build_twins grayscale hover:grayscale-0" src={Bauer} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Bim" class="build_twins grayscale hover:grayscale-0" src={Bim} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Lubbing" class="build_twins grayscale hover:grayscale-0" src={Lubbing} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Wago" class="build_twins grayscale hover:grayscale-0" src={Wago} />
-            </div>
-            <div class="p-4" style={{width:'50%'}}>
-              <img  alt="Selve" class="build_twins grayscale hover:grayscale-0" src={Selve} />
-            </div>
+        <div className="mx-auto" style={{marginTop:'32px'}}>
+          <div id="mycenter inner" style={{overflow: 'hidden'}} className="flex flex-wrap  text-center">
+           
+              <img  alt="Horn" id="platform" className="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
+              <img  alt="Phoenix" id="platform" className="build_twins grayscale hover:grayscale-0" src={Phoenix} />
+              <img  alt="Hosch" id="platform" className="build_twins grayscale hover:grayscale-0" src={Hosch} />
+              <img  alt="Bauer" id="platform" className="build_twins grayscale hover:grayscale-0" src={Bauer} />
+              <img  alt="Bim" id="platform" className="build_twins grayscale hover:grayscale-0" src={Bim} />
+              <img  alt="Lubbing" id="platform" className="build_twins grayscale hover:grayscale-0" src={Lubbing} />
+              <img  alt="Wago" id="platform" className="build_twins grayscale hover:grayscale-0" src={Wago} />
+              <img  alt="Selve" id="platform" className="build_twins grayscale hover:grayscale-0" src={Selve} />
           </div>
         </div>
-      </section>
     </div>
   );
 }

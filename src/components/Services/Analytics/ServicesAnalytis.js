@@ -13,9 +13,9 @@ import Footer from "../../Footer/Footer";
 import "../../../App.css";
 export default function services() {
   return (
-    <div>
-      <div>
-        <Header />
+    <div className="App" >
+      <Header />
+      <div className="container">
         <Services1 />
         <Services2 />
         <Services3 />
@@ -24,8 +24,8 @@ export default function services() {
         <Services6 />
         <Services7 />
         <Services8 /> */}
-        <Footer />
       </div>
+          <Footer />
     </div>
   );
 }

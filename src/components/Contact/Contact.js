@@ -4,9 +4,11 @@ import Footer from "../Footer/Footer";
 import Index from "./Conindex";
 export default function Contact() {
   return (
-    <div style={{textAlign:"center"}}>
-      <Header />
+    <div className="App" >
+    < Header />
+     <div className="container">
       <Index />
+    </div>  
       <Footer />
     </div>
   );

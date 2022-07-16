@@ -1,5 +1,5 @@
 import React from "react";
-import pImage from "../../../assest/Images/project/p2.jpg";
+import pImage from "../../../assest/Images/project/Chart.png";
 import Battery from "../../../assest/Icons/BatteryCharging.png";
 import CircleHalf from "../../../assest/Icons/CircleHalf.png";
 import Line from "../../../assest/Icons/ChartLine.png";
@@ -10,49 +10,41 @@ import LineSegments from "../../../assest/Icons/LineSegments.png";
 
 export default function p4() {
   return (
-    <div>
-      <section class=" body-font">
-        <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+    <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
+      <div className="text-gray-600 body-font">
+        <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
+          <div className="rounded-lg overflow-hidden" style={{marginLeft: '-10px', width:'58%', height:'484px'}}>
             <img
               class="object-cover object-center rounded h-full w-full"
               alt="feature"
               src={pImage}
             />
           </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center">
-            <h1
-              style={{ fontFamily: "Exo2-Regular" }}
-              class="title-font sm:text-4xl text-[50px] mb-4 font-[700] text-gray-700"
-            >
+          <div className="flex flex-col md:items-start md:text-left items-center" style={{marginLeft: '25px', width:'42%'}}>
+            <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
               Results & benefits
             </h1>
-            <p  style={{ fontFamily: "NunitoSans-Regular" }} class="mb-8 leading-relaxed w-[580px] font-[400]">
+            <p  style={{ fontFamily: "NunitoSans-Regular", width:'565px' }} className="results_benefits_content" >
               We delivered a detailed shading assessment of each window. This
               data enhanced the existing shading automation system with highly
               accurate shading correction data files. Furthermore, in phase two,
               cloud-based shading control set-points were delivered to maximise
               the benefits.
             </p>
-            <div class="flex flex-col space-y-5">
-              <p
-                style={{ fontFamily: "Exo2-Regular" }}
-                class="uppercase tracking-widest text-[20px] font-[400]"
-              >
-                Client's benefits:
-              </p>
-              <ul class="space-y-5">
-                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={Battery} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings were more than 7% </p></li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort </p></li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data for predictive maintenance of shading systems</p></li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={HardDrive} /><p style={{fontfamily:"NunitoSans-Regular"}}>Avoidance of expensive and strenuous hardware sensor-based systems</p> </li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={LockOpen} /><p style={{fontfamily:"NunitoSans-Regular"}}>Unlocked potential to improve building certification label</p> </li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Project" src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
+            <div class="flex flex-col space-y-5" style={{width:'550px'}}>
+            <p style={{fontFamily:"Exo2-Regular", marginBottom:'0px'}} className="results_benefits_subhead">Client's benefits:</p>
+              <ul class="space-y-7">
+                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={Battery} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings were more than 7% </p></li>
+                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={CircleHalf} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort </p></li>
+                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={Line} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Data for predictive maintenance of shading systems</p></li>
+                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={HardDrive} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Avoidance of expensive and strenuous hardware sensor-based systems</p> </li>
+                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Unlocked potential to improve building certification label</p> </li>
+                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={LineSegments} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

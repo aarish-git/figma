@@ -44,27 +44,27 @@ export default function Header({ history }) {
           <div className="arun_menuList" id="sub-header">
             <ul>
               <li>
-                <NavLink style={{textDecoration:"unset",color:"unset"}} to="/" >
+                <NavLink style={{textDecoration:"unset",color:"unset", fontFamily: "NunitoSans-Regular"}} className="navFont" to="/" >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink style={{textDecoration:"unset",color:"unset"}} to="/Project">
+                <NavLink style={{textDecoration:"unset",color:"unset", fontFamily: "NunitoSans-Regular" }} className="navFont" to="/Project">
                   Project
                 </NavLink>{" "}
               </li>
               <li>
-                {/* <NavLink to="/service">Services</NavLink> */}
+                {/* <NavLink className="navFont" to="/service">Services</NavLink> */}
                 <div class="dropdown">
-                  <button class="dropbtn"> <p class="">Services</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <button class="dropbtn"> <p class="navFont" style={{ fontFamily: "NunitoSans-Regular"}}>Services</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
-                    <NavLink to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                       Modeling
                     </NavLink>
-                    <NavLink to="/building-analytics" activeClassName="active-link">
+                    <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/building-analytics" activeClassName="active-link">
                       Analytics
                     </NavLink>
-                    <NavLink to="/smart-building-control" activeClassName="active-link">
+                    <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/smart-building-control" activeClassName="active-link">
                       Control
                     </NavLink>
                   </div>
@@ -74,14 +74,14 @@ export default function Header({ history }) {
                 <ul style={{ gap: "2rem" }}>
                   <li className="Contact_btn">
                     <NavLink style={{all:"unset"}} to="/contact" activeClassName="active-link">
-                      <button type="button">Contact</button>
+                      <button type="button" style={{ fontFamily: "NunitoSans-Regular"}} >Contact</button>
                     </NavLink>
                   </li>
                   <li classNam>
-                    <button>EN</button>
+                    <button style={{ fontFamily: "NunitoSans-Regular"}} className="navFont">EN</button>
                   </li>
                   <li>
-                    <button>DE</button>
+                    <button style={{ fontFamily: "NunitoSans-Regular"}} className="navFont">DE</button>
                   </li>
                 </ul>
               </div>
