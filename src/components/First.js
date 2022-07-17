@@ -95,7 +95,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{justifyContent:'center'}} >
               <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-                Take a look at our success stories
+                Take a look at ss stories
               </button>
             </div>
           </div>
