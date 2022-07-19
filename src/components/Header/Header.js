@@ -5,8 +5,11 @@ import Downarrow from "../../assest/Icons/chevron.png"
 import "./Header.css";
 import { Outlet, NavLink,Link } from "react-router-dom";
 import $ from "jquery";
+import { useTranslation } from 'react-i18next';//translator
+import i18next from 'i18next';
 
 export default function Header({ history }) {
+  const { t, i18n } = useTranslation();//translator
   const [showMenu, setMenu] = useState(false);
   console.log(history);
 
@@ -44,13 +47,13 @@ export default function Header({ history }) {
           <div className="arun_menuList" id="sub-header">
             <ul>
               <li>
-                <NavLink style={{textDecoration:"unset",color:"unset"}} to="/" >
-                  Home
+                <NavLink style={{textDecoration:"unset",color:"unset",fontFamily: "NunitoSans-Regular"}} to="/" >
+                {t('Home_text')} 
                 </NavLink>
               </li>
               <li>
-                <NavLink style={{textDecoration:"unset",color:"unset"}} to="/Project">
-                  Project
+                <NavLink style={{textDecoration:"unset",color:"unset",fontFamily: "NunitoSans-Regular"}} to="/Project">
+                {t('Project_text')}
                 </NavLink>{" "}
               </li>
               <li>
@@ -58,13 +61,13 @@ export default function Header({ history }) {
                 <div class="dropdown">
                   <button class="dropbtn"> <p class="">Services</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
-                    <NavLink to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    <NavLink to="/services/3d-digital-models-of-buildings">
                       Modeling
                     </NavLink>
-                    <NavLink to="/building-analytics" activeClassName="active-link">
+                    <NavLink to="/building-analytics" >
                       Analytics
                     </NavLink>
-                    <NavLink to="/smart-building-control" activeClassName="active-link">
+                    <NavLink to="/smart-building-control" >
                       Control
                     </NavLink>
                   </div>
@@ -73,15 +76,15 @@ export default function Header({ history }) {
               <div className="contactandLanguage">
                 <ul style={{ gap: "2rem" }}>
                   <li className="Contact_btn">
-                    <NavLink style={{all:"unset"}} to="/contact" activeClassName="active-link">
+                    <NavLink style={{all:"unset"}} to="/contact">
                       <button type="button">Contact</button>
                     </NavLink>
                   </li>
                   <li classNam>
-                    <button>EN</button>
+                    <button onClick={()=>i18next.changeLanguage("en")}>EN</button>
                   </li>
                   <li>
-                    <button>DE</button>
+                    <button onClick={()=>i18next.changeLanguage("de")}>DE</button>
                   </li>
                 </ul>
               </div>
