@@ -13,7 +13,7 @@ import { margin } from "@mui/system";
 
 export default function project() {
   return (
-    <div className="" style={{width:'1275px'}}>
+    <div className="" style={{width:'1280px'}}>
       <div className=" text-gray-600" style={{marginTop:'32px', textAlign:'left'}}>
         <a style={{ all: "unset", cursor: 'pointer' }} href="/mannhiem">
             <div className="project_outline ">

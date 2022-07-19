@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+a:hover {
+  text-decoration: none;
+  color: none;
+}
+
+
 .container {
   width: 100%;
 }
@@ -18,20 +24,84 @@
 }
 
 #platform {
-  width: 200px;
-  height: 50px;
+  width: 227%;
+  height: 90px;
   position: relative;
   /* top: 150px; */
   right: 0;
-  /* left: 220; */
-  transform: translate(100%);
+  transform: translate(40%);
   margin-left: auto;
-  animation: move 8s linear infinite;
+  animation: move 35s linear infinite;
+  display: flex;
+  align-items: center;
 }
+
+/* #platform a {
+} */
+
+.build_twins {
+  width: 84.85px !important;
+  height: 38px;
+  cursor: pointer;
+  margin-left: 178px;
+
+}
+
+.build_twins:hover {
+  -ms-transform: scale(50); 
+  -webkit-transform: scale(50); 
+  transform: scale(2.0, 2.5) !important;
+  /* height: 109px; */
+}
+
+.build_twins_horn{
+  width: 130.85px !important;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 178px;
+
+}
+
+
+.build_twins_horn:hover{
+  -ms-transform: scale(10); 
+  -webkit-transform: scale(10); 
+  transform: scale(1.3, 1.7) !important;
+  /* height: 130px; */
+}
+
+.bvg {
+  width: 130.85px !important;
+  height: 40px;
+}
+
+.dabbel {
+  width: 110.85px !important;
+  height: 70px;
+}
+
+.gfr {
+  height: 40px;
+}
+
+.vatten {
+  width: 150px !important;
+  height: 110px !important;
+}
+
+.vatten:hover{
+  -ms-transform: scale(10); 
+  -webkit-transform: scale(10); 
+  transform: scale(1.3, 1.7) !important;
+  /* height: 130px; */
+}
+
+
+
 
 @keyframes move {
   to {
-    right: 100%;
+    right: 255%;
     transform: translate(0);
   }
 }
@@ -42,18 +112,6 @@
 .slick-slide div{
   /* width: 85px !important; */
   margin: 0px 32px
-}
-
-.build_twins {
-  width: 84.85px !important;
-  height: 24px;
-  cursor: pointer;
-}
-
-.build_twins_horn{
-  width: 84.85px !important;
-  height: 24px;
-  cursor: pointer;
 }
 
 .sub_move_towards_body{
@@ -259,18 +317,9 @@
 }
 
 
-.horn {
 
-   width: 140px;
-   margin-top: 5px;
-}
 
-.build_twins:hover {
-  -ms-transform: scale(50); 
-  -webkit-transform: scale(50); 
-  transform: scale(1.2); 
-  /* height: 109px; */
-}
+
 
 
 .abc:hover {
@@ -279,11 +328,8 @@
   transform: scale(1.2); 
 }
 
-.build_twins_horn:hover{
-  -ms-transform: scale(10); 
-  -webkit-transform: scale(10); 
-  transform: scale(1.5) !important; 
-}
+
+
 
 .project_nums {
   margin-top: -65px;
@@ -341,6 +387,7 @@ color: #2F2F2F;
 
 .project_outline {
   box-shadow: 0px 4px 4px rgba(3, 24, 43, 0.25);
+  border-radius: 20px;
 }
 
 .project_outline:hover {
@@ -383,6 +430,7 @@ color: #2F2F2F;
 .projectImage{
   width: 580px;
   height: 597px;
+  border-radius: 20px !important;
 }
 
 .project_icons {
@@ -702,6 +750,11 @@ cursor: pointer;
   height: 477px;
 }
 
+.stepperService_desc_img{
+  /* width: 598px; */
+  height: 518px;
+}
+
 .results_benefits_head {
   font-style: normal;
   font-weight: 700;
@@ -782,7 +835,7 @@ cursor: pointer;
   /* background-color: transparent !important; */
   color: black !important;
   font-style: italic;
-  padding: 16px;
+  padding: 14px;
   
 }
 
@@ -793,13 +846,43 @@ cursor: pointer;
   padding: 0px;
   font-style: normal;
   z-index: -1;
-  padding: 16px;
+  padding: 14px;
+  border-radius: 20px;
 }
 
 .nav-pills .nav-link.active .circle {
   width: 23px;
   height: 23px;
   margin-left: -2px;
+  box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+}
+
+.service .nav-pills .nav-link {
+  /* background-color: transparent !important; */
+  color: black !important;
+  font-style: italic;
+  padding: 14px;
+  margin-left: -30px;
+  
+}
+
+.service .nav-pills .nav-link.active {
+  background-color: #F5F5F5 !important;
+  color: black !important;
+  font-weight: 700;
+  padding: 0px;
+  font-style: normal;
+  z-index: -1;
+  padding: 14px;
+  border-radius: 20px;
+  margin-left: -30px;
+}
+
+.service .nav-pills .nav-link.active .circle {
+  width: 23px;
+  height: 23px;
+  margin-left: -2px;
+  box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
 }
 
 .subcontent {
@@ -894,17 +977,17 @@ cursor: pointer;
 
 .step.completed .circle {
   visibility: visible;
-  background-color: rgb(6,150,215);
-  border-color: rgb(6,150,215);
+  background-color: #0087FF;
+  border-color: #0087FF;
 }
 
 .step.completed .line {
-  border-left: 3px dotted rgb(6,150,215);
+  border-left: 3px dotted #0087FF;
 }
 
 .step.active .circle {
 visibility: visible;
-  border-color: rgb(6,150,215);
+  border-color: #0087FF;
 }
 
 .step.empty .circle {
@@ -920,7 +1003,7 @@ visibility: visible;
 
 
 .step:last-child .line {
-  border-left: 3px dotted #0696d7;
+  border-left: 3px dotted #0087FF;
   z-index: -1; /* behind the circle to completely hide */
 }
 

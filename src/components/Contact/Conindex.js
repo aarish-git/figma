@@ -55,7 +55,7 @@ export default function Index() {
                     </button>
                   </div>
 
-                  <div class="flex space-x-3">
+                  <div class="flex space-x-3" style={{marginLeft: '0px'}}>
                     <button style={{ fontFamily: "Exo2-Regular" }} class="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
                       Utility providers
                     </button>
@@ -67,7 +67,7 @@ export default function Index() {
                     </button>
                   </div>
 
-                  <div class="flex space-x-3">
+                  <div class="flex space-x-3"  style={{marginLeft: '0px'}}>
                    
                     <button style={{ fontFamily: "Exo2-Regular" }} class="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
                       Consultants

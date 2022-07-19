@@ -1,5 +1,5 @@
 import React from "react";
-import Building from "../../../assest/Images/project/projectb.png"
+import Building from "../../../assest/Images/project/Buildings.svg"
 export default function index() {
   return (
     <div className="row">

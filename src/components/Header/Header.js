@@ -72,9 +72,9 @@ export default function Header({ history }) {
               </li>
               <div className="contactandLanguage">
                 <ul style={{ gap: "2rem" }}>
-                  <li className="Contact_btn">
+                  <li className="">
                     <NavLink style={{all:"unset"}} to="/contact" activeClassName="active-link">
-                      <button type="button" style={{ fontFamily: "NunitoSans-Regular"}} >Contact</button>
+                      <button className="Contact_btn" type="button" style={{ fontFamily: "NunitoSans-Regular"}} >Contact</button>
                     </NavLink>
                   </li>
                   <li classNam>

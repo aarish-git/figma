@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import linkindin from './../../assest/Icons/LinkedinLogo.svg'
+import twitter from './../../assest/Icons/TwitterLogo.svg'
 
 export default function Footer() {
   return (
@@ -7,12 +9,15 @@ export default function Footer() {
       <footer class="text-gray-600 bg-[#FAFBFC] body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap md:text-left text-left -mb-10 -mx-4">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4" style={{marginTop:'-10px'}}>
               <h2 style={{fontFamily:"Exo2-Regular"}} class="title-font font-bold text-[#0087FF] tracking-widest text-[30px] mb-3 uppercase">
                 LeafTech
               </h2>
+              <p>
+              Leaftech GmbH <br /> Am Krögel 2 <br /> 10179 Berlin <br /> contact@leaftech.eu <br /> +49 170 9529249
+              </p>
                 
-                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">Leaftech GmbH</p>
+                  {/* <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">Leaftech GmbH</p>
                   <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">Am Krögel 2</p>
                   <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">10179 Berlin</p>
                   <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">
@@ -20,7 +25,7 @@ export default function Footer() {
                   </p>
                   <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">
                     +49 170 9529249
-                  </p>
+                  </p> */}
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
               <h2 style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
@@ -60,17 +65,17 @@ export default function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Modelling</a>
+                  <a href="/services/3d-digital-models-of-buildings" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Modelling</a>
                 </li>
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Analytics</a>
+                  <a href="/building-analytics" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Analytics</a>
                 </li>
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Control</a>
+                  <a href="/smart-building-control" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Control</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Digital twin platform</a>
-                </li>
+                </li> */}
               </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
@@ -79,23 +84,31 @@ export default function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+                  <a href="/Project" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
                     Project showcases{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Contact</a>
+                  <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Contact</a>
                 </li>
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+                  <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
                     Customer Platform
                   </a>
                 </li>
                 <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Follow Us</a>
+                  <span style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Follow Us</span>
                 </li>
                 <li>
-                  <div class="border-gray-200">
+                  <div style={{display:'flex', alignItems:'center'}}>
+                    <a href="https://twitter.com/leaftech_twitt?lang=de" class="content_head">
+                      <img src={twitter} alt="logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/leaftech/mycompany/" style={{marginLeft:'15px'}} class="content_head">
+                      <img src={linkindin} alt="logo" />
+                    </a>
+                  </div>
+                  {/* <div class="border-gray-200">
                     <div class="container px-5 py-2 flex flex-wrap mx-auto items-center">
                       <span class="inline-flex lg:-ml-14 lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
                         <a href="" class="ml-3 text-gray-500">
@@ -129,7 +142,7 @@ export default function Footer() {
                         </a>
                       </span>
                     </div>
-                  </div>
+                  </div> */}
                 </li>
               </nav>
             </div>

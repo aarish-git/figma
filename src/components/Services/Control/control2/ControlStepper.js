@@ -99,7 +99,7 @@ export default function VerticalLinearStepper() {
   // };
 
   return (
-<div className="row" style={{textAlign: 'left', marginTop:'120px'}}>
+<div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
 
    <div className="allsteper">
     <div className="stepLabel">
@@ -135,13 +135,13 @@ export default function VerticalLinearStepper() {
     </div>
    </div>
 
-    <div class="tab-content" id="tabContent">
+    <div class="tab-content" id="tabContent" style={{width:'70%'}}>
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Control data for smart shading</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           Extend the capabilities of your local weather sensor to ensure secure, efficient, and comfortable control of your shading systems. To guarantee the highest level of system quality, we provide shading and wind correction factors for each window along with recommendations for weather sensor placement.  This solution is based on the VDI 3813/3814 and EN15232 standards.          </p>
-          <img className="stepper_desc_img" src={control} alt="control" />
+          <img className="stepperService_desc_img" src={control} alt="control" />
         </div>
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -149,14 +149,14 @@ export default function VerticalLinearStepper() {
           <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Cloud-based forecast for smart shading</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           The digital twin continuously calculates the current and future shadowing, the irradiation angle, and the local wind profiles, and correlates them with local weather forecast data to provide forecasted control data related to the optimal shading positions and slat angles for each shading device. The data for each shading device is then integrated via Restful API for maximum thermal and visual comfort as well as energy efficiency.   </p>     </div>
-          <img className="stepper_desc_img" src={cloud} alt="cloud" />
+          <img className="stepperService_desc_img" src={cloud} alt="cloud" />
       </div>
       <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Energy balance forecase</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           The Digital Twin forecasts the energy balance for each room, area, and the entire building after considering the influences from systems and people. This forecasted data is integrated into the HVAC control system to provide maximum efficiency while maintaining comfort at all times. </p>
-          <img className="stepper_desc_img" src={energy} alt="energy" />
+          <img className="stepperService_desc_img" src={energy} alt="energy" />
         </div>
       </div>
     </div>

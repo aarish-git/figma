@@ -126,7 +126,7 @@ export default function VerticalLinearStepper() {
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Energy balance calculation</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b> Solar radiation analysis</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
             We gathered solar radiation measurements from a nearby weather station and combined them with Leaftech’s shading analysis to conduct a detailed assessment of solar radiation intake on each roof. The data was provided for 2019-2021 as well as 2022 in 15-minute steps.
           </p>
@@ -135,7 +135,7 @@ export default function VerticalLinearStepper() {
       </div>
       <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Cooling load assessment</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Photovoltaic yield assessment</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
             We used the results from the solar radiation analysis in combination with PV-Panel characteristics to quantify the potential yield and related feasibility for each building.  
           </p>
@@ -143,7 +143,7 @@ export default function VerticalLinearStepper() {
       </div>
       <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Optimization recommendations</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Energy system design</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
             Based on the highly accurate PV yield data and the onsite energy demand, Leaftech provided an optimal count and layout of PV systems. The goal was to strike a balance between self-sufficient energy supply, and investment and operational costs.
           </p>
