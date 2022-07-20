@@ -11,7 +11,7 @@ export default function wago5() {
             src="https://dummyimage.com/720x600"
           /> */}
           <div className="text-center lg:w-2/3 w-full">
-            <h1 style={{fontFamily:"NunitoSans-Regular"}} className="discover_how tracking-widest uppercase text-[20px] font-[400] py-5 mb-2">
+            <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how tracking-widest uppercase text-[20px] font-[400] py-5 mb-2">
               Discover how we can assist in your project.
             </h1>
             <div className="flex justify-center">

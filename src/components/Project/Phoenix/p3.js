@@ -68,79 +68,79 @@ export default function VerticalLinearStepper() {
         </p>
         <div className="allsteper">
     <div className="stepLabel">
-         <div class="step completed">
-      {/* <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+         <div className="step completed">
+      {/* <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
       </div> */}
-     <div class="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
-          <div class="circle"></div>
+     <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <div className="circle"></div>
           3D model setup
-          <div class="line"></div>
+          <div className="line"></div>
         </a>
-        <a class="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-          <div class="circle"></div>
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div className="circle"></div>
           Weather data integration & solar analysis*
-          <div class="line"></div>
+          <div className="line"></div>
         </a>
-        <a class="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-          <div class="circle"></div>
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+          <div className="circle"></div>
           Shading correction data for each window
-          <div class="line"></div>
+          <div className="line"></div>
         </a>
-        <a class="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
-          <div class="circle"></div>
+        <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+          <div className="circle"></div>
           Cloud-based control data
         </a>
     </div>
     </div>
    </div>
 
-    <div class="tab-content" id="tabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div className="tab-content" id="tabContent">
+      <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>3D model setup</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           Using building plans and geospatial data, we created a highly detailed 3D model of the target building (LOD 4) and merged it with models of surrounding buildings, vegetation, and terrain.
           </p>
           <img className="stepper_desc_img" src={PImage} alt="home" />
         </div>
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Weather data integration & solar analysis*</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           We used the resulting model to conduct a detailed shading analysis for multiple points on each window. Our algorithm calculated shading conditions and incident angles for each calculation point (virtual sensor*) for the sun position for the entire year. Embedding local TRY weather data, we quantified the annual energy intake for each calculation point.
           </p>
           <img className="stepper_desc_img" src={PImage1} alt="home" />
         </div>
       </div>
-      <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Shading correction data for each window</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
             Next, we calculated the shading progression on each window 
             for the whole year and converted it into a shading correction data file. 
             This file was then integrated with the building controller and merged with measurements from the local weather sensor data to provide a time-based shading position. With this, we delivered the phase-one results.
           </p>
         </div>
       </div>
-      <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+      <div className="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Cloud-based control data</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           We are enhancing the digital twin with additional system-specific data. Each calculation point, i.e virtual sensor on the window, is connected to the local weather forecast data. This uses the resulting forecast of solar radiation for each virtual sensor to quantify the expected solar radiation intake and accordingly, determines the best shading position to maximise comfort and efficiency.
           </p>
         </div>

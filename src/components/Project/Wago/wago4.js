@@ -13,7 +13,7 @@ export default function wago4() {
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="rounded-lg overflow-hidden" style={{marginLeft: '-15px', width:'60%'}}>
             <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src={LC}
             />
@@ -28,13 +28,13 @@ export default function wago4() {
               sensors on the rooftop. The shading correction data file for each
               window was provided to the integration partner Lübbing.
             </p>
-            <div class="flex flex-col space-y-5">
+            <div className="flex flex-col space-y-5">
             <p style={{fontFamily:"Exo2-Regular", marginBottom:'16px'}} className="results_benefits_subhead">Client's benefits:</p>
-              <ul class="space-y-3">
-                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={Arrow} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings of more than 7% </p></li>
-                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort</p> </li>
-                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={CheckSquare} /><p style={{fontfamily:"NunitoSans-Regular"}}>Hassle-free facility management</p></li>
-                <li class="flex space-x-5"><img class="h-fit" alt="wago" src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
+              <ul className="space-y-3">
+                <li className="flex space-x-5"><img className="h-fit" alt="wago" src ={Arrow} /><p style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings of more than 7% </p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="wago" src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort</p> </li>
+                <li className="flex space-x-5"><img className="h-fit" alt="wago" src ={CheckSquare} /><p style={{fontfamily:"NunitoSans-Regular"}}>Hassle-free facility management</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="wago" src ={LineSegments} /><p style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
               </ul>
             </div>
           </div>

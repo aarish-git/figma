@@ -70,116 +70,116 @@ export default function VerticalLinearStepper() {
       </p>
       <div className="allsteper">
         <div className="stepLabel">
-          {/* <div class="step completed">
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+          {/* <div className="step completed">
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
       </div>
        </div> */}
-          <div class="step completed">
+          <div className="step completed">
             <div
-              class="nav step flex-column nav-pills"
+              className="nav step flex-column nav-pills"
               id="tab"
               role="tablist"
               aria-orientation="vertical"
             >
               <a
-                class="nav-link active"
+                className="nav-link active"
                 id="home-tab"
                 onClick={() => window.scrollTo(0, 1500)}
                 data-toggle="pill"
-                style={{ marginTop: "-10px", fontSize: "24px" }}
+                style={{ marginTop: "-10px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#home"
                 role="tab"
                 aria-controls="home"
                 aria-selected="true"
               >
-                <div class="circle" style={{ marginLeft: "0px" }}></div>
+                <div className="circle" style={{ marginLeft: "0px" }}></div>
                 Digital twin setup
-                <div class="line" style={{ marginLeft: "8px" }}></div>
+                <div className="line" style={{ marginLeft: "8px" }}></div>
               </a>
               <a
-                class="nav-link"
+                className="nav-link"
                 id="profile-tab"
                 onClick={() => window.scrollTo(0, 1500)}
                 data-toggle="pill"
-                style={{ marginTop: "48px", fontSize: "24px" }}
+                style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#profile"
                 role="tab"
                 aria-controls="profile"
                 aria-selected="false"
               >
-                <div class="circle"></div>
+                <div className="circle"></div>
                 Building & weather data integration
-                <div class="line"></div>
+                <div className="line"></div>
               </a>
               <a
-                class="nav-link"
+                className="nav-link"
                 id="messages-tab"
                 onClick={() => window.scrollTo(0, 1500)}
                 data-toggle="pill"
-                style={{ marginTop: "48px", fontSize: "24px" }}
+                style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#messages"
                 role="tab"
                 aria-controls="messages"
                 aria-selected="false"
               >
-                <div class="circle"></div>
+                <div className="circle"></div>
                 Energy balance calculation
-                <div class="line"></div>
+                <div className="line"></div>
               </a>
               <a
-                class="nav-link"
+                className="nav-link"
                 id="settings-tab"
                 onClick={() => window.scrollTo(0, 1500)}
                 data-toggle="pill"
-                style={{ marginTop: "48px", fontSize: "24px" }}
+                style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#settings"
                 role="tab"
                 aria-controls="settings"
                 aria-selected="false"
               >
-                <div class="circle"></div>
+                <div className="circle"></div>
                 Cooling load assessment
-                <div class="line"></div>
+                <div className="line"></div>
               </a>
               <a
-                class="nav-link"
+                className="nav-link"
                 id="office-tab"
                 onClick={() => window.scrollTo(0, 1500)}
                 data-toggle="pill"
-                style={{ marginTop: "48px", fontSize: "24px" }}
+                style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#office"
                 role="tab"
                 aria-controls="office"
                 aria-selected="false"
               >
-                <div class="circle"></div>
+                <div className="circle"></div>
                 Optimization recommendations
-                {/* <div class="line"></div> */}
+                {/* <div className="line"></div> */}
               </a>
             </div>
           </div>
         </div>
 
-        <div class="tab-content" id="tabContent">
+        <div className="tab-content" id="tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="home"
             role="tabpanel"
             aria-labelledby="home-tab"
@@ -200,7 +200,7 @@ export default function VerticalLinearStepper() {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="profile"
             role="tabpanel"
             aria-labelledby="profile-tab"
@@ -220,7 +220,7 @@ export default function VerticalLinearStepper() {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="messages"
             role="tabpanel"
             aria-labelledby="messages-tab"
@@ -243,7 +243,7 @@ export default function VerticalLinearStepper() {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="settings"
             role="tabpanel"
             aria-labelledby="settings-tab"
@@ -264,7 +264,7 @@ export default function VerticalLinearStepper() {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="office"
             role="tabpanel"
             aria-labelledby="office-tab"

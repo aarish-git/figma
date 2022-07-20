@@ -34,24 +34,19 @@ export default function man1() {
               <div className="flex ">
                 <div className="text-gray-900 body-font -mb-10">
                   <div className=" ">
-                    <div className="flex flex-wrap space-x-14 ">
+                    <div className="flex flex-wrap space-x-14 " style={{marginTop:'40px'}}>
                       <div className="sm:2/3 space-y-2">
-                        <h2 style={{ fontFamily: "Exo2-Bold"  }} className="title-font font-bold  text-[40px]">
-                        12,000 sqm
+                        <h2 style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]">
+                        12,000 m²
                         </h2>
                         <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">Total building surface area</p>
                       </div>
+  
                       <div className="sm:2/3 space-y-2">
-                        <h2 style={{ fontFamily: "Exo2-Bold" }} className="title-font font-bold  text-[40px]">
-                        ~9,000 €
+                        <h2 style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F' }} className="title-font font-bold text-[40px]">
+                        ~8,000 m²
                         </h2>
-                        <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">Total price</p>
-                      </div>
-                      <div className="sm:2/3 space-y-2">
-                        <h2 style={{ fontFamily: "Exo2-Bold" }} className="title-font font-bold text-[40px]">
-                        ~8,000 sqm
-                        </h2>
-                        <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">Total project area</p>
+                        <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">Area under assessment</p>
                       </div>
                       {/* <div className="p-4 sm:w-1/4 w-5">
                       <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">

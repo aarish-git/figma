@@ -94,31 +94,23 @@ export default function project() {
                       <div className="flex text-gray-600 body-font">
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                            style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
+                            className="title-font font-bold sm:text-2xl text-3xl text-[#2F2F2F]"
                           >
-                            12,000 sqm
+                            12,000 m²
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
                         </div>
-                        <div className="project_nums_center" style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
+                        
+                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                            style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
+                            className="title-font font-bold sm:text-2xl text-3xl text-[#2F2F2F]"
                           >
-                            ~9,000 €
-                          </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project cost </p>
-                        </div>
-                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                          <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                          >
-                            ~8,000 sqm
+                            ~8,000 m²
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed w-full">
-                            Building area under assessment
+                            Area under assessment
                           </p>
                         </div>
                         {/* <div className="p-4 sm:w-1/3 w-1/2">
@@ -161,9 +153,7 @@ export default function project() {
                   style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
                   className="project_content"
                 >
-                  Our digital twin-based analytics services provided onsite
-                  energy generation potential assessment along with optimal PV
-                  system layout.
+                  Our digital twin-based analytics services provided onsite energy generation potential assessment along with optimal PV system layout. 
                 </p>
                 <div className="flex mt-6 items-center pb-5 border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -214,26 +204,15 @@ export default function project() {
                       <div className="flex text-gray-600 body-font project_nums -m-4">
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
-                            15,000 sqm
+                            15,000 m²
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
                         </div>
-                        <div className="project_nums_center" style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
+                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                          >
-                            ~6,000 €
-                          </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project cost </p>
-                        </div>
-                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                          <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
                             116 Units
                           </h2>
@@ -277,12 +256,10 @@ export default function project() {
                   Pheonix Contact
                 </h1>
                 <p
-                  style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
-                  className="project_content"
+                 style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
+                 className="project_content"
                 >
-                  Leaftech provided digital twin-based analytics and control
-                  services to enhance the shading automation system to maximise
-                  efficiency and comfort.
+                  Leaftech provided Digital Twin-based analytics and control services to enhance the shading automation system to maximise efficiency and comfort.
                 </p>
                 <div className="flex mt-6 items-center pb-5  border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -337,31 +314,15 @@ export default function project() {
                 <div className="flex text-gray-600 body-font project_nums">
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'124px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
-                            -1,965 sqm
+                           ~1,965 m²
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
                         </div>
-                        <div className='project_nums_center' style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'194px'}} >
+                        <div  style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                          >
-                            3,000 €
-                          </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">
-                            Project Cost Phase One (2019)
-                          </p>
-                        </div>
-                        <div  style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                          <h2
-                            style={{
-                              fontFamily: "Exo2-Bold",
-                              width: "207px",
-                            }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
                            169
                           </h2>
@@ -409,9 +370,7 @@ export default function project() {
                   style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
                   className="project_content"
                 >
-                  Leaftech provided digital twin-based analytics and control
-                  services to enhance the shading automation system to maximise
-                  efficiency and comfort.
+                 Leaftech provided Digital Twin-based analytics and control services to enhance the shading automation system to maximise efficiency and comfort. 
                 </p>
                 <div className="flex mt-6 items-center pb-5  border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -472,33 +431,19 @@ export default function project() {
                     <div className="flex text-gray-600 body-font">
                       <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
                         <h2
-                          style={{ fontFamily: "Exo2-Regular" }}
-                          className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                          style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                         >
-                          3,800 sqm
+                          3,800 m²
                         </h2>
                         <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
                       </div>
-                      <div className="project_nums_center" style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'171px', margin:'0px 48px 0px 94px'}}>
+                      <div style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                         <h2
-                          style={{ fontFamily: "Exo2-Regular" }}
-                          className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                        >
-                          2,970 €
-                        </h2>
-                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">
-                          Total project cost <br />
-                          (without wind assessment){" "}
-                        </p>
-                      </div>
-                      <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                        <h2
-                          style={{ fontFamily: "Exo2-Regular" }}
-                          className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                          style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                         >
                           250 +
                         </h2>
-                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Devices controlled</p>
+                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Devices in control </p>
                       </div>
                     </div>
                   </div>

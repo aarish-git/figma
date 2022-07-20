@@ -7,7 +7,7 @@ export default function wago1() {
         <div  className="mx-auto flex  md:flex-row flex-col ">
           <div  style={{textAlign:'left', marginTop:'72px'}}>
             <h1
-              style={{ fontFamily: "Exo2-Regular" }}
+              style={{ fontFamily: "Exo2-SemiBold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
               Project showcase
@@ -24,7 +24,7 @@ export default function wago1() {
             >
               Minden, Germany, June 2021
             </p>
-            <p style={{fontFamily:"NunitoSans-Regular"}} class="mb-8 leading-relaxed single_project_content">
+            <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content">
               Wago is a building automation and technical system provider. Its
               office facility in Minden, called V1, was constructed in the early
               2000s. For this building, we provided digital twin-based control
@@ -33,34 +33,23 @@ export default function wago1() {
             <div className="flex ">
                 <div className="text-gray-900 body-font -mb-10">
                   <div className=" ">
-                    <div className="flex flex-wrap space-x-14 ">
+                    <div className="flex flex-wrap space-x-14 " style={{marginTop:'40px'}}>
                       <div className="sm:2/3 space-y-2">
-                        <h2 style={{ fontFamily: "Exo2-Bold"  }} className="title-font font-bold  text-[40px]">
-                        3,800 sqm
+                        <h2 style={{ fontFamily: "Exo2-Bold", color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]">
+                        3,800 m²
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[14px]">
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
                         Total project area
                       </p>
                     </div>
-                    <div class="sm:2/3 space-y-2">
+                 
+                    <div className="sm:2/3 space-y-2">
                       <h2
-                        style={{ fontFamily: "Exo2-Bold" }} className="title-font font-bold  text-[40px]"
-                      >
-                        2,970 €
-                      </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[14px]">
-                        Total project price
-                        <br />
-                        (without wind assessement)
-                      </p>
-                    </div>
-                    <div class="sm:2/3 space-y-2">
-                      <h2
-                        style={{ fontFamily: "Exo2-Bold" }} className="title-font font-bold  text-[40px]"
+                        style={{ fontFamily: "Exo2-Bold", color:'#2F2F2F' }} className="title-font font-bold  text-[40px]"
                       >
                         250 +
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[14px]">
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
                         Devices controlled
                       </p>
                     </div>

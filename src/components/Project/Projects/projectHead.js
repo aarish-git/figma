@@ -8,17 +8,17 @@ export default function index() {
           <div className="col-lg-6 items-center">
             <span
               style={{ fontFamily: "Exo2-SemiBold", marginBottom: '16px' }}
-              className="text-[#0087FF] uppercase my-3 text-[24pt]"
+              className="text-[#0087FF] uppercase my-3 text-[24px]"
             >
               Projects
             </span>
             <h1
-              style={{ fontFamily: "Exo2-Bold", marginBottom: '32px' }}
-              className="text-[#2F2F2F] text-[58pt] "
+              style={{ fontFamily: "Exo2-Bold", marginBottom: '32px', marginTop:'16px' }}
+              className="text-[#2F2F2F] text-[58px] "
             >
               Our success stories
             </h1>
-            <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px'}} className="text-[20pt] w-[400] leading-relaxed">
+            <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'775px'}} className="text-[20px] leading-relaxed">
               We have gained experience working with a wide range of industry
               partners. Take a glance at our project portfolio to learn more
               about the value we created for our clients and their buildings.
@@ -27,7 +27,7 @@ export default function index() {
               <a style={{all:"unset"}} href="/contact">
               <button
                 style={{ fontFamily: "NunitoSans-Regular", marginLeft:'-10px' }}
-                className="inline-flex  py-2 px-6  rounded-[20px] text-[20pt] text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
+                className="inline-flex  py-2 px-6  rounded-[20px] text-[20px] text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
               >
                 Contact us
               </button>

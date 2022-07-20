@@ -59,8 +59,8 @@ export default function Wecreated() {
   return (
     <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px'}}>
         <h1
-          style={{ fontFamily: "Exo2-Regular" }}
-          className="title-font text-2xl pt-5 font-large capitalize font-bold"
+          style={{ fontFamily: "Exo2-Bold" }}
+          className="weCreatedHead"
         >
           WE CREATED BUILDING TWINS FOR
         </h1>

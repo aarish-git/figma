@@ -14,7 +14,7 @@ export default function clients() {
     <div style={{margin: '184px 175px 200px 175px'}}>
     
           <div className="flex flex-col text-center w-full" style={{marginBottom:'28px'}}>
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 md:text-[24px] font-bold text-center text-[#2b2b3a] uppercase">
+            <h1 className="weSupport" style={{ fontFamily: "Exo2-Bold"}}>
               We are supported by
             </h1>
           </div>
@@ -43,7 +43,7 @@ export default function clients() {
           </div>
           <br />
           <br />
-          <div style={{marginTop:'40px'}} className=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
+          <div style={{marginTop:'0px'}} className=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
              <a href="https://telekomhilft.telekom.de/t5/TechBoost/ct-p/techboost" >
               <img className=" h-fit" alt="h-fit" src={C4} />

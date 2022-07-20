@@ -11,7 +11,7 @@ export default function wago2() {
         <div className="single_project_desc_image rounded-lg overflow-hidden">
             <img
               alt="feature"
-              class="object-cover object-center h-full w-full"
+              className="object-cover object-center h-full w-full"
               src={wago}
             />
           </div>
@@ -36,18 +36,18 @@ export default function wago2() {
                 </p>
               </div>
             </div>
-            <div class="flex flex-col mb-10 lg:items-start items-center">
-              {/* <div class="w-full h-12 inline-flex items-center justify-left "></div> */}
-              <div class="flex-grow">
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              {/* <div className="w-full h-12 inline-flex items-center justify-left "></div> */}
+              <div className="flex-grow">
               <h2
                  style={{ fontFamily: "Exo2-Regular", width: '664px', marginTop:'40px' }}
-                 class="results_benefits_subhead"
+                 className="results_benefits_subhead"
                 >
                   We provided:
                 </h2>
-                <ul class="my-3 space-y-4">
-                  <li class="flex space-x-5"><img class="h-fit project_icons" alt="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Recommendations for weather sensor placement</p></li>
-                  <li class="flex space-x-5"><img class="h-fit project_icons" alt="Circle" src={Circle} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">
+                <ul className="my-3 space-y-4">
+                  <li className="flex space-x-5"><img className="h-fit project_icons" alt="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Recommendations for weather sensor placement</p></li>
+                  <li className="flex space-x-5"><img className="h-fit project_icons" alt="Circle" src={Circle} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">
                     Shading correction data for shading/sun protection control{" "}</p>
                   </li>
                   {/* <li>
@@ -56,7 +56,7 @@ export default function wago2() {
                 </ul>
               </div>
             </div>
-            {/* <div class="flex flex-col mb-10 lg:items-start items-center">
+            {/* <div className="flex flex-col mb-10 lg:items-start items-center">
               <p>
                 Addressing these challenges was key to ensuring that the
                 contractual obligation with the tenant to maintain a comfortable

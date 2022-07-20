@@ -5,11 +5,11 @@ import Downarrow from "../../assest/Icons/chevron.png"
 import "./Header.css";
 import { Outlet, NavLink,Link } from "react-router-dom";
 import $ from "jquery";
-import { useTranslation } from 'react-i18next';//translator
-import i18next from 'i18next';
+// import { useTranslation } from 'react-i18next';//translator
+// import i18next from 'i18next';
 
 export default function Header({ history }) {
-  const { t, i18n } = useTranslation();//translator
+  // const { t, i18n } = useTranslation();//translator
   const [showMenu, setMenu] = useState(false);
   console.log(history);
 
@@ -39,7 +39,7 @@ export default function Header({ history }) {
     <div>
       <div className="arun_container">
         <div className="arun_logo">
-          <h1 style={{ fontFamily: "Exo2-Regular" }} class="uppercase font-bold tracking-wide">
+          <h1 style={{ fontFamily: "Exo2-Regular" }} className="uppercase font-bold tracking-wide">
             LeafTech
           </h1>
         </div>
@@ -58,9 +58,9 @@ export default function Header({ history }) {
               </li>
               <li>
                 {/* <NavLink className="navFont" to="/service">Services</NavLink> */}
-                <div class="dropdown">
-                  <button class="dropbtn"> <p class="navFont" style={{ fontFamily: "NunitoSans-Regular"}}>Services</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
-                  <div class="dropdown-content">
+                <div className="dropdown">
+                  <button className="dropbtn"> <p className="navFont" style={{ fontFamily: "NunitoSans-Regular"}}>Services</p><img alt="Downarrow" id="dropbtnimg" className="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <div className="dropdown-content">
                     <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                       Modeling
                     </NavLink>
@@ -102,9 +102,9 @@ export default function Header({ history }) {
                 <NavLink to="/Project">Project</NavLink>{" "}
               </li>
               <li>
-                <div class="dropdown">
-                  <button class="dropbtn">Services</button>
-                  <div class="dropdown-content">
+                <div className="dropdown">
+                  <button className="dropbtn">Services</button>
+                  <div className="dropdown-content">
                     <NavLink to="/service">Services 1</NavLink>
                     <NavLink to="/service">Services 2</NavLink>
                     <NavLink to="/service">Services 3</NavLink>

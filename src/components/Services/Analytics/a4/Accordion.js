@@ -36,7 +36,7 @@ export default function SimpleAccordion() {
           <div>
             <img
               alt="gallery"
-              class="w-full object-cover h-full object-center block"
+              className="w-full object-cover h-full object-center block"
               src="https://dummyimage.com/502x302"
             />
           </div>

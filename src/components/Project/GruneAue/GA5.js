@@ -11,9 +11,9 @@ export default function GA5() {
           src="https://dummyimage.com/720x600"
         /> */}
         <div className="text-center lg:w-2/3 w-full">
-          <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how tracking-widest uppercase text-[20px] font-[400] py-5 mb-2">
-            Discover how we can assist in your project.
-          </h1>
+        <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how tracking-widest uppercase text-[20px] font-[400] py-5 mb-2">
+              Discover how we can assist in your project.
+            </h1>
           <div className="flex justify-center">
             <a href="/contact" >
             <button className="inline-flex text-white py-2 px-6 text-white bg-[#0087FF] rounded-[20px] shadow-[0_4px_4px_rgba(0,135,225,0.25)] rounded-[20px] text-lg">

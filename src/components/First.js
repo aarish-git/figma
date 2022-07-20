@@ -31,7 +31,7 @@ export default function First() {
     <div className='row'>
       <div className='row' id="foot_building"  style={{marginTop: '120px', zIndex: '0'}}>
         <h1
-          style={{ fontFamily: "Exo2-Regular", fontSize: '58px', lineHeight: '70px', marginBottom:'40px'}}
+          style={{ fontFamily: "Exo2-Bold", fontSize: '58px', lineHeight: '70px', marginBottom:'64px'}}
           className="title-font sm:text-5xl font-bold text-3xl  font-medium "
         >
           What's in it for you?
@@ -63,14 +63,10 @@ export default function First() {
               {/* <br className="hidden lg:inline-block" />
               readymade gluten */}
             </h1>
-            <p style={{ fontFamily: "NunitoSans-Regular" }}
+            <p style={{ fontFamily: "NunitoSans-Regular", color:'#2F2F2F' }}
               className="for_bld_owners_content mb-8 text-[20px] leading-relaxed"
             >
-              Achieve your financial, ecological, and operational objectives
-              with us. Together, let's create a digital twin-building model to
-              identify investment opportunities, create a decarbonization
-              roadmap to improve your assets' performance, and with it all,
-              boost your ESG score..
+              Achieve your financial, ecological, and operational objectives with us. Together, let's create a digital twin-building model to identify investment opportunities, create a decarbonization roadmap to improve your assets' performance, and with it all, boost your ESG score.
             </p>
 
             <div className="flex">
@@ -128,10 +124,7 @@ export default function First() {
               style={{ fontFamily: "NunitoSans-Regular" }}
               className="for_bld_owners_content mb-8 text-[20px] leading-relaxed"
             >
-              Reduce your building's operating costs and risks, and meet the
-              contractual obligations with your tenants, with Leaftech's
-              solution. Use our accurate data to make the appropriate decisions
-              for smooth and hassle-free everyday operations.
+              Reduce your building's operating costs and risks, and meet the contractual obligations with your tenants, with Leaftech's solution. Use our accurate data to make the appropriate decisions for smooth and hassle-free everyday operations. 
             </p>
             <div className="flex">
               <ul className="space-y-5" >
@@ -201,11 +194,7 @@ export default function First() {
               style={{ fontFamily: "NunitoSans-Regular" }}
               className="for_bld_owners_content leading-relaxed"
             >
-              With Leaftech's Digital Twin, you minimise the need for expensive
-              and difficult-to-maintain frahling sensors. Stay ahead of the
-              weather with our data services and use them to improve the
-              accuracy and efficiency of your building automation and smart home
-              systems
+              With Leaftech's Digital Twin, you minimise the need for expensive and difficult-to-maintain frahling sensors. Stay ahead of the weather with our data services and use them to improve the accuracy and efficiency of your building automation and smart home systems.
             </p>
             <div className="flex">
               <ul className="space-y-5" >
@@ -260,12 +249,7 @@ export default function First() {
               style={{ fontFamily: "NunitoSans-Regular" }}
               className="for_bld_owners_content leading-relaxed"
             >
-              With the digital twin, you get insights and solutions for planning
-              and optimising energy systems that enable your end customers to
-              achieve a high level of sustainability. Leverage our solution to
-              offer value-added services to your customers through detailed
-              analyses. Strengthen the relationship with your end customers and
-              create the basis for a long-term and trusting relationship
+              With the Digital Twin, you get insights and solutions for planning and optimising energy systems that enable your end customers to achieve a high level of sustainability. Leverage our solution to offer value-added services to your customers through detailed analyses. Strengthen the relationship with your end customers and create the basis for a long-term and trusting relationship.
             </p>
             <div className="flex">
               <ul className="space-y-5" >

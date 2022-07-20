@@ -13,7 +13,7 @@ export default function GA2() {
           <div className="single_project_desc_image rounded-lg overflow-hidden">
             <img
               alt="feature"
-              class="object-cover object-center h-full w-full"
+              className="object-cover object-center h-full w-full"
               src={Grananue}
             />
           </div>
@@ -41,18 +41,18 @@ export default function GA2() {
                 </p>
               </div>
             </div>
-            <div class="flex flex-col mb-10 lg:items-start items-center">
-              {/* <div class="w-full h-12 inline-flex items-center justify-left "></div> */}
-              <div class="flex-grow">
+            <div className="flex flex-col mb-10 lg:items-start items-center">
+              {/* <div className="w-full h-12 inline-flex items-center justify-left "></div> */}
+              <div className="flex-grow">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
-                  class="results_benefits_subhead"
+                  className="results_benefits_subhead"
                 >
                   Leaftech was tasked to provide:
                 </h2>
                 {/* <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
-                  class="leading-relaxed text-[20px] font-[400]"
+                  className="leading-relaxed text-[20px] font-[400]"
                 >
                   The building architecture and the proposed modernization posed
                   a risk of the building interiors heating up unevenly. Also,
@@ -61,9 +61,9 @@ export default function GA2() {
                   for the building to heat up were:
                 </p> */}
 
-                <ul class="my-3 space-y-5">
-                  <li class="flex space-x-3"><img class="h-fit project_icons"  alt ="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Photovoltaic potential assessment</p> </li>
-                  <li class="flex space-x-3"><img class="h-fit project_icons"  alt ="ChartLine" src={ChartLine} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Data for optimal PV system layout.</p> </li>
+                <ul className="my-3 space-y-5">
+                  <li className="flex space-x-3"><img className="h-fit project_icons"  alt ="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Photovoltaic potential assessment</p> </li>
+                  <li className="flex space-x-3"><img className="h-fit project_icons"  alt ="ChartLine" src={ChartLine} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Data for optimal PV system layout.</p> </li>
                 </ul>
               </div>
             </div>

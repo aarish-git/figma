@@ -6,131 +6,131 @@ import twitter from './../../assest/Icons/TwitterLogo.svg'
 export default function Footer() {
   return (
     <div>
-      <footer class="text-gray-600 bg-[#FAFBFC] body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap md:text-left text-left -mb-10 -mx-4">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4" style={{marginTop:'-10px'}}>
-              <h2 style={{fontFamily:"Exo2-Regular"}} class="title-font font-bold text-[#0087FF] tracking-widest text-[30px] mb-3 uppercase">
+      <footer className="text-gray-600 bg-[#FAFBFC] body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap md:text-left text-left -mb-10 -mx-4">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4" style={{marginTop:'-10px'}}>
+              <h2 style={{fontFamily:"Exo2-Regular"}} className="title-font font-bold text-[#0087FF] tracking-widest text-[30px] mb-3 uppercase">
                 LeafTech
               </h2>
               <p>
               Leaftech GmbH <br /> Am Krögel 2 <br /> 10179 Berlin <br /> contact@leaftech.eu <br /> +49 170 9529249
               </p>
                 
-                  {/* <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">Leaftech GmbH</p>
-                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">Am Krögel 2</p>
-                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">10179 Berlin</p>
-                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">
+                  {/* <p href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_address">Leaftech GmbH</p>
+                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_address">Am Krögel 2</p>
+                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_address">10179 Berlin</p>
+                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_address">
                     contact@leaftech.eu
                   </p>
-                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_address">
+                  <p href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_address">
                     +49 170 9529249
                   </p> */}
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
-              <h2 style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
+              <h2 style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
                 Solutions for
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <a href="/" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     Building owners
                   </a>
                 </li>
                 <li>
-                  <a href="#foot_Assest" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="#foot_Assest" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     Asset managers{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="#foot_Building" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="#foot_Building" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     Building automation{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="#foot_Energy" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="#foot_Energy" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     Energy providers
                   </a>
                 </li>
                 <li>
-                  <a href="#foot_Architects" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="#foot_Architects" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     Architects & Designers{" "}
                   </a>
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
-              <h2 style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
+              <h2 style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
                 Services
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <a href="/services/3d-digital-models-of-buildings" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Modelling</a>
+                  <a href="/services/3d-digital-models-of-buildings" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">Modelling</a>
                 </li>
                 <li>
-                  <a href="/building-analytics" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Analytics</a>
+                  <a href="/building-analytics" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">Analytics</a>
                 </li>
                 <li>
-                  <a href="/smart-building-control" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Control</a>
+                  <a href="/smart-building-control" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">Control</a>
                 </li>
                 {/* <li>
-                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">Digital twin platform</a>
+                  <a href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">Digital twin platform</a>
                 </li> */}
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
-              <h2 style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4 leading-loose">
+              <h2 style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
                 Home
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <a href="/Project" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+                  <a href="/Project" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
                     Project showcases{" "}
                   </a>
                 </li>
                 <li>
-                  <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Contact</a>
+                  <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">Contact</a>
                 </li>
                 <li>
-                  <a href="https://frontend.apps.leaftech.eu/login" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+                  <a href="https://frontend.apps.leaftech.eu/login" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
                     Customer Platform
                   </a>
                 </li>
                 <li>
-                  <span style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Follow Us</span>
+                  <span style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">Follow Us</span>
                 </li>
                 <li>
                   <div style={{display:'flex', alignItems:'center'}}>
-                    <a href="https://twitter.com/leaftech_twitt?lang=de" class="content_head">
+                    <a href="https://twitter.com/leaftech_twitt?lang=de" className="content_head">
                       <img src={twitter} alt="logo" />
                     </a>
-                    <a href="https://www.linkedin.com/company/leaftech/mycompany/" style={{marginLeft:'15px'}} class="content_head">
+                    <a href="https://www.linkedin.com/company/leaftech/mycompany/" style={{marginLeft:'15px'}} className="content_head">
                       <img src={linkindin} alt="logo" />
                     </a>
                   </div>
-                  {/* <div class="border-gray-200">
-                    <div class="container px-5 py-2 flex flex-wrap mx-auto items-center">
-                      <span class="inline-flex lg:-ml-14 lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-                        <a href="" class="ml-3 text-gray-500">
+                  {/* <div className="border-gray-200">
+                    <div className="container px-5 py-2 flex flex-wrap mx-auto items-center">
+                      <span className="inline-flex lg:-ml-14 lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+                        <a href="" className="ml-3 text-gray-500">
                           <svg
                             fill="currentColor"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2"
-                            class="w-5 h-5"
+                            className="w-5 h-5"
                             viewBox="0 0 24 24"
                           >
                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                           </svg>
                         </a>
-                        <a href="" class="ml-3 text-gray-500">
+                        <a href="" className="ml-3 text-gray-500">
                           <svg
                             fill="currentColor"
                             stroke="currentColor"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="0"
-                            class="w-5 h-5"
+                            className="w-5 h-5"
                             viewBox="0 0 24 24"
                           >
                             <path
@@ -146,70 +146,70 @@ export default function Footer() {
                 </li>
               </nav>
             </div>
-            {/* <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 CATEGORIES
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+            <div className="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 CATEGORIES
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a href="" class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a href="" className="text-gray-600 hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div> */}
           </div>
         </div>
-        {/* <div class="border-t border-gray-200">
-          <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
-            <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-              <a href="" class="ml-3 text-gray-500">
+        {/* <div className="border-t border-gray-200">
+          <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
+            <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <a href="" className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </a>
 
-              <a href="" class="ml-3 text-gray-500">
+              <a href="" className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="0"
-                  class="w-5 h-5"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -222,20 +222,20 @@ export default function Footer() {
             </span>
           </div>
         </div> */}
-        <div class="bg-gray-900 ">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col">
-            <p class="text-gray-500 text-sm text-center ">
+        <div className="bg-gray-900 ">
+          <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col">
+            <p className="text-gray-500 text-sm text-center ">
               © 2020 Leaftech —
               <a
                 // href="https://twitter.com/knyttneve"
-                class="text-gray-600 ml-1"
+                className="text-gray-600 ml-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 All rights reserved
               </a>
             </p>
-            {/* <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
+            {/* <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
               Enamel pin tousled raclette tacos irony
             </span> */}
           </div>
