@@ -8,44 +8,41 @@ import ChartTv from "../../../../assest/Icons/ChartTv.png";
 import Mac from "../../../../assest/Images/services/Model/model3.gif"
 export default function index() {
   return (
-    <div>
-       <section class="service3_d text-gray-600 body-font ">
-        <div class="container mx-auto flex  md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left">
-            <h1
-              style={{ fontFamily: "Exo2-Regular" }}
-              class="w-[780px] mb-4 text-[36px] text-[#2F2F2F] font-[900] capitalize"
-            >
-              Our 3D building modelling services enable you to:
+    <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
+    <div className="text-gray-600 body-font">
+      <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
+        <div className="flex flex-col md:items-start md:text-left items-center"  style={{width:'762px', height:'455px'}}>
+            <h1 style={{fontFamily:"Exo2-Bold"}} className="service_3d_head">
+              Our 3D building modelling services <br /> enable you to:
             </h1>
-            <ul class="space-y-5 mb-5">
+            <ul class="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="model" src={Cube} />
-                <p class="">
+                <img class="h-fit project_icons" alt="model" src={Cube} />
+                <p class="project_icon_text">
                 Extract geometrical information in 2D and 3D.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="model" src={Cursor} />
-                <p class="">
+                <img class="h-fit project_icons" alt="model" src={Cursor} />
+                <p class="project_icon_text">
                 Get interactive 2D and 3D plans.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="model" src={ArrowSquareIn} />
-                <p class="">
+                <img class="h-fit project_icons" alt="model" src={ArrowSquareIn} />
+                <p class="project_icon_text">
                 Get the inputs required to better utilise and optimise your real estate.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="model" src={Tree} />
-                <p class="">
+                <img class="h-fit project_icons" alt="model" src={Tree} />
+                <p class="project_icon_text">
                 Understand your building's surroundings and their impact.
                 </p>
               </li>
               <li class="flex space-x-5">
-                <img class="h-fit" alt="model" src={ChartTv} />
-                <p class="">
+                <img class="h-fit project_icons" alt="model" src={ChartTv} />
+                <p class="project_icon_text">
                 Use the 3D models to conduct further analysis.
                 </p>
               </li>
@@ -58,19 +55,19 @@ export default function index() {
               </div>
             </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div  style={{width:'661px', height:'451px'}}>
             <img
               class="object-cover object-center rounded"
               alt="hero"
-              style={{marginLeft: '25px'}}
+              // style={{marginLeft: '25px'}}
               src={Mac}
             />
           </div>
         </div>
-      </section>
+      </div>
 
       {/* tablet */}
-      <section class="service3_t text-gray-600 body-font ">
+      <div class="service3_t text-gray-600 body-font ">
         <div class="container px-3 py-5 mx-auto items-center bg-gray-100">
           <div class=" items-center text-left">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 capitalize">
@@ -98,7 +95,7 @@ export default function index() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

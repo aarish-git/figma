@@ -56,20 +56,20 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-    <div>
-         <h2
-            style={{ fontFamily: "Exo2-Regular" , marginLeft: '55px'}}
-            class="text-[#2F2F2F] text-[50px] font-bold mb-4"
-        >
+    <div className="row" style={{textAlign: 'left'}}>
+    <h2
+        style={{ fontFamily: "Exo2-Bold" }}
+        className="single_project_desc_head"
+   >
             Our solution
         </h2>
-        <p style={{fontFamily:"NunitoSans-Regular" , marginLeft: '55px'}} class="leading-relaxed text-[20px] font-[400] mb-3">
+        <p style={{ fontFamily: "NunitoSans-Regular" , margintop: '24px', marginBottom: '40px'}} className="single_project_desc_p">
              Our solution included the following steps.
         </p>
-        <div className="allsteper2">
+        <div className="allsteper">
     <div className="stepLabel">
          <div class="step completed">
-      <div class="v-stepper">
+      {/* <div class="v-stepper">
         <div class="circle"></div>
         <div class="line"></div>
       </div>
@@ -83,40 +83,54 @@ export default function VerticalLinearStepper() {
       </div>
       <div class="v-stepper">
         <div class="circle"></div>
-        {/* <div class="line"></div> */}
-      </div>
-       </div>
+      </div> */}
      <div class="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" id="home-tab" data-toggle="pill" style={{marginTop: '-10px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">3D model setup</a>
-        <a class="nav-link" id="profile-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">Weather data integration & solar analysis*</a>
-        <a class="nav-link" id="messages-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">Shading correction data for each window</a>
-        <a class="nav-link" id="settings-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">Cloud-based control data</a>
+        <a class="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <div class="circle"></div>
+          3D model setup
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div class="circle"></div>
+          Weather data integration & solar analysis*
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+          <div class="circle"></div>
+          Shading correction data for each window
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+          <div class="circle"></div>
+          Cloud-based control data
+        </a>
+    </div>
     </div>
    </div>
 
     <div class="tab-content" id="tabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>3D model setup</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>3D model setup</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           Using building plans and geospatial data, we created a highly detailed 3D model of the target building (LOD 4) and merged it with models of surrounding buildings, vegetation, and terrain.
           </p>
-          <img src={PImage} alt="home" />
+          <img className="stepper_desc_img" src={PImage} alt="home" />
         </div>
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Weather data integration & solar analysis*</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Weather data integration & solar analysis*</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           We used the resulting model to conduct a detailed shading analysis for multiple points on each window. Our algorithm calculated shading conditions and incident angles for each calculation point (virtual sensor*) for the sun position for the entire year. Embedding local TRY weather data, we quantified the annual energy intake for each calculation point.
           </p>
-          <img src={PImage1} alt="home" />
+          <img className="stepper_desc_img" src={PImage1} alt="home" />
         </div>
       </div>
       <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Shading correction data for each window</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Shading correction data for each window</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
             Next, we calculated the shading progression on each window 
             for the whole year and converted it into a shading correction data file. 
             This file was then integrated with the building controller and merged with measurements from the local weather sensor data to provide a time-based shading position. With this, we delivered the phase-one results.
@@ -125,8 +139,8 @@ export default function VerticalLinearStepper() {
       </div>
       <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Cloud-based control data</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Cloud-based control data</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           We are enhancing the digital twin with additional system-specific data. Each calculation point, i.e virtual sensor on the window, is connected to the local weather forecast data. This uses the resulting forecast of solar radiation for each virtual sensor to quantify the expected solar radiation intake and accordingly, determines the best shading position to maximise comfort and efficiency.
           </p>
         </div>

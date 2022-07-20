@@ -9,24 +9,14 @@ import P5 from "./../Mannheim/mann5";
 import P6 from "./p6";
 export default function index() {
   return (
-    <div >
+    <div className="App" >
       <Header />
-      <div className="row">
+      <div className="container">
         <P1 />
-      </div>
-      <div className="row">
         <P2 />
-      </div>
-      <div className="row">
         <P3 />
-      </div>
-      <div className="row">
         <P4 />
-      </div>
-      <div className="row">
         <P5 />
-      </div>
-      <div className="row">
         <P6 />
       </div>
       <Footer />

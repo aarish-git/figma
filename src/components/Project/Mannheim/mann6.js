@@ -16,7 +16,7 @@ export default function mann6() {
               >
                 {" "}
                 <img alt="leftArrow" src={leftArrow} />
-                <p class="leading-relaxed underline underline-offset-4">Wago Headquarters Project</p>
+                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">Wago Headquarters Project</p>
               </a>
             </div>
             <div class="p-4 w-1/2 text-right">
@@ -25,7 +25,7 @@ export default function mann6() {
                 class="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <p class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
+                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
                 <img alt="rightArrow" src={rightArrow} />
               </a>
             </div>

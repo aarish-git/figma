@@ -10,14 +10,16 @@ import Wago6 from "./wago6";
 
 export default function index() {
   return (
-    <div>
+    <div className="App" >
       <Header />
+      <div className="container">
       <Wago1 />
       <Wago2 />
       <Wago3 />
       <Wago4 />
       <Wago5 />
       <Wago6 />
+      </div>
       <Footer />
     </div>
   );

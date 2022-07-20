@@ -3,27 +3,24 @@ import "./index.css";
 
 export default function services1() {
   return (
-    <div>
-      <section style={{
-          background:
-            "linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)",
-        }} class="service1_d body-font">
-        <div style={{padding:'107px 47px'}} class="py-24 mx-auto">
-          <div class="flex flex-col text-left w-full mb-2 px-2 mt-5">
-            <p
+    <div className="row">
+    <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+        <div  className="mx-auto flex  md:flex-row flex-col ">
+          <div  style={{textAlign:'left', marginTop:'72px', marginLeft: '-10px'}}>
+            <h1
               style={{ fontFamily: "Exo2-Regular" }}
-              class="text-[#0087FF] uppercase text-[24px] font-[600]"
+              className="single_project_blue_head text-[#0087FF]"
             >
               Control
-            </p>
-            <h2
-              style={{ fontFamily: "Exo2-Regular" }}
-              class=" text-[52px] font-[900]  mb-4 "
+              </h1>
+            <h1
+              style={{ fontFamily: "Exo2-Bold" }}
+              className="single_project_main_head"
             >
               Control recommendations <br />
               to keep you ahead of the weather
-            </h2>
-            <p class="leading-relaxed text-left mb-5">
+            </h1>
+            <p class="mb-8 leading-relaxed single_project_content" style={{width:'995px', marginBottom: '64px', marginTop:'92px'}}>
             Combine our assessment insights with additional data layers like weather forecast data and local sensor data, to <br />
             generate model-based building control data for improving your building’s energy efficiency and comfort. <br />
 Here's a look at our control services.
@@ -38,11 +35,11 @@ Here's a look at our control services.
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* tablet */}
-      <section class="service1_t bg-gray-200	 text-gray-600 body-font">
-        <div style={{padding:'107px 47px'}} class="x-5 py-24 mx-auto">
+      <div class="service1_t bg-gray-200	 text-gray-600 body-font">
+        <div style={{margin:'0px 40px'}} class="x-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-2">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 capitalize">
               leaftech's serives: your
@@ -71,7 +68,7 @@ Here's a look at our control services.
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

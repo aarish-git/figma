@@ -1,12 +1,12 @@
 .arun_container {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0px 28px 0px 40px;
   margin: 0;
   display: flex;
   position: fixed;
   /* background-color:#fff; */
   /* z-index: 0.0; */
-  /* z-index: 1; */
+  z-index: 9999;
   /* opacity:0.9; */
   background:rgb(252, 252, 252,0.1);
   backdrop-filter: blur(14px);
@@ -16,7 +16,19 @@
   font-size: 2rem;
   margin: auto 0px;
   color: #0087ff;
+  /* margin-left: 20px; */
   text-transform: capitalize;
+}
+
+.navFont {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.0025em;
+  color: #2F2F2F;
 }
 
 .arun_container .arun_menuList ul {
@@ -55,12 +67,18 @@
   color: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
   /* border: 1px solid rgb(29, 29, 29); */
-  padding: 5px;
+  padding: 0px 24px;
   width: 106px;
   /* position:absolute;
   right: 2rem; */
   text-align: center;
   border-radius: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
 }
 
 

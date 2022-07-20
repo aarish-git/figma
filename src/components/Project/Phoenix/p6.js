@@ -16,7 +16,7 @@ export default function p6() {
               >
                 {" "}
                 <img alt="Project" src={leftArrow} />
-                <p class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
+                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
               </a>
             </div>
             <div class="p-4 w-1/2 text-right">
@@ -25,7 +25,7 @@ export default function p6() {
                 class="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <p class="leading-relaxed underline underline-offset-4">Wago Project</p>
+                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">Wago Project</p>
                 <img alt="Project" src={rightArrow} />
               </a>
             </div>

@@ -5,49 +5,49 @@ import Circle from "../../../assest/Icons/CircleHalf.png"
 
 export default function wago2() {
   return (
-    <div>
-      <section class=" body-font">
-        <div class=" px-5 py-24 mx-auto flex flex-wrap">
-          <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+    <div className="row" style={{marginTop:'120px'}}>
+    <div className="text-gray-600 body-font">
+      <div className="flex flex-wrap">
+        <div className="single_project_desc_image rounded-lg overflow-hidden">
             <img
               alt="feature"
               class="object-cover object-center h-full w-full"
               src={wago}
             />
           </div>
-          <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-left">
-            <div class="flex flex-col mb-4 lg:items-start items-left">
-              <div class="w-full h-12 inline-flex items-center justify-left uppercase"></div>
-              <div class="flex-grow ">
-                <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
-                  class=" text-[50px] font-bold mb-4"
+          <div className="single_project_desc flex">
+            <div className="flex">
+              {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
+              <div className="flex-grow">
+              <h2
+                  style={{ fontFamily: "Exo2-Bold" }}
+                  className="single_project_desc_head"
                 >
                   Project brief
                 </h2>
-                <p style={{fontfamily:"NunitoSans-Regular"}} class="leading-relaxed text-[20px] font-[400]">
+                <p className="mann_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
                   The building V1 hosts many offices, including the board of
                   Wago. The building structure has a complex contour, shading
                   architecture, and surroundings which make it challenging for
                   the shading automation system to ensure thermal and visual
                   comfort for the building users. To assist the Wago automation
                   system with the individual shading control, Leaftech provided
-                  data services to improve efficiency and comfort.<br /> We provided:
+                  data services to improve efficiency and comfort.
                 </p>
               </div>
             </div>
             <div class="flex flex-col mb-10 lg:items-start items-center">
               {/* <div class="w-full h-12 inline-flex items-center justify-left "></div> */}
               <div class="flex-grow">
-                {/* <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
-                  class="text-gray-900 text-[20px] font-bold mb-3"
+              <h2
+                 style={{ fontFamily: "Exo2-Regular", width: '664px', marginTop:'40px' }}
+                 class="results_benefits_subhead"
                 >
                   We provided:
-                </h2> */}
+                </h2>
                 <ul class="my-3 space-y-4">
-                  <li class="flex space-x-5"><img class="h-fit" alt="Sun" src={Sun} /><p>Recommendations for weather sensor placement</p></li>
-                  <li class="flex space-x-5"><img class="h-fit" alt="Circle" src={Circle} /><p>
+                  <li class="flex space-x-5"><img class="h-fit project_icons" alt="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Recommendations for weather sensor placement</p></li>
+                  <li class="flex space-x-5"><img class="h-fit project_icons" alt="Circle" src={Circle} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">
                     Shading correction data for shading/sun protection control{" "}</p>
                   </li>
                   {/* <li>
@@ -65,7 +65,7 @@ export default function wago2() {
             </div> */}
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

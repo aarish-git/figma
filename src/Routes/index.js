@@ -29,6 +29,8 @@ export default function index() {
           <Route path="/services/3d-digital-models-of-buildings" element={<MServices />} />
 
           <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/#foot_building" element={<Home />} /> */}
+          
         </Routes>
       </Router>
     </div>

@@ -13,13 +13,15 @@ function App() {
   return (
     <div className="App" >
       <Header />
-      <Count />
+       <div className="container">
+       <Count />
       <Wecreate />
       <Services />
       <First />
       {/* <Contact /> */}
       <Getstart />
       <Clients />
+       </div>
       <Footer />
     </div>
   );

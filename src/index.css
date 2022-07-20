@@ -27,7 +27,12 @@ code {
 
 @font-face {
   font-family: "Exo2-Regular";
-  src: url("../src/assest/font/Exo_2/static/Exo2-Regular.ttf") format("truetype");
+  src: url("../src/assest/font/Exo_2/static/Exo2-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("../src/assest/font/Exo_2/static/Exo2-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -36,11 +41,11 @@ code {
 }
 
 
-/* @font-face {
-  font-family: "Exo2-BlackItalic";
-  src: url("./assest/font/static/Exo2-BlackItalic.ttf") format("truetype");
+ @font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("../src/assest/font/Exo_2/static/Exo2-SemiBold.ttf") format("truetype");
 }
-
+/*
 @font-face {
   font-family: "Exo2-Bold";
   src: url("./assest/font/static/Exo2-Bold.ttf") format("truetype");

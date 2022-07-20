@@ -9,14 +9,16 @@ import Mann5 from "./mann5";
 import Mann6 from "./mann6";
 export default function index() {
   return (
-    <div>
+    <div className="App" >
       <Header />
+      <div className="container">
       <Mann />
       <Mann2 />
       <Mann3 />
       <Mann4 />
       <Mann5 />
       <Mann6 />
+      </div>
       <Footer />
     </div>
   );

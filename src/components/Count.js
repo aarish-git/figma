@@ -1,65 +1,64 @@
 import React from "react";
-import image from "../assest/Images/home/Isometric2.png"
+import image from "../assest/Images/home/illustrationframe.gif"
 import { Link } from "react-router-dom";
 
 export default function Count() {
   return (
-    <div>
-      <section class=" body-font">
-        <div class=" flex px-3 py-24 md:flex-row flex-col items-center ">
-          <div class="row py-10 mx-auto  w-full">
-            <div className="home_first_row"> 
-            <div className="home-first-content">
-              <div class="text-left w-full mb-20">
+          <div class="row " >
+            <div class="row " style={{marginTop: '120px'}}>
+
+            {/* <div className="home_first_row">  */}
+              <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <div class="home_first_content text-left w-full mb-20">
                 <h1
-                  style={{ fontFamily: "Exo2-Regular" }}
-                  class=" text-[#2F2F2F] xl:text[46px] lg:text-[36px] md:text-[46px] sm:text-[46px] font-[700] leading-[50px] mb-4"
+                  style={{ fontFamily: "Exo2-Bold", fontSize: '56px', lineHeight: '70px'}}
+                  class="home_first_content_head"
                 >
                   Make data-driven decisions.
                   <br />
                   Optimize building performance.
                 </h1>
                 <p
-                  style={{ fontFamily: "NunitoSans-Regular" }}
-                  class="text-[#2F2F2F] w-[664px] text-[20px] font-[400] leading-[32px]"
+                  style={{ fontFamily: "NunitoSans-Regular", width:'664px', height:'96px' }}
+                  class="home_first_subcontent"
                 >
                   With Leaftech's building Digital Twin, you can access highly
                   accurate data to understand your building's performance, make
                   informed decisions on upgrades, and work on the required
                   building optimization measures.
                 </p>
-              </div>
-              <section class="body-font">
-                <div  class=" text-left mx-auto">
+                
+
+                <div style={{margin:'80px 40px 0px 0px'}} class=" text-left mx-auto">
                   <div class="flex flex-col text-left w-full ">
                     <h1
-                      style={{ fontFamily: "Exo2-Regular" }}
-                      class=" font-[600] tracking-wide uppercase text-[24px]"
+                      style={{ fontFamily: "Exo2-Bold" }}
+                      class="home_first_subhead"
                     >
                       our growing impact!
                     </h1>
                   </div>
                   <div class="flex flex-wrap  text-left ">
-                    <div class="py-4 md:w-1/3 sm:w-1/2 w-full">
-                      <h2 style={{fontFamily:"Exo2-Regular"}} class="font-[700] text-[30px] text-gray-900">
+                    <div style={{width:'140px', height:'74px'}}>
+                      <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
                         15
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed font-[400] text-[14px] mt-1">Digital Twin’s set-ups</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">Digital Twin’s set-ups</p>
                     </div>
-                    <div class="py-4 md:w-1/3 sm:w-1/2 w-full">
-                      <h2 style={{fontFamily:"Exo2-Regular"}} class="font-[700] text-[30px] text-gray-900">
+                    <div style={{width:'189px', height:'74px', margin: '0px 64px 0px 56px'}}>
+                      <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
                         500,000 +
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed font-[400] text-[14px] mt-1">Sqm served</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">Sqm served</p>
                     </div>
-                    <div class="py-4 md:w-1/3 sm:w-1/2 w-full">
-                      <h2 style={{fontFamily:"Exo2-Regular"}} class="font-[700] text-[30px] text-gray-900">
+                    <div style={{width:'130px', height:'74px'}}>
+                      <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
                         1,500 +
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed font-[400] text-[14px] mt-1">Devices in control </p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">Devices in control </p>
                     </div>
                   </div>
-                  <div class="relative top-10">
+                  <div class="relative top-10" style={{marginTop:'64px'}}>
                     <Link style={{all:"unset"}} to="/contact">
                     <button
                       style={{
@@ -82,21 +81,21 @@ export default function Count() {
                     </Link>
                   </div>
                 </div>
-              </section>
               </div>
-              <div class="">
+                
+              </div>
+              
+              <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12 home_first_image" style={{zIndex: '-12'}}>
               <img
-                class="object-cover object-center rounded home_first_image"
+                class="object-cover object-center rounded"  
+                // style={{marginLeft: '35px', marginTop: '-30px'}}
                 alt="hero"
                 src={image}
               />
-            </div>
               </div>
+            {/* </div> */}
+            </div>
          
           </div>
-          
-        </div>
-      </section>
-    </div>
   );
 }

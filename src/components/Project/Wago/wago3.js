@@ -71,20 +71,20 @@ export default function VerticalLinearStepper() {
   // };
 
   return (
-    <div>
-         <h2
-            style={{ fontFamily: "Exo2-Regular" , marginLeft: '85px'}}
-            class="text-[#2F2F2F] text-[50px] font-bold mb-4"
-        >
+    <div className="row" style={{textAlign: 'left'}}>
+    <h2
+        style={{ fontFamily: "Exo2-Bold" }}
+        className="single_project_desc_head"
+   >
             Our solution
         </h2>
-        <p style={{fontFamily:"NunitoSans-Regular" , marginLeft: '85px'}} class="leading-relaxed text-[20px] font-[400] mb-3">
+        <p style={{ fontFamily: "NunitoSans-Regular" , margintop: '24px', marginBottom: '40px'}} className="single_project_desc_p">
           Below is our detailed solution for Wago. 
         </p>
-        <div className="allsteper3">
+        <div className="allsteper">
     <div className="stepLabel">
          <div class="step completed">
-      <div class="v-stepper">
+      {/* <div class="v-stepper">
         <div class="circle"></div>
         <div class="line"></div>
       </div>
@@ -106,72 +106,96 @@ export default function VerticalLinearStepper() {
       </div>
       <div class="v-stepper">
         <div class="circle"></div>
-        {/* <div class="line"></div> */}
-      </div>
-       </div>
+      </div> */}
      <div class="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" id="home-tab" data-toggle="pill" style={{marginTop: '-10px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">Digital twin setup</a>
-        <a class="nav-link" id="profile-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">Created the target surfaces & virtual sensor placement</a>
-        <a class="nav-link" id="messages-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">Solar analysis</a>
-        <a class="nav-link" id="settings-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">Wind flow analysis</a>
-        <a class="nav-link" id="build-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#build" role="tab" aria-controls="build" aria-selected="false">Location for sensor placement</a>
-        <a class="nav-link" id="wind-tab" data-toggle="pill" style={{marginTop: '40px'}} href="#wind" role="tab" aria-controls="wind" aria-selected="false">Shading control data for each window</a>
+        <a class="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <div class="circle"></div>
+          Digital twin setup
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '32px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div style={{display:'flex', alignItems: 'center'}}>
+          <div class="circle"></div>
+           Created the target surfaces & virtual sensor placement
+          </div>
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+          <div class="circle"></div>
+          Solar analysis
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+          <div class="circle"></div>
+          Wind flow analysis
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="build-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#build" role="tab" aria-controls="build" aria-selected="false">
+          <div class="circle"></div>
+          Location for sensor placement
+          <div class="line"></div>
+        </a>
+        <a class="nav-link" id="wind-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#wind" role="tab" aria-controls="wind" aria-selected="false">
+          <div class="circle"></div>
+          Shading control data for each window
+        </a>
+    </div>
     </div>
    </div>
 
     <div class="tab-content" id="tabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Digital twin setup</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Digital twin setup</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           We received the 3D model of the target building from the customer and created and merged it with the surroundings using satellite images and scans, and Leaftech’s in-house tool.
           </p>
-          <img src={wimg} alt="home" />
+          <img className="stepper_desc_img" src={wimg} alt="home" />
         </div>
       </div>
       <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Created the target surfaces & virtual sensor* placement</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Created the target surfaces & virtual sensor* placement</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           The rooftop and the windows were the target surfaces for sensor placement and shading control assessment respectively. We positioned the virtual sensors, i.e the calculation points on target surfaces, to simulate the influencing factors for every minute.
           </p>
-          <img src={wimg2} alt="home" />
+          <img className="stepper_desc_img" src={wimg2} alt="home" />
         </div>
       </div>
       <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Solar analysis</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Solar analysis</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           Next, we did a detailed solar analysis for each virtual sensor 
           on the rooftop and the windows. This solar analysis included a solar radiation analysis, annual sunshine hours analysis, and shading analysis for the whole year.
           </p>
-          <img src={wimg1} alt="home" />
+          <img className="stepper_desc_img" src={wimg1} alt="home" />
         </div>
       </div>
       <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Wind flow analysis</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Wind flow analysis</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
           Using the digital twin model and local wind profile, we did a detailed CFD analysis to derive the wind flow pattern, pressure zone, and wakes for each calculation point around the building. 
           </p>
-          <img src={wimg4} alt="home" />
+          <img className="stepper_desc_img" src={wimg4} alt="home" />
 
         </div>
       </div>
       <div class="tab-pane fade" id="build" role="tabpanel" aria-labelledby="build-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Location for sensor placement</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Location for sensor placement</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
             Next, we derived the optimal location for rooftop weather sensors to ensure uninterrupted and stable measurements using the results from the solar analysis, wind flow analysis, and the local site-specific requirements
           </p>
-          <img src={wimg3} alt="home" />
+          <img className="stepper_desc_img" src={wimg3} alt="home" />
 
         </div>
       </div>
       <div class="tab-pane fade" id="wind" role="tabpanel" aria-labelledby="wind-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Shading control data for each window</b></h1>
-          <p style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Shading control data for each window</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
             We analysed the shading progression for the whole year and generated a correction factor corresponding to the rooftop sensor measurement for each window. Also, we created a window-specific data file that could be locally deployed by the integration partner.
           </p>
         </div>

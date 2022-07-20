@@ -29,7 +29,7 @@ export default function wago6() {
               >
                 {" "}
                 <img alt="arrow" src={leftArrow} />
-                <p class="leading-relaxed underline underline-offset-4">
+                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">
                   Trio Mannheim Project
                 </p>
               </a>
@@ -40,7 +40,7 @@ export default function wago6() {
                 class="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <p class="leading-relaxed underline underline-offset-4">
+                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">
                   Pheonix Contact Project
                 </p>
                 <img alt="arrow" src={rightArrow} />
