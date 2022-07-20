@@ -10,14 +10,14 @@ export default function GA4() {
     <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
-          <div className="rounded-lg overflow-hidden" style={{marginLeft: '-15px'}}>
+          <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '-15px'}}>
             <img
               class="object-cover object-center rounded"
               alt="hero"
               src={Grananue2}
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center">
+          <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center">
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
               Results & benefits
             </h1>

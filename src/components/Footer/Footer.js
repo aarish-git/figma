@@ -33,7 +33,7 @@ export default function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="#foot_building" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="/" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
                     Building owners
                   </a>
                 </li>
@@ -92,7 +92,7 @@ export default function Footer() {
                   <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">Contact</a>
                 </li>
                 <li>
-                  <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
+                  <a href="https://frontend.apps.leaftech.eu/login" style={{ fontFamily: "NunitoSans-Regular" }} class="content_head">
                     Customer Platform
                   </a>
                 </li>

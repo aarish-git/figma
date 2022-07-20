@@ -47,7 +47,7 @@ export default function First() {
             />
         </div>
         <div className='col-lg-6'>
-          <div style={{textAlign:'left'}} className="for_bld_owners_content_box">
+          <div style={{textAlign:'left'}} id="sec1" className="for_bld_owners_content_box">
             <span
               style={{ fontFamily: "Exo2-Regular" }}
               className="for_bld_owners_content_caption uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
@@ -94,9 +94,11 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{justifyContent:'center'}} >
+            <a style={{all:"unset"}} href="/project">
               <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-                Take a look at ss stories
+              Take a look at our success stories
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -228,7 +230,7 @@ export default function First() {
             <div className="flex mt-5" style={{justifyContent:'center'}} >
             <a style={{all:"unset"}} href="/wago">
               <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-                Know more about our data control project
+              Know more about our proactive control project
               </button>
               </a>
             </div>
@@ -292,7 +294,7 @@ export default function First() {
             <div className="flex mt-5" style={{justifyContent:'center'}} >
             <a style={{all:"unset"}} href="/granue">
               <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-                Know more about our residential project
+              Take a look at our project with Vattenfall
               </button>
               </a>
             </div>
@@ -356,9 +358,11 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{justifyContent:'center'}} >
+            <a style={{all:"unset"}} href="/project">
               <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                 Our success stories
               </button>
+              </a>
             </div>
           </div>
       </div>
