@@ -3,7 +3,7 @@ import "./Conindex.css";
 // import Countryflag from "./countryFlag";
 import relaxed from "../../assest/Images/contact/contact1.png";
 import building from "../../assest/Images/contact/contact2.png";
-// import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Index() {
   const [verified, setverified] = useState(false);
@@ -223,15 +223,16 @@ export default function Index() {
                 communications from Leaftech*
               </p>
             </div>
-            <div class=" flex space-x-4 justify-center">
+            <div class=" flex space-x-4" style={{marginTop:'20px'}}>
               {/* <button class="w-1/3 text-black bg-slate-50	 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Go Back
               </button> */}
-              {/* <ReCAPTCHA
+               <ReCAPTCHA
                 sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                 onChange={handleContact}
-              /> */}
-              
+              />
+            </div>
+            <div class=" flex space-x-4 justify-center">
               <button
                 disabled={!verified}
                 class="contact_form_submitButton"

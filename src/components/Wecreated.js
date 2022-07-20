@@ -67,58 +67,58 @@ export default function Wecreated() {
         <div className="mx-auto" style={{marginTop:'32px'}}>
           <div id="mycenter inner" style={{overflow: 'hidden'}} >
                <div id="platform" className="flex text-center">
-               <a href="" >
+               <a href="" className="build_twins_horn_a">
               <img  alt="Horn"  className="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
               </a>
-              <a href="" >
+              <a href="https://www.phoenixcontact.com/" >
               <img  alt="Phoenix"  className="build_twins grayscale hover:grayscale-0" src={Phoenix} />
               </a>
-              <a href="" >
+              <a href="https://www.hosch-ga.de/" >
               <img  alt="Hosch"  className="build_twins grayscale hover:grayscale-0" src={Hosch} />
               </a>
-              <a href="" >
+              <a href="https://www.bauer-netz.de/" >
               <img  alt="Bauer"  className="build_twins grayscale hover:grayscale-0" src={Bauer} />
               </a>
-              <a href="" >
+              <a href="https://www.bim-berlin.de/" >
               <img  alt="Bim"  className="build_twins grayscale hover:grayscale-0" src={Bim} />
               </a>
-              <a href="" >
+              <a href="https://www.luebbing.de/" >
               <img  alt="Lubbing"  className="build_twins grayscale hover:grayscale-0" src={Lubbing} />
               </a>
-              <a href="" >
+              <a href="https://www.wago.com/global/country-selection" >
               <img  alt="Wago"  className="build_twins grayscale hover:grayscale-0" src={Wago} />
               </a>
-              <a href="" >
+              <a href="https://www.selve.de/" >
               <img  alt="Selve"  className="build_twins grayscale hover:grayscale-0" src={Selve} />
               </a>
-              <a href="" >
+              <a href="https://www.bvg.de/en" >
               <img  alt="bvg"  className="build_twins bvg grayscale hover:grayscale-0" src={bvg} />
               </a>
-              <a href="" >
+              {/* <a href="https://www.dabbel.eu/" >
               <img  alt="dabbel"  className="build_twins dabbel grayscale hover:grayscale-0" src={dabbel} />
-              </a>
-              <a href="" >
+              </a> */}
+              <a href="https://www.fujitsu.com/de/" >
               <img  alt="fujitsu"  className="build_twins grayscale hover:grayscale-0" src={fujitsu} />
               </a>
-              <a href="" >
+              <a href="https://www.boschbuildingsolutions.com/" >
               <img  alt="gfr"  className="build_twins gfr grayscale hover:grayscale-0" src={gfr} />
               </a>
-              <a href="" >
+              <a href="http://www.hermos.com/en/" >
               <img  alt="hermos"  className="build_twins grayscale hover:grayscale-0" src={hermos} />
               </a>
-              <a href="" >
+              <a href="https://lae.eu/?lang=en" >
               <img  alt="lae"  className="build_twins grayscale hover:grayscale-0" src={lae} />
               </a>
-              <a href="" >
+              <a href="https://trio-mannheim.de/" >
               <img  alt="trio"  className="build_twins grayscale hover:grayscale-0" src={trio} />
               </a>
-              <a href="" >
+              <a href="https://www.vattenfall.de/" >
               <img  alt="vatten"  className="build_twins vatten grayscale hover:grayscale-0" src={vatten} />
               </a>
-              <a href="" >
-              <img  alt="volks"  className="build_twins grayscale hover:grayscale-0" src={volks} />
+              <a href="https://www.vr.de/privatkunden.html" >
+              <img  alt="volks"  className="volks build_twins grayscale hover:grayscale-0" src={volks} />
               </a>
-              <a href="" >
+              <a href="https://www.vonovia.de/en" >
               <img  alt="vono"  className="build_twins grayscale hover:grayscale-0" src={vono} />
               </a>
                </div>
