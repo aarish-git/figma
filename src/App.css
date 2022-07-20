@@ -166,12 +166,12 @@ a:hover {
 
 @media only screen and (min-width: 1530px) { 
   .project_home {
-    width: 1555px !important;
+    width: 1420px !important;
     margin-left: 0px !important;
   }
 
   .projectImage {
-    width: 830px !important;
+    width: 700px !important;
     height: 597px !important;
     border-radius: 20px !important;
     margin-left: -17px !important;

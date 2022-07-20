@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Trio from "../../../assest/Images/project/project1.jpg";
 import Granue from "../../../assest/Images/project/project2.jpg";
-import Pheonix from "../../../assest/Images/project/project3.jpg";
-import Wago from "../../../assest/Images/project/project4.jpg";
+import Pheonix from "../../../assest/Images/project/phoenix.svg";
+import Wago from "../../../assest/Images/project/wago.svg";
 
 import Sun from "../../../assest/Icons/Sun.png";
 import Wrench from "../../../assest/Icons/Wrench.png";

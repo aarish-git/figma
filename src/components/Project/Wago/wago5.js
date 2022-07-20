@@ -15,9 +15,11 @@ export default function wago5() {
               Discover how we can assist in your project.
             </h1>
             <div className="flex justify-center">
+            <a href="/contact" >
               <button style={{fontFamily:"NunitoSans-Regular"}} className="inline-flex text-white py-2 px-6 text-white bg-[#0087FF] rounded-[20px] shadow-[0_4px_4px_rgba(0,135,225,0.25)] rounded-[20px] text-lg">
                 Contact us
               </button>
+              </a>
             </div>
           </div>
         </div>

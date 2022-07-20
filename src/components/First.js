@@ -1,9 +1,9 @@
 import React from "react";
-import img1 from "../assest/Images/home/one.jpg";
-import img2 from "../assest/Images/home/two.jpg";
-import img3 from "../assest/Images/home/three.jpg";
-import img4 from "../assest/Images/home/four.jpg";
-import img5 from "../assest/Images/home/five.jpg";
+import img1 from "../assest/Images/home/one.svg";
+import img2 from "../assest/Images/home/two.svg";
+import img3 from "../assest/Images/home/three.svg";
+import img4 from "../assest/Images/home/four.svg";
+import img5 from "../assest/Images/home/five.svg";
 // import img1 from "../assest/Images/home/one.jpg"
 import Tree from "../assest/Icons/Tree.png";
 import ChartLine from "../assest/Icons/ChartLine.png";
