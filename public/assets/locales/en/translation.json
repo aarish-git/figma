@@ -1,3 +1,13 @@
 {
-    "Home_text":"home"
+    "Home_text":"Home",
+    "Project_text": "Project",
+      "Services_text":"Services",
+      "Contact_text":"Services",
+      "Home_head1":"Make data-driven decisions.",
+      "Home_head2":"Optimize building performance.",
+      "Home_content":"With Leaftech's building Digital Twin, you can access highly accurate data to understand your building's performance, make informed decisions on upgrades, and work on the required building optimization measures.",
+      "Home_number_head":"OUR GROWING IMPACT!",
+      "Home_number_text1":"Digital Twin’s set-ups",
+      "Home_number_text2":"Sqm served",
+      "Home_number_text3":"Devices in control"
 }

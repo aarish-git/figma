@@ -33,7 +33,7 @@ export default function Footer() {
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a href="/" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <a href="foot_building" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
                     Building owners
                   </a>
                 </li>

@@ -1,3 +1,14 @@
 {
-    "Home_text":"Startseite"
+    "Home_text":"Startseite",
+    "Project_text": "Projekte",
+      "Services_text":"Leistungen",
+      "Contact_text":"Kontakt",
+      "Home_head1":"Treffen Sie datengestützte Entscheidungen.",
+      "Home_head2":"Optimieren Sie die Gebäudeleistung.",
+      "Home_content":"Mit dem digitalen Zwilling von Leaftech greifen Sie auf hochpräzise Daten zu, um die Bedürfnisse Ihres Gebäudes zu verstehen, fundierte Entscheidungen über Verbesserungen zu treffen und die Leistung Ihres Gebäudes oder einzelner Systeme zu verbessern.",
+      "Home_number_head":"Unser Impact in Zahlen",
+      "Home_number_text1":"Digitale Zwillinge eingerichtet",
+      "Home_number_text2":"Quadratmeter versorgt",
+      "Home_number_text3":"Einzelgeräte gesteuert"
+
 }

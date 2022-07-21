@@ -1,8 +1,10 @@
 import React from "react";
 import image from "../assest/Images/home/illustrationframe.gif"
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 export default function Count() {
+  const { t, i18n } = useTranslation();//translator
   return (
           <div class="row " >
             <div class="row " style={{marginTop: '120px'}}>
@@ -14,18 +16,17 @@ export default function Count() {
                   style={{ fontFamily: "Exo2-Bold", fontSize: '56px', lineHeight: '70px'}}
                   class="home_first_content_head"
                 >
-                  Make data-driven decisions.
+                  {/* Make data-driven decisions. */}
+                  
+                  {t('Home_head1')}
                   <br />
-                  Optimize building performance.
+                  {t('Home_head2')}
                 </h1>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", width:'664px', height:'96px' }}
                   class="home_first_subcontent"
                 >
-                  With Leaftech's building Digital Twin, you can access highly
-                  accurate data to understand your building's performance, make
-                  informed decisions on upgrades, and work on the required
-                  building optimization measures.
+                  {t('Home_content')}
                 </p>
                 
 
@@ -35,7 +36,7 @@ export default function Count() {
                       style={{ fontFamily: "Exo2-Bold" }}
                       class="home_first_subhead"
                     >
-                      our growing impact!
+                      {t('Home_number_head')}
                     </h1>
                   </div>
                   <div class="flex flex-wrap  text-left ">
@@ -43,19 +44,19 @@ export default function Count() {
                       <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
                         15
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">Digital Twin’s set-ups</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
                     </div>
                     <div style={{width:'189px', height:'74px', margin: '0px 64px 0px 56px'}}>
                       <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
                         500,000 +
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">Sqm served</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text2')}</p>
                     </div>
                     <div style={{width:'130px', height:'74px'}}>
                       <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
                         1,500 +
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">Devices in control </p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
                     </div>
                   </div>
                   <div class="relative top-10" style={{marginTop:'64px'}}>
