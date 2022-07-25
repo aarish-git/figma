@@ -42,7 +42,7 @@ export default function man2() {
               <div className="">
               <h2
                  style={{ fontFamily: "Exo2-Regular", width: '664px' }}
-                 class="results_benefits_subhead"
+                 className="results_benefits_subhead"
                 >
                   Leaftech was tasked to solve THE following issues:
                 </h2>

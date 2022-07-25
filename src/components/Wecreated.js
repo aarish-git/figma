@@ -19,8 +19,10 @@ import trio from "../assest/Images/home/weCreate/Trio Mannheim original.svg";
 import vatten from "../assest/Images/home/weCreate/Vattenfall_logo_Original.svg";
 import volks from "../assest/Images/home/weCreate/Volksbank_original.svg";
 import vono from "../assest/Images/home/weCreate/Vonovia_Logo_original.svg";
+import { useTranslation } from 'react-i18next';//translator
 
 export default function Wecreated() {
+  const { t, i18n } = useTranslation();//translator
   // useEffect(() => {
   //   $("#mycenter")
   //     .not(".slick-initialized")
@@ -59,10 +61,10 @@ export default function Wecreated() {
   return (
     <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px'}}>
         <h1
-          style={{ fontFamily: "Exo2-Regular" }}
-          className="title-font text-2xl pt-5 font-large capitalize font-bold"
+          style={{ fontFamily: "Exo2-Bold" }}
+          className="weCreatedHead"
         >
-          WE CREATED BUILDING TWINS FOR
+         {t('Home_section2')}
         </h1>
         <div className="mx-auto" style={{marginTop:'32px'}}>
           <div id="mycenter inner" style={{overflow: 'hidden'}} >

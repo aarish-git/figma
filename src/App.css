@@ -170,11 +170,17 @@ a:hover {
     margin-left: 0px !important;
   }
 
+  .project_outline  {
+    width: 109% !important;
+    margin-left: 0px !important;
+  }
+
+
   .projectImage {
-    width: 700px !important;
+    width: 43% !important;
     height: 597px !important;
     border-radius: 20px !important;
-    margin-left: -17px !important;
+    margin-left: -183px !important;
     margin-top: 5px !important;
   }
 
@@ -278,36 +284,42 @@ a:hover {
 
 .for_bld_owners_content_box {
   width: 665px !important;
+  color:#2f2f2f;
   height: 100%;
   margin-left: -36px;
 }
 
 .for_bld_owners_content_box2 {
-  width: 665px !important;
+  width: 663px !important;
+  color:#2f2f2f;
   height: 100%;
   margin-left: -15px;
 }
 
 .for_bld_owners_content_box3 {
   width: 610px !important;
+  color:#2f2f2f;
   height: 100%;
   margin-left: 32px;
 }
 
 .for_bld_owners_content_box4 {
   width: 665px !important;
+  color:#2f2f2f;
   height: 100%;
   margin-left: -35px;
 }
 
 .for_bld_owners_content_box5 {
   width: 665px !important;
+  color:#2f2f2f;
   height: 100%;
   margin-left: -15px;
 }
 
 .for_bld_owners_content_box6 {
   width: 665px !important;
+  color:#2f2f2f;
   height: 100%;
   margin-left: -25px;
 }
@@ -371,7 +383,7 @@ a:hover {
 
 .access_your_content {
   height: 81px;
-  width: 428px;
+  width: 450px;
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -397,7 +409,13 @@ a:hover {
   margin-top: 30px;
 }
 
-
+.weSupport {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #2F2F2F;
+}
 
 
 
@@ -594,7 +612,7 @@ color: #2F2F2F;
   font-size: 20px;
   line-height: 32px;
   color: #2F2F2F;
-  width: 975px;
+  width: 1005px !important;
   height: 96px;
 }
 
@@ -764,6 +782,16 @@ margin-top: 120px;
   font-size: 14px;
   line-height: 19px;
   color: #2F2F2F;
+ }
+
+ .weCreatedHead {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  margin-top: 40px;
  }
 
 .clientImageBox {

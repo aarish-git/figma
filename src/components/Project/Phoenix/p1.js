@@ -7,7 +7,7 @@ export default function p1() {
         <div  className="mx-auto flex  md:flex-row flex-col ">
           <div  style={{textAlign:'left', marginTop:'72px'}}>
             <h1
-              style={{ fontFamily: "Exo2-Regular" }}
+              style={{ fontFamily: "Exo2-SemiBold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
               Project showcase
@@ -24,7 +24,7 @@ export default function p1() {
             >
               Blomberg Germany, April 2022
             </p>
-            <p style={{fontFamily:"NunitoSans-Regular"}} class="mb-8 leading-relaxed single_project_content">
+            <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content">
               Leaftech serviced the office facility of Phoenix Contact, a
               building automation/smart home provider. This building uses
               Phoenix Contact's in-house building automation system called
@@ -35,33 +35,24 @@ export default function p1() {
             <div className="flex ">
                 <div className="text-gray-900 body-font -mb-10">
                   <div className=" ">
-                    <div className="flex flex-wrap space-x-14 ">
+                    <div className="flex flex-wrap space-x-14 " style={{marginTop:'40px'}}>
                       <div className="sm:2/3 space-y-2">
-                        <h2 style={{ fontFamily: "Exo2-Bold"  }} className="title-font font-bold  text-[40px]">
-                        ~1,965 sqm
+                        <h2 style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]">
+                        ~1,965 m²
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[14px]">
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
                       Total project area
                       </p>
                     </div>
-                    <div class="sm:2/3 space-y-2">
+                    <div className="sm:2/3 space-y-2">
                       <h2
-                        style={{ fontFamily: "Exo2-Bold" }} className="title-font font-bold  text-[40px]"
+                        style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F' }} className="title-font font-bold  text-[40px]"
                       >
-                        3,000 €
+                        169
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[14px]">Total price phase one (2019)</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">Devices in control</p>
                     </div>
-                    <div class="sm:2/3 space-y-2">
-                      <h2
-                        style={{ fontFamily: "Exo2-Bold" }} className="title-font font-bold  text-[40px]"
-                      >
-                        1,500 € + 67 €<span class=" text-[15px] font-bold">/month</span>
-                      </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed text-[14px] ">
-                      Total price phase two (2022)
-                      </p>
-                    </div>
+                    
                     
                   </div>
                 </div>

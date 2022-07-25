@@ -102,47 +102,47 @@ export default function VerticalLinearStepper() {
 <div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
     <div className="allsteper">
     <div className="stepLabel">
-    <div class="step completed" style={{marginLeft: "-20px"}}>
-     <div class="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
-        <div class="circle" style={{marginLeft: '0px'}}></div>
+    <div className="step completed" style={{marginLeft: "-20px"}}>
+     <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+        <div className="circle" style={{marginLeft: '0px'}}></div>
           The target building
-          <div class="line" style={{marginLeft: '8px'}}></div>
+          <div className="line" style={{marginLeft: '8px'}}></div>
         </a>
-        <a class="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-        <div class="circle"></div>
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+        <div className="circle"></div>
           Site context
-          <div class="line"></div>
+          <div className="line"></div>
         </a>
-        <a class="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-        <div class="circle"></div>
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+        <div className="circle"></div>
           Access your 3D models
          </a>
     </div>
    </div>
    </div>
 
-    <div class="tab-content" id="tabContent" style={{width:'70%'}}>
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div className="tab-content" id="tabContent" style={{width:'70%'}}>
+      <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>The target building</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>The target building</b></h1>
+          <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
           Access your accurate digital models through our digital twin platform. We build these 3D models using advanced tools, and they come with different Levels of Detail (LoD 2 to LoD4) based on your specific requirements. We use 2D plans, pictures, satellite scans, etc. to build your model.          </p>
           <img className="stepperService_desc_img" src={target} alt="target" />
         </div>
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Site context</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Site context</b></h1>
+          <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
           Gain a better understanding of your building and its interaction with the immediate environment using neighbourhood context site-specific models. This includes the neighbouring infrastructures like buildings, bridges, vegetation, and terrain. We use the latest geo datasets, digital surface models, LIDAR scans, and terrain models, to gain this contextual site analysis, and integrate them with our in-house software.         </p>
           <img className="stepperService_desc_img" src={context} alt="context" />
         </div>
       </div>
-      <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Access your 3D models </b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Access your 3D models </b></h1>
+          <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
           Access your 3D models, interactive building plans, and all related information through our platform, and even export/share this with your relevant stakeholders.  No additional software, licences, or tools are needed when you use Leaftech's platform, as we take care of everything for you.        </p>
           <img className="stepperService_desc_img" src={access} alt="access" />
         </div>

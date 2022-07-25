@@ -12,7 +12,7 @@ export default function GA4() {
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '-15px'}}>
             <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src={Grananue2}
             />
@@ -28,12 +28,12 @@ export default function GA4() {
               daily and annual PV yield, and optimal layout and configuration
               were presented.
             </p>
-            <div class="flex flex-col space-y-5">
+            <div className="flex flex-col space-y-5">
             <p style={{fontFamily:"Exo2-Regular"}} className="results_benefits_subhead">Client's benefits:</p>
-              <ul class="space-y-3">
-                <li class="flex space-x-5"><img class="h-fit" alt="Line" src={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Fast and accurate results</p> </li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data-based decision making</p> </li>
-                <li class="flex space-x-5"><img class="h-fit" alt="Coin" src={Coin} /><p style={{fontfamily:"NunitoSans-Regular"}}>Made recommendations to reduce energy costs by up to 8%</p></li>
+              <ul className="space-y-3">
+                <li className="flex space-x-5"><img className="h-fit" alt="Line" src={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>Fast and accurate results</p> </li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>Data-based decision making</p> </li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Coin" src={Coin} /><p style={{fontfamily:"NunitoSans-Regular"}}>Made recommendations to reduce energy costs by up to 8%</p></li>
               </ul>
             </div>
           </div>

@@ -10,8 +10,12 @@ import Wrench from "../../../assest/Icons/Wrench.png";
 import User from "../../../assest/Icons/User.png";
 import Default from "../../../assest/Icons/Default.png";
 import { margin } from "@mui/system";
+import { useTranslation } from 'react-i18next';//translator
 
-export default function project() {
+
+export default function Project() {
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="project_home" style={{width:'1280px'}}>
       <div className=" text-gray-600" style={{marginTop:'32px', textAlign:'left'}}>
@@ -28,21 +32,24 @@ export default function project() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="project_blue_head uppercase font-[400] text-[20pt] text-[#0087FF] tracking-widest"
                 >
-                  Mannheim, Germany, February 2022
+                  {/* Mannheim, Germany, February 2022 */}
+                  {t('Project_section2_head1')}
                 </h2>
                 <text
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="project_head text-[40pt] text-[#2F2F2F] font-bold "
                 >
-                  Trio Mannheim
+                  {/* Trio Mannheim */}
+                  {t('Project_section2_head2')}
                 </text>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
                   className="project_content"
                 >
-                  Provided digital twin-based analytic services to conduct
+                  {/* Provided digital twin-based analytic services to conduct
                   energy design risk assessment and for informed decision
-                  making.
+                  making. */}
+                  {t('project_section2_content')}
                 </p>
                 <div className="flex mt-6 items-center pb-5 border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -54,7 +61,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Customer group: Building owner/asset management
+                           {t('project_section2_List1')}
+                            {/* Customer group: Building owner/asset management */}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -63,7 +71,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Building type: Commercial, P&C shopping complex
+                            {t('project_section2_List2')}
+                            {/* Building type: Commercial, P&C shopping complex */}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -72,8 +81,9 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="text-[16px] font-[400]"
                           >
-                            System Information: Centralized HVAC system
-                            installed
+                           {t('project_section2_List3')}
+                            {/* System Information: Centralized HVAC system
+                            installed */}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -82,7 +92,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="text-[16px] font [400]"
                           >
-                            Services: Digital twin set-up, energy demand assessment
+                            {t('project_section2_List4')}
+                            {/* Services: Digital twin set-up, energy demand assessment */}
 
                           </p>
                         </li>
@@ -94,31 +105,24 @@ export default function project() {
                       <div className="flex text-gray-600 body-font">
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                            style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
+                            className="title-font font-bold sm:text-2xl text-3xl text-[#2F2F2F]"
                           >
-                            12,000 sqm
+                            12,000 m²
                           </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
+                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section2_number1')}</p>
                         </div>
-                        <div className="project_nums_center" style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
+                        
+                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                            style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
+                            className="title-font font-bold sm:text-2xl text-3xl text-[#2F2F2F]"
                           >
-                            ~9,000 €
-                          </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project cost </p>
-                        </div>
-                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                          <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                          >
-                            ~8,000 sqm
+                            ~8,000 m²
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed w-full">
-                            Building area under assessment
+                            {/* Area under assessment */}
+                            {t('project_section2_number2')}
                           </p>
                         </div>
                         {/* <div className="p-4 sm:w-1/3 w-1/2">
@@ -149,21 +153,21 @@ export default function project() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="project_blue_head uppercase text-[#0087FF]"
                 >
-                  Berlin, germany, March 2022
+                  {/* Berlin, germany, March 2022 */}
+                  {t('Project_section3_head1')}
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="project_head text-[#2F2F2F] font-bold"
                 >
-                  Grüne Aue
+                  {t('Project_section3_head2')}
                 </h1>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
                   className="project_content"
                 >
-                  Our digital twin-based analytics services provided onsite
-                  energy generation potential assessment along with optimal PV
-                  system layout.
+                  {/* Our digital twin-based analytics services provided onsite energy generation potential assessment along with optimal PV system layout.  */}
+                  {t('project_section3_content')}
                 </p>
                 <div className="flex mt-6 items-center pb-5 border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -175,7 +179,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Customer group: Utility & energy system provider{" "}
+                            {/* Customer group: Utility & energy system provider{" "} */}
+                            {t('project_section3_List1')}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -184,7 +189,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Building type: Residential
+                            {/* Building type: Residential */}
+                            {t('project_section3_List2')}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -193,7 +199,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Heating system: CHP in combination with heat pump
+                            {/* Heating system: CHP in combination with heat pump */}
+                            {t('project_section3_List3')}
                           </p>{" "}
                         </li>
                         <li className="flex space-x-5">
@@ -202,8 +209,9 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Services: Digital twin set-up, PV potential
-                            assessment{" "}
+                            {/* Services: Digital twin set-up, PV potential
+                            assessment{" "} */}
+                            {t('project_section3_List4')}
                           </p>
                         </li>
                       </ul>
@@ -214,30 +222,19 @@ export default function project() {
                       <div className="flex text-gray-600 body-font project_nums -m-4">
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
-                            15,000 sqm
+                            15,000 m²
                           </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
+                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section3_number1')}</p>
                         </div>
-                        <div className="project_nums_center" style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
+                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                          >
-                            ~6,000 €
-                          </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project cost </p>
-                        </div>
-                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                          <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
                             116 Units
                           </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Homes</p>
+                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section3_number2')}</p>
                         </div>
                         {/* <div className="p-4 sm:w-1/3 w-1/2">
                   <h2 className="title-font font-medium sm:text-2xl text-3xl text-gray-900">
@@ -268,21 +265,19 @@ export default function project() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="project_blue_head uppercase text-[#0087FF]"
                 >
-                  Blomberg, Germany, April 2022
+                  {t('Project_section4_head1')}
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="project_head text-[#2F2F2F] font-bold"
                 >
-                  Pheonix Contact
+                  {t('Project_section4_head2')}
                 </h1>
                 <p
-                  style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
-                  className="project_content"
+                 style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
+                 className="project_content"
                 >
-                  Leaftech provided digital twin-based analytics and control
-                  services to enhance the shading automation system to maximise
-                  efficiency and comfort.
+                  {t('project_section4_content')}
                 </p>
                 <div className="flex mt-6 items-center pb-5  border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -295,8 +290,9 @@ export default function project() {
                             className="project_icon_text"
                           >
                             {" "}
-                            Customer group: Building automation/smart home
-                            provider{" "}
+                            {/* Customer group: Building automation/smart home
+                            provider{" "} */}
+                            {t('project_section4_List1')}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -306,8 +302,9 @@ export default function project() {
                             className="project_icon_text"
                           >
                             {" "}
-                            Building type: Commercial, Phoenix Contact office
-                            facility{" "}
+                            {/* Building type: Commercial, Phoenix Contact office
+                            facility{" "} */}
+                            {t('project_section4_List2')}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -316,8 +313,9 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Automation system: Emalytics and automated
-                            individual shading control
+                            {/* Automation system: Emalytics and automated
+                            individual shading control */}
+                            {t('project_section4_List3')}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -326,7 +324,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Service: Control data for shading automation
+                            {/* Service: Control data for shading automation */}
+                            {t('project_section4_List4')}
                           </p>
                         </li>
                       </ul>
@@ -337,36 +336,21 @@ export default function project() {
                 <div className="flex text-gray-600 body-font project_nums">
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'124px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
-                            -1,965 sqm
+                           ~1,965 m²
                           </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
+                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section4_number1')}</p>
                         </div>
-                        <div className='project_nums_center' style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'194px'}} >
+                        <div  style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
-                            style={{ fontFamily: "Exo2-Bold" }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                          >
-                            3,000 €
-                          </h2>
-                          <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">
-                            Project Cost Phase One (2019)
-                          </p>
-                        </div>
-                        <div  style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                          <h2
-                            style={{
-                              fontFamily: "Exo2-Bold",
-                              width: "207px",
-                            }}
-                            className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                           >
                            169
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">
-                          Devices in control
+                          {/* Devices in control */}
+                          {t('project_section4_number2')}
                           </p>
                         </div>
                         {/* <div className="p-4 sm:w-1/3 w-1/2">
@@ -397,21 +381,22 @@ export default function project() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="project_blue_head uppercase text-[#0087FF]"
                 >
-                  Minden, Germany, June 2021
+                  {/* Minden, Germany, June 2021 */}
+                  {t('Project_section5_head1')}
                 </h2>
                 <h1
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="project_head text-[#2F2F2F] font-bold "
                 >
-                  Wago Headquarters
+                  {/* Wago Headquarters */}
+                  {t('Project_section5_head2')}
                 </h1>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", marginTop: '24px', marginBottom: '40px' }}
                   className="project_content"
                 >
-                  Leaftech provided digital twin-based analytics and control
-                  services to enhance the shading automation system to maximise
-                  efficiency and comfort.
+                 {/* Leaftech provided Digital Twin-based analytics and control services to enhance the shading automation system to maximise efficiency and comfort.  */}
+                 {t('project_section5_content')}
                 </p>
                 <div className="flex mt-6 items-center pb-5  border-gray-100 mb-5">
                   <div className="flex  items-center">
@@ -423,7 +408,8 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Customer group: Building automation
+                            {/* Customer group: Building automation */}
+                            {t('project_section5_List1')}
                           </p>{" "}
                         </li>
                         <li className="flex space-x-5">
@@ -432,8 +418,9 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Building type: Commercial, Wago's own office
-                            facility
+                            {/* Building type: Commercial, Wago's own office
+                            facility */}
+                            {t('project_section5_List2')}
                           </p>{" "}
                         </li>
                         <li className="flex space-x-5">
@@ -446,8 +433,9 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            System information: Wago’s automation system with
-                            individual shading control
+                            {/* System information: Wago’s automation system with
+                            individual shading control */}
+                            {t('project_section5_List3')}
                           </p>
                         </li>
                         <li className="flex space-x-5">
@@ -460,8 +448,9 @@ export default function project() {
                             style={{ fontFamily: "NunitoSans-Regular" }}
                             className="project_icon_text"
                           >
-                            Services: Digital twin set-up, data for shading
-                            automation and sensor placement{" "}
+                            {/* Services: Digital twin set-up, data for shading
+                            automation and sensor placement{" "} */}
+                            {t('project_section5_List4')}
                           </p>
                         </li>
                       </ul>
@@ -472,33 +461,19 @@ export default function project() {
                     <div className="flex text-gray-600 body-font">
                       <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
                         <h2
-                          style={{ fontFamily: "Exo2-Regular" }}
-                          className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                          style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                         >
-                          3,800 sqm
+                          3,800 m²
                         </h2>
-                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Total project area</p>
+                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section5_number1')}</p>
                       </div>
-                      <div className="project_nums_center" style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'171px', margin:'0px 48px 0px 94px'}}>
+                      <div style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                         <h2
-                          style={{ fontFamily: "Exo2-Regular" }}
-                          className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
-                        >
-                          2,970 €
-                        </h2>
-                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">
-                          Total project cost <br />
-                          (without wind assessment){" "}
-                        </p>
-                      </div>
-                      <div style={{display:'flex', flexDirection: 'column', textAlign:'left'}}>
-                        <h2
-                          style={{ fontFamily: "Exo2-Regular" }}
-                          className="title-font font-bold sm:text-2xl text-3xl text-gray-900"
+                          style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                         >
                           250 +
                         </h2>
-                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">Devices controlled</p>
+                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section5_number2')}</p>
                       </div>
                     </div>
                   </div>

@@ -103,58 +103,58 @@ export default function VerticalLinearStepper() {
 
    <div className="allsteper">
     <div className="stepLabel">
-         <div class="step completed">
-      {/* <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+         <div className="step completed">
+      {/* <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
-        <div class="line"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
+        <div className="line"></div>
       </div>
-      <div class="v-stepper">
-        <div class="circle"></div>
+      <div className="v-stepper">
+        <div className="circle"></div>
       </div> */}
     
-     <div class="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
-          <div class="circle" style={{marginLeft: '0px'}}></div>
+     <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <div className="circle" style={{marginLeft: '0px'}}></div>
           Control data for smart shading
-          <div class="line" style={{marginLeft: '8px'}}></div>
+          <div className="line" style={{marginLeft: '8px'}}></div>
         </a>
-        <a class="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-          <div class="circle"></div>
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div className="circle"></div>
           Cloud-based forecast for smart shading
-          <div class="line"></div>
+          <div className="line"></div>
         </a>
-        <a class="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-          <div class="circle"></div>
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+          <div className="circle"></div>
           Energy balance forecast
         </a>
        </div>
     </div>
    </div>
 
-    <div class="tab-content" id="tabContent" style={{width:'70%'}}>
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div className="tab-content" id="tabContent" style={{width:'70%'}}>
+      <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Control data for smart shading</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Control data for smart shading</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           Extend the capabilities of your local weather sensor to ensure secure, efficient, and comfortable control of your shading systems. To guarantee the highest level of system quality, we provide shading and wind correction factors for each window along with recommendations for weather sensor placement.  This solution is based on the VDI 3813/3814 and EN15232 standards.          </p>
           <img className="stepperService_desc_img" src={control} alt="control" />
         </div>
       </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Cloud-based forecast for smart shading</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Cloud-based forecast for smart shading</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           The digital twin continuously calculates the current and future shadowing, the irradiation angle, and the local wind profiles, and correlates them with local weather forecast data to provide forecasted control data related to the optimal shading positions and slat angles for each shading device. The data for each shading device is then integrated via Restful API for maximum thermal and visual comfort as well as energy efficiency.   </p>     </div>
           <img className="stepperService_desc_img" src={cloud} alt="cloud" />
       </div>
-      <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "Exo2-Regular" }}><b>Energy balance forecase</b></h1>
-          <p className="stepper_desc_p" style={{ fontWeight: '400'}}>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Energy balance forecase</b></h1>
+          <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           The Digital Twin forecasts the energy balance for each room, area, and the entire building after considering the influences from systems and people. This forecasted data is integrated into the HVAC control system to provide maximum efficiency while maintaining comfort at all times. </p>
           <img className="stepperService_desc_img" src={energy} alt="energy" />
         </div>

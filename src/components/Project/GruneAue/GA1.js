@@ -7,7 +7,7 @@ export default function gran() {
         <div  className="mx-auto flex  md:flex-row flex-col ">
           <div  style={{textAlign:'left', marginTop:'72px'}}>
             <h1
-              style={{ fontFamily: "Exo2-Regular" }}
+              style={{ fontFamily: "Exo2-SemiBold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
               Project showcase
@@ -24,7 +24,7 @@ export default function gran() {
             >
               Berlin, Germany, March 2022
             </p>
-            <p style={{fontFamily:"NunitoSans-Regular"}} class="mb-8 leading-relaxed single_project_content">
+            <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content">
               Leaftech successfully completed this project for Vattenfall, a
               leading heating and energy service provider. Grüne Aue is a
               cluster of residential units, serviced by Vattenfall. Leaftech
@@ -32,31 +32,24 @@ export default function gran() {
               potential to supply energy to heat pumps used for heating and hot
               water systems.
             </p>
-            <div class="flex ">
-              <div class="text-gray-900 body-font">
-                <div class="  ">
-                  <div class="flex flex-wrap space-x-14 ">
-                    <div class="sm:2/3 space-y-2">
+            <div className="flex ">
+              <div className="text-gray-900 body-font">
+                <div className="  ">
+                  <div className="flex flex-wrap space-x-14 " style={{marginTop:'40px'}}>
+                    <div className="sm:2/3 space-y-2">
                       <h2
-                        style={{ fontFamily: "Exo2-Bold"  }} className="title-font font-bold  text-[40px]"
+                        style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]"
                       >
-                        15,000 sqm
+                        15,000 m²
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
                       Total project area
                       </p>
                     </div>
-                    <div class="sm:2/3 space-y-2">
+                 
+                    <div className="sm:2/3 space-y-2" >
                       <h2
-                        style={{ fontFamily: "Exo2-Bold"  }} className="title-font font-bold  text-[40px]"
-                      >
-                        ~6,000 €
-                      </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">Total project cost</p>
-                    </div>
-                    <div class="sm:2/3 space-y-2">
-                      <h2
-                        style={{ fontFamily: "Exo2-Bold"  }} className="title-font font-bold  text-[40px]"
+                        style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]"
                       >
                         116 units
                       </h2>
@@ -64,19 +57,19 @@ export default function gran() {
                       Homes
                       </p>
                     </div>
-                    {/* <div class="p-4 sm:w-1/4 w-5">
-                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                    {/* <div className="p-4 sm:w-1/4 w-5">
+                    <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
                       4
                     </h2>
-                    <p class="leading-relaxed">Products</p>
+                    <p className="leading-relaxed">Products</p>
                   </div> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+          {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
     </div> */}
         </div>
       </div>

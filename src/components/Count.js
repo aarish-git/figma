@@ -6,15 +6,15 @@ import { useTranslation } from 'react-i18next';
 export default function Count() {
   const { t, i18n } = useTranslation();//translator
   return (
-          <div class="row " >
-            <div class="row " style={{marginTop: '120px'}}>
+          <div className="row " >
+            <div className="row " style={{marginTop: '120px'}}>
 
             {/* <div className="home_first_row">  */}
               <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-              <div class="home_first_content text-left w-full mb-20">
+              <div className="home_first_content text-left w-full mb-20">
                 <h1
-                  style={{ fontFamily: "Exo2-Bold", fontSize: '56px', lineHeight: '70px'}}
-                  class="home_first_content_head"
+                  style={{ fontFamily: "Exo2-Bold", fontSize: '58px', lineHeight: '70px'}}
+                  className="home_first_content_head"
                 >
                   {/* Make data-driven decisions. */}
                   
@@ -24,42 +24,42 @@ export default function Count() {
                 </h1>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", width:'664px', height:'96px' }}
-                  class="home_first_subcontent"
+                  className="home_first_subcontent"
                 >
                   {t('Home_content')}
                 </p>
                 
 
-                <div style={{margin:'80px 40px 0px 0px'}} class=" text-left mx-auto">
-                  <div class="flex flex-col text-left w-full ">
+                <div style={{margin:'80px 40px 0px 0px'}} className=" text-left mx-auto">
+                  <div className="flex flex-col text-left w-full ">
                     <h1
                       style={{ fontFamily: "Exo2-Bold" }}
-                      class="home_first_subhead"
+                      className="home_first_subhead"
                     >
                       {t('Home_number_head')}
                     </h1>
                   </div>
-                  <div class="flex flex-wrap  text-left ">
+                  <div className="flex flex-wrap  text-left ">
                     <div style={{width:'140px', height:'74px'}}>
-                      <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
+                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
                         15
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
                     </div>
-                    <div style={{width:'189px', height:'74px', margin: '0px 64px 0px 56px'}}>
-                      <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
+                    <div style={{width:'189px', height:'74px', margin: '0px 76px 0px 76px'}}>
+                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
                         500,000 +
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text2')}</p>
                     </div>
                     <div style={{width:'130px', height:'74px'}}>
-                      <h2 style={{fontFamily:"Exo2-Bold"}} class="home_first_nums">
+                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
                         1,500 +
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
                     </div>
                   </div>
-                  <div class="relative top-10" style={{marginTop:'64px'}}>
+                  <div className="relative top-10" style={{marginTop:'64px'}}>
                     <Link style={{all:"unset"}} to="/contact">
                     <button
                       style={{
@@ -75,7 +75,7 @@ export default function Count() {
                         fontSize: "20px",
                         
                       }}
-                      class="bg-[#0087FF] p-[10px] text-[white] rounded-[20px] w-[160px] shadow-[0_4px_4px_rgba(0,135,255,0.25)]"
+                      className="bg-[#0087FF] p-[10px] text-[white] rounded-[20px] w-[160px] shadow-[0_4px_4px_rgba(0,135,255,0.25)]"
                     >
                       Contact Us
                     </button>
@@ -86,9 +86,9 @@ export default function Count() {
                 
               </div>
               
-              <div class="col-lg-9 col-md-6 col-sm-12 col-xs-12 home_first_image" style={{zIndex: '-12'}}>
+              <div className="col-lg-9 col-md-6 col-sm-12 col-xs-12 home_first_image" style={{zIndex: '-12'}}>
               <img
-                class="object-cover object-center rounded"  
+                className="object-cover object-center rounded"  
                 // style={{marginLeft: '35px', marginTop: '-30px'}}
                 alt="hero"
                 src={image}

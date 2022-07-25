@@ -15,7 +15,7 @@ export default function p4() {
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="rounded-lg overflow-hidden" style={{marginLeft: '-10px', width:'58%', height:'484px'}}>
             <img
-              class="object-cover object-center rounded h-full w-full"
+              className="object-cover object-center rounded h-full w-full"
               alt="feature"
               src={pImage}
             />
@@ -31,15 +31,15 @@ export default function p4() {
               cloud-based shading control set-points were delivered to maximise
               the benefits.
             </p>
-            <div class="flex flex-col space-y-5" style={{width:'550px'}}>
+            <div className="flex flex-col space-y-5" style={{width:'550px'}}>
             <p style={{fontFamily:"Exo2-Regular", marginBottom:'0px'}} className="results_benefits_subhead">Client's benefits:</p>
-              <ul class="space-y-7">
-                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={Battery} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings were more than 7% </p></li>
-                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={CircleHalf} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort </p></li>
-                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={Line} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Data for predictive maintenance of shading systems</p></li>
-                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={HardDrive} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Avoidance of expensive and strenuous hardware sensor-based systems</p> </li>
-                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Unlocked potential to improve building certification label</p> </li>
-                <li class="flex space-x-5"><img class="h-fit project_icons" alt="Project" src ={LineSegments} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
+              <ul className="space-y-7">
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={Battery} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Energy cost savings were more than 7% </p></li>
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={CircleHalf} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Highest level of thermal as well as visual comfort </p></li>
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={Line} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Data for predictive maintenance of shading systems</p></li>
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={HardDrive} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Avoidance of expensive and strenuous hardware sensor-based systems</p> </li>
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Unlocked potential to improve building certification label</p> </li>
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LineSegments} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>Technology as per VDI and EN standards </p></li>
               </ul>
             </div>
           </div>

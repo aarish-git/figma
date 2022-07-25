@@ -24,103 +24,132 @@ import CloudSun from "../assest/Icons/CloudSun.png";
 import PresentationChart from "../assest/Icons/PresentationChart.png";
 import CheckSquare from "../assest/Icons/CheckSquare.png";
 import Home from "../assest/Icons/Home.png";
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; //translator
 
 export default function First() {
+  const { t, i18n } = useTranslation(); //translator
+
   return (
-    <div className='row'>
-      <div className='row' id="foot_building"  style={{marginTop: '120px', zIndex: '0'}}>
+    <div className="row">
+      <div
+        className="row"
+        id="foot_building"
+        style={{ marginTop: "120px", zIndex: "0" }}
+      >
         <h1
-          style={{ fontFamily: "Exo2-Regular", fontSize: '58px', lineHeight: '70px', marginBottom:'40px'}}
+          style={{
+            fontFamily: "Exo2-Bold",
+            fontSize: "58px",
+            lineHeight: "70px",
+            marginBottom: "64px",
+          }}
           className="title-font sm:text-5xl font-bold text-3xl  font-medium "
         >
-          What's in it for you?
+          {/* What's in it for you? */}
+          {t("Home_section4_head")}
         </h1>
+      </div>
+
+      <div className="row">
+        <div className="col-lg-6">
+          <img className="for_bld_owners_img1" alt="hero" src={img1} />
         </div>
-  
-        <div className='row'>
-        <div className='col-lg-6'>
-            <img
-              className="for_bld_owners_img1"
-              alt="hero"
-              src={img1}
-            />
-        </div>
-        <div className='col-lg-6'>
-          <div style={{textAlign:'left'}} id="sec1" className="for_bld_owners_content_box">
+        <div className="col-lg-6">
+          <div
+            style={{ textAlign: "left" }}
+            id="sec1"
+            className="for_bld_owners_content_box"
+          >
             <span
               style={{ fontFamily: "Exo2-Regular" }}
               className="for_bld_owners_content_caption uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
             >
-              For Building Owners
+              {/* For Building Owners */}
+              {t("Home_section4_subhead1")}
             </span>
             <h1
-              style={{ fontFamily: "Exo2-Bold"}}
+              style={{ fontFamily: "Exo2-Bold" }}
               className="for_bld_owners_content_head title-font font-bold"
             >
-              Increase the value of your building <br />
-              assets
+              {t("Home_section4_subhead2_a")} <br />
+              {t("Home_section4_subhead2_b")}
               {/* <br className="hidden lg:inline-block" />
               readymade gluten */}
             </h1>
-            <p style={{ fontFamily: "NunitoSans-Regular" }}
+            <p
+              style={{ fontFamily: "NunitoSans-Regular", color: "#2F2F2F" }}
               className="for_bld_owners_content mb-8 text-[20px] leading-relaxed"
             >
-              Achieve your financial, ecological, and operational objectives
-              with us. Together, let's create a digital twin-building model to
-              identify investment opportunities, create a decarbonization
-              roadmap to improve your assets' performance, and with it all,
-              boost your ESG score..
+              {t("Home_section4_content")}
+              {/* Achieve your financial, ecological, and operational objectives with us. Together, let's create a digital twin-building model to identify investment opportunities, create a decarbonization roadmap to improve your assets' performance, and with it all, boost your ESG score. */}
             </p>
 
             <div className="flex">
-              <ul className="space-y-5" >
+              <ul className="space-y-5">
                 <li className="flex space-x-3">
-                  <img className="h-fit	"  alt="home" src={Home  } />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Digitise your real estate</p>
+                  <img className="h-fit	" alt="home" src={Home} />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {t("Home_section4_contentList1")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit	"  alt="ChartLine" src={ChartLine} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Benchmarking for investment decisions </p>
+                  <img className="h-fit	" alt="ChartLine" src={ChartLine} />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {" "}
+                    {t("Home_section4_contentList2")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Tree" src={Tree} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Decarbonize your building</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {t("Home_section4_contentList3")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit	"  alt="Girl in a Medal" src={Medal} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Improve your ESG rating</p>
+                  <img className="h-fit	" alt="Girl in a Medal" src={Medal} />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {t("Home_section4_contentList4")}
+                  </p>
                 </li>
               </ul>
             </div>
-            <div className="flex mt-5" style={{justifyContent:'center'}} >
-            <a style={{all:"unset"}} href="/project">
-              <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-              Take a look at our success stories
-              </button>
+            <div className="flex mt-5" style={{ justifyContent: "center" }}>
+              <a style={{ all: "unset" }} href="/project">
+                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                  {t("Home_section4_button1")}
+                </button>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-
-      <div className="row" id="foot_Assest" style={{marginTop: '120px', textAlign:'left'}}>
-          <div className='col-lg-6'>
-          <div style={{textAlign:'left'}} className="for_bld_owners_content_box2">
+      <div
+        className="row"
+        id="foot_Assest"
+        style={{ marginTop: "120px", textAlign: "left" }}
+      >
+        <div className="col-lg-6">
+          <div
+            style={{ textAlign: "left" }}
+            className="for_bld_owners_content_box2"
+          >
             <span
               style={{ fontFamily: "Exo2-Regular" }}
               className="for_bld_owners_content_caption uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
             >
-              FOR PROPERTY & ASSET MANAGERS
+              {t("Home_section5_subhead1")}
             </span>
             <h1
-              style={{ fontFamily: "Exo2-Bold"}}
+              style={{ fontFamily: "Exo2-Bold" }}
               className="for_bld_owners_content_head title-font font-bold"
             >
-              Informed decision-making for
+              {/* Informed decision-making for */}
+              {t("Home_section5_subhead2_a")}
               <br />
-              smooth building operations
+              {/* smooth building operations */}
+              {t("Home_section5_subhead2_b")}
               {/* <br />
               readymade gluten */}
             </h1>
@@ -128,244 +157,325 @@ export default function First() {
               style={{ fontFamily: "NunitoSans-Regular" }}
               className="for_bld_owners_content mb-8 text-[20px] leading-relaxed"
             >
-              Reduce your building's operating costs and risks, and meet the
+              {/* Reduce your building's operating costs and risks, and meet the
               contractual obligations with your tenants, with Leaftech's
               solution. Use our accurate data to make the appropriate decisions
-              for smooth and hassle-free everyday operations.
+              for smooth and hassle-free everyday operations. */}
+              {t("Home_section5_content")}
             </p>
             <div className="flex">
-              <ul className="space-y-5" >
+              <ul className="space-y-5">
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="ChartBar" src={ChartBar} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Make decisions using analytic data</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Make decisions using analytic data */}
+                    {t("Home_section5_contentList1")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Coins" src={Coins} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Reduce building operating expenses</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Reduce building operating expenses */}
+                    {t("Home_section5_contentList2")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="BatteryCharging" src={BatteryCharging} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Mitigate energy design risks</p>
+                  <img
+                    className="h-fit"
+                    alt="BatteryCharging"
+                    src={BatteryCharging}
+                  />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Mitigate energy design risks */}
+                    {t("Home_section5_contentList3")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Medal" src={Medal} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Data for energy performance certificates </p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Data for energy performance certificates{" "} */}
+                    {t("Home_section5_contentList4")}
+                  </p>
                 </li>
               </ul>
             </div>
-            <div className="flex mt-5" style={{justifyContent:'center'}}  >
-              <a style={{all:"unset"}} href="/mannhiem">
-              <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-                Take a look at our Trio Mannheim project
-              </button>
+            <div className="flex mt-5" style={{ justifyContent: "center" }}>
+              <a style={{ all: "unset" }} href="/mannhiem">
+                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                  {/* Take a look at our Trio Mannheim project */}
+                  {t("Home_section5_button1")}
+                </button>
               </a>
             </div>
           </div>
+        </div>
+
+        <div className="col-lg-6">
+          <img className="for_bld_owners_img2" alt="hero" src={img2} />
+        </div>
       </div>
 
-          <div className='col-lg-6'>
-            <img
-              className="for_bld_owners_img2"
-              alt="hero"
-              src={img2}
-            />
-          </div>
-      </div>
-
-
-      <div className="row" id="foot_Building" style={{marginTop: '120px', textAlign:'left'}}>
-       
-          <div className="col-lg-6">
-            <img
-              className="for_bld_owners_img3"
-              alt="hero"
-              src={img3}
-            />
-          </div>
-          <div className="col-lg-6">
-          <div style={{textAlign:'left'}}  className="for_bld_owners_content_box4">
+      <div
+        className="row"
+        id="foot_Building"
+        style={{ marginTop: "120px", textAlign: "left" }}
+      >
+        <div className="col-lg-6">
+          <img className="for_bld_owners_img3" alt="hero" src={img3} />
+        </div>
+        <div className="col-lg-6">
+          <div
+            style={{ textAlign: "left" }}
+            className="for_bld_owners_content_box4"
+          >
             <span
               style={{ fontFamily: "Exo2-Regular" }}
               className="uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
             >
-              For Building automation providers
+              {/* For Building automation providers */}
+              {t("Home_section6_subhead1")}
             </span>
             <h1
-              style={{ fontFamily: "Exo2-Bold"}}
+              style={{ fontFamily: "Exo2-Bold" }}
               className="for_bld_owners_content_head title-font font-bold"
             >
-              Provide data-assisted building <br />
-              automation systems
+              {t("Home_section6_subhead2_a")} <br />
+              {t("Home_section6_subhead2_b")}
             </h1>
             <p
               style={{ fontFamily: "NunitoSans-Regular" }}
               className="for_bld_owners_content leading-relaxed"
             >
-              With Leaftech's Digital Twin, you minimise the need for expensive
+              {/* With Leaftech's Digital Twin, you minimise the need for expensive
               and difficult-to-maintain frahling sensors. Stay ahead of the
               weather with our data services and use them to improve the
               accuracy and efficiency of your building automation and smart home
-              systems
+              systems. */}
+              {t("Home_section6_content")}
             </p>
             <div className="flex">
-              <ul className="space-y-5" >
+              <ul className="space-y-5">
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Default" src={Default} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Digital Twin based system design and layout</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Digital Twin based system design and layout */}
+                    
+                    {t("Home_section6_contentList1")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="CircleHalf" src={CircleHalf} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Best-in-class data services for shading automation </p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Best-in-class data services for shading automation{" "} */}
+                    {t("Home_section6_contentList2")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="ClockAfternoon" src={ClockAfternoon} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Data-driven predictive maintenance</p>
+                  <img
+                    className="h-fit"
+                    alt="ClockAfternoon"
+                    src={ClockAfternoon}
+                  />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Data-driven predictive maintenance */}
+                    {t("Home_section6_contentList3")}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Armchair" src={Armchair} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Anticipate upcoming operating conditions of each room </p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Anticipate upcoming operating conditions of each room{" "} */}
+                    {t("Home_section6_contentList4")}
+                  </p>
                 </li>
               </ul>
             </div>
-            <div className="flex mt-5" style={{justifyContent:'center'}} >
-            <a style={{all:"unset"}} href="/wago">
-              <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-              Know more about our proactive control project
-              </button>
+            <div className="flex mt-5" style={{ justifyContent: "center" }}>
+              <a style={{ all: "unset" }} href="/wago">
+                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                  {/* Know more about our proactive control project */}
+                  {t("Home_section6_button1")}
+                </button>
               </a>
             </div>
           </div>
-          </div>
-          
+        </div>
       </div>
 
-
-      <div className="row" id="foot_Energy" style={{marginTop: '120px', textAlign:'left'}}>
-       
-      <div className="col-lg-6" >
-          <div style={{textAlign:'left'}}  className="for_bld_owners_content_box5" >
-          <span
+      <div
+        className="row"
+        id="foot_Energy"
+        style={{ marginTop: "120px", textAlign: "left" }}
+      >
+        <div className="col-lg-6">
+          <div
+            style={{ textAlign: "left" }}
+            className="for_bld_owners_content_box5"
+          >
+            <span
               style={{ fontFamily: "Exo2-Regular" }}
               className="for_bld_owners_content_caption uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
             >
-              For Utility providers
+              {/* For Utility providers */}
+              {t('Home_section7_subhead1')}
             </span>
             <h1
-              style={{ fontFamily: "Exo2-Bold"}}
+              style={{ fontFamily: "Exo2-Bold" }}
               className="for_bld_owners_content_head title-font font-bold"
             >
-              Provide tailor-made building <br /> energy systems
+              {/* Provide tailor-made building */}
+              {t('Home_section7_subhead2_a')}
+               <br /> 
+               {t('Home_section7_subhead2_b')}
             </h1>
             <p
               style={{ fontFamily: "NunitoSans-Regular" }}
               className="for_bld_owners_content leading-relaxed"
             >
-              With the digital twin, you get insights and solutions for planning
+              {/* With the Digital Twin, you get insights and solutions for planning
               and optimising energy systems that enable your end customers to
               achieve a high level of sustainability. Leverage our solution to
               offer value-added services to your customers through detailed
               analyses. Strengthen the relationship with your end customers and
-              create the basis for a long-term and trusting relationship
+              create the basis for a long-term and trusting relationship. */}
+              {t('Home_section7_content')}
             </p>
             <div className="flex">
-              <ul className="space-y-5" >
+              <ul className="space-y-5">
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="ChartLine" src={ChartLine} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Offer analytic insights to your clients</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Offer analytic insights to your clients */}
+                    {t('Home_section7_contentList1')}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Thermometer" src={Thermometer} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Assess local cooling and heating load </p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Assess local cooling and heating load{" "} */}
+                    {t('Home_section7_contentList2')}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Recycle" src={Recycle} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Assess onsite renewable energy generation potential</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Assess onsite renewable energy generation potential */}
+                    {t('Home_section7_contentList3')}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="BatteryCharging" src={BatteryCharging} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Design integrated low-impact energy systems </p>
+                  <img
+                    className="h-fit"
+                    alt="BatteryCharging"
+                    src={BatteryCharging}
+                  />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Design integrated low-impact energy systems{" "} */}
+                    {t('Home_section7_contentList4')}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="CloudSun" src={CloudSun} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Forecast data to increase building’s energy efficiency</p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Forecast data to increase building’s energy efficiency */}
+                    {t('Home_section7_contentList5')}
+                  </p>
                 </li>
               </ul>
             </div>
-            <div className="flex mt-5" style={{justifyContent:'center'}} >
-            <a style={{all:"unset"}} href="/granue">
-              <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-              Take a look at our project with Vattenfall
-              </button>
+            <div className="flex mt-5" style={{ justifyContent: "center" }}>
+              <a style={{ all: "unset" }} href="/granue">
+                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                  {/* Take a look at our project with Vattenfall */}
+                  {t('Home_section7_button1')}
+                </button>
               </a>
             </div>
           </div>
-          </div>
+        </div>
 
-          <div className="col-lg-6">
-            <img
-              className="for_bld_owners_img4"
-              alt="hero"
-              src={img4}
-            />
-          </div>
+        <div className="col-lg-6">
+          <img className="for_bld_owners_img4" alt="hero" src={img4} />
+        </div>
       </div>
 
-
-      <div className="row"  id="foot_Architects"  style={{marginTop: '120px', textAlign:'left'}}>
-       
-          <div className="col-lg-6">
-            <img
-              className="for_bld_owners_img5"
-              alt="hero"
-              src={img5}
-            />
-          </div>
-          <div className="col-lg-6 ">
-          <div style={{textAlign:'left'}}  className="for_bld_owners_content_box6" >
-          <span
+      <div
+        className="row"
+        id="foot_Architects"
+        style={{ marginTop: "120px", textAlign: "left" }}
+      >
+        <div className="col-lg-6">
+          <img className="for_bld_owners_img5" alt="hero" src={img5} />
+        </div>
+        <div className="col-lg-6 ">
+          <div
+            style={{ textAlign: "left" }}
+            className="for_bld_owners_content_box6"
+          >
+            <span
               style={{ fontFamily: "Exo2-Regular" }}
               className="for_bld_owners_content_caption uppercase text-[20px] text-[#0087FF] mb-2 tracking-widest"
             >
-              For Architects & Designers
+              {/* For Architects & Designers */}
+              {t('Home_section8_subhead1')}
             </span>
             <h1
-              style={{ fontFamily: "Exo2-Bold", paddingRight:'0px'}}
+              style={{ fontFamily: "Exo2-Bold", paddingRight: "0px" }}
               className="for_bld_owners_content_head title-font font-bold"
             >
-              Comprehensive & detailed energy assessment for your building
-              design
+              {/* Comprehensive & detailed energy assessment for your building
+              design */}
+              {t('Home_section8_subhead2_a')}
             </h1>
             <p
-              style={{ fontFamily: "NunitoSans-Regular", paddingRight:'45px' }}
+              style={{ fontFamily: "NunitoSans-Regular", paddingRight: "45px" }}
               className="for_bld_owners_content leading-relaxed"
             >
-              Make the most of our digital twin for your design’s full-energy assessments. With Leaftech, no more worries about losing data or switching between multiple tools, as we take care of all your assessments holistically.
+              {/* Make the most of our digital twin for your design’s full-energy
+              assessments. With Leaftech, no more worries about losing data or
+              switching between multiple tools, as we take care of all your
+              assessments holistically. */}
+              {t('Home_section8_content')}
             </p>
             <div className="flex">
-              <ul className="space-y-5" >
+              <ul className="space-y-5">
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Thermometer" src={Thermometer} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Building site analysis, climate analysis </p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Building site analysis, climate analysis{" "} */}
+                    {t('Home_section8_contentList1')}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="CheckSquare" src={CheckSquare} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Verify your design assumptions </p>
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Verify your design assumptions{" "} */}
+                    {t('Home_section8_contentList2')}
+                  </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="PresentationChart" src={PresentationChart} />
-                  <p style={{ fontFamily: "NunitoSans-Regular" }}>Data for Energy design </p>
+                  <img
+                    className="h-fit"
+                    alt="PresentationChart"
+                    src={PresentationChart}
+                  />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Data for Energy design{" "} */}
+                    {t('Home_section8_contentList3')}
+                  </p>
                 </li>
               </ul>
             </div>
-            <div className="flex mt-5" style={{justifyContent:'center'}} >
-            <a style={{all:"unset"}} href="/project">
-              <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
-                Our success stories
-              </button>
+            <div className="flex mt-5" style={{ justifyContent: "center" }}>
+              <a style={{ all: "unset" }} href="/project">
+                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                  {/* Our success stories */}
+                  {t('Home_section8_button1')}
+                </button>
               </a>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   );

@@ -6,26 +6,26 @@ import rightArrow from "../../../assest/Icons/ArrowCircleRight.png";
 export default function mann6() {
   return (
     <div>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4 text-center">
-            <div class="p-4 w-1/2 text-left">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4 text-center">
+            <div className="p-4 w-1/2 text-left">
               <a
                 href="/wago"
-                class="flex text-left space-x-4 hover:text-zinc-900"
+                className="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <img alt="leftArrow" src={leftArrow} />
-                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">Wago Headquarters Project</p>
+                <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed underline underline-offset-4">Wago Headquarters Project</p>
               </a>
             </div>
-            <div class="p-4 w-1/2 text-right">
+            <div className="p-4 w-1/2 text-right">
               <a
                 href="/granue"
-                class="flex float-right space-x-4 hover:text-zinc-900"
+                className="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
-                <p style={{fontFamily:"NunitoSans-Regular"}} class="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
+                <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
                 <img alt="rightArrow" src={rightArrow} />
               </a>
             </div>

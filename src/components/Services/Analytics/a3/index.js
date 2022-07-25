@@ -15,53 +15,55 @@ export default function index() {
             <h1 style={{fontFamily:"Exo2-Bold"}} className="service_3d_head">
               Leaftech's high quality analytic services empower you to:
             </h1>
-            <ul class="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
-              <li class="flex space-x-5">
-                <img class="h-fit project_icons" alt="service" src={Slider} />
-                <p class="project_icon_text">
+            <ul className="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
+              <li className="flex space-x-5">
+                <img className="h-fit project_icons" alt="service" src={Slider} />
+                <p className="project_icon_text">
                   Make informed decisions to design & plan your building
                   project.
                 </p>
               </li>
-              <li class="flex space-x-5">
-                <img class="h-fit project_icons" alt="service" src={ChartPie} />
-                <p class="project_icon_text">
+              <li className="flex space-x-5">
+                <img className="h-fit project_icons" alt="service" src={ChartPie} />
+                <p className="project_icon_text">
                   Select the appropriate modernization measures to improve the
                   building’s efficiency and comfort.
                 </p>
               </li>
-              <li class="flex space-x-5">
-                <img class="h-fit project_icons" alt="service" src={BatteryCharging} />
-                <p class="project_icon_text">
+              <li className="flex space-x-5">
+                <img className="h-fit project_icons" alt="service" src={BatteryCharging} />
+                <p className="project_icon_text">
                   Conduct energy design risk assessment and test different
                   scenarios.
                 </p>
               </li>
-              <li class="flex space-x-5">
-                <img class="h-fit project_icons" alt="service" src={Tree} />
-                <p class="project_icon_text">
+              <li className="flex space-x-5">
+                <img className="h-fit project_icons" alt="service" src={Tree} />
+                <p className="project_icon_text">
                   Design ecologically and economically sustainable energy
                   systems.
                 </p>
               </li>
-              <li class="flex space-x-5">
-                <img class="h-fit project_icons" alt="service" src={GlobeHemisphereEast} />
-                <p class="project_icon_text">
+              <li className="flex space-x-5">
+                <img className="h-fit project_icons" alt="service" src={GlobeHemisphereEast} />
+                <p className="project_icon_text">
                   Meet local or national building codes and standards.
                 </p>
               </li>
             </ul>
-            <div class="flex w-full md:justify-start justify-center items-end">
-              <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-                <button class="shadow-[0_4px_4px_rgba(0,135,255,0.25)] border-solid border-[#2F2F2F] border-1 w-[127px] height-[54px] py-2 rounded-[20px]">
+            <div className="flex w-full md:justify-start justify-center items-end">
+              <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+              <a href="/contact" >
+                <button style={{fontFamily: "NunitoSans-Regular", fontSize:'20px'}} className="shadow-[0_4px_4px_rgba(0,135,255,0.25)] border-solid border-[#2F2F2F] border-1 w-[127px] height-[54px] py-2 rounded-[20px]">
                   Contact
                 </button>
+                </a>
               </div>
             </div>
           </div>
           <div style={{width:'661px', height:'451px'}}>
             <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src={Mac}
             />
@@ -70,28 +72,28 @@ export default function index() {
       </div>
 
       {/* tablet */}
-      <div class="service3_t text-gray-600 body-font ">
-        <div class="container px-3 py-5 mx-auto items-center bg-gray-100">
-          <div class=" items-center text-left">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 capitalize">
+      <div className="service3_t text-gray-600 body-font ">
+        <div className="container px-3 py-5 mx-auto items-center bg-gray-100">
+          <div className=" items-center text-left">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 capitalize">
               what can you do with this model?
             </h1>
-            <p class="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
               Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid.
             </p>
-            <p class="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
               Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid.
             </p>
-            <p class="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
               Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid.
             </p>
-            <p class="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
               Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid.
             </p>
 
-            <div class="flex w-full md:justify-start justify-center text-center items-end">
-              <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-                <button class=" bg-gray-700 rounded border border-slate-900 text-white focus:ring-2 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out capitalize">
+            <div className="flex w-full md:justify-start justify-center text-center items-end">
+              <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+                <button className=" bg-gray-700 rounded border border-slate-900 text-white focus:ring-2 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out capitalize">
                   contact page
                 </button>
               </div>

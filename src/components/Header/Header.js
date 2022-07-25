@@ -39,7 +39,7 @@ export default function Header({ history }) {
     <div>
       <div className="arun_container">
         <div className="arun_logo">
-          <h1 style={{ fontFamily: "Exo2-Regular" }} class="uppercase font-bold tracking-wide">
+          <h1 style={{ fontFamily: "Exo2-Regular" }} className="uppercase font-bold tracking-wide">
             LeafTech
           </h1>
         </div>
@@ -104,9 +104,9 @@ export default function Header({ history }) {
                 <NavLink to="/Project">Project</NavLink>{" "}
               </li>
               <li>
-                <div class="dropdown">
-                  <button class="dropbtn">Services</button>
-                  <div class="dropdown-content">
+                <div className="dropdown">
+                  <button className="dropbtn">Services</button>
+                  <div className="dropdown-content">
                     <NavLink to="/service">Services 1</NavLink>
                     <NavLink to="/service">Services 2</NavLink>
                     <NavLink to="/service">Services 3</NavLink>

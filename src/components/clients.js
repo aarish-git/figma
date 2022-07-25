@@ -7,15 +7,19 @@ import C5 from "../assest/Images/home/Clients/Sommer_logo1.png";
 import C6 from "../assest/Images/home/Clients/IBB-Logo1.png";
 import C7 from "../assest/Images/home/Clients/DENEFF_Logo1.png";
 import C8 from "../assest/Images/home/Clients/mujinzolabs.png";
+import { useTranslation } from 'react-i18next';//translator
 
 
-export default function clients() {
+export default function Clients() {
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div style={{margin: '184px 175px 200px 175px'}}>
     
           <div className="flex flex-col text-center w-full" style={{marginBottom:'28px'}}>
-            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 md:text-[24px] font-bold text-center text-[#2b2b3a] uppercase">
-              We are supported by
+            <h1 className="weSupport" style={{ fontFamily: "Exo2-Bold"}}>
+              
+              {t('Home_section10_head')}
             </h1>
           </div>
           <div className=" grid grid-cols-1 gap-y-10 gap-x-4 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
@@ -43,7 +47,7 @@ export default function clients() {
           </div>
           <br />
           <br />
-          <div style={{marginTop:'40px'}} className=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
+          <div style={{marginTop:'0px'}} className=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
              <a href="https://telekomhilft.telekom.de/t5/TechBoost/ct-p/techboost" >
               <img className=" h-fit" alt="h-fit" src={C4} />

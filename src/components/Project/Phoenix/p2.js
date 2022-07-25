@@ -8,7 +8,7 @@ export default function p2() {
         <div className="single_project_desc_image rounded-lg overflow-hidden" style={{height:'727px'}}>
             <img
               alt="feature"
-              class="object-cover object-center h-full w-full"
+              className="object-cover object-center h-full w-full"
               src={pImage}
             />
           </div>
@@ -34,21 +34,21 @@ export default function p2() {
                   maximise its employee’s comfort and to improve the system's
                   efficiency.{" "}
                 </p>
-                <p class="text-[20px] font-[400] ">We delivered the project in two phases. </p>
+                <p className="text-[20px] font-[400] ">We delivered the project in two phases. </p>
               </div>
             </div>
-            <div class="flex flex-col mb-10 lg:items-start items-center" style={{marginTop:'40px' }}>
-              {/* <div class="w-full h-12 inline-flex items-center justify-left "></div> */}
-              <div class="flex-grow">
+            <div className="flex flex-col mb-10 lg:items-start items-center" style={{marginTop:'40px' }}>
+              {/* <div className="w-full h-12 inline-flex items-center justify-left "></div> */}
+              <div className="flex-grow">
                 <h2
                   style={{ fontFamily: "Exo2-Regular", marginBottom:'8px' }}
-                  class="results_benefits_subhead"
+                  className="results_benefits_subhead"
                 >
                   Phase one
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", marginBottom:'32px' }}
-                  class="leading-relaxed text-[20px] font-[400] mb-5"
+                  className="leading-relaxed text-[20px] font-[400] mb-5"
                 >
                   We provided a shading correction factor for each window for
                   the whole year. This shading correction factor was used along
@@ -57,20 +57,20 @@ export default function p2() {
                 </p>
                 <h2
                  style={{ fontFamily: "Exo2-Regular", marginBottom:'8px' }}
-                 class="results_benefits_subhead"
+                 className="results_benefits_subhead"
                 >
                   Phase two
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
-                  class="leading-relaxed text-[20px] font-[400]"
+                  className="leading-relaxed text-[20px] font-[400]"
                 >
                   We are enriching the Digital Twin from phase one with the
                   weather forecast data to continuously provide control advice
                   to the shading devices to maximise thermal as well as visual
                   comfort.
                 </p>
-                {/* <ul class="my-3 leading-9">
+                {/* <ul className="my-3 leading-9">
                   <li>High solar heat gain from the large glass façade</li>
                   <li>A non-uniform airflow in the office area </li>
                   <li>
@@ -79,7 +79,7 @@ export default function p2() {
                 </ul> */}
               </div>
             </div>
-            {/* <div class="flex flex-col mb-10 lg:items-start items-center">
+            {/* <div className="flex flex-col mb-10 lg:items-start items-center">
               <p>
                 Addressing these challenges was key to ensuring that the
                 contractual obligation with the tenant to maintain a comfortable
