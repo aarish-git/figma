@@ -4,8 +4,12 @@ import Slider from "../../../assest/Icons/Sliders.png"
 import Stamp from "../../../assest/Icons/Stamp.png"
 import Coins from "../../../assest/Icons/Coins.png"
 import Armchair from "../../../assest/Icons/Armchair.png"
+import { useTranslation } from 'react-i18next';//translator
 
 export default function mann4() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
       <div className="text-gray-600 body-font">
@@ -19,22 +23,18 @@ export default function mann4() {
           </div>
           <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center">
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
-              Results & benefits
+            {t('mann_project_results_benefits_head')}
             </h1>
             <p style={{fontFamily: "NunitoSans-Regular"}} className="results_benefits_content">
-              We delivered the digital twin model of the building along with
-              detailed data sets and visuals to showcase the cooling load of
-              each room for the whole year. We presented three scenarios to
-              provide optimization recommendations for improving the building's
-              overall efficiency.
+            {t('mann_project_results_benefits_content')}
             </p>
             <div className="flex flex-col space-y-5">
-              <p style={{fontFamily:"Exo2-Regular"}} className="results_benefits_subhead">Client's benefits:</p>
+              <p style={{fontFamily:"Exo2-Regular"}} className="results_benefits_subhead">{t('mann_project_results_benefits_subhead')}</p>
               <ul className="space-y-5">
-                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>Enabled the client to make informed decisions. </p></li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Stamp" src={Stamp} /><p style={{fontfamily:"NunitoSans-Regular"}}>Complied with legal and contractual obligations</p></li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Coins" src={Coins} /><p style={{fontfamily:"NunitoSans-Regular"}}>Made recommendations to reduce energy costs by up to 8%</p></li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Armchair" src={Armchair} /><p style={{fontfamily:"NunitoSans-Regular"}}>Provided comfortable indoor conditions for tenants</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text1')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Stamp" src={Stamp} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text2')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Coins" src={Coins} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text3')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Armchair" src={Armchair} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text4')}</p></li>
               </ul>
             </div>
           </div>

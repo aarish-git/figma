@@ -2,7 +2,7 @@
     "Home_text":"Home",
     "Project_text": "Project",
       "Services_text":"Services",
-      "Contact_text":"Services",
+      "Contact_text":"Contact",
       "Home_head1":"Make data-driven decisions.",
       "Home_head2":"Optimize building performance.",
       "Home_content":"With Leaftech's building Digital Twin, you can access highly accurate data to understand your building's performance, make informed decisions on upgrades, and work on the required building optimization measures.",
@@ -142,7 +142,187 @@
       "project_section5_number2":"Devices in control",
 
       "project_section6_text1":"GET IN TOUCH TO LEARN MORE ABOUT OUR PROJECT",
-      "project_section6_text2":"PORTFOLIO AND THE SOLUTIONS WE’VE DELIVERED."
+      "project_section6_text2":"PORTFOLIO AND THE SOLUTIONS WE’VE DELIVERED.",
 
+
+
+
+
+      "phoenix_project_blue_head" : "Project showcase",
+      "phoenix_project_main_head" : "Phoenix Contact",
+      "phoenix_project_location_head" : "Blomberg Germany, April 2022",
+      "phoenix_project_content" : "Leaftech serviced the office facility of Phoenix Contact, a building automation/smart home provider. This building uses Phoenix Contact's in-house building automation system called 'emalytics and automated shading control'. We provided Digital Twin-based analytics and control recommendations to enhance the shading system for maximum efficiency and comfort.",
+      "phoenix_project_numtext1" : "Total project area",
+      "phoenix_project_numtext2" : "Devices in control",
+
+      "phoenix_project_desc_head" : "Project brief",
+      "phoenix_project_desc_p1" : "Phoenix Contact's new office building, called 17a, is located on their campus in Blomberg and it consists of three floors with large-scale open office areas. This office architecture made it challenging to maintain the thermal and visual comfort of all its employees. ",
+      "phoenix_project_desc_p2" : "Leaftech was tasked to provide shading control data to maximise its employee’s comfort and to improve the system's efficiency. ",
+      "phoenix_project_desc_p3" : "We delivered the project in two phases. ",
+      "phoenix_project_desc_subhead1" : "Phase one",
+      "phoenix_project_desc_subp1" : "We provided a shading correction factor for each window for the whole year. This shading correction factor was used along with the rooftop weather station to control the individual shading devices. ",
+      "phoenix_project_desc_head2" : "Phase two",
+      "phoenix_project_desc_subp2" : "We are enriching the Digital Twin from phase one with the weather forecast data to continuously provide control advice to the shading devices to maximise thermal as well as visual comfort.",
+
+      "phoenix_project_oursolution" : "Our solution",
+      "phoenix_project_oursolution_desc" : "Our solution included the following steps.",
+
+      "phoenix_project_stephead1" : "Digital twin setup ",
+      "phoenix_project_stepdesc1" : "Using building plans and geospatial data, we created a highly detailed 3D model of the target building (LOD 4) and merged it with models of surrounding buildings, vegetation, and terrain.",
+      "phoenix_project_stephead2" : "Weather data integration & solar analysis ",
+      "phoenix_project_stepdesc2" : "We delivered the project in two phases. ",
+      "phoenix_project_stephead3" : "Shading correction data for each window",
+      "phoenix_project_stepdesc3" : "We delivered the project in two phases. ",
+      "phoenix_project_stephead4" : "Cloud-based control data",
+      "phoenix_project_stepdesc4" : "We delivered the project in two phases. ",
+
+      "phoenix_project_results_benefits_head" : "Results & benefits",
+      "phoenix_project_results_benefits_content" : "We delivered a detailed shading assessment of each window. This data enhanced the existing shading automation system with highly accurate shading correction data files. Furthermore, in phase two,  cloud-based shading control set-points were delivered to maximise the benefits. ",
+      "phoenix_project_results_benefits_subhead" : "Client's benefits:",
+      "phoenix_project_icon_text1" : "Energy cost savings were more than 7%",
+      "phoenix_project_icon_text2" : "Highest level of thermal as well as visual comfort ",
+      "phoenix_project_icon_text3" : "Data for predictive maintenance of shading systems",
+      "phoenix_project_icon_text4" : "Avoidance of expensive and strenuous hardware sensor-based systems ",
+      "phoenix_project_icon_text5" : "Unlocked potential to improve building certification label ",
+      "phoenix_project_icon_text6" : "Technology as per VDI and EN standards",
+
+      "phoenix_project_discover_how" : "Discover how we can assist in your project.",
+      "phoenix_project_discover_how_contact" : "Contact us",
+
+
+
+
+
+
+
+
+
+
+      "wago_project_blue_head" : "Project showcase",
+      "wago_project_main_head" : "Wago Headquarters",
+      "wago_project_location_head" : "Minden, Germany, June 2021",
+      "wago_project_content" : "Wago is a building automation and technical system provider. Its office facility in Minden, called V1, was constructed in the early 2000s. For this building, we provided digital twin-based control services along with our integration partner Lübbing.",
+      "wago_project_numtext1" : "Total project area",
+      "wago_project_numtext2" : "Devices controlled",
+
+      "wago_project_desc_head" : "Project brief",
+      "wago_project_desc_p1" : "The headquarters hosts many offices, including the board of Wago. The building structure has a complex contour, shading architecture, and surroundings which make it challenging for the shading automation system to ensure thermal and visual comfort for the building users. To assist the Wago automation system with the individual shading control, Leaftech provided data services to improve efficiency and comfort.",
+      "wago_project_desc_subhead1" : "We provided:",
+      "wago_project_desc_subp1" : "Recommendations for weather sensor placement ",
+      "wago_project_desc_subp2" : "Shading correction data for shading & sun protection control ",
+
+      "wago_project_oursolution" : "Our solution",
+      "wago_project_oursolution_desc" : "Below is our detailed solution for Wago. ",
+
+
+      "wago_project_stephead1" : "Digital twin setup ",
+      "wago_project_stepdesc1" : "We received the 3D model of the target building from the customer and created and merged it with the surroundings using satellite images and scans, and Leaftech’s in-house tool.",
+      "wago_project_stephead2" : "Created the target surfaces & virtual sensor placement",
+      "wago_project_stepdesc2" : "We delivered the project in two phases. ",
+      "wago_project_stephead3" : "Solar analysis",
+      "wago_project_stepdesc3" : "We delivered the project in two phases. ",
+      "wago_project_stephead4" : "Wind flow analysis",
+      "wago_project_stepdesc4" : "We delivered the project in two phases. ",
+      "wago_project_stephead5" : "Location for sensor placement",
+      "wago_project_stepdesc5" : "We delivered the project in two phases. ",
+      "wago_project_stephead6" : "Shading control data for each window",
+      "wago_project_stepdesc6" : "We delivered the project in two phases. ",
+
+      "wago_project_results_benefits_head" : "Results & benefits",
+      "wago_project_results_benefits_content" : "We delivered the digital twin of the building along with the recommendations for optimal locations for solar as well as wind sensors on the rooftop. The shading correction data file for each window was provided to the integration partner Lübbing. ",
+      "wago_project_results_benefits_subhead" : "Client's benefits:",
+      "wago_project_icon_text1" : "Energy cost savings of more than 7%",
+      "wago_project_icon_text2" : "Highest level of thermal as well as visual comfort ",
+      "wago_project_icon_text3" : "Hassle-free facility management ",
+      "wago_project_icon_text4" : "Technology as per VDI and EN standards ",
+
+      "wago_project_discover_how" : "Discover how we can assist in your project.",
+      "wago_project_discover_how_contact" : "Contact us",
+
+
+      
+
+
+      "grune_project_blue_head" : "Project showcase",
+      "grune_project_main_head" : "Grüne Aue",
+      "grune_project_location_head" : "Berlin, Germany, March 2022",
+      "grune_project_content" : "Leaftech successfully completed this project for Vattenfall, a leading heating and energy service provider. Grüne Aue is a cluster of residential units, serviced by Vattenfall. Leaftech delivered analytics services to assess the onsite solar energy potential to supply energy to heat pumps used for heating and hot water systems.",
+      "grune_project_numtext1" : "Total project area",
+      "grune_project_numtext2" : "Homes",
+
+      "grune_project_desc_head" : "Project brief",
+      "grune_project_desc_p1" : "The heating energy to the residential units is mainly provided by a central, gas-powered CHP in combination with a heat pump. ",
+      "grune_project_desc_p2" : "To ensure a transition towards a sustainable and secure source of energy supply for the buildings, the client wanted to assess the onsite local energy generation potential to further add to the supply of heat pumps, and to cover the heating as well as the warm water demands.",
+      "grune_project_desc_subhead1" : "Leaftech was tasked to provide:",
+      "grune_project_desc_subp1" : "Photovoltaic potential assessment ",
+      "grune_project_desc_subp2" : "Data for optimal PV system layout",
+
+      "grune_project_oursolution" : "Our solution",
+      "grune_project_oursolution_desc" : "Here's our step-by-step approach to help this client assess the building's onsite energy potential.",
+
+
+      "grune_project_stephead1" : "Digital twin setup ",
+      "grune_project_stepdesc1" : "Using the LIDAR raw scans and images, Leaftech created a 3D model of all buildings with the rooftops accurately shaped. This model also included the neighbouring buildings and vegetation.",
+      "grune_project_stephead2" : "Solar radiation analysis",
+      "grune_project_stepdesc2" : "We delivered the project in two phases. ",
+      "grune_project_stephead3" : "Photovoltaic yield assessment",
+      "grune_project_stepdesc3" : "We delivered the project in two phases. ",
+      "grune_project_stephead4" : "Energy system design",
+      "grune_project_stepdesc4" : "We delivered the project in two phases. ",
+
+      "grune_project_results_benefits_head" : "Results & benefits",
+      "grune_project_results_benefits_content" : "We delivered the digital twin model of each housing unit. The result of each building rooftop was available in the form of data files and visuals. A detailed report on PV feasibility study, daily and annual PV yield, and optimal layout and configuration were presented. ",
+      "grune_project_results_benefits_subhead" : "Client's benefits:",
+      "grune_project_icon_text1" : "Fast and accurate results ",
+      "grune_project_icon_text2" : "Data-based decision making ",
+      "grune_project_icon_text3" : "Maximising profits and improving payback time ",
+
+      "grune_project_discover_how" : "Discover how we can assist in your project.",
+      "grune_project_discover_how_contact" : "Contact us",
+
+
+      
+
+
+      "mann_project_blue_head" : "Project showcase",
+      "mann_project_main_head" : "Trio Mannheim",
+      "mann_project_location_head" : "Mannheim, Germany, Febuary 2022",
+      "mann_project_content" : "Horn Grundbesitz owns and manages the Trio Mannheim facility. Modernized in 2021, the building was used as a P&C shopping complex and was later renovated to include office space. Leaftech conducted an energy design risk assessment for this client to help them make appropriate decisions for smooth operations.",
+      "mann_project_numtext1" : "Total building surface area",
+      "mann_project_numtext2" : "Area under assessment",
+
+      "mann_project_desc_head" : "Project brief",
+      "mann_project_desc_p1" : "Our client renovated and repurposed the top 3 floors of a 6-floor building. The top 3 floors were converted into an office space.",
+      "mann_project_desc_p2" : "The building architecture and the proposed modernization posed a risk of the building interiors heating up unevenly. Also, there was uncertainty about the existing HVAC system's capacity to supply the required cooling load. Addressing these challenges was key to ensuring that the contractual obligation with the tenant to maintain a comfortable temperature was fulfilled. ",
+      "mann_project_desc_subhead1" : "Leaftech was tasked to solve THE following issues:",
+      "mann_project_desc_subp1" : "High solar heat gain from the large glass façade",
+      "mann_project_desc_subp2" : "A non-uniform airflow in the office area",
+      "mann_project_desc_subp3" : "Changes in the energy balance due to the inner courtyard",
+
+      "mann_project_oursolution" : "Our solution",
+      "mann_project_oursolution_desc" : "Here's our step-by-step approach to address the above challenges. ",
+
+
+      "mann_project_stephead1" : "Digital twin setup",
+      "mann_project_stepdesc1" : "Created a detailed 3D model of the target building along with the surroundings, using building plans, satellite images, lidar scans, and CityGML data. ",
+      "mann_project_stephead2" : "Building & weather data integration",
+      "mann_project_stepdesc2" : "We delivered the project in two phases. ",
+      "mann_project_stephead3" : "Energy balance calculation",
+      "mann_project_stepdesc3" : "We delivered the project in two phases. ",
+      "mann_project_stephead4" : "Cooling load assessment",
+      "mann_project_stepdesc4" : "We delivered the project in two phases. ",
+      "mann_project_stephead5" : "Optimization recommendations",
+      "mann_project_stepdesc5" : "We delivered the project in two phases. ",
+
+      "mann_project_results_benefits_head" : "Results & benefits",
+      "mann_project_results_benefits_content" : "We delivered the digital twin model of the building along with detailed data sets and visuals to showcase the cooling load of each room for the whole year. We presented three scenarios to provide optimization recommendations for improving the building's overall efficiency. ",
+      "mann_project_results_benefits_subhead" : "Client's benefits::",
+      "mann_project_icon_text1" : "Enabled the client to make informed decisions",
+      "mann_project_icon_text2" : "Complied with legal and contractual obligations",
+      "mann_project_icon_text3" : "Made recommendations to reduce energy costs by up to 8%",
+      "mann_project_icon_text4" : "Provided comfortable indoor conditions for tenants",
+
+      "mann_project_discover_how" : "Discover how we can assist in your project.",
+      "mann_project_discover_how_contact" : "Contact us"
 
 }

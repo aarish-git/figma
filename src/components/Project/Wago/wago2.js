@@ -2,8 +2,12 @@ import React from "react";
 import wago from "../../../assest/Images/project/project4.jpg";
 import Sun from "../../../assest/Icons/Sun.png"
 import Circle from "../../../assest/Icons/CircleHalf.png"
+import { useTranslation } from 'react-i18next';//translator
 
 export default function wago2() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="row" style={{marginTop:'120px'}}>
     <div className="text-gray-600 body-font">
@@ -23,16 +27,10 @@ export default function wago2() {
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="single_project_desc_head"
                 >
-                  Project brief
+                   {t('wago_project_desc_head')}
                 </h2>
                 <p className="mann_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
-                  The building V1 hosts many offices, including the board of
-                  Wago. The building structure has a complex contour, shading
-                  architecture, and surroundings which make it challenging for
-                  the shading automation system to ensure thermal and visual
-                  comfort for the building users. To assist the Wago automation
-                  system with the individual shading control, Leaftech provided
-                  data services to improve efficiency and comfort.
+                  {t('wago_project_desc_p1')}
                 </p>
               </div>
             </div>
@@ -43,12 +41,13 @@ export default function wago2() {
                  style={{ fontFamily: "Exo2-Regular", width: '664px', marginTop:'40px' }}
                  className="results_benefits_subhead"
                 >
-                  We provided:
+                  {t('wago_project_desc_subhead1')}
                 </h2>
                 <ul className="my-3 space-y-4">
-                  <li className="flex space-x-5"><img className="h-fit project_icons" alt="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Recommendations for weather sensor placement</p></li>
+                  <li className="flex space-x-5"><img className="h-fit project_icons" alt="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text"> {t('wago_project_desc_subp1')}</p></li>
                   <li className="flex space-x-5"><img className="h-fit project_icons" alt="Circle" src={Circle} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">
-                    Shading correction data for shading/sun protection control{" "}</p>
+                    {t('wago_project_desc_subp2')}
+                    </p>
                   </li>
                   {/* <li>
                     Changes in the energy balance due to the inner courtyard..

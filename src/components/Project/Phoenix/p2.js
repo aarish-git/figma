@@ -1,6 +1,10 @@
 import React from "react";
 import pImage from "../../../assest/Images/project/p1.jpg" 
+import { useTranslation } from 'react-i18next';//translator
+
 export default function p2() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
   return (
     <div className="row" style={{marginTop:'120px'}}>
     <div className="text-gray-600 body-font">
@@ -20,21 +24,15 @@ export default function p2() {
                   style={{ fontFamily: "Exo2-Bold", marginTop:'8px' }}
                   className="single_project_desc_head"
                 >
-                  Project brief
+                  {t('phoenix_project_desc_head')}
                 </h2>
                 <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
-                  Phoenix Contact's new office building called 17a is located on
-                  their campus in Bloomberg and it consists of three floors with
-                  large-scale open office areas. This office architecture made
-                  it challenging to maintain the thermal and visual comfort of
-                  all its employees.
+                {t('phoenix_project_desc_p1')}
                 </p>
                 <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
-                  Leaftech was tasked to provide shading control data to
-                  maximise its employee’s comfort and to improve the system's
-                  efficiency.{" "}
+                {t('phoenix_project_desc_p2')}
                 </p>
-                <p className="text-[20px] font-[400] ">We delivered the project in two phases. </p>
+                <p className="text-[20px] font-[400] ">{t('phoenix_project_desc_p3')}</p>
               </div>
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center" style={{marginTop:'40px' }}>
@@ -44,31 +42,25 @@ export default function p2() {
                   style={{ fontFamily: "Exo2-Regular", marginBottom:'8px' }}
                   className="results_benefits_subhead"
                 >
-                  Phase one
+                  {t('phoenix_project_desc_subhead1')}
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", marginBottom:'32px' }}
                   className="leading-relaxed text-[20px] font-[400] mb-5"
                 >
-                  We provided a shading correction factor for each window for
-                  the whole year. This shading correction factor was used along
-                  with the rooftop weather station to control the individual
-                  shading devices.
+                 {t('phoenix_project_desc_subp1')}
                 </p>
                 <h2
                  style={{ fontFamily: "Exo2-Regular", marginBottom:'8px' }}
                  className="results_benefits_subhead"
                 >
-                  Phase two
+                 {t('phoenix_project_desc_subhead2')}
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
                   className="leading-relaxed text-[20px] font-[400]"
                 >
-                  We are enriching the Digital Twin from phase one with the
-                  weather forecast data to continuously provide control advice
-                  to the shading devices to maximise thermal as well as visual
-                  comfort.
+                 {t('phoenix_project_desc_subp2')}
                 </p>
                 {/* <ul className="my-3 leading-9">
                   <li>High solar heat gain from the large glass façade</li>
