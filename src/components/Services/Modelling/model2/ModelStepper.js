@@ -23,9 +23,10 @@ import Typography from '@mui/material/Typography';
 // import solar from "../../../../assest/Images/services/Analytics/step.jpg";
 // import solar from "../../../../assest/Images/services/Analytics/step.jpg";
 
-import target from "../../../../assest/Images/services/Model/model1.gif";
+import target from "../../../../assest/Images/services/Model/model1st.gif";
 import context from "../../../../assest/Images/services/Model/model2.jpg";
 import access from "../../../../assest/Images/services/Model/model3.gif";
+import { useTranslation } from 'react-i18next';//translator
 
 
 const steps = [
@@ -84,6 +85,8 @@ const steps = [
 ];
 
 export default function VerticalLinearStepper() {
+  const { t, i18n } = useTranslation();//translator
+
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -106,17 +109,17 @@ export default function VerticalLinearStepper() {
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
         <div className="circle" style={{marginLeft: '0px'}}></div>
-          The target building
+        {t('model_service_stephead1')}
           <div className="line" style={{marginLeft: '8px'}}></div>
         </a>
         <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
         <div className="circle"></div>
-          Site context
+        {t('model_service_stephead2')}
           <div className="line"></div>
         </a>
         <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
         <div className="circle"></div>
-          Access your 3D models
+        {t('model_service_stephead3')}
          </a>
     </div>
    </div>
@@ -125,25 +128,28 @@ export default function VerticalLinearStepper() {
     <div className="tab-content" id="tabContent" style={{width:'70%'}}>
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>The target building</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead1')}</b></h1>
           <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
-          Access your accurate digital models through our digital twin platform. We build these 3D models using advanced tools, and they come with different Levels of Detail (LoD 2 to LoD4) based on your specific requirements. We use 2D plans, pictures, satellite scans, etc. to build your model.          </p>
+          {t('model_service_stepdesc1')}
+          </p>
           <img className="stepperService_desc_img" src={target} alt="target" />
         </div>
       </div>
       <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Site context</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead2')}</b></h1>
           <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
-          Gain a better understanding of your building and its interaction with the immediate environment using neighbourhood context site-specific models. This includes the neighbouring infrastructures like buildings, bridges, vegetation, and terrain. We use the latest geo datasets, digital surface models, LIDAR scans, and terrain models, to gain this contextual site analysis, and integrate them with our in-house software.         </p>
+          {t('model_service_stepdesc2')}
+          </p>
           <img className="stepperService_desc_img" src={context} alt="context" />
         </div>
       </div>
       <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Access your 3D models </b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead3')}</b></h1>
           <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
-          Access your 3D models, interactive building plans, and all related information through our platform, and even export/share this with your relevant stakeholders.  No additional software, licences, or tools are needed when you use Leaftech's platform, as we take care of everything for you.        </p>
+          {t('model_service_stepdesc3')}
+          </p>
           <img className="stepperService_desc_img" src={access} alt="access" />
         </div>
       </div>

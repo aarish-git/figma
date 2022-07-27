@@ -117,7 +117,7 @@ export default function VerticalLinearStepper() {
         <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('phoenix_project_stephead1')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          {t('Project_section2_head1')}
+          {t('phoenix_project_stepdesc1')}
           </p>
           <img className="stepper_desc_img" src={PImage} alt="home" />
         </div>
@@ -126,7 +126,7 @@ export default function VerticalLinearStepper() {
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('phoenix_project_stephead2')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          We used the resulting model to conduct a detailed shading analysis for multiple points on each window. Our algorithm calculated shading conditions and incident angles for each calculation point (virtual sensor*) for the sun position for the entire year. Embedding local TRY weather data, we quantified the annual energy intake for each calculation point.
+          {t('phoenix_project_stepdesc2')}
           </p>
           <img className="stepper_desc_img" src={PImage1} alt="home" />
         </div>
@@ -135,9 +135,7 @@ export default function VerticalLinearStepper() {
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('phoenix_project_stephead3')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-            Next, we calculated the shading progression on each window 
-            for the whole year and converted it into a shading correction data file. 
-            This file was then integrated with the building controller and merged with measurements from the local weather sensor data to provide a time-based shading position. With this, we delivered the phase-one results.
+          {t('phoenix_project_stepdesc3')}
           </p>
         </div>
       </div>
@@ -145,7 +143,7 @@ export default function VerticalLinearStepper() {
          <div className="subcontent">
           <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('phoenix_project_stephead4')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          We are enhancing the digital twin with additional system-specific data. Each calculation point, i.e virtual sensor on the window, is connected to the local weather forecast data. This uses the resulting forecast of solar radiation for each virtual sensor to quantify the expected solar radiation intake and accordingly, determines the best shading position to maximise comfort and efficiency.
+          {t('phoenix_project_stepdesc4')}
           </p>
         </div>
       </div>
