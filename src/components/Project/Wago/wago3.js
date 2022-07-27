@@ -15,6 +15,7 @@ import wimg1 from "../../../assest/Images/project/wago/w1.png"
 import wimg2 from "../../../assest/Images/project/wago/w2.png"
 import wimg3 from "../../../assest/Images/project/wago/w3.png"
 import wimg4 from "../../../assest/Images/project/wago/w4.png"
+import { useTranslation } from 'react-i18next';//translator
 
 
 const steps = [
@@ -56,6 +57,8 @@ const steps = [
 ];
 
 export default function VerticalLinearStepper() {
+  const { t, i18n } = useTranslation();//translator
+
   // const [activeStep, setActiveStep] = React.useState(0);
 
   // const handleNext = () => {
@@ -76,10 +79,10 @@ export default function VerticalLinearStepper() {
         style={{ fontFamily: "Exo2-Bold" }}
         className="single_project_desc_head"
    >
-            Our solution
+            {t('wago_project_oursolution')}
         </h2>
         <p style={{ fontFamily: "NunitoSans-Regular" , margintop: '24px', marginBottom: '40px'}} className="single_project_desc_p">
-          Below is our detailed solution for Wago. 
+        {t('wago_project_oursolution_desc')}
         </p>
         <div className="allsteper">
     <div className="stepLabel">
@@ -110,34 +113,34 @@ export default function VerticalLinearStepper() {
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div className="circle"></div>
-          Digital twin setup
+          {t('wago_project_stephead1')}
           <div className="line"></div>
         </a>
         <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '32px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
           <div style={{display:'flex', alignItems: 'center'}}>
           <div className="circle"></div>
-           Created the target surfaces & virtual sensor placement
+          {t('wago_project_stephead2')}
           </div>
           <div className="line"></div>
         </a>
         <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
           <div className="circle"></div>
-          Solar analysis
+          {t('wago_project_stephead3')}
           <div className="line"></div>
         </a>
         <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
           <div className="circle"></div>
-          Wind flow analysis
+          {t('wago_project_stephead4')}
           <div className="line"></div>
         </a>
         <a className="nav-link" id="build-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#build" role="tab" aria-controls="build" aria-selected="false">
           <div className="circle"></div>
-          Location for sensor placement
+          {t('wago_project_stephead5')}
           <div className="line"></div>
         </a>
         <a className="nav-link" id="wind-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#wind" role="tab" aria-controls="wind" aria-selected="false">
           <div className="circle"></div>
-          Shading control data for each window
+          {t('wago_project_stephead6')}
         </a>
     </div>
     </div>
@@ -146,37 +149,36 @@ export default function VerticalLinearStepper() {
     <div className="tab-content" id="tabContent">
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Digital twin setup</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('wago_project_stephead1')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          We received the 3D model of the target building from the customer and created and merged it with the surroundings using satellite images and scans, and Leaftech’s in-house tool.
+          {t('wago_project_stepdesc1')}
           </p>
           <img className="stepper_desc_img" src={wimg} alt="home" />
         </div>
       </div>
       <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Created the target surfaces & virtual sensor* placement</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('wago_project_stephead2')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          The rooftop and the windows were the target surfaces for sensor placement and shading control assessment respectively. We positioned the virtual sensors, i.e the calculation points on target surfaces, to simulate the influencing factors for every minute.
+          {t('wago_project_stepdesc2')}
           </p>
           <img className="stepper_desc_img" src={wimg2} alt="home" />
         </div>
       </div>
       <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Solar analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('wago_project_stephead3')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Next, we did a detailed solar analysis for each virtual sensor 
-          on the rooftop and the windows. This solar analysis included a solar radiation analysis, annual sunshine hours analysis, and shading analysis for the whole year.
+          {t('wago_project_stepdesc3')}
           </p>
           <img className="stepper_desc_img" src={wimg1} alt="home" />
         </div>
       </div>
       <div className="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Wind flow analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('wago_project_stephead4')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Using the digital twin model and local wind profile, we did a detailed CFD analysis to derive the wind flow pattern, pressure zone, and wakes for each calculation point around the building. 
+          {t('wago_project_stepdesc4')}
           </p>
           <img className="stepper_desc_img" src={wimg4} alt="home" />
 
@@ -184,9 +186,9 @@ export default function VerticalLinearStepper() {
       </div>
       <div className="tab-pane fade" id="build" role="tabpanel" aria-labelledby="build-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Location for sensor placement</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('wago_project_stephead5')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-            Next, we derived the optimal location for rooftop weather sensors to ensure uninterrupted and stable measurements using the results from the solar analysis, wind flow analysis, and the local site-specific requirements
+          {t('wago_project_stepdesc5')}
           </p>
           <img className="stepper_desc_img" src={wimg3} alt="home" />
 
@@ -194,9 +196,9 @@ export default function VerticalLinearStepper() {
       </div>
       <div className="tab-pane fade" id="wind" role="tabpanel" aria-labelledby="wind-tab">
          <div className="subcontent2">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Shading control data for each window</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('wago_project_stephead6')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-            We analysed the shading progression for the whole year and generated a correction factor corresponding to the rooftop sensor measurement for each window. Also, we created a window-specific data file that could be locally deployed by the integration partner.
+          {t('wago_project_stepdesc6')}
           </p>
         </div>
       </div>

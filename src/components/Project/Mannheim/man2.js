@@ -3,8 +3,12 @@ import Trio1 from "../../../assest/Images/project/Trio1.jpg";
 import sun from "../../../assest/Icons/Sun.png"
 import Wind from "../../../assest/Icons/Wind.png"
 import Battery from "../../../assest/Icons/BatteryCharging.png"
+import { useTranslation } from 'react-i18next';//translator
 
 export default function man2() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font">
@@ -24,18 +28,16 @@ export default function man2() {
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="mann_project_desc_head"
                 >
-                  Project brief
+                   {t('mann_project_desc_head')}
                 </h2>
                 <p className="mann_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
-                  Our client renovated and repurposed the top 3 floors of a
-                  6-floor building. <br />
-                  The top 3 floors were converted into an office space.
+                  {t('mann_project_desc_p1')}
                 </p>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular" , marginBottom: '40px'}}
                   className="mann_project_desc_p"
                 >
-                  The building architecture and the proposed modernization posed a risk of the building interiors heating up unevenly. Also, there was uncertainty about the existing HVAC system's capacity to supply the required cooling load. Addressing these challenges was key to ensuring that the contractual obligation with the tenant to maintain a comfortable temperature was fulfilled. 
+                  {t('mann_project_desc_p2')}
                 </p>
               </div>
             </div>
@@ -44,13 +46,13 @@ export default function man2() {
                  style={{ fontFamily: "Exo2-Regular", width: '664px' }}
                  className="results_benefits_subhead"
                 >
-                  Leaftech was tasked to solve THE following issues:
+                   {t('mann_project_desc_subhead1')}
                 </h2>
                 <ul className="space-y-5">
-                  <li className="flex space-x-4"><img className="h-fit project_icons" alt="sun" src={sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">High solar heat gain from the large glass façade</p></li>
-                  <li className="flex space-x-4"><img className="h-fit project_icons" alt="Wind" src={Wind} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">A non-uniform airflow in the office area </p></li>
+                  <li className="flex space-x-4"><img className="h-fit project_icons" alt="sun" src={sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text"> {t('mann_project_desc_subp1')}</p></li>
+                  <li className="flex space-x-4"><img className="h-fit project_icons" alt="Wind" src={Wind} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text"> {t('mann_project_desc_subp2')}</p></li>
                   <li className="flex space-x-4">
-                  <img className="h-fit project_icons" alt="Battery" src={Battery} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Changes in the energy balance due to the inner courtyard..</p>
+                  <img className="h-fit project_icons" alt="Battery" src={Battery} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">{t('mann_project_desc_subp3')}</p>
                   </li>
                 </ul>
               </div>

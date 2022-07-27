@@ -4,8 +4,12 @@ import "./Conindex.css";
 import relaxed from "../../assest/Images/contact/contact1.png";
 import building from "../../assest/Images/contact/contact2.png";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useTranslation } from 'react-i18next';//translator
 
 export default function Index() {
+  const { t, i18n } = useTranslation();//translator
+  console.log(t, 'ttttt')
+
   const [verified, setverified] = useState(false);
 
   function handleContact(value) {
@@ -21,64 +25,62 @@ export default function Index() {
               style={{ fontFamily: "Exo2-Bold" }}
               className="contact_head"
             >
-              Let's accelerate the change together!
+              {t('contact_head')}
             </h1>
             <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed  contact_content">
-              Do you have a building to twin or want to know more about
-              Leaftech? <br />
-              Reach out to us and we will schedule a meeting with you.
+            {t('contact__content')}
             </p>
             <div className="my-5  text-left">
               <div className="space-y-3">
-                <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>Interested in*</p>
+                <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>{t('contact_subhead1')}</p>
                 <div className="space-x-4">
                 <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
-                    Digital Twin Services
+                {t('contact_subhead_buttons_text11')}
                   </button>
                   <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
-                    Further information
+                  {t('contact_subhead_buttons_text12')}
                   </button>
                 </div>
               </div>
               <div className="space-y-3" style={{marginTop:'32px'}}>
-                <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>Which group do you represent?*</p>
+                <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>{t('contact_subhead2')}</p>
                 <div className="space-x-4 space-y-4">
                   <div className="flex space-x-3">
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)]">
-                       Building owners
+                    {t('contact_subhead_buttons_text1')}
                     </button>
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
-                       Asset management
+                    {t('contact_subhead_buttons_text2')}
                     </button>
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
-                      Building automation
+                    {t('contact_subhead_buttons_text3')}
                     </button>
                   </div>
 
                   <div className="flex space-x-3" style={{marginLeft: '0px'}}>
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
-                      Utility providers
+                    {t('contact_subhead_buttons_text4')}
                     </button>
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
-                       Architects
+                    {t('contact_subhead_buttons_text5')}
                     </button>
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
-                      Building designers
+                    {t('contact_subhead_buttons_text6')}
                     </button>
                   </div>
 
                   <div className="flex space-x-3"  style={{marginLeft: '0px'}}>
                    
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
-                      Consultants
+                    {t('contact_subhead_buttons_text7')}
                     </button>
                     
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
-                      Smart home
+                    {t('contact_subhead_buttons_text8')}
                     </button>
 
                     <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
-                      Others
+                    {t('contact_subhead_buttons_text9')}
                     </button>
                   </div>
 
@@ -105,7 +107,7 @@ export default function Index() {
           </div>
           <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0" style={{width: '500px', height:'763px'}}>
             <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'138px'}}>
-              <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>Meeting Language</p>
+              <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>{t('contact_form_meeting')}</p>
               <div style={{display:'flex', alignItems:'center'}}>
                 <input className="contact_form_checkbox" type="checkbox" />
                 <label className="contact_form_lang_font">English</label>
@@ -129,7 +131,7 @@ export default function Index() {
             </div>
             <div className="relative text-left">
               <label for="text" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
-                Job Title*
+              {t('contact_subhead_position')}
               </label>
               <input
                 type="text"
@@ -154,7 +156,7 @@ export default function Index() {
               </div>
               <div className="relative text-left">
                 <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
-                  Company(Optional)
+                {t('contact_subhead_company')}
                 </label>
                 <input
                   type="email"
@@ -182,19 +184,19 @@ export default function Index() {
               </div> */}
             <div className="relative text-left"  style={{ display: 'flex', flexDirection: 'column' }}>
               <label for="text" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
-               Phone
+              {t('contact_subhead_number')}
               </label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="+46"
+                placeholder="+49"
                 className="contact_form_phoneInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
               <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
-                Short Note
+              {t('contact_subhead_note')}
               </label>
               {/* <input
                 type="email"
@@ -208,7 +210,7 @@ export default function Index() {
                 name="w3review"
                 rows="4"
                 cols="50"
-                placeholder="Is there anything we’d need to know before the meeting?"
+                placeholder={t('contact_note_text')}
               />
             </div>
             <div className="flex my-2 space-x-4 text-left">
@@ -219,8 +221,7 @@ export default function Index() {
                 className="contact_form_checkbox bg-white drop-shadow-sm rounded-[2px] w-[26px] h-[26px]  border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
               />
               <p className="text-[12px] contact_form_Iagree">
-                I agree to the Privacy Policy and to receive other
-                communications from Leaftech*
+              {t('contact_note_iagree')}
               </p>
             </div>
             <div className=" flex space-x-4" style={{marginTop:'20px'}}>
@@ -237,7 +238,7 @@ export default function Index() {
                 disabled={!verified}
                 className="contact_form_submitButton"
               >
-                Submit
+                {t('contact_submit_button')}
               </button>
             </div>
           </div>

@@ -3,9 +3,13 @@ import Grananue from "../../../assest/Images/project/GruneAue1.jpg";
 import Sun from "../../../assest/Icons/Sun.png"
 
 import ChartLine from "../../../assest/Icons/ChartLine.png"
+import { useTranslation } from 'react-i18next';//translator
 
 
 export default function GA2() {
+  const { t, i18n } = useTranslation();//translator
+
+
   return (
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font">
@@ -25,19 +29,14 @@ export default function GA2() {
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="single_project_desc_head"
                 >
-                  Project brief
+                   {t('grune_project_desc_head')}
                 </h2>
                 <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
-                  The heating energy to the residential units is mainly provided
-                  by a central, gas-powered CHP in combination with a heat pump.
+                {t('grune_project_desc_p1')}
                 </p>
                 <p  style={{ fontFamily: "NunitoSans-Regular" , marginBottom: '40px'}}
                   className="single_project_desc_p">
-                  To ensure a transition towards a sustainable and secure source
-                  of energy supply for the buildings, the client wanted to
-                  assess the onsite local energy generation potential to further
-                  add to the supply of heat pumps, and to cover the heating as
-                  well as the warm water demands.
+                   {t('grune_project_desc_p2')}
                 </p>
               </div>
             </div>
@@ -48,7 +47,7 @@ export default function GA2() {
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="results_benefits_subhead"
                 >
-                  Leaftech was tasked to provide:
+                   {t('grune_project_desc_subhead1')}
                 </h2>
                 {/* <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
@@ -62,8 +61,8 @@ export default function GA2() {
                 </p> */}
 
                 <ul className="my-3 space-y-5">
-                  <li className="flex space-x-3"><img className="h-fit project_icons"  alt ="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Photovoltaic potential assessment</p> </li>
-                  <li className="flex space-x-3"><img className="h-fit project_icons"  alt ="ChartLine" src={ChartLine} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text">Data for optimal PV system layout.</p> </li>
+                  <li className="flex space-x-3"><img className="h-fit project_icons"  alt ="Sun" src={Sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text"> {t('grune_project_desc_subp1')}</p> </li>
+                  <li className="flex space-x-3"><img className="h-fit project_icons"  alt ="ChartLine" src={ChartLine} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text"> {t('grune_project_desc_subp2')}</p> </li>
                 </ul>
               </div>
             </div>

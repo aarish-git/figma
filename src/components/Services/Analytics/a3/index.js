@@ -6,48 +6,50 @@ import BatteryCharging from "../../../../assest/Icons/BatteryCharging.png";
 import Tree from "../../../../assest/Icons/Tree.png";
 import GlobeHemisphereEast from "../../../../assest/Icons/GlobeHemisphereEast.png";
 import Mac from "../../../../assest/Images/services/Analytics/analytics_laptop.gif"
+import { useTranslation } from 'react-i18next';//translator
+
+
 export default function index() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
     <div className="text-gray-600 body-font">
       <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
         <div className="flex flex-col md:items-start md:text-left items-center"  style={{width:'780px', height:'455px'}}>
             <h1 style={{fontFamily:"Exo2-Bold"}} className="service_3d_head">
-              Leaftech's high quality analytic services empower you to:
+            {t('analytics_service_results_benefits_head')}
             </h1>
             <ul className="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="service" src={Slider} />
                 <p className="project_icon_text">
-                  Make informed decisions to design & plan your building
-                  project.
+                {t('analytics_service_icon_text1')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="service" src={ChartPie} />
                 <p className="project_icon_text">
-                  Select the appropriate modernization measures to improve the
-                  building’s efficiency and comfort.
+                {t('analytics_service_icon_text2')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="service" src={BatteryCharging} />
                 <p className="project_icon_text">
-                  Conduct energy design risk assessment and test different
-                  scenarios.
+                {t('analytics_service_icon_text3')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="service" src={Tree} />
                 <p className="project_icon_text">
-                  Design ecologically and economically sustainable energy
-                  systems.
+                {t('analytics_service_icon_text4')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="service" src={GlobeHemisphereEast} />
                 <p className="project_icon_text">
-                  Meet local or national building codes and standards.
+                {t('analytics_service_icon_text5')}
                 </p>
               </li>
             </ul>
@@ -55,7 +57,7 @@ export default function index() {
               <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
               <a href="/contact" >
                 <button style={{fontFamily: "NunitoSans-Regular", fontSize:'20px'}} className="shadow-[0_4px_4px_rgba(0,135,255,0.25)] border-solid border-[#2F2F2F] border-1 w-[127px] height-[54px] py-2 rounded-[20px]">
-                  Contact
+                {t('model_service_contact')}
                 </button>
                 </a>
               </div>

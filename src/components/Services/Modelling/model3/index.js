@@ -6,44 +6,50 @@ import ArrowSquareIn from "../../../../assest/Icons/ArrowSquareIn.png";
 import Tree from "../../../../assest/Icons/Tree.png";
 import ChartTv from "../../../../assest/Icons/ChartTv.png";
 import Mac from "../../../../assest/Images/services/Model/model3.gif"
+import { useTranslation } from 'react-i18next';//translator
+
 export default function index() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
+
   return (
     <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
     <div className="text-gray-600 body-font">
       <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
         <div className="flex flex-col md:items-start md:text-left items-center"  style={{width:'762px', height:'455px'}}>
             <h1 style={{fontFamily:"Exo2-Bold"}} className="service_3d_head">
-              Our 3D building modelling services <br /> enable you to:
+            {t('model_service_results_benefits_head')}
             </h1>
             <ul className="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="model" src={Cube} />
                 <p className="project_icon_text">
-                Extract geometrical information in 2D and 3D.
+                {t('model_service_icon_text1')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="model" src={Cursor} />
                 <p className="project_icon_text">
-                Get interactive 2D and 3D plans.
+                {t('model_service_icon_text2')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="model" src={ArrowSquareIn} />
                 <p className="project_icon_text">
-                Get the inputs required to better utilise and optimise your real estate.
+                {t('model_service_icon_text3')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="model" src={Tree} />
                 <p className="project_icon_text">
-                Understand your building's surroundings and their impact.
+                {t('model_service_icon_text4')}
                 </p>
               </li>
               <li className="flex space-x-5">
                 <img className="h-fit project_icons" alt="model" src={ChartTv} />
                 <p className="project_icon_text">
-                Use the 3D models to conduct further analysis.
+                {t('model_service_icon_text5')}
                 </p>
               </li>
             </ul>
@@ -51,7 +57,7 @@ export default function index() {
               <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
               <a href="/contact" >
                 <button style={{fontFamily: "NunitoSans-Regular", fontSize:'20px'}} className="shadow-[0_4px_4px_rgba(0,135,255,0.25)] border-solid border-[#2F2F2F] border-1 w-[127px] height-[54px] py-2 rounded-[20px]">
-                  Contact
+                {t('model_service_contact')}
                 </button>
                 </a>
               </div>

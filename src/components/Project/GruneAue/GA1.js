@@ -1,6 +1,12 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';//translator
+
 
 export default function gran() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
+
   return (
     <div className="row">
     <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
@@ -10,27 +16,22 @@ export default function gran() {
               style={{ fontFamily: "Exo2-SemiBold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
-              Project showcase
+              {t('grune_project_blue_head')}
             </h1>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="single_project_main_head"
             >
-              Grüne Aue
+               {t('grune_project_main_head')}
             </h1>
             <p
              style={{ fontFamily: "Exo2-Regular" }}
              className="single_project_location_head text-[#4EA0FD]"
             >
-              Berlin, Germany, March 2022
+              {t('grune_project_location_head')}
             </p>
             <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content">
-              Leaftech successfully completed this project for Vattenfall, a
-              leading heating and energy service provider. Grüne Aue is a
-              cluster of residential units, serviced by Vattenfall. Leaftech
-              delivered analytics services to assess the onsite solar energy
-              potential to supply energy to heat pumps used for heating and hot
-              water systems.
+            {t('grune_project_content')}
             </p>
             <div className="flex ">
               <div className="text-gray-900 body-font">
@@ -43,7 +44,7 @@ export default function gran() {
                         15,000 m²
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
-                      Total project area
+                      {t('grune_project_numtext1')}
                       </p>
                     </div>
                  
@@ -54,7 +55,7 @@ export default function gran() {
                         116 units
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
-                      Homes
+                      {t('grune_project_numtext2')}
                       </p>
                     </div>
                     {/* <div className="p-4 sm:w-1/4 w-5">

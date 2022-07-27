@@ -1,7 +1,11 @@
 import React from "react";
 import "./index.css";
+import { useTranslation } from 'react-i18next';//translator
 
 export default function services1() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="row">
     <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
@@ -11,19 +15,16 @@ export default function services1() {
               style={{ fontFamily: "Exo2-Bold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
-              Control
+              {t('control_service_blue_head')}
               </h1>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="single_project_main_head"
             >
-              Control recommendations <br />
-              to keep you ahead of the weather
+             {t('control_service_main_head')}
             </h1>
             <p className="mb-8 leading-relaxed single_project_content" style={{fontFamily: "NunitoSans-Regular", width:'995px', marginBottom: '64px', marginTop:'92px'}}>
-            Combine our assessment insights with additional data layers like weather forecast data and local sensor data, to <br />
-            generate model-based building control data for improving your building’s energy efficiency and comfort. <br />
-Here's a look at our control services.
+              {t('control_service_content')}
             </p>
             <div>
             <a href="/contact" >
@@ -31,7 +32,7 @@ Here's a look at our control services.
                 style={{ fontFamily: "NunitoSans-Regular", fontSize:'20px' }}
                 className="inline-flex py-2 px-6 rounded-[20px] text-lg text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
               >
-                Contact Us
+                {t('model_service_contact')}
               </button>
               </a>
             </div>

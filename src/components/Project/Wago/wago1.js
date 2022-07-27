@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';//translator
 
 export default function wago1() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t, i18n } = useTranslation();//translator
+
   return (
     <div className="row">
     <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
@@ -10,25 +14,22 @@ export default function wago1() {
               style={{ fontFamily: "Exo2-SemiBold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
-              Project showcase
+             {t('wago_project_blue_head')}
             </h1>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="single_project_main_head "
             >
-              Wago Headquarters
+              {t('wago_project_main_head')}
             </h1>
             <p
               style={{ fontFamily: "Exo2-Regular" }}
               className="single_project_location_head text-[#4EA0FD]"
             >
-              Minden, Germany, June 2021
+             {t('wago_project_location_head')}
             </p>
             <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content">
-              Wago is a building automation and technical system provider. Its
-              office facility in Minden, called V1, was constructed in the early
-              2000s. For this building, we provided digital twin-based control
-              services along with our integration partner Lübbing.
+            {t('wago_project_content')}
             </p>
             <div className="flex ">
                 <div className="text-gray-900 body-font -mb-10">
@@ -39,7 +40,7 @@ export default function wago1() {
                         3,800 m²
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
-                        Total project area
+                      {t('wago_project_numtext1')}
                       </p>
                     </div>
                  
@@ -50,7 +51,7 @@ export default function wago1() {
                         250 +
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
-                        Devices controlled
+                      {t('wago_project_numtext2')}
                       </p>
                     </div>
                   </div>

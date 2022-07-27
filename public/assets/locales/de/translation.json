@@ -142,6 +142,300 @@
       "project_section5_number2":"Gesteuerte Geräte",
       
       "project_section6_text1":"Kontaktieren Sie uns, um mehr über unser Projektportfolio",
-      "project_section6_text2":"und die von uns gelieferten Lösungen zu erfahren."
+      "project_section6_text2":"und die von uns gelieferten Lösungen zu erfahren.",
+
+
+
+
+      "phoenix_project_blue_head" : "Projektbeispiele",
+      "phoenix_project_main_head" : "Phoenix Contact",
+      "phoenix_project_location_head" : "Blomberg, Deutschland, April 2022",
+      "phoenix_project_content" : "Phoenix Contact, ein Anbieter für Gebäudeautomation und Smart Home, nutzt das hauseigene Gebäudeautomationssystem namens 'Emalytics und automatische Sonnenschutzsteuerung' im eigenen Bürogebäude. Wir lieferten auf dem digitalen Zwilling basierende Analysen und Steuerdaten zur Verbesserung des Sonnenschutzsystems für maximale Effizienz und Komfort.",
+      "phoenix_project_numtext1" : "Gesamte Gebäudefläche",
+      "phoenix_project_numtext2" : "Gesteuerte Geräte",
+
+      "phoenix_project_desc_head" : "Projektbeschreibung",
+      "phoenix_project_desc_p1" : "Das neue dreistöckige Bürogebäude 17a von Phoenix Contact befindet sich auf dem Campus Blomberg und bietet großzügige Büroflächen. Bei dieser offenen Büroarchitektur ist es eine Herausforderung den thermischen und visuellen Komfort aller Mitarbeiter aufrechtzuerhalten. ",
+      "phoenix_project_desc_p2" : "Leaftech wurde beauftragt, Daten zur Sonnenschutzsteuerung zu liefern, um den Komfort der Mitarbeiter zu maximieren und die Effizienz des Systems zu verbessern.",
+      "phoenix_project_desc_p3" : "Wir führten das Projekt in zwei Phasen durch.",
+      "phoenix_project_desc_subhead1" : "Phase eins",
+      "phoenix_project_desc_subp1" : "Für jedes Fenster berechneten wir den Schattenwurf im Jahresverlauf. Die Ergebnisse wurden verwendet um in Kombination mit der auf dem Dach befindlichen Wetterstation eine Jahresverschattungskorrektur für die Steuerung der einzelnen Behänge zu realisieren.",
+      "phoenix_project_desc_subhead2" : "Zweite Phase",
+      "phoenix_project_desc_subp2" : "Durch die Einbindung von Wettervorhersagedaten optimierten wir den digitalen Zwilling aus Phase eins. Dadurch werden kontinuierlich Steuerungsdaten an die Sonnenschutzsysteme übermittelt, wodurch der thermische und visuelle Komfort maximiert wird.",
+
+      "phoenix_project_stephead1" : "Erstellung des digitalen Zwillings",
+      "phoenix_project_stepdesc1" : "Erstellung eines detaillierten 3D-Modells (LOD 4) des Zielgebäudes und der Umgebung basierend auf Gebäudeplänen, Satellitenbildern und Geo-Daten.",
+      "phoenix_project_stephead2" : "Integration der Wetterdaten und Solaranalyse",
+      "phoenix_project_stepdesc2" : "Unser Algorithmus berechnete die Verschattungsbedingungen und Einfallswinkel an jedem Berechnungspunkt (virtueller Sensor*) für den Sonnenstand des gesamten Jahres. Unter Einbeziehung lokaler Wetterdaten bewerteten wir die jährliche Energieaufnahme für jeden Berechnungspunkt.",
+      "phoenix_project_stephead3" : "Daten für die Jahresverschattungskorrektur",
+      "phoenix_project_stepdesc3" : "Für jedes Fenster ermittelten wir den Schattenwurf. Die so erstellte Verschattungskorrektur Dateien wurde in die Gebäudesteuerung integriert und mit den Messungen der lokalen Wettersensordaten zusammengeführt. Daraus ergab sich das Ergebnis der Phase eins:  hochgenaue zeitbasierte Verschattungsdaten.",
+      "phoenix_project_stephead4" : "Cloud-basierte Steuerungsdaten",
+      "phoenix_project_stepdesc4" : "Der Digitale Zwilling wurde um zusätzliche systemspezifische Daten erweitert. Jeder Berechnungspunkt, d.h. virtueller Sensor* am Fenster, wurde mit den lokalen Wettervorhersagedaten verbunden. Die daraus resultierende Vorhersage der solaren Einstrahlung wird kontinuierlich zur Bestimmung der optimalen Position für jeden Behang sowie zur optimalen Steuerung von Heizung und Kühlung verwendet. Dank der bereitgestellten Daten werden visueller und thermischer Komfort maximiert während der Energiebedarf sinkt.",
+
+      "phoenix_project_oursolution" : "Unsere Lösung",
+      "phoenix_project_oursolution_desc" : "Unsere Lösung umfasste die folgenden Schritte.",
+
+      "phoenix_project_results_benefits_head" : "Ergebnisse",
+      "phoenix_project_results_benefits_content" : "Leaftech übermittelte eine detaillierte Verschattungsanalyse zur Verbesserung des vorhandenen Sonnenschutzsystems. In Phase zwei stellten wir optimale Steuerdaten für den Sonnenschutz via Cloud bereit, um den Nutzen im Tagesverlauf zu maximieren.",
+      "phoenix_project_results_benefits_subhead" : "Kundenvorteile:",
+      "phoenix_project_icon_text1" : "Energiekosteneinsparungen von mehr als 7%",
+      "phoenix_project_icon_text2" : "Höchstes Niveau an thermischem und visuellem Komfort",
+      "phoenix_project_icon_text3" : "Daten für die vorausschauende Wartung der Sonnenschutzsysteme",
+      "phoenix_project_icon_text4" : "Vermeidung von teuren und aufwändigen sensorgestützten Hardwaresystemen",
+      "phoenix_project_icon_text5" : "Steigerung des Entwicklungspotenzials für Gebäudezertifizierungen",
+      "phoenix_project_icon_text6" : "Technologie gemäß VDI- und EN-Normen",
+
+      "phoenix_project_discover_how" : "Entdecken Sie, wie wir Sie bei Ihrem Projekt unterstützen können.",
+      "phoenix_project_discover_how_contact" : "Kontaktieren Sie uns",
+
+
+
+
+
+
+
+
+
+      
+      "wago_project_blue_head" : "Projektbeispiele",
+      "wago_project_main_head" : "Wago Hauptquartier",
+      "wago_project_location_head" : "Minden, Deutschland, Juni 2021",
+      "wago_project_content" : "WAGO ist ein Systemanbieter für Gebäudeautomation und Gebäudetechnik. Für das im Jahr 2000 errichtete Bürogebäude der WAGO GmbH & Co. KG in Minden haben wir zusammen mit dem Integrationspartner Lübbing die Steuerung auf Basis des digitalen Zwillings realisiert.",
+      "wago_project_numtext1" : "Gesamte Gebäudefläche",
+      "wago_project_numtext2" : "Gesteuerte Geräte",
+
+      "wago_project_desc_head" : "Projektbeschreibung",
+      "wago_project_desc_p1" : "Das Hauptquartier beherbergt Büroflächen, die unter anderem vom Unternehmensvorstand von von Wago genutzt werden. Die Gebäudestruktur hat eine komplexe Kontur und Umgebung, die die Gewährleistung des thermischen und des visuellen Komforts für die Gebäudenutzer zu gewährleisten. Um das Wago-Automatisierungssystem bei der individuellen Sonnenschutzsteuerung zu unterstützen, lieferte Leaftech Datendienste zur Verbesserung von Effizienz und Komfort.",
+      "wago_project_desc_subhead1" : "Wir haben folgende Services zur Verfügung gestellt:",
+      "wago_project_desc_subp1" : "Empfehlungen für eine optimale Sensorpositionierung",
+      "wago_project_desc_subp2" : "Jahresverschattungskorrektur für eine optimale Steuerung des Sonnenschutzs",
+
+      "wago_project_oursolution" : "Unsere Lösung",
+      "wago_project_oursolution_desc" : "Nachfolgend finden Sie unsere detaillierte Lösung.",
+
+
+      "wago_project_stephead1" : "Erstellung des digitalen Zwillings",
+      "wago_project_stepdesc1" : "Der Kunde stellte ein 3D-Modell des Gebäudes zur Verfügung welches wir um Umgebungsdaten unter Verwendung von Satellitenbildern und -scans erweiterten.",
+      "wago_project_stephead2" : "Erstellung der Zielflächen und Platzierung der virtuellen Sensoren*",
+      "wago_project_stepdesc2" : "Zur Bewertung der Sonnenschutzsteuerung wurden auf den Dach- und Fensterflächen virtuelle Sensoren platziert, d.h. die Berechnungspunkte auf den Zielflächen, um die Einflussfaktoren für jede Minute zu simulieren.",
+      "wago_project_stephead3" : "Solaranalyse",
+      "wago_project_stepdesc3" : "Die Solaranalyse umfasste eine Analyse der Sonneneinstrahlung und jährlichen Sonnenstunden sowie der Verschattung innerhalb eines Jahres für jeden virtuellen Sensor.",
+      "wago_project_stephead4" : "Windströmungsanalyse",
+      "wago_project_stepdesc4" : "Anhand des digitalen Zwillingsmodells und des lokalen Windprofils führten wir eine detaillierte CFD-Analyse durch, in der das Windströmungsbild, die Druckzone und die Wirbel für jeden Berechnungspunkt rund um das Gebäude bestimmt wurden. ",
+      "wago_project_stephead5" : "Standort für die Wettersensorplatzierung",
+      "wago_project_stepdesc5" : "Den optimalen Standort für die Wettersensoren auf dem Dach berechneten wir mittels der Ergebnisse der Solar- und Windströmungsanalyse sowie der lokalen standortspezifischen Anforderungen, um kontinuierlich stabile Messungen zu gewährleisten.",
+      "wago_project_stephead6" : "Daten für die Jahresverschattungskorrektur",
+      "wago_project_stepdesc6" : "Für jedes Fenster wurde der Schattenwurf im Jahresverlauf ermittelt. Die auf dieser Grundlage erzeugten Daten für die Jahresverschattungskorrektur wurden in die Gebäudesteuerung integriert und mit Messungen der lokalen Wettersensorik korreliert. Daraus ergab sich eine hochgenaue, bedarfsgerechte Steuerung der Sonnenschutzsysteme.",
+
+      "wago_project_results_benefits_head" : "Ergebnisse",
+      "wago_project_results_benefits_content" : "Der digitale Zwilling des Gebäudes zusammen mit den Empfehlungen für optimale Standorte von Solar- und Windsensoren auf dem Dach wurden Wago bereitgestellt und die Daten für die Verschattungskorrektur an jedem Fenster wurden dem Integrationspartner Lübbing übermittelt.",
+      "wago_project_results_benefits_subhead" : "Kundenvorteile:",
+      "wago_project_icon_text1" : "Energiekosteneinsparungen von mehr als 7%",
+      "wago_project_icon_text2" : "Höchster thermischer und visueller Komfort",
+      "wago_project_icon_text3" : "Reibungsloses Gebäudemanagement",
+      "wago_project_icon_text4" : "Technik gemäß VDI- & EN-Normen",
+
+      "wago_project_discover_how" : "Entdecken Sie, wie wir Sie bei Ihrem Projekt unterstützen können.",
+      "wago_project_discover_how_contact" : "Kontaktieren Sie uns",
+
+
+
+
+
+
+      "grune_project_blue_head" : "Projektbeispiele",
+      "grune_project_main_head" : "Grüne Aue",
+      "grune_project_location_head" : "Berlin, Deutschland, März 2022",
+      "grune_project_content" : "Grüne Aue ist ein Cluster von Wohneinheiten, das von dem führenden Wärme- und Energiedienstleister Vattenfall betreut wird. Leaftech führte Analysedienstleistungen zur Bewertung des Solarenergiepotenzials durch, in Hinsicht auf die Energieversorgung der Wärmepumpe für Heizungs- und Warmwassersysteme.",
+      "grune_project_numtext1" : "Gesamte Gebäudefläche",
+      "grune_project_numtext2" : "Wohneinheiten",
+
+      "grune_project_desc_head" : "Projektbeschreibung",
+      "grune_project_desc_p1" : "Die Bereitstellung der Heizenergie für die Wohneinheiten erfolgt hauptsächlich aus einem gasbetriebenen Blockheizkraftwerk (BHKW) in Kombination mit einer Wärmepumpe.",
+      "grune_project_desc_p2" : "Mit Blick auf den Übergang zu einer nachhaltigen und sicheren Energiequelle für die Gebäude wollte der Bauherr das lokale Energieerzeugungspotenzial vor Ort bewerten. Die Wärmepumpenversorgung soll um PV-Systeme ergänzt werden, um den Bedarf an Heizung und Warmwasser zu decken.",
+      "grune_project_desc_subhead1" : "Folgende Leistungen wurden von Leaftech beauftrag:",
+      "grune_project_desc_subp1" : "Bewertung des photovoltaischen Potenzials",
+      "grune_project_desc_subp2" : "Daten für die optimale Auslegung des PV-Systems",
+
+      "grune_project_oursolution" : "Unsere Lösung",
+      "grune_project_oursolution_desc" : "Hier ist unser schrittweiser Ansatz, um das Energiepotenzial des Gebäudes vor Ort zu bewerten.",
+
+
+      "grune_project_stephead1" : "Erstellung des digitalen Zwillings",
+      "grune_project_stepdesc1" : "Anhand von LIDAR-Rohscans und Satellitenbildern erstellte Leaftech ein 3D-Modell aller Gebäude mit genauen Abmaßen der Dächer, einschließlich der benachbarten Gebäude und der Vegetation.",
+      "grune_project_stephead2" : "Analyse der Sonneneinstrahlung",
+      "grune_project_stepdesc2" : "Analyse von lokalen Sonneneinstrahlungsmessdaten mit dem hausinternen Verschattungsanalysetool zur detaillierten Bewertung der Sonneneinstrahlung jeder Dachfläche. Die Daten wurden sowohl für 2019 bis 2021 als auch für 2022 in 15-Minuten-Schritten bereitgestellt.",
+      "grune_project_stephead3" : "Bewertung des PV-Ertrags",
+      "grune_project_stepdesc3" : "Ermittlung des potentiellen PV-Ertrags mittels der Sonneneinstrahlungsanalysedaten in Kombination mit PV-Systemeigenschaften und Machbarkeitsprüfung für jedes Gebäude. ",
+      "grune_project_stephead4" : "Auslegung des Energiesystems",
+      "grune_project_stepdesc4" : "Bestimmung der optimalen Anzahl und Anordnung von PV-Modulen basierend auf den hochpräzisen PV-Ertragsdaten und des Energiebedarfs, mit gleichzeitiger Betrachtung der autarken Energieversorgung und Investitions- und Betriebskosten.",
+
+      "grune_project_results_benefits_head" : "Ergebnisse",
+      "grune_project_results_benefits_content" : "Leaftech übermittelte das digitale Zwillingsmodell jedes Gebäudes im Cluster bestehend aus Datensätzen und Visualisierungen. Als Ergebnis wurde ein detaillierter Bericht über die PV-Wirtschaftlichkeitsbetrachtung, den täglichen und jährlichen PV-Ertrag sowie die optimale Auslegung und Konfiguration der PV-Module vorgelegt. ",
+      "grune_project_results_benefits_subhead" : "Kundenvorteile:",
+      "grune_project_icon_text1" : "Schnelle & genaue Ergebnisse",
+      "grune_project_icon_text2" : "Fundierte datenbasierte Entscheidungsfindung",
+      "grune_project_icon_text3" : "Maximierung der Gewinne und verbesserte Amortisationszeit durch bestmöglichen PV-Ertrag",
+
+      "grune_project_discover_how" : "Entdecken Sie, wie wir Sie bei Ihrem Projekt unterstützen können.",
+      "grune_project_discover_how_contact" : "Kontaktieren Sie uns",
+
+
+
+
+
+
+      "mann_project_blue_head" : "Projektbeispiele",
+      "mann_project_main_head" : "Trio Mannheim",
+      "mann_project_location_head" : "Mannheim, Deutschland, Februar 2022",
+      "mann_project_content" : "Horn Grundbesitz ist Eigentümer und Verwalter des Trio Mannheim. Die bisher als P&C-Einkaufszentrum genutzte Gebäudefläche wurde durch einer Modernisierungsmaßnahme im Jahr 2021 teilweise zu Büroflächen umfunktioniert. Leaftech führte für dieses Gebäude eine Risikobewertung des Energiedesigns durch.",
+      "mann_project_numtext1" : "Gesamte Gebäudefläche",
+      "mann_project_numtext2" : "Zu bewertende Gebäudefläche",
+
+      "mann_project_desc_head" : "Projektbeschreibung",
+      "mann_project_desc_p1" : "Der Kunde modernisierte das Gebäude und funktionierte die obersten drei Etagen eines sechs-stöckigen Gebäudes in Bürofläche um.",
+      "mann_project_desc_p2" : "Aufgrund der Gebäudearchitektur und der geplanten Modernisierungsmaßnahme bestand die Gefahr, dass sich der Innenraum des Gebäudes ungleichmäßig aufheizen würde. Zusätzlich musste überprüft werden, ob die Kapazität des bestehenden HLK-Systems die erforderliche Kühllast erbringt. Die folgenden Hauptgründe für die Erwärmung des Gebäudes waren:",
+      "mann_project_desc_subhead1" : "Folgende Leistungen wurden von Leaftech beauftrag:",
+      "mann_project_desc_subp1" : "Hoher solarer Wärmezufluss durch die große Fläche der Glasfassade",
+      "mann_project_desc_subp2" : "Ungleichmäßiger Luftstrom im Bürobereich",
+      "mann_project_desc_subp3" : "Veränderte Energiebilanz aufgrund des Innenhofs",
+
+      "mann_project_oursolution" : "Unsere Lösung",
+      "mann_project_oursolution_desc" : "Folgende Schritte verschaffen einen schrittweisen Ansatz zu Bewältigung der oben genannten Herausforderungen Erstellung eines digitalen Zwillings:",
+
+
+      "mann_project_stephead1" : "Erstellung eines digitalen Zwillings",
+      "mann_project_stepdesc1" : "Erstellung eines detaillierten 3D-Modells des Zielgebäudes und der Umgebung basierend auf Gebäudeplänen, Satellitenbildern, Lidar-Scans und CityGML-Daten.",
+      "mann_project_stephead2" : "Integration der Gebäude & Wetterdaten",
+      "mann_project_stepdesc2" : "Integration der TRY-Wetterdatendateien und gebäudespezifischer Angaben wie Materialeigenschaften, Gebäudesysteme und Benutzerinformationen zur Erstellung eines thermischen 3D-Modells des Gebäudes.",
+      "mann_project_stephead3" : "Berechnung der Energiebilanz",
+      "mann_project_stepdesc3" : "Dank unserem hauseigenen Leaftech- Algorithmus berechneten wir alle relevanten Faktoren der Energiebilanzgleichung, um die realen Betriebsbedingungen zu simulieren. Die solaren Wärmegewinne durch die Glassfassaden wurden raumgenau erfasst. Dafür wurden Simulationen auf Basis gängiger DIN- und VDI- Normen durchgeführt (sommerlicher Wärmeschutz u.A.).",
+      "mann_project_stephead4" : "Bewertung der Kühllast",
+      "mann_project_stepdesc4" : "Berechnung und Bewertung der jährlichen Kühllast für jeden Büroraum und deren minimal erforderlichen HLK-Leistung unter Berücksichtigung der unterschiedlichen Wetterbedingungen im Jahresverlauf.",
+      "mann_project_stephead5" : "Optimierungsempfehlungen",
+      "mann_project_stepdesc5" : "Identifizierung von Optimierungspotenzialen zur Minimierung der Betriebs- und Investitionskosten bei gleichzeitiger Aufrechterhaltung des Komfortlevels im Gebäude, wie z. B. Auswirkungen verschiedener Sonnenschutzsysteme auf die Kühllast.",
+
+      "mann_project_results_benefits_head" : "Ergebnisse",
+      "mann_project_results_benefits_content" : "Das digitale Zwillingsmodell des Gebäudes sowie die detaillierten Datensätzen und Visualisierungen ergaben eine Übersicht der Kühllast für jeden Raum über einen Zeitraum von einem Jahr. Daraus leiteten sich drei Empfehlungsszenarien zur Gebäudeeffizienzsteigerung ab.",
+      "mann_project_results_benefits_subhead" : "Kundenvorteile:",
+      "mann_project_icon_text1" : "Hilfe um fundierte Entscheidungen zu treffen",
+      "mann_project_icon_text2" : "Einhaltung der gesetzlichen und vertraglichen Verpflichtungen",
+      "mann_project_icon_text3" : "Empfehlungen zur Senkung der Energiekosten um bis zu 8%",
+      "mann_project_icon_text4" : "Angenehme Innenraumbedingungen für die Mieter",
+
+      "mann_project_discover_how" : "Entdecken Sie, wie wir Sie bei Ihrem Projekt unterstützen können.",
+      "mann_project_discover_how_contact" : "Kontaktieren Sie uns",
+
+
+
+
+
+
+      "model_service_blue_head" : "Digitalisierung",
+      "model_service_main_head" : "Digitales Modell zur Erfassung Ihres Gebäudes und dessen Umgebung",
+      "model_service_content" : "Die Modellierung in 3D ist der erste Schritt zur Digitalisierung Ihrer Immobilie. Geben Sie einfach den Standort Ihres Gebäudes an, und wir erstellen das 3D-Modell Ihres Gebäudes. Hier finden Sie einen Überblick über unsere Modellierungsdienste.",
+      "model_service_contact" : "Kontaktieren Sie uns",
+
+      "model_service_stephead1" : "Das Zielgebäude",
+      "model_service_stepdesc1" : "Greifen Sie über unsere Plattform auf Ihre digitalen Zwillinge und die damit verbundenen Daten zu. Wir erstellen die Modelle Ihres Gebäudes mit fortschrittlichen Tools und je nach Ihren spezifischen Anforderungen in verschiedenen Detailgraden (LoD 2 bis LoD 4) an. Dabei nutzt unser Prozess 2D-Pläne, Bilder, Satellitenscans und weitere Datensätze, um Ihr Modell zu erstellen.",
+      "model_service_stephead2" : "Standort-Kontext",
+      "model_service_stepdesc2" : "Dank unseres detaillierten Modells der Gebäudeumgebung sowie lokaler Besonderheiten gewinnen Sie ein holistisches Verständnis für Ihr Gebäude und dessen Standort. Unser Modell umfasst die benachbarte Infrastruktur wie Gebäude, Brücken, die Vegetation und das Gelände. Um die relevanten Objekte in unsere Analysesoftware zu integrieren greifen wir auf moderne Geodatensätze wie digitale Oberflächenmodelle, LIDAR-Scans und Geländemodelle zurück.",
+      "model_service_stephead3" : "Zugriff auf Ihre 3D-Modelle",
+      "model_service_stepdesc3" : "Greifen Sie über unsere Plattform auf Ihre 3D-Modelle, interaktive Baupläne und alle weiteren Informationen zu. Geben Sie relevanten Interessensgruppen Zugang und exportieren Sie die Modelle in gängige Formate zur weiteren Verwendung. Dank unserer Visualisierungstools benötigen Sie keine zusätzliche Software, Lizenzen oder Tools um erste Einblicke in Ihr Gebäude zu gewinnen.",
+
+      "model_service_results_benefits_head" : "Mit unserer 3D-Digitalisierung können Sie:",
+      "model_service_icon_text1" : "Erfassen Sie geometrische Informationen in 2D und 3D",
+      "model_service_icon_text2" : "Rufen Sie 2D- und 3D-Pläne schnell und unkompliziert ab",
+      "model_service_icon_text3" : "Holen Sie sich die nötigen Informationen, um Ihre Immobilien besser zu nutzen und zu optimieren",
+      "model_service_icon_text4" : "Berücksichtigen Sie die Umgebung Ihres Gebäudes und deren Einflüsse",
+      "model_service_icon_text5" : "Gewinnen Sie tiefere Einblicke und starten Sie Analysen anhand der 3D-Modelle",
+
+
+
+
+
+      "analytics_service_blue_head" : "Analysen",
+      "analytics_service_main_head" : "Tiefgreifende Analysen zur Optimierung Ihres Gebäudes",
+      "analytics_service_content" : "Anhand der 3D-Modelle und zusätzlicher Eingabedaten führen wir mit selbst entwickelten Algorithmen eine detaillierte und ganzheitliche Gebäudeanalyse durch. Hier ein Blick auf unsere Analytik-Dienstleistungen.",
+
+      "analytics_service_stephead1" : "Sonneneinstrahlungsanalyse",
+      "analytics_service_stepdesc1" : "Unsere Sonneneinstrahlungsanalyse kartiert und analysiert die Auswirkungen der direkten, diffusen und globalen Einstrahlung auf relevante Bereiche der Gebäudehülle. Damit erfahren Sie mehr über den Einfluss der solaren Einstrahlung auf die Energiebilanz Ihres Gebäudes Im Jahresverlauf. Verwenden Sie den Service zum Beispiel um das PV-Potenzial Ihres Gebäudes einzuschätzen, die Anforderungen an die Verglasung zu ermitteln und die optimale Position für Sitzplätze im Freien zu bestimmen.",
+      "analytics_service_stephead2" : "Sonnenstundenanalyse",
+      "analytics_service_stepdesc2" : "Die Sonnenstundenanalyse von Leaftech gibt die Anzahl der Stunden an in denen die Sonne ungehindert auf die Hülle Ihres Gebäudes fällt. Dabei ermitteln wir Daten für jeden Punkt der Fassade. Nutzen Sie den Service um die notwendigen gestalterischen und architektonischen Entscheidungen zu treffen um im Einklang mit bestehenden Verordnungen im Bereich Beleuchtung zu agieren. Ermitteln Sie den Tageslichtfaktor des Gebäudes, um den Wert und die Attraktivität Ihres Gebäudes zu steigern.",
+      "analytics_service_stephead3" : "Verschattungsanalyse",
+      "analytics_service_stepdesc3" : "Die Verschattungsanalyse liefert Informationen über die Sonneneinstrahlung auf verschiedene Gebäudeteile und das Gelände für das ganze Jahr in hoher räumlicher und zeitlicher Auflösung. Nutzen Sie diese Dienstleistung, um die Optimierungspotentiale in der passiven Gestaltung zu identifizieren, einen Standort für Ihren Freisitz oder Ihr Schwimmbad auszuwählen, Ihren Sonnenschutz zu optimieren und vieles mehr.",
+      "analytics_service_stephead4" : "Tageslichtanalyse",
+      "analytics_service_stepdesc4" : "Nutzen Sie unsere Tageslichtanalyse, um den natürlichen Lichteinfall für alle oder bestimmte Bereiche und/oder Räume in Ihrem Gebäude zu bewerten. Unsere Simulationen und Ergebnisse entsprechen den Normen DIN EN 17037, 5034 und LM-83.",
+      "analytics_service_stephead5" : "Sommerlicher Wärmeschutz",
+      "analytics_service_stepdesc5" : "Unsere Hitzeschutzanalyse umfasst die Bewertung des solaren Energieeintrags für jedes Fenster und eine thermische Simulation für jeden einzelnen Raum. Anhand dieser Daten können Sie erkennen, ob und wie häufig einzelne Räume und Bereiche überhitzen, und können entsprechende Maßnahmen treffen, um dies zu vermeiden. Diese Dienstleistung entspricht den Vorschriften der DIN 4108-2.",
+      "analytics_service_stephead6" : "Bewertung des Kühl & Heizbedarfs",
+      "analytics_service_stepdesc6" : "Verstehen Sie den Energiebedarf Ihres Gebäudes mit der Kühl- und Heizlastanalyse von Leaftech. Wir berücksichtigen alle relevanten Faktoren wie Witterungseinflüsse, solarthermische Gewinne, Materialinformationen, Systemspezifikationen, NutzerInnen-Informationen und viele Weitere. Im Detail, um qualitativ hochwertige Einblicke zu gewinnen. Die Simulationen und Ergebnisse entsprechen den Anforderungen der DIN 4108, VDI 207 und DIN EN 12831. Sie können diese Ergebnisse auch für erste Bewertungen nach DIN 18599 verwenden.",
+      "analytics_service_stephead7" : "Photovoltaikbewertung",
+      "analytics_service_stepdesc7" : "Erhalten Sie eine detaillierte Bewertung des PV-Potenzials Ihres Gebäudes und gleichen Sie die Ergebnisse direkt mit Ihrem Bedarf ab. Wir prognostizieren den Ertrag für das ganze Jahr und empfehlen die optimale Position, Anzahl, Ausrichtung und Neigung der PV-Paneele auf dem Dach und an der Fassade, um die Auslegung mit der höchsten Effizienz und Rendite für Ihr Projekt zu ermitteln.",
+      "analytics_service_stephead8" : "Windanalyse",
+      "analytics_service_stepdesc8" : "Verschaffen Sie sich mit unserer CFD-Windanalyse ein besseres Verständnis der Windströmung, Wirbelschleppen und Druckzonen rund um Ihr Gebäude. Wir ermitteln für Sie lokale Windenergiepotentiale und stellen Daten für den sicheren und effizienten Betrieb Ihrer Sonnenschutzsysteme zur Verfügung. Darüber hinaus identifizieren wir geeignete Bereiche für natürliche Belüftung und Öffnungen und unterstützen dabei das Design durch aktive und passive Maßnahmen zu optimieren.",
+      "analytics_service_stephead9" : "Optimale Platzierung von Wettersensoren",
+      "analytics_service_stepdesc9" : "Wir ermitteln für Ihr Gebäude die optimale Anzahl von Witterungssensoren und optimale Montagepositionen, um unter Berücksichtigung lokaler standortspezifischer Faktoren die genauesten und stabilsten Wetterdaten zu erhalten. Wir bieten Ihnen Bewertungen für Windgeschwindigkeits-, Windrichtungs-, Helligkeits- und Globalstrahlungssensoren an.",
+     
+
+      "analytics_service_results_benefits_head" : "Leaftechs hochpräzise Datenservices bieten Ihnen eine Vielzahl an Mehrwerten:",
+      "analytics_service_icon_text1" : "Treffen Sie fundierte Entscheidungen zum Entwurf & Planung Ihres Bauvorhabens",
+      "analytics_service_icon_text2" : "Wählen Sie die passenden Modernisierungsmaßnahmen zur Verbesserung der Effizienz und des Komforts Ihres Gebäudes auf Basis fundierter Analysen",
+      "analytics_service_icon_text3" : "Führen Sie Risikobewertungen bei der Energiesystemauslegung durch und testen Sie verschiedene Szenarien",
+      "analytics_service_icon_text4" : "Entwerfen Sie ökologisch und ökonomisch nachhaltige Energiesysteme",
+      "analytics_service_icon_text5" : "Erfüllung nationaler und internationaler Vorgaben",
+
+
+
+
+
+      "control_service_blue_head" : "Steuerung",
+      "control_service_main_head" : "Mit unseren Steuerdaten sind Sie dem Wetter stets einen Schritt voraus",
+      "control_service_content" : "Kombinieren Sie unsere Bewertungsergebnisse mit Wettervorhersagedaten, lokalen Sensordaten und weiteren Datenpunkten, um modellbasierte Steuerungsdaten zu generieren die zur Verbesserung der Energieeffizienz und des Komforts beitragen. Hier ein Blick auf unsere Steuerungsdienste.",
+
+      "control_service_stephead1" : "Steuerdaten für eine bedarfsgerechte & sichere Sonnenschutzsteuerung",
+      "control_service_stepdesc1" : "Maximieren Sie die Möglichkeiten Ihres lokalen Wettersensors, um eine sichere, effiziente, komfortable und bedarfsgerechte Steuerung Ihrer Beschattungssysteme zu gewährleisten. Um ein Höchstmaß an Systemqualität zu erreichen, stellen wir für jedes Fenster Beschattungs- und Windkorrekturfaktoren bereit. Zusätzlich identifizieren wir die optimale Position für die lokalen Wettersensoren. Unsere Datendienste entsprechen den Anforderungen der VDI 3813/3814 und EN 15232.",
+      "control_service_stephead2" : "Cloud-basierte Prognosen für optimalen Einsatz des Sonnenschutzes",
+      "control_service_stepdesc2" : "Mit unserem cloudbasierten Prognoseservice erhalten Sie Steuerdaten für die optimale Sonnenschutzposition und den Lamellenwinkel an jedem Behang für die nächsten 3-6 Stunden. Dafür berechnet der digitale Zwilling kontinuierlich den aktuellen und zukünftigen Schattenwurf, den Einstrahlungswinkel sowie die lokalen Windprofile und korreliert die Ergebnisse mit lokalen Wettervorhersage-Daten. Durch den Abgleich mit nutzerspezifischen Anforderungen entstehen so Vorhersagen für die optimale und sichere Sonnenschutzposition in den kommenden Stunden. Die Daten für jeden Behang werden via Restful-API eingebunden und maximieren sowohl den thermischen und visuellen Komfort als auch die Energieeffizienz.",
+      "control_service_stephead3" : "Energiebilanzprognose",
+      "control_service_stepdesc3" : "Der Digitale Zwilling prognostiziert die zukünftigen Energiebilanz für jeden Raum, jeden Bereich sowie das gesamte Gebäude. Dabei werden Einflüsse durch Systeme und Personen direkt berücksichtigt. Die Einbindung der Prognosen in die Steuerung trägt dazu bei, Ihr HLK-System proaktiv und mit maximaler Effizienz zu betreiben und den Komfort gleichzeitig jederzeit aufrechtzuerhalten.",
+
+      "control_service_results_benefits_head" : "Nutzen Sie die vielfältigen Vorteile unserer auf einem digitalen Zwilling basierenden Steuerungsdienstleistungen",
+      "control_service_icon_text1" : "Vermeiden Sie die teure und mühsame Implementierung von Hardware-Sensorik",
+      "control_service_icon_text2" : "Erhalten Sie hochwertige und präzise Steuerungsdaten für Ihren Sonnenschutz",
+      "control_service_icon_text3" : "Einfache und kostengünstige Implementierung",
+      "control_service_icon_text4" : "Sparen sie bis zu 28 % Energie im Betrieb durch das Upgrade zu einer modellbasierten proaktiven Steuerung",
+      "control_service_icon_text5" : "Maximieren Sie den Komfort durch eine smarte Steuerung die die optimale Balance zwischenthermischem und visuellem Komfort herstellt",
+      "control_service_icon_text6" : "Nutzen Sie unsere Datendienste für Predictive Maintenance Maßnahmen rund um Ihren Sonnenschutz",
+
+
+
+
+      
+      "contact_head" : "Lassen Sie uns gemeinsam den Wandel vorantreiben! ",
+      "contact__content" : "Möchten Sie Ihr Gebäude optimieren oder mehr über Leaftech erfahren? Dann hinterlassen Sie uns gerne eine Nachricht.",
+      "contact_subhead1" : "Interessiert an*",
+      "contact_subhead_buttons_text11" : "Digitale Zwillingsdienste",
+      "contact_subhead_buttons_text12" : "Weitere Informationen",
+      "contact_subhead2" : "Welche Gruppe vertreten Sie?*",
+      "contact_subhead_buttons_text1" : "Gebäudeeigentümer",
+      "contact_subhead_buttons_text2" : "Vermögensverwaltung",
+      "contact_subhead_buttons_text3" : "Gebäudeplaner",
+      "contact_subhead_buttons_text4" : "Gebäudeautomation",
+      "contact_subhead_buttons_text5" : "Versorgungsunternehmen",
+      "contact_subhead_buttons_text6" : "Architekten",
+      "contact_subhead_buttons_text7" : "Berater",
+      "contact_subhead_buttons_text8" : "Smart home",
+      "contact_subhead_buttons_text9" : "Sonstige",
+
+      "contact_form_meeting" : "Sprache treffen",
+      "contact_subhead_position" : "Position*",
+      "contact_subhead_company" : "Unternehmen (Optional)",
+      "contact_subhead_number" : "Telefonnr.*",
+      "contact_subhead_note" : "Ihre Nachricht*",
+      "contact_note_text" : "Gibt es etwas, das wir vor dem Treffen wissen müssen?",
+
+      "contact_note_iagree" : "Ich stimme der Datenschutzrichtlinie zu und erhalte andere Mitteilungen von Leaftech.*",
+      "contact_submit_button" : "Senden"
 
 }

@@ -7,7 +7,7 @@ import StepContent from '@mui/material/StepContent';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-// import modelSetup from "../assest/Images/project/trio/Mask group.png";
+// import analyticsSetup from "../assest/Images/project/trio/Mask group.png";
 // import m1 from "../../../assest/Images/project/manheim/Mask_group.png";
 // import m2 from "../../../assest/Images/project/manheim/Group_1078.png";
 // import m3 from "../../../assest/Images/project/manheim/Vertical_Bar_chart.png";
@@ -23,19 +23,20 @@ import assessment from "../../../../assest/Images/services/Analytics/step7.jpg";
 import weather from "../../../../assest/Images/services/Analytics/step8.jpg";
 
 import build from "../../../../assest/Images/services/Analytics/step9.GIF";
+import { useTranslation } from 'react-i18next';//translator
 
 
 
 const steps = [
   {
     label: 'Solar radiation analysis',
-    description: `Created a detailed 3D model of the target building along with the surroundings, using building plans, satellite images, lidar scans, and CityGML data. `,
+    description: `Created a detailed 3D analytics of the target building along with the surroundings, using building plans, satellite images, lidar scans, and CityGML data. `,
     // img: `${m1}`
   },
   {
     label: 'Sunshine hour analysis',
     description:
-      'Integrated the TRY weather data files and building-specific inputs like material properties, building systems, and user information to create a thermal model of the building. ',
+      'Integrated the TRY weather data files and building-specific inputs like material properties, building systems, and user information to create a thermal analytics of the building. ',
       
     },
   {
@@ -82,6 +83,8 @@ const steps = [
 ];
 
 export default function VerticalLinearStepper() {
+  const { t, i18n } = useTranslation();//translator
+
   // const [activeStep, setActiveStep] = React.useState(0);
 
   // const handleNext = () => {
@@ -140,47 +143,47 @@ export default function VerticalLinearStepper() {
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div className="circle"></div>
-          Solar radiation analysis
+          {t('analytics_service_stephead1')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
           <div className="circle"></div>
-          Sunshine hour analysis
+          {t('analytics_service_stephead2')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
           <div className="circle"></div>
-          Shading analysis
+          {t('analytics_service_stephead3')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
           <div className="circle"></div>
-          Daylight analysis
+          {t('analytics_service_stephead4')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="office-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#office" role="tab" aria-controls="office" aria-selected="false">
           <div className="circle"></div>
-          Summer heat protection
+          {t('analytics_service_stephead5')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="cooling-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#cooling" role="tab" aria-controls="cooling" aria-selected="false">
           <div className="circle"></div>
-          Cooling & heating demand assessment 
+          {t('analytics_service_stephead6')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="assessment-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#assessment" role="tab" aria-controls="assessment" aria-selected="false">
           <div className="circle"></div>
-          Photovoltaic assessment 
+          {t('analytics_service_stephead7')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="analysis-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#analysis" role="tab" aria-controls="analysis" aria-selected="false">
           <div className="circle"></div>
-          Building wind analysis
+          {t('analytics_service_stephead8')}
           <div className="line"></div>
           </a>
         <a className="nav-link" id="placement-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#placement" role="tab" aria-controls="placement" aria-selected="false">
           <div className="circle"></div>
-          Weather sensor placement analysis 
+          {t('analytics_service_stephead9')}
         </a>
     </div>
    </div>
@@ -189,75 +192,83 @@ export default function VerticalLinearStepper() {
     <div className="tab-content" id="tabContent" style={{width:'70%'}}>
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Solar radiation analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead1')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Our solar radiation analysis maps and analyses the sun's effects over a building's target surface to calculate the direct, diffuse, and global radiations. Understand the impact of solar radiation on your building's energy balance throughout the year and make informed decisions. Use this data service to assess your building's PV potential and glazing requirements, and accordingly, identify the optimal positions for outdoor seatings.  
+          {t('analytics_service_stepdesc1')}
           </p>
           <img className="stepperService_desc_img" src={solar} alt="solar" />
         </div>
       </div>
       <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Sunshine hour analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead2')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Leaftech's Sunshine hour analysis provides the number of unobstructed hours of sunlight your building gets each year. Comply with the Right to light law and make the necessary design and architectural changes with this service. Combine it with shading analysis to derive the daylight factor of the building, which in turn, enhances your building's value and increases its appeal.          </p>
+          {t('analytics_service_stepdesc2')}
+          </p>
           <img className="stepperService_desc_img" src={sunshine} alt="sunshine" />
         </div>
       </div>
       <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Shading analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead3')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Shading analysis provides information on solar access to different parts of the building and the site for the whole year and even generates a yearly shading progression for the areas of interest. Use this service to understand the passive design opportunities, choose a location for your outdoor seating area or swimming pool, smarten up your sun protection control, and more.          </p>
+          {t('analytics_service_stepdesc3')}
+          </p>
           <img className="stepperService_desc_img" src={shading} alt="shading" />
         </div>
       </div>
       <div className="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Daylight analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead4')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Leverage our daylight analysis to assess the natural light intake for any given area or a room in a building. Our simulations and results are according to the DIN EN 17037, 5034, and LM-83 standards.          </p>
+          {t('analytics_service_stepdesc4')}
+          </p>
           
           <img className="stepperService_desc_img" src={daylight} alt="daylight" />
         </div>
       </div>
       <div className="tab-pane fade" id="office" role="tabpanel" aria-labelledby="office-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Summer heat protection</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead5')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Our summer heat protection analysis encompasses the solar energy intake assessment of every window and the thermal simulation for each individual room. Use this data to understand if the room or target area is overheating, so you can make appropriate decisions to avoid the same. This service complies with the DIN 4108-2 regulations.          </p>
+          {t('analytics_service_stepdesc5')}
+          </p>
           <img className="stepperService_desc_img" src={summer} alt="summer" />
         </div>
       </div>
       <div className="tab-pane fade" id="cooling" role="tabpanel" aria-labelledby="cooling-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Cooling & heating demand assessment </b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead6')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Understand the energy demands of your building with Leaftech's cooling and heating load assessment. We consider critical factors like weather effects including solar energy intake, building specification, user information, etc, in detail, to generate high-quality data with high resolution. The simulations and results are according to the DIN 4108, VDI 207, and DIN EN 12831. You can even utilise these results for the DIN 18599 assessment.          </p>
+          {t('analytics_service_stepdesc6')}
+          </p>
           <img className="stepperService_desc_img" src={cooling} alt="cooling" />
         </div>
       </div>
       <div className="tab-pane fade" id="assessment" role="tabpanel" aria-labelledby="assessment-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Photovoltaic assessment </b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead7')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Get a detailed assessment of your building's solar PV potential and match it with your requirements and needs. We forecast the yield for the entire year and recommend the optimal position, number, orientation, and tilt of the PV panels on the roof and facade to ensure the highest efficiency and return on investment for your project. Our assessment includes both cost-benefit analysis and PV shading analysis. </p>
+          {t('analytics_service_stepdesc7')}
+          </p>
           <img className="stepperService_desc_img" src={assessment} alt="assessment" />
         </div>
       </div>
       <div className="tab-pane fade" id="analysis" role="tabpanel" aria-labelledby="analysis-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Building wind analysis</b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead8')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Gain a better understanding of the wind flow patterns, wakes, and pressure zones with our CFD wind analysis for buildings. Use this data from our building wind analysis to know your wind energy potential, areas for natural ventilation and openings, operate shading devices safely and efficiently, understand passive design opportunities, and more. </p>
+          {t('analytics_service_stepdesc8')}
+          </p>
           <img className="stepperService_desc_img" src={build} alt="build" />
         </div>
       </div>
       <div className="tab-pane fade" id="placement" role="tabpanel" aria-labelledby="placement-tab">
          <div className="subcontent">
-          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>Weather sensor placement analysis </b></h1>
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead9')}</b></h1>
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
-          Obtain the number of sensors and their optimal locations to generate the most accurate and stable data, after considering local site-specific factors. We offer assessments for wind speed, wind direction, brightness, and global radiation sensors.        </p>
+          {t('analytics_service_stepdesc9')}
+          </p>
           
           <img className="stepperService_desc_img" src={weather} alt="weather" />
         </div>
