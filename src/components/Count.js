@@ -22,12 +22,18 @@ export default function Count() {
                   <br />
                   {t('Home_head2')}
                 </h1>
-                <p
+                {t('Home_content')==="With Leaftech's building Digital Twin, you can access highly accurate data to understand your building's performance, make informed decisions on upgrades, and work on the required building optimization measures."?<p
                   style={{ fontFamily: "NunitoSans-Regular", width:'664px', height:'96px' }}
                   className="home_first_subcontent"
                 >
                   {t('Home_content')}
-                </p>
+                </p>:<p
+                  style={{ fontFamily: "NunitoSans-Regular", width:'664px', height:'96px' }}
+                  className="home_first_subcontent1"
+                >
+                  {t('Home_content')}
+                </p>}
+                
                 
 
                 <div style={{margin:'80px 40px 0px 0px'}} className=" text-left mx-auto">

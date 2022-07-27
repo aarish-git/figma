@@ -757,7 +757,16 @@ margin-top: 120px;
   line-height: 32px;
   color: #2F2F2F;
 }
-
+.home_first_subcontent1 {
+  margin-top: 162px;
+  margin-bottom: 80px;
+  height: 96px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+}
 .home_first_subhead {
   font-style: normal;
   font-weight: 600;
