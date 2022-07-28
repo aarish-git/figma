@@ -3,6 +3,7 @@ import "./Footer.css";
 import linkindin from './../../assest/Icons/LinkedinLogo.svg'
 import twitter from './../../assest/Icons/TwitterLogo.svg'
 import { useTranslation } from 'react-i18next';//translator
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();//translator
@@ -75,13 +76,13 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a href="/services/3d-digital-models-of-buildings" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb1')}</a>
+                  <Link to="/services/3d-digital-models-of-buildings" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb1')}</Link>
                 </li>
                 <li>
-                  <a href="/building-analytics" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb2')}</a>
+                  <Link to="/building-analytics" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb2')}</Link>
                 </li>
                 <li>
-                  <a href="/smart-building-control" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb3')}</a>
+                  <Link to="/smart-building-control" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb3')}</Link>
                 </li>
                 {/* <li>
                   <a href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">Digital twin platform</a>
@@ -95,13 +96,13 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a href="/Project" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
+                  <Link to="/Project" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
                     {/* Project showcases{" "} */}
                     {t('Footer_Listc1')}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc2')}</a>
+                  <Link to="/contact" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc2')}</Link>
                 </li>
                 <li>
                   <a href="https://frontend.apps.leaftech.eu/login" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">
