@@ -17,15 +17,40 @@ export default function services1() {
             >
               {t('model_service_blue_head')}
             </h1>
-            <h1
+            {t('model_service_contact') === "Contact us" ?
+              <h1
+                style={{ fontFamily: "Exo2-Bold" }}
+                className="single_project_main_head"
+              >
+                {t('model_service_main_head')}
+              </h1>
+              :
+              <h1
               style={{ fontFamily: "Exo2-Bold" }}
-              className="single_project_main_head"
-            >
-            {t('model_service_main_head')}
-            </h1>
-            <p className="mb-8 leading-relaxed single_project_content" style={{fontFamily: "NunitoSans-Regular", marginBottom: '64px', marginTop:'92px'}}>
-            {t('model_service_content')}
+              className="single_project_main_head_de"
+              >
+                {t('model_service_main_head')}
+              </h1>
+            }
+
+            {t('model_service_contact') === "Contact us" ?
+               <p className="mb-8 leading-relaxed single_service_content" style={{fontFamily: "NunitoSans-Regular", marginBottom: '64px', marginTop:'92px'}}>
+               {t('model_service_content1')}
+               <br />
+               {t('model_service_content2')}
+               <br />
+               {t('model_service_content3')}
+               </p>
+              :
+              <p className="mb-8 leading-relaxed single_service_content_de" style={{fontFamily: "NunitoSans-Regular", marginBottom: '64px', marginTop:'92px'}}>
+             {t('model_service_content1')}
+               <br />
+               {t('model_service_content2')}
+               <br />
+               {t('model_service_content3')}
             </p>
+            }
+           
             <div>
             <a href="/contact" >
               <button

@@ -333,7 +333,9 @@
 
       "model_service_blue_head" : "MODELING",
       "model_service_main_head" : "Three-dimensional models to better understand your building",
-      "model_service_content" : "Our modelling services are the first steps towards digitizing your real estate. Simply provide your building's location and we will create the 3D model of your building. Here's a look at our modeling services.",
+      "model_service_content1" : "Our modelling services are the first steps towards digitizing your real estate. Simply provide ",
+      "model_service_content2" : "your building's location and we will create the 3D model of your building.",
+      "model_service_content3" : " Here's a look at our modeling services.",
       "model_service_contact" : "Contact us",
 
       "model_service_stephead1" : "The target building",
@@ -355,9 +357,10 @@
 
 
       "analytics_service_blue_head" : "Analytics",
-      "analytics_service_main_head" : "In-depth analysis to optimise your building",
-      "analytics_service_content" : "Using the 3D models with additional input data, we perform detailed and holistic building analytics using in-house developed algorithms. Here's a look at our analytics services.",
-
+      "analytics_service_main_head1" : "In-depth analysis",
+      "analytics_service_main_head2" : "to optimise your building",
+      "analytics_service_content1"  : "Using the 3D models with additional input data, we perform detailed and holistic building analytics using in-house developed algorithms.",
+      "analytics_service_content2"  : "Here's a look at our analytics services.",
       "analytics_service_stephead1" : "Solar radiation analysis",
       "analytics_service_stepdesc1" : "Our solar radiation analysis maps and analyses the sun's effects over a building's target surface to calculate the direct, diffuse, and global radiations. Understand the impact of solar radiation on your building's energy balance throughout the year and make informed decisions. Use this data service to assess your building's PV potential and glazing requirements, and accordingly, identify the optimal positions for outdoor seatings.",
       "analytics_service_stephead2" : "Sunshine hour analysis",
@@ -391,7 +394,8 @@
 
       "control_service_blue_head" : "Control",
       "control_service_main_head" : "Control recommendations to keep you ahead of the weather",
-      "control_service_content" : "Combine our assessment insights with additional data layers like weather forecast data and local sensor data, to generate model-based building control data for improving your building’s energy efficiency and comfort. Here's a look at our control services.",
+      "control_service_content1" : "Combine our assessment insights with additional data layers like weather forecast data and local sensor data, to generate model-based building control data for improving your building’s energy efficiency and comfort.",
+      "control_service_content2" : "Here's a look at our control services.",
 
       "control_service_stephead1" : "Control data for smart shading",
       "control_service_stepdesc1" : "Extend the capabilities of your local weather sensor to ensure secure, efficient, and comfortable control of your shading systems. To guarantee the highest level of system quality, we provide shading and wind correction factors for each window along with recommendations for weather sensor placement.  This solution is based on the VDI 3813/3814 and EN15232 standards.",

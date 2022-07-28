@@ -17,8 +17,8 @@ export default function index() {
     <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
     <div className="text-gray-600 body-font">
       <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
-        <div className="flex flex-col md:items-start md:text-left items-center"  style={{width:'762px', height:'455px'}}>
-            <h1 style={{fontFamily:"Exo2-Bold"}} className="service_3d_head">
+        <div className="flex flex-col md:items-start md:text-left items-center"  style={{width:'955px', height:'455px'}}>
+            <h1 style={{fontFamily:"Exo2-Bold", width:'645px'}} className="service_3d_head">
             {t('model_service_results_benefits_head')}
             </h1>
             <ul className="space-y-5" style={{marginTop:'40px', marginBottom: '64px'}}>
@@ -56,7 +56,7 @@ export default function index() {
             <div className="flex w-full md:justify-start justify-center items-end">
               <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
               <a href="/contact" >
-                <button style={{fontFamily: "NunitoSans-Regular", fontSize:'20px'}} className="shadow-[0_4px_4px_rgba(0,135,255,0.25)] border-solid border-[#2F2F2F] border-1 w-[127px] height-[54px] py-2 rounded-[20px]">
+                <button style={{fontFamily: "NunitoSans-Regular", fontSize:'20px', padding:'10px 20px'}} className="shadow-[0_4px_4px_rgba(0,135,255,0.25)] border-solid border-[#2F2F2F] border-1  height-[54px] py-2 rounded-[20px]">
                 {t('model_service_contact')}
                 </button>
                 </a>

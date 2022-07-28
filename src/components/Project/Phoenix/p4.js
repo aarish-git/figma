@@ -16,7 +16,7 @@ export default function p4() {
     <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
-          <div className="rounded-lg overflow-hidden" style={{marginLeft: '-10px', width:'58%', height:'484px'}}>
+          <div className="rounded-lg overflow-hidden" style={{marginLeft: '-10px', width:'55%', height:'484px'}}>
             <img
               className="object-cover object-center rounded h-full w-full"
               alt="feature"
@@ -27,18 +27,22 @@ export default function p4() {
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
             {t('phoenix_project_results_benefits_head')}
             </h1>
-            <p  style={{ fontFamily: "NunitoSans-Regular", width:'565px' }} className="results_benefits_content" >
+            <p  style={{ fontFamily: "NunitoSans-Regular", width:'575px' }} className="results_benefits_content" >
             {t('phoenix_project_results_benefits_content')}
             </p>
             <div className="flex flex-col space-y-5" style={{width:'550px'}}>
-            <p style={{fontFamily:"Exo2-Regular", marginBottom:'0px'}} className="results_benefits_subhead">{t('phoenix_project_results_benefits_subhead')}</p>
+            <p style={{fontFamily:"Exo2-Regular", marginBottom:'0px', width:'573px'}} className="results_benefits_subhead">{t('phoenix_project_results_benefits_subhead')}</p>
               <ul className="space-y-7">
                 <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={Battery} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text1')} </p></li>
                 <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={CircleHalf} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text2')}</p></li>
                 <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={Line} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text3')}</p></li>
-                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={HardDrive} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text3')}</p> </li>
-                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text4')}</p> </li>
-                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LineSegments} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text5')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={HardDrive} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text4')}</p> </li>
+                {t('model_service_contact') === "Contact us" ?
+                  <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text5')}</p> </li>
+                  :
+                  <li className="flex space-x-5" style={{marginTop:'40px'}}><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text5')}</p> </li>
+                }
+                <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LineSegments} /><p className="project_icon_text" style={{fontfamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text6')}</p></li>
               </ul>
             </div>
           </div>

@@ -30,7 +30,7 @@ export default function wago4() {
             {t('wago_project_results_benefits_content')}
             </p>
             <div className="flex flex-col space-y-5">
-            <p style={{fontFamily:"Exo2-Regular", marginBottom:'16px'}} className="results_benefits_subhead">{t('wago_project_results_benefits_subhead')}</p>
+            <p style={{fontFamily:"Exo2-Regular", marginBottom:'16px', width:'545px'}} className="results_benefits_subhead">{t('wago_project_results_benefits_subhead')}</p>
               <ul className="space-y-3">
                 <li className="flex space-x-5"><img className="h-fit" alt="wago" src ={Arrow} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('wago_project_icon_text1')}</p></li>
                 <li className="flex space-x-5"><img className="h-fit" alt="wago" src ={CircleHalf} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('wago_project_icon_text2')}</p> </li>

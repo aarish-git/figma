@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 // import modelSetup from "./../../../assest/Images/project/trio/24 1.png";
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 import G1 from "../../../assest/Images/project/grune/Grune.png"
-import G2 from "../../../assest/Images/project/grune/Grune1.png"
+import G2 from "../../../assest/Images/project/grune/grune22.svg"
 // import G3 from "../../../assest/Images/project/grune.png"
 import { useTranslation } from 'react-i18next';//translator
 

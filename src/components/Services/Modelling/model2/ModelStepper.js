@@ -125,6 +125,8 @@ export default function VerticalLinearStepper() {
    </div>
    </div>
 
+   {t('model_service_contact') === "Contact us" ?
+
     <div className="tab-content" id="tabContent" style={{width:'70%'}}>
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
@@ -154,6 +156,39 @@ export default function VerticalLinearStepper() {
         </div>
       </div>
     </div>
+
+    :
+
+    <div className="tab-content" id="tabContent" style={{width:'70%'}}>
+      <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead1')}</b></h1>
+          <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
+          {t('model_service_stepdesc1')}
+          </p>
+          <img className="stepperService_desc_img" src={target} alt="target" />
+        </div>
+      </div>
+      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+         <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead2')}</b></h1>
+          <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
+          {t('model_service_stepdesc2')}
+          </p>
+          <img className="stepperService_desc_img" src={context} alt="context" />
+        </div>
+      </div>
+      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+         <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead3')}</b></h1>
+          <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
+          {t('model_service_stepdesc3')}
+          </p>
+          <img className="stepperService_desc_img" src={access} alt="access" />
+        </div>
+      </div>
+    </div>
+    }
    </div>
    </div>
    

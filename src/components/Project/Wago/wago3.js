@@ -11,9 +11,9 @@ import Typography from '@mui/material/Typography';
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
 import wimg from "../../../assest/Images/project/wago/Mask.png";
-import wimg1 from "../../../assest/Images/project/wago/w1.png"
+import wimg1 from "../../../assest/Images/project/wago/project_wago_step3_solarAnalysis.svg"
 import wimg2 from "../../../assest/Images/project/wago/w2.png"
-import wimg3 from "../../../assest/Images/project/wago/w3.png"
+import wimg3 from "../../../assest/Images/project/wago/project_wago_step5_location.svg"
 import wimg4 from "../../../assest/Images/project/wago/w4.png"
 import { useTranslation } from 'react-i18next';//translator
 

@@ -64,13 +64,13 @@ export default function Header({ history }) {
                   <button class="dropbtn"> <p class="navFont" style={{ fontFamily: "NunitoSans-Regular"}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
                     <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
-                      Modeling
+                    {t('Home_section3_service1')}
                     </NavLink>
                     <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/building-analytics" activeClassName="active-link">
-                      Analytics
+                    {t('Home_section3_service2')}
                     </NavLink>
                     <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/smart-building-control" activeClassName="active-link">
-                      Control
+                    {t('Home_section3_service3')}
                     </NavLink>
                   </div>
                 </div>

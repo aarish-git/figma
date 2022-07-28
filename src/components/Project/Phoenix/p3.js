@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';//translator
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
 import PImage from "../../../assest/Images/project/trio/p1.png";
-import PImage1 from "../../../assest/Images/project/trio/p2.png"
+import PImage1 from "../../../assest/Images/project/trio/p22.svg"
 
 
 const steps = [

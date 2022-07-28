@@ -27,7 +27,7 @@ export default function p1() {
             >
               {t('phoenix_project_location_head')}
             </p>
-            <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content">
+            <p style={{fontFamily:"NunitoSans-Regular", marginBottom:'80px'}} className="leading-relaxed single_project_content">
             {t('phoenix_project_content')}
             </p>
             <div className="flex ">

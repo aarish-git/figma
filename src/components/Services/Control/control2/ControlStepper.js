@@ -120,17 +120,37 @@ export default function VerticalLinearStepper() {
       </div> */}
     
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+     {/* <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="false">
+          <div style={{display:'flex', alignItems: 'center'}}>
           <div className="circle" style={{marginLeft: '0px'}}></div>
           {t('control_service_stephead1')}
+          </div>
           <div className="line" style={{marginLeft: '8px'}}></div>
         </a>
-        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-          <div className="circle"></div>
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '32px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div style={{display:'flex', alignItems: 'center'}}>
+          <div className="circle" style={{marginLeft: '3px'}}></div>
           {t('control_service_stephead2')}
+          </div>
+          <div className="line"></div>
+        </a> */}
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <div style={{display:'flex', alignItems: 'center'}}>
+          <div className="circle" style={{marginLeft: '-2px', width:'28px', height:'24px'}}></div>
+          {t('control_service_stephead1')}
+        </div>
+
+          <div className="line" style={{marginLeft: '8px'}}></div>
+        </a>
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div style={{display:'flex', alignItems: 'center'}}>
+          
+        <div className="circle" style={{marginLeft: '2px', width:'28px', height:'24px'}}></div>
+          {t('control_service_stephead2')}
+        </div>
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '48px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
           <div className="circle"></div>
           {t('control_service_stephead3')}
         </a>
@@ -138,6 +158,7 @@ export default function VerticalLinearStepper() {
     </div>
    </div>
 
+   {t('model_service_contact') === "Contact us" ?
     <div className="tab-content" id="tabContent" style={{width:'70%'}}>
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div className="subcontent">
@@ -167,6 +188,41 @@ export default function VerticalLinearStepper() {
         </div>
       </div>
     </div>
+
+
+    :
+
+
+    <div className="tab-content" id="tabContent" style={{width:'60%'}}>
+      <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('control_service_stephead1')}</b></h1>
+          <p className="control_stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+          {t('control_service_stepdesc1')}
+          </p>
+          <img className="stepperService_desc_img" src={control} alt="control" />
+        </div>
+      </div>
+      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+         <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('control_service_stephead2')}</b></h1>
+          <p className="control_stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+          {t('control_service_stepdesc2')}
+          </p>     
+          </div>
+          <img className="stepperService_desc_img" src={cloud} alt="cloud" />
+      </div>
+      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+         <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('control_service_stephead3')}</b></h1>
+          <p className="control_stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+          {t('control_service_stepdesc3')}
+          </p>
+          <img className="stepperService_desc_img" src={energy} alt="energy" />
+        </div>
+      </div>
+    </div>
+    }
    </div>
    </div>
   

@@ -9,6 +9,7 @@ export default function p2() {
     <div className="row" style={{marginTop:'120px'}}>
     <div className="text-gray-600 body-font">
       <div className="flex flex-wrap">
+      {t('model_service_contact') === "Contact us" ?
         <div className="single_project_desc_image rounded-lg overflow-hidden" style={{height:'727px'}}>
             <img
               alt="feature"
@@ -16,7 +17,16 @@ export default function p2() {
               src={pImage}
             />
           </div>
-          <div className="single_project_desc flex" style={{marginTop:'0px'}}> 
+          :
+          <div className="single_project_desc_image rounded-lg overflow-hidden" style={{height:'815px'}}>
+            <img
+              alt="feature"
+              className="object-cover object-center h-full w-full"
+              src={pImage}
+            />
+          </div>
+          }
+          <div className="single_project_desc flex" style={{marginTop:'0px', width:'640px'}}> 
             <div className="flex">
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">

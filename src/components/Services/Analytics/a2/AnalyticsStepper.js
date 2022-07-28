@@ -182,12 +182,16 @@ export default function VerticalLinearStepper() {
           <div className="line"></div>
           </a>
         <a className="nav-link" id="placement-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginTop: '25px', fontSize:'24px'}} href="#placement" role="tab" aria-controls="placement" aria-selected="false">
+        <div style={{display:'flex', alignItems: 'center'}}>
           <div className="circle"></div>
           {t('analytics_service_stephead9')}
+          </div>
         </a>
     </div>
    </div>
    </div>
+
+   {t('model_service_contact') === "Contact us" ?
 
     <div className="tab-content" id="tabContent" style={{width:'70%'}}>
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -274,6 +278,97 @@ export default function VerticalLinearStepper() {
         </div>
       </div>
     </div>
+
+
+     :
+    
+    
+    <div className="tab-content" id="tabContent" style={{width:'70%'}}>
+     <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+       <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead1')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc1')}
+         </p>
+         <img className="stepperService_desc_img" src={solar} alt="solar" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead2')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc2')}
+         </p>
+         <img className="stepperService_desc_img" src={sunshine} alt="sunshine" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead3')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc3')}
+         </p>
+         <img className="stepperService_desc_img" src={shading} alt="shading" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead4')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc4')}
+         </p>
+         
+         <img className="stepperService_desc_img" src={daylight} alt="daylight" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="office" role="tabpanel" aria-labelledby="office-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead5')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc5')}
+         </p>
+         <img className="stepperService_desc_img" src={summer} alt="summer" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="cooling" role="tabpanel" aria-labelledby="cooling-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead6')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc6')}
+         </p>
+         <img className="stepperService_desc_img" src={cooling} alt="cooling" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="assessment" role="tabpanel" aria-labelledby="assessment-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead7')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc7')}
+         </p>
+         <img className="stepperService_desc_img" src={assessment} alt="assessment" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="analysis" role="tabpanel" aria-labelledby="analysis-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead8')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc8')}
+         </p>
+         <img className="stepperService_desc_img" src={build} alt="build" />
+       </div>
+     </div>
+     <div className="tab-pane fade" id="placement" role="tabpanel" aria-labelledby="placement-tab">
+        <div className="subcontent">
+         <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('analytics_service_stephead9')}</b></h1>
+         <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
+         {t('analytics_service_stepdesc9')}
+         </p>
+         
+         <img className="stepperService_desc_img" src={weather} alt="weather" />
+       </div>
+     </div>
+   </div>
+    }
    </div>
   </div>
   

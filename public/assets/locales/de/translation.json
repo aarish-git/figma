@@ -333,7 +333,9 @@
 
       "model_service_blue_head" : "Digitalisierung",
       "model_service_main_head" : "Digitales Modell zur Erfassung Ihres Gebäudes und dessen Umgebung",
-      "model_service_content" : "Die Modellierung in 3D ist der erste Schritt zur Digitalisierung Ihrer Immobilie. Geben Sie einfach den Standort Ihres Gebäudes an, und wir erstellen das 3D-Modell Ihres Gebäudes. Hier finden Sie einen Überblick über unsere Modellierungsdienste.",
+      "model_service_content1" : "Die Modellierung in 3D ist der erste Schritt zur Digitalisierung Ihrer Immobilie.",
+      "model_service_content2" : "Geben Sie einfach den Standort Ihres Gebäudes an, und wir erstellen das 3D-Modell Ihres Gebäudes.",
+      "model_service_content3" : " Hier finden Sie einen Überblick über unsere Modellierungsdienste.",
       "model_service_contact" : "Kontaktieren Sie uns",
 
       "model_service_stephead1" : "Das Zielgebäude",
@@ -355,8 +357,10 @@
 
 
       "analytics_service_blue_head" : "Analysen",
-      "analytics_service_main_head" : "Tiefgreifende Analysen zur Optimierung Ihres Gebäudes",
-      "analytics_service_content" : "Anhand der 3D-Modelle und zusätzlicher Eingabedaten führen wir mit selbst entwickelten Algorithmen eine detaillierte und ganzheitliche Gebäudeanalyse durch. Hier ein Blick auf unsere Analytik-Dienstleistungen.",
+      "analytics_service_main_head1" : "Tiefgreifende Analysen zur",
+      "analytics_service_main_head2" : "Optimierung Ihres Gebäudes",
+      "analytics_service_content1" : "Anhand der 3D-Modelle und zusätzlicher Eingabedaten führen wir mit selbst entwickelten Algorithmen eine detaillierte und ganzheitliche Gebäudeanalyse durch.",
+      "analytics_service_content2" : "Hier ein Blick auf unsere Analytik-Dienstleistungen.",
 
       "analytics_service_stephead1" : "Sonneneinstrahlungsanalyse",
       "analytics_service_stepdesc1" : "Unsere Sonneneinstrahlungsanalyse kartiert und analysiert die Auswirkungen der direkten, diffusen und globalen Einstrahlung auf relevante Bereiche der Gebäudehülle. Damit erfahren Sie mehr über den Einfluss der solaren Einstrahlung auf die Energiebilanz Ihres Gebäudes Im Jahresverlauf. Verwenden Sie den Service zum Beispiel um das PV-Potenzial Ihres Gebäudes einzuschätzen, die Anforderungen an die Verglasung zu ermitteln und die optimale Position für Sitzplätze im Freien zu bestimmen.",
@@ -391,7 +395,8 @@
 
       "control_service_blue_head" : "Steuerung",
       "control_service_main_head" : "Mit unseren Steuerdaten sind Sie dem Wetter stets einen Schritt voraus",
-      "control_service_content" : "Kombinieren Sie unsere Bewertungsergebnisse mit Wettervorhersagedaten, lokalen Sensordaten und weiteren Datenpunkten, um modellbasierte Steuerungsdaten zu generieren die zur Verbesserung der Energieeffizienz und des Komforts beitragen. Hier ein Blick auf unsere Steuerungsdienste.",
+      "control_service_content1" : "Kombinieren Sie unsere Bewertungsergebnisse mit Wettervorhersagedaten, lokalen Sensordaten und weiteren Datenpunkten, um modellbasierte Steuerungsdaten zu generieren die zur Verbesserung der Energieeffizienz und des Komforts beitragen. ",
+      "control_service_content2" : "Hier ein Blick auf unsere Steuerungsdienste.",
 
       "control_service_stephead1" : "Steuerdaten für eine bedarfsgerechte & sichere Sonnenschutzsteuerung",
       "control_service_stepdesc1" : "Maximieren Sie die Möglichkeiten Ihres lokalen Wettersensors, um eine sichere, effiziente, komfortable und bedarfsgerechte Steuerung Ihrer Beschattungssysteme zu gewährleisten. Um ein Höchstmaß an Systemqualität zu erreichen, stellen wir für jedes Fenster Beschattungs- und Windkorrekturfaktoren bereit. Zusätzlich identifizieren wir die optimale Position für die lokalen Wettersensoren. Unsere Datendienste entsprechen den Anforderungen der VDI 3813/3814 und EN 15232.",

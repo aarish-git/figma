@@ -38,34 +38,34 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a href="#foot_building" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
                     {/* Building owners */}
                     {t('Footer_Lista1')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Assest" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Asset managers{" "} */}
                     {t('Footer_Lista2')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Building" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Building automation{" "} */}
                     {t('Footer_Lista3')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Energy" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Energy providers */}
                     {t('Footer_Lista4')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Architects" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Architects & Designers{" "} */}
                     {t('Footer_Lista5')}
-                  </a>
+                 </Link>
                 </li>
               </nav>
             </div>

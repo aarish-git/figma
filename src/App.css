@@ -10,6 +10,7 @@ a:hover {
 
 .container {
   width: 100%;
+  /* max-width: 1980px !important; */
 }
 
 .row {
@@ -593,6 +594,19 @@ color: #2F2F2F;
   height: 70px;
 }
 
+.single_project_main_head_de {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  letter-spacing: 0.002em;
+  color: #2F2F2F;
+  height: 70px;
+  width: 75%;
+}
+
 .single_project_location_head {
   margin-bottom: 24px;
   font-style: normal;
@@ -612,6 +626,61 @@ color: #2F2F2F;
   line-height: 32px;
   color: #2F2F2F;
   width: 1005px !important;
+  height: 96px;
+}
+
+.single_project_content_de {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  width: 845px !important;
+  height: 96px;
+}
+
+.single_service_content_de {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  width: 970px !important;
+  height: 96px;
+}
+
+.single_service_content {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  width: 930px !important;
+  height: 96px;
+}
+
+.control_service_content_de {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  width: 1007px !important;
+  height: 96px;
+}
+
+.control_service_content {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  width: 997px !important;
   height: 96px;
 }
 
@@ -865,6 +934,26 @@ cursor: pointer;
   color: #2F2F2F;
 }
 
+.stepper_desc_p_de {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  margin-bottom: 40px;
+  width: 730px;
+}
+
+.control_stepper_desc_p_de {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #2F2F2F;
+  margin-bottom: 40px;
+  width: 675px;
+}
+
 .stepper_desc_p {
   font-style: normal;
   font-weight: 400;
@@ -872,12 +961,12 @@ cursor: pointer;
   line-height: 32px;
   color: #2F2F2F;
   margin-bottom: 40px;
-  width: 625px;
+  width: 710px;
 }
 
 .stepper_desc_img{
-  width: 97%;
-  height: 435px;
+  /* width: 97%; */
+  /* height: 435px; */
 }
 
 .stepperService_desc_img{
@@ -916,6 +1005,7 @@ cursor: pointer;
   text-transform: uppercase;
   color: #2F2F2F;
   margin-bottom: 16px;
+  width: 655px;
 }
 
 .discover_how {
