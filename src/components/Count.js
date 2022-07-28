@@ -83,7 +83,8 @@ export default function Count() {
                       }}
                       className="bg-[#0087FF] p-[10px] text-[white] rounded-[20px] w-[160px] shadow-[0_4px_4px_rgba(0,135,255,0.25)]"
                     >
-                      Contact Us
+                      {/* Contact Us */}
+                      {t('Contact_text')}
                     </button>
                     </Link>
                   </div>

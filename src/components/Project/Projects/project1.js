@@ -19,7 +19,7 @@ export default function Project() {
   return (
     <div className="project_home" style={{width:'1280px'}}>
       <div className=" text-gray-600" style={{marginTop:'32px', textAlign:'left'}}>
-        <a style={{ all: "unset", cursor: 'pointer' }} href="/mannhiem">
+        <Link style={{ all: "unset", cursor: 'pointer' }} to="/mannhiem">
             <div className="project_outline ">
               <img
                 alt="ecommerce"
@@ -136,11 +136,11 @@ export default function Project() {
                 </div>
               </div>
             </div>
-        </a>
+        </Link>
       </div>
       {/* 2nd */}
       <div className=" text-gray-600" style={{marginTop:'120px', textAlign:'left'}}>
-        <a style={{ all: "unset", cursor: 'pointer' }} href="/granue">
+        <Link style={{ all: "unset", cursor: 'pointer' }} to="/granue">
             <div className="project_outline ">
               <img
                 alt="ecommerce"
@@ -248,11 +248,11 @@ export default function Project() {
                
               </div>
             </div>
-        </a>
+        </Link>
       </div>
       {/* 3rd */}
       <div className=" text-gray-600" style={{marginTop:'120px', textAlign:'left'}}>
-        <a style={{ all: "unset", cursor: 'pointer' }} href="/phoenix">
+        <Link style={{ all: "unset", cursor: 'pointer' }} to="/phoenix">
             <div className="project_outline ">
               <img
                 alt="ecommerce"
@@ -364,11 +364,11 @@ export default function Project() {
                 </div>
               </div>
             </div>
-        </a>
+        </Link>
       </div>
       {/* 4th */}
       <div className=" text-gray-600" style={{marginTop:'120px', marginBottom:'43px', textAlign:'left'}}>
-        <a style={{ all: "unset", cursor: 'pointer' }} href="/wago">
+        <Link style={{ all: "unset", cursor: 'pointer' }} to="/wago">
             <div className="project_outline ">
               <img
                 alt="ecommerce"
@@ -480,7 +480,7 @@ export default function Project() {
                 </div>
               </div>
             </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

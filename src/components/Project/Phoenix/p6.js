@@ -10,24 +10,24 @@ export default function p6() {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 w-1/2 text-left">
-              <a
-                href="/granue"
+              <Link
+                to="/granue"
                 className="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <img alt="Project" src={leftArrow} />
                 <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed underline underline-offset-4">Grüne Aue Project</p>
-              </a>
+              </Link>
             </div>
             <div className="p-4 w-1/2 text-right">
-              <a
-                href="/wago"
+              <Link
+                to="/wago"
                 className="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
                 <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed underline underline-offset-4">Wago Project</p>
                 <img alt="Project" src={rightArrow} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

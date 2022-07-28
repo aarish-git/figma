@@ -23,8 +23,8 @@ export default function wago6() {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 w-1/2 text-left">
-              <a
-                href="/mannhiem"
+              <Link
+                to="/mannhiem"
                 className="flex text-left space-x-4 hover:text-zinc-900"
               >
                 {" "}
@@ -32,11 +32,11 @@ export default function wago6() {
                 <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed underline underline-offset-4">
                   Trio Mannheim Project
                 </p>
-              </a>
+              </Link>
             </div>
             <div className="p-4 w-1/2 text-right">
-              <a
-                href="/phoenix"
+              <Link
+                to="/phoenix"
                 className="flex float-right space-x-4 hover:text-zinc-900"
               >
                 {" "}
@@ -44,7 +44,7 @@ export default function wago6() {
                   Pheonix Contact Project
                 </p>
                 <img alt="arrow" src={rightArrow} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
