@@ -37,9 +37,9 @@ export default function Services() {
         {/* card1 */}
 
         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 cursor-pointer">
-          <a
+          <Link
             style={{ all: "unset" }}
-            href="/services/3d-digital-models-of-buildings"
+            to="/services/3d-digital-models-of-buildings"
           >
             {t('model_service_contact') === "Contact us" ?
             <div className="py-3 sub_move_towards_body">
@@ -72,13 +72,13 @@ export default function Services() {
               </p>
             </div>
             }
-          </a>
+          </Link>
         </div>
 
         {/* card2 */}
 
         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 cursor-pointer">
-          <a style={{ all: "unset" }} href="/building-analytics">
+          <Link style={{ all: "unset" }} to="/building-analytics">
           {t('model_service_contact') === "Contact us" ?
             <div className="py-3 sub_move_towards_body">
               <h2
@@ -112,13 +112,13 @@ export default function Services() {
             </p>
           </div>
           }
-          </a>
+          </Link>
         </div>
 
         {/* card3 */}
 
             <div  className="col-lg-4 col-md-4 col-sm-12 col-xs-12 cursor-pointer">
-              <a style={{ all: "unset" }} href="/smart-building-control">
+              <Link style={{ all: "unset" }} to="/smart-building-control">
               {t('model_service_contact') === "Contact us" ?
                 <div className="py-3 sub_move_towards_body">
                   <h2
@@ -150,7 +150,7 @@ export default function Services() {
                   </p>
                 </div>
               }
-              </a>
+              </Link>
             </div>
       </div>
     </div>

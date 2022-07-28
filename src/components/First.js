@@ -115,11 +115,11 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
-              <a style={{ all: "unset" }} href="/project">
+              <Link style={{ all: "unset" }} to="/project">
                 <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                   {t("Home_section4_button1")}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -200,12 +200,12 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
-              <a style={{ all: "unset" }} href="/mannhiem">
+              <Link style={{ all: "unset" }} to="/mannhiem">
                 <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                   {/* Take a look at our Trio Mannheim project */}
                   {t("Home_section5_button1")}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -291,12 +291,12 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
-              <a style={{ all: "unset" }} href="/wago">
+              <Link style={{ all: "unset" }} to="/wago">
                 <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                   {/* Know more about our proactive control project */}
                   {t("Home_section6_button1")}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -384,12 +384,12 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
-              <a style={{ all: "unset" }} href="/granue">
+              <Link style={{ all: "unset" }} to="/granue">
                 <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                   {/* Take a look at our project with Vattenfall */}
                   {t('Home_section7_button1')}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -467,12 +467,12 @@ export default function First() {
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
-              <a style={{ all: "unset" }} href="/project">
+              <Link style={{ all: "unset" }} to="/project">
                 <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
                   {/* Our success stories */}
                   {t('Home_section8_button1')}
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
