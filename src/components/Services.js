@@ -41,6 +41,7 @@ export default function Services() {
             style={{ all: "unset" }}
             href="/services/3d-digital-models-of-buildings"
           >
+            {t('model_service_contact') === "Contact us" ?
             <div className="py-3 sub_move_towards_body">
               <h2
                 style={{ fontFamily: "Exo2-Bold" }}
@@ -54,26 +55,23 @@ export default function Services() {
               >
                 {t("Home_section3_service1_content")}
               </p>
-              {/* <p style={{ fontFamily: "NunitoSans-Regular", marginTop:'20px'}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                <div className="py-3 sub_move_towards_body">
-                  <h2 style={{ fontFamily: "Exo2-Bold" }}
-                    className="sub_move_towards_head text-gray-900 text-lg font-bold title-font uppercase mb-2 tracking-wide"
-                  >
-                    Modelling
-                  </h2>
-                  <p style={{ fontFamily: "NunitoSans-Regular", marginTop:'20px'}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                  Take the step to digitise your real estate with our unique building 3D modelling services.
-                  </p>
-                  {/* <p style={{ fontFamily: "NunitoSans-Regular", marginTop:'20px'}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                    Take the step to digitise your real estate 
-                  </p>
-                  <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                    with our unique building 3D modelling 
-                  </p>
-                  <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                   services.
-                  </p> */}
             </div>
+            :
+            <div className="py-3 sub_move_towards_body_de">
+              <h2
+                style={{ fontFamily: "Exo2-Bold" }}
+                className="sub_move_towards_head text-gray-900 text-lg font-bold title-font uppercase mb-2 tracking-wide"
+              >
+                {t("Home_section3_service1")}
+              </h2>
+              <p
+                style={{ fontFamily: "NunitoSans-Regular", marginTop: "20px" }}
+                className="sub_move_towards_content leading-relaxed text-base text-center "
+              >
+                {t("Home_section3_service1_content")}
+              </p>
+            </div>
+            }
           </a>
         </div>
 
@@ -81,6 +79,7 @@ export default function Services() {
 
         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 cursor-pointer">
           <a style={{ all: "unset" }} href="/building-analytics">
+          {t('model_service_contact') === "Contact us" ?
             <div className="py-3 sub_move_towards_body">
               <h2
                 style={{ fontFamily: "Exo2-Bold" }}
@@ -95,28 +94,24 @@ export default function Services() {
               >
                 {t("Home_section3_service2_content")}
               </p>
-              {/* <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 cursor-pointer">
-              <a style={{ all: "unset" }} href="/building-analytics">
-                <div className="py-3 sub_move_towards_body">
-                  <h2 style={{ fontFamily: "Exo2-Bold" }}
-                    className="sub_move_towards_head text-gray-900 text-lg font-bold title-font font-medium mb-2 uppercase tracking-wide"
-                  >
-                    Analytics
-                  </h2>
-                  <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                  Get a holistic view of your building's design and performance with our advanced building analytics services.
-                  </p>
-                  {/* <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                    Get a holistic view of your building's 
-                  </p>
-                  <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                    design and performance with our 
-                  </p>
-                  <p style={{ fontFamily: "NunitoSans-Regular"}} className="sub_move_towards_content leading-relaxed text-base text-center ">
-                   advanced building analytics services.
-                  </p> */}
             </div>
+            :
+            <div className="py-3 sub_move_towards_body_de">
+            <h2
+              style={{ fontFamily: "Exo2-Bold" }}
+              className="sub_move_towards_head text-gray-900 text-lg font-bold title-font font-medium mb-2 uppercase tracking-wide"
+            >
+              
+              {t("Home_section3_service2")}
+            </h2>
+            <p
+              style={{ fontFamily: "NunitoSans-Regular" }}
+              className="sub_move_towards_content leading-relaxed text-base text-center "
+            >
+              {t("Home_section3_service2_content")}
+            </p>
+          </div>
+          }
           </a>
         </div>
 
@@ -124,6 +119,7 @@ export default function Services() {
 
             <div  className="col-lg-4 col-md-4 col-sm-12 col-xs-12 cursor-pointer">
               <a style={{ all: "unset" }} href="/smart-building-control">
+              {t('model_service_contact') === "Contact us" ?
                 <div className="py-3 sub_move_towards_body">
                   <h2
                     style={{ fontFamily: "Exo2-Bold" }}
@@ -138,6 +134,22 @@ export default function Services() {
                   {t("Home_section3_service3_content")}
                   </p>
                 </div>
+                :
+                <div className="py-3 sub_move_towards_body_de">
+                  <h2
+                    style={{ fontFamily: "Exo2-Bold" }}
+                    className="sub_move_towards_head text-gray-900 text-lg font-bold title-font font-medium mb-2 uppercase tracking-wide"
+                  >
+                   {t("Home_section3_service3")}
+                  </h2>
+                  <p
+                    style={{ fontFamily: "NunitoSans-Regular"}}
+                    className="sub_move_towards_content leading-relaxed text-base text-center 2xl:px-5 xl:px-5 lg:px-1"
+                  >
+                  {t("Home_section3_service3_content")}
+                  </p>
+                </div>
+              }
               </a>
             </div>
       </div>

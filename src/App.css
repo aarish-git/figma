@@ -126,19 +126,18 @@ a:hover {
 }
 
 .sub_move_towards_body{
-  /* position: absolute; */
   width: 400px;
-  height: 189px;
-  /* left: 38px;
-  top: 1481px; */
-  
-  /* White */
-  
+  height: 180px;
   background: #FFFFFF;
-  /* Blue Shadow Button */
-  
   box-shadow: 0px 4px 4px rgba(3, 24, 43, 0.25);
-  /* box-shadow: none; */
+  border-radius: 20px;
+}
+
+.sub_move_towards_body_de{
+  width: 400px;
+  height: 205px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(3, 24, 43, 0.25);
   border-radius: 20px;
 }
 
@@ -651,7 +650,7 @@ color: #2F2F2F;
   font-size: 20px;
   line-height: 32px;
   /* height: 64px; */
-  /* width: 665px !important; */
+  /* width: 670px !important; */
   color: #2F2F2F;
   /* margin-bottom: 40px; */
 }
@@ -682,6 +681,18 @@ color: #2F2F2F;
 
 .mann_project_desc_head {
   margin-top: 35px;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.005em;
+  color: #373F41;
+  height: 60px;
+}
+
+.mann_project_desc_head_de {
+  margin-top: 10px;
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 700;
@@ -861,6 +872,7 @@ cursor: pointer;
   line-height: 32px;
   color: #2F2F2F;
   margin-bottom: 40px;
+  width: 625px;
 }
 
 .stepper_desc_img{
@@ -892,7 +904,7 @@ cursor: pointer;
   line-height: 32px;
   color: #2F2F2F;
   margin-bottom: 40px;
-  width: 655px;
+  width: 670px;
 }
 
 .results_benefits_subhead {

@@ -24,12 +24,21 @@ export default function man2() {
             <div className="flex">
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">
+              {t('model_service_contact') === "Contact us" ?
                 <h2
                   style={{ fontFamily: "Exo2-Bold" }}
                   className="mann_project_desc_head"
                 >
                    {t('mann_project_desc_head')}
                 </h2>
+                :
+                <h2
+                  style={{ fontFamily: "Exo2-Bold" }}
+                  className="mann_project_desc_head_de"
+                >
+                   {t('mann_project_desc_head')}
+                </h2>
+              }
                 <p className="mann_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
                   {t('mann_project_desc_p1')}
                 </p>
@@ -43,7 +52,7 @@ export default function man2() {
             </div>
               <div className="">
               <h2
-                 style={{ fontFamily: "Exo2-Regular", width: '664px' }}
+                 style={{ fontFamily: "Exo2-Regular", width: '666px' }}
                  className="results_benefits_subhead"
                 >
                    {t('mann_project_desc_subhead1')}

@@ -18,19 +18,39 @@ export default function Index() {
               {/* Projects */}
               {t('Project_section1_head1')}
             </span>
-            <h1
-              style={{ fontFamily: "Exo2-Bold", marginBottom: '32px', marginTop:'16px' }}
-              className="text-[#2F2F2F] text-[58px] "
-            >
+            {t('model_service_contact') === "Contact us" ?
+              <h1
+                style={{ fontFamily: "Exo2-Bold", marginBottom: '32px', marginTop:'16px' }}
+                className="text-[#2F2F2F] text-[58px] "
+              >
               {/* Our success stories */}
               {t('Project_section1_head2')}
             </h1>
-            <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'775px'}} className="text-[20px] leading-relaxed">
+            :
+            <h1
+                style={{ fontFamily: "Exo2-Bold", marginBottom: '32px', marginTop:'16px', width:'750px' }}
+                className="text-[#2F2F2F] text-[58px] "
+              >
+              {/* Our success stories */}
+              {t('Project_section1_head2')}
+            </h1>
+            }
+
+            {t('model_service_contact') === "Contact us" ?
+              <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'775px'}} className="text-[20px] leading-relaxed">
+                {/* We have gained experience working with a wide range of industry
+                partners. Take a glance at our project portfolio to learn more
+                about the value we created for our clients and their buildings. */}
+                {t('project_section1_content')}
+              </p>
+              :
+              <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'780px'}} className="text-[20px] leading-relaxed">
               {/* We have gained experience working with a wide range of industry
               partners. Take a glance at our project portfolio to learn more
               about the value we created for our clients and their buildings. */}
               {t('project_section1_content')}
-            </p>
+              </p>
+            }
             <div className="flex">
               <a style={{all:"unset"}} href="/contact">
               <button
@@ -38,7 +58,7 @@ export default function Index() {
                 className="inline-flex  py-2 px-6  rounded-[20px] text-[20px] text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
               >
                 {/* Contact us */}
-                {t('Contact_text')}
+                {t('model_service_contact')}
               </button>
               </a>
             </div>

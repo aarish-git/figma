@@ -334,6 +334,7 @@ export default function Project() {
                 </div>
                 <div className=" text-center project_nums">
                 <div className="flex text-gray-600 body-font project_nums">
+                      {t('model_service_contact') === "Contact us" ?
                         <div style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'124px'}}>
                           <h2
                            style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
@@ -342,6 +343,16 @@ export default function Project() {
                           </h2>
                           <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section4_number1')}</p>
                         </div>
+                        :
+                        <div style={{display:'flex', flexDirection: 'column', textAlign:'left', width:'155px'}}>
+                        <h2
+                         style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
+                        >
+                         ~1,965 m²
+                        </h2>
+                        <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section4_number1')}</p>
+                        </div>
+                      }
                         <div  style={{display:'flex', flexDirection: 'column', textAlign:'left', marginLeft:'80px'}}>
                           <h2
                            style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}

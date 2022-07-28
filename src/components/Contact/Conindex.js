@@ -95,14 +95,26 @@ export default function Index() {
                   </button> */}
                 </div>
               </div>
+              {t('contact_subhead_buttons_text9')==="Others" ?
+                <div className="grid grid-cols-2 gap-4 place-content-end ">
+               <div className="align-self-end">
+               <img className="usersit_img"  alt="relaxed" src={relaxed} />
+             </div>
+             <div className="justify-end w-full">
+               <img className="building_img" alt="building" src={building} />
+             </div>
+             </div>
+              :
               <div className="grid grid-cols-2 gap-4 place-content-end ">
                 <div className="align-self-end">
-                  <img className="usersit_img"  alt="relaxed" src={relaxed} />
-                </div>
-                <div className="justify-end w-full">
-                  <img className="building_img" alt="building" src={building} />
-                </div>
+                <img className="usersit_img_de"  alt="relaxed" src={relaxed} />
               </div>
+              <div className="justify-end w-full">
+                <img className="building_img_de" alt="building" src={building} />
+              </div>
+               
+              </div>
+                  }
             </div>
           </div>
           <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0" style={{width: '500px', height:'763px'}}>
@@ -213,7 +225,7 @@ export default function Index() {
                 placeholder={t('contact_note_text')}
               />
             </div>
-            <div className="flex my-2 space-x-4 text-left">
+            <div className="flex my-2 space-x-4 text-left contact_form_Iagree_div" >
               <input
                 type="checkbox"
                 id="email"
