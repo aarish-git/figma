@@ -20,7 +20,7 @@ export default function GetStart() {
             <div className="flex">
               <Link style={{all:"unset"}} to="/contact">
               <button style={{marginTop:'64px', fontSize:'20px'}} className="inline-flex text-white py-2 px-6 focus:outline-none bg-[#0087FF] shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] text-lg">
-              {t('Home_section9_button1')}
+              {t('model_service_contact')}
               </button>
               </Link>
             </div>

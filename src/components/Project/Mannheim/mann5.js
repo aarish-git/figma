@@ -14,7 +14,7 @@ export default function mann5() {
             alt="hero"
             src="https://dummyimage.com/720x600"
           /> */}
-          <div className="text-center lg:w-2/3 w-full">
+          <div className="text-center w-full">
           <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how tracking-widest uppercase text-[20px] font-[400] py-5 mb-2">
           {t('mann_project_discover_how')}
             </h1>

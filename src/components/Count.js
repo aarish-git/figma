@@ -28,7 +28,7 @@ export default function Count() {
                 >
                   {t('Home_content')}
                 </p>:<p
-                  style={{ fontFamily: "NunitoSans-Regular", width:'664px', height:'96px' }}
+                  style={{ fontFamily: "NunitoSans-Regular", width:'645px', height:'96px' }}
                   className="home_first_subcontent1"
                 >
                   {t('Home_content')}
@@ -45,25 +45,47 @@ export default function Count() {
                       {t('Home_number_head')}
                     </h1>
                   </div>
+                  
                   <div className="flex flex-wrap  text-left ">
-                    <div style={{width:'140px', height:'74px'}}>
-                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                        15
-                      </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
-                    </div>
+                    {t('model_service_contact') === "Contact us" ?
+                       <div style={{width:'140px', height:'74px'}}>
+                       <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
+                         15
+                       </h2>
+                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
+                     </div>
+                     :
+                     <div style={{width:'190px', height:'74px'}}>
+                     <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
+                       15
+                     </h2>
+                     <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
+                   </div>
+                    }
+                   
                     <div style={{width:'189px', height:'74px', margin: '0px 76px 0px 76px'}}>
                       <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                        500,000 +
+                        500,000+
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text2')}</p>
                     </div>
-                    <div style={{width:'130px', height:'74px'}}>
-                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                        1,500 +
-                      </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
-                    </div>
+
+                    {t('model_service_contact') === "Contact us" ?
+                       <div style={{width:'130px', height:'74px'}}>
+                       <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
+                         1,500+
+                       </h2>
+                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
+                     </div>
+                     :
+                     <div style={{width:'145px', height:'74px'}}>
+                     <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
+                       1,500+
+                     </h2>
+                     <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
+                   </div>
+                    }
+                   
                   </div>
                   <div className="relative top-10" style={{marginTop:'64px'}}>
                     <Link style={{all:"unset"}} to="/contact">
@@ -79,12 +101,11 @@ export default function Count() {
                         fontFamily: "NunitoSans-Regular",
                         fontWeight: "400",
                         fontSize: "20px",
-                        
+                        padding: '10px 20px'
                       }}
-                      className="bg-[#0087FF] p-[10px] text-[white] rounded-[20px] w-[160px] shadow-[0_4px_4px_rgba(0,135,255,0.25)]"
+                      className="bg-[#0087FF] p-[10px] text-[white] rounded-[20px]  shadow-[0_4px_4px_rgba(0,135,255,0.25)]"
                     >
-                      {/* Contact Us */}
-                      {t('Contact_text')}
+                      {t('model_service_contact')}
                     </button>
                     </Link>
                   </div>

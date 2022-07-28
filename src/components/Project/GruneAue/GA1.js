@@ -36,7 +36,7 @@ export default function gran() {
             <div className="flex ">
               <div className="text-gray-900 body-font">
                 <div className="  ">
-                  <div className="flex flex-wrap space-x-14 " style={{marginTop:'40px'}}>
+                  <div className="flex flex-wrap space-x-14 ">
                     <div className="sm:2/3 space-y-2">
                       <h2
                         style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]"

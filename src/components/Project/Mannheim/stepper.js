@@ -54,7 +54,7 @@ export default function VerticalLinearStepper() {
   // };
 
   return (
-    <div className="row" style={{ textAlign: "left" }}>
+    <div className="row" style={{ textAlign: "left", marginTop:'120px' }}>
       <h2
         style={{ fontFamily: "Exo2-Bold" }}
         className="single_project_desc_head"

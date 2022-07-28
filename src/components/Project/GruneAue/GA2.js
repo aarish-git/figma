@@ -44,7 +44,7 @@ export default function GA2() {
               {/* <div className="w-full h-12 inline-flex items-center justify-left "></div> */}
               <div className="flex-grow">
                 <h2
-                  style={{ fontFamily: "Exo2-Regular" }}
+                  style={{ fontFamily: "Exo2-Regular", width: '665px' }}
                   className="results_benefits_subhead"
                 >
                    {t('grune_project_desc_subhead1')}
