@@ -1,15 +1,12 @@
 .arun_container {
-  width: 100%;
-  padding: 0px 28px 0px 40px;
+  width: 99%;
+  padding: 0px 0px 0px 30px;
   margin: 0;
   display: flex;
   position: fixed;
-  /* background-color:#fff; */
-  /* z-index: 0.0; */
   z-index: 9999;
-  /* opacity:0.9; */
-  background:rgb(252, 252, 252,0.1);
-  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
 }
 
 .arun_container .arun_logo {
@@ -31,25 +28,69 @@
   color: #2F2F2F;
 }
 
-.arun_container .arun_menuList ul {
+.arun_container .arun_menuList .arunUL {
   display: flex;
   gap: 3.8rem;
   align-items: center;
   font-size: 113%;
   margin-left: inherit;
-  /* font-weight: 400; */
-  
+  font-weight: 500;
 }
 
-.active {
-  /* background-color: rgb(248, 248, 248); */
-  font-weight: bolder;
-  background-color: #fffbfb;
+
+.arun_container .arun_menuList .arunUL #dd_link{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #2F2F2F;
   padding: 10px;
-  border-radius: 20px;
-  opacity: 1;
-  z-index: 1;
 }
+
+.arunUL .active {
+  /* background-color: rgb(248, 248, 248); */
+  background: #FFFFFF;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 800 !important;
+  font-size: 16px;
+  line-height: 22px;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.0025em;
+  color: #2F2F2F;
+}
+
+.lang_options ul {
+  display: flex;
+  align-items: center;
+}
+
+.lang_options .active{
+  background: none;
+  font-weight: 800;
+}
+
+.lang_options button {
+  font-size: 16px !important;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0025em;
+  color: #2F2F2F;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+  /* margin-top: 16px; */
+  font-style: normal !important;
+  background: none !important;
+}
+
+
 /* to override the existing css for "a" tag */
 #sub-header .active a {
   color: #FFFFFF;
@@ -84,7 +125,7 @@
 
 .contactandLanguage {
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   margin: auto;
   gap: 1rem;
 }

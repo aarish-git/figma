@@ -13,7 +13,7 @@ export default function GA4() {
     <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
-          <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '-15px'}}>
+          <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'45%'}}>
             <img
               className="object-cover object-center rounded"
               alt="hero"
@@ -30,9 +30,9 @@ export default function GA4() {
             <div className="flex flex-col space-y-5">
             <p style={{fontFamily:"Exo2-Regular"}} className="results_benefits_subhead">{t('grune_project_results_benefits_subhead')}</p>
               <ul className="space-y-3">
-                <li className="flex space-x-5"><img className="h-fit" alt="Line" src={Line} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text1')}</p> </li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text2')}</p> </li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Coin" src={Coin} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text3')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Line" src={Line} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text1')}</p> </li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text2')}</p> </li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Coin" src={Coin} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text3')}</p></li>
               </ul>
             </div>
           </div>

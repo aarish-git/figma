@@ -111,34 +111,34 @@ export default function VerticalLinearStepper() {
         <div className="circle"></div>
       </div> */}
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div className="circle"></div>
           {t('wago_project_stephead1')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '32px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '32px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
           <div style={{display:'flex', alignItems: 'center'}}>
-          <div className="circle"></div>
+          <div className="circle" style={{marginTop:'12px', width:'25px', height:'23px', marginLeft:'0px'}}></div>
           {t('wago_project_stephead2')}
           </div>
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
           <div className="circle"></div>
           {t('wago_project_stephead3')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+        <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
           <div className="circle"></div>
           {t('wago_project_stephead4')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="build-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#build" role="tab" aria-controls="build" aria-selected="false">
+        <a className="nav-link" id="build-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#build" role="tab" aria-controls="build" aria-selected="false">
           <div className="circle"></div>
           {t('wago_project_stephead5')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="wind-tab" onClick={() => window.scrollTo(0, 1500)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#wind" role="tab" aria-controls="wind" aria-selected="false">
+        <a className="nav-link" id="wind-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#wind" role="tab" aria-controls="wind" aria-selected="false">
           <div className="circle"></div>
           {t('wago_project_stephead6')}
         </a>

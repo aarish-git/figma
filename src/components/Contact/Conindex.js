@@ -5,6 +5,7 @@ import relaxed from "../../assest/Images/contact/contact1.png";
 import building from "../../assest/Images/contact/contact2.png";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from 'react-i18next';//translator
+import $ from "jquery";
 
 export default function Index() {
   const { t, i18n } = useTranslation();//translator
@@ -16,11 +17,80 @@ export default function Index() {
     console.log("Captcha value:", value);
     setverified(true);
   }
+
+  // $(document).ready(function(){
+    // $(".contact_subhead_buttons_text").click(function(){
+      // $(".contact_subhead_buttons_text").toggleClass("main");
+    // });
+  // });
+
+  const [isActive1, setActive1] = useState(false);
+  const [isActive2, setActive2] = useState(false);
+  const [isActive3, setActive3] = useState(false);
+  const [isActive4, setActive4] = useState(false);
+  const [isActive5, setActive5] = useState(false);
+  const [isActive6, setActive6] = useState(false);
+  const [isActive7, setActive7] = useState(false);
+  const [isActive8, setActive8] = useState(false);
+  const [isActive9, setActive9] = useState(false);
+  const [isActive10, setActive10] = useState(false);
+  const [isActive11, setActive11] = useState(false);
+  // const [isActive12, setActive11] = useState(false);
+
+  const toggleClass1 = () => {
+    setActive1(!isActive1);
+  };
+
+  const toggleClass2 = () => {
+    setActive2(!isActive2);
+  };
+
+  const toggleClass3 = () => {
+    setActive3(!isActive3);
+  };
+
+  const toggleClass4 = () => {
+    setActive4(!isActive4);
+  };
+
+  const toggleClass5 = () => {
+    setActive5(!isActive5);
+  };
+
+  const toggleClass6 = () => {
+    setActive6(!isActive6);
+  };
+
+  const toggleClass7 = () => {
+    setActive7(!isActive7);
+  };
+
+  const toggleClass8 = () => {
+    setActive8(!isActive8);
+  };
+
+  const toggleClass9 = () => {
+    setActive9(!isActive9);
+  };
+
+  const toggleClass10 = () => {
+    setActive10(!isActive10);
+  };
+  
+  const toggleClass11 = () => {
+    setActive11(!isActive11);
+  };
+
+  // const toggleClass12 = () => {
+  //   setActive12(!isActive11);
+  // };
+
+
   return (
     <div className="row">
     <div className="row" style={{marginTop:'75px', height:'1153px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
         <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{width:'666px', height:'506px', textAlign:'left', marginTop:'147px', marginLeft: '-10px'}}>
+          <div  style={{width:'666px', height:'506px', textAlign:'left', marginTop:'45px', marginLeft: '15px'}}>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="contact_head"
@@ -33,11 +103,17 @@ export default function Index() {
             <div className="my-5  text-left">
               <div className="space-y-3">
                 <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>{t('contact_subhead1')}</p>
-                <div className="space-x-4">
-                <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                <div className="flex space-x-3">
+                <button style={{ fontFamily: "Exo2-Regular" }}
+                 className={isActive1 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass1}  
+                //   className={isActive ? 'main': 'contact_subhead_buttons_text'} 
+                //  onClick={toggleClass}  
+                 >
                 {t('contact_subhead_buttons_text11')}
                   </button>
-                  <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                  <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive2 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass2}  >
                   {t('contact_subhead_buttons_text12')}
                   </button>
                 </div>
@@ -46,40 +122,49 @@ export default function Index() {
                 <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>{t('contact_subhead2')}</p>
                 <div className="space-x-4 space-y-4">
                   <div className="flex space-x-3">
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)]">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive11 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass11}>
                     {t('contact_subhead_buttons_text1')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive3 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass3}  >
                     {t('contact_subhead_buttons_text2')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive4 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass4}  >
                     {t('contact_subhead_buttons_text3')}
                     </button>
                   </div>
 
                   <div className="flex space-x-3" style={{marginLeft: '0px'}}>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive5 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass5}  >
                     {t('contact_subhead_buttons_text4')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive6 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass6}  >
                     {t('contact_subhead_buttons_text5')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular", zIndex:'10' }} className={isActive7 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass7} >
                     {t('contact_subhead_buttons_text6')}
                     </button>
                   </div>
 
                   <div className="flex space-x-3"  style={{marginLeft: '0px'}}>
                    
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive8 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass8}>
                     {t('contact_subhead_buttons_text7')}
                     </button>
                     
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive9 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass9}>
                     {t('contact_subhead_buttons_text8')}
                     </button>
 
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive10 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass10}>
                     {t('contact_subhead_buttons_text9')}
                     </button>
                   </div>
@@ -118,7 +203,7 @@ export default function Index() {
             </div>
           </div>
           <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0" style={{width: '500px', height:'763px'}}>
-            <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'138px'}}>
+            <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'35px'}}>
               <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>{t('contact_form_meeting')}</p>
               <div style={{display:'flex', alignItems:'center'}}>
                 <input className="contact_form_checkbox" type="checkbox" />
@@ -138,7 +223,7 @@ export default function Index() {
                 id="full-name"
                 name="full-name"
                 placeholder="Your name"
-                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
@@ -150,7 +235,7 @@ export default function Index() {
                 id="text"
                 name="Job Title"
                 placeholder="Role"
-                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="flex space-x-4">
@@ -163,7 +248,7 @@ export default function Index() {
                   id="email"
                   name="email"
                   placeholder="your@company.com"
-                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <div className="relative text-left">
@@ -175,7 +260,7 @@ export default function Index() {
                   id="email"
                   name="email"
                   placeholder="The name of your company"
-                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -191,7 +276,7 @@ export default function Index() {
                   id="phone"
                   name="phone"
                   placeholder="+46"
-                  className=" drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1  leading-8 transition-colors duration-200 ease-in-out"
+                  className=" drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1  leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div> */}
             <div className="relative text-left"  style={{ display: 'flex', flexDirection: 'column' }}>
@@ -203,7 +288,7 @@ export default function Index() {
                 id="phone"
                 name="phone"
                 placeholder="+49"
-                className="contact_form_phoneInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="contact_form_phoneInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
@@ -214,7 +299,7 @@ export default function Index() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               /> */}
               <textarea
                 className="contact_form_shortnote rop-shadow-md rounded-[10px] p-1 w-[-webkit-fill-available]"
@@ -230,9 +315,9 @@ export default function Index() {
                 type="checkbox"
                 id="email"
                 name="email"
-                className="contact_form_checkbox bg-white drop-shadow-sm rounded-[2px] w-[26px] h-[26px]  border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
+                className="contact_form_checkbox bg-white drop-shadow-sm rounded-[2px] w-[26px] h-[26px]   text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
               />
-              <p className="text-[12px] contact_form_Iagree">
+              <p className="text-[12px] contact_form_Iagree" style={{fontFamily:"NunitoSans-Regular"}}>
               {t('contact_note_iagree')}
               </p>
             </div>
@@ -249,6 +334,7 @@ export default function Index() {
               <button
                 disabled={!verified}
                 className="contact_form_submitButton"
+                style={{fontFamily:"NunitoSans-Regular"}}
               >
                 {t('contact_submit_button')}
               </button>
@@ -291,7 +377,7 @@ export default function Index() {
                     type="text"
                     id="full-name"
                     name="full-name"
-                    className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
                 <div className="relative mb-4">
@@ -302,7 +388,7 @@ export default function Index() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
                 <div className="flex space-x-4">
@@ -314,7 +400,7 @@ export default function Index() {
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
                   <div className="relative mb-4">
@@ -325,7 +411,7 @@ export default function Index() {
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
                 </div>
@@ -335,7 +421,7 @@ export default function Index() {
                       type="radio"
                       id="email"
                       name="email"
-                      className=" bg-white drop-shadow-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className=" bg-white drop-shadow-sm rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     <label for="email" className="leading-7 text-sm text-gray-600">
                       Digital twin service
@@ -347,7 +433,7 @@ export default function Index() {
                       type="radio"
                       id="email"
                       name="email"
-                      className=" bg-white drop-shadow-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className=" bg-white drop-shadow-sm rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     <label for="email" className="leading-7 text-sm text-gray-600">
                       Future Information
@@ -371,7 +457,7 @@ export default function Index() {
                     type="checkbox"
                     id="email"
                     name="email"
-                    className="bg-white drop-shadow-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
+                    className="bg-white drop-shadow-sm rounded border  text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
                   />
                   <p className="text-xs text-gray-500 ">
                     Literally you probably haven't heard of them jean shorts.

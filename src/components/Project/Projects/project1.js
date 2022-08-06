@@ -17,7 +17,7 @@ export default function Project() {
   const { t, i18n } = useTranslation();//translator
 
   return (
-    <div className="project_home" style={{width:'1280px'}}>
+    <div className="project_home" style={{width:'97%'}}>
       <div className=" text-gray-600" style={{marginTop:'32px', textAlign:'left'}}>
         <Link style={{ all: "unset", cursor: 'pointer' }} to="/mannhiem">
             <div className="project_outline ">
@@ -26,7 +26,7 @@ export default function Project() {
                 className=" projectImage rounded-[20px]  object-cover object-center rounded"
                 src={Trio}
               />
-              <div className="">
+              <div style={{width:'70%'}}>
               <div className="project_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -147,7 +147,7 @@ export default function Project() {
                 className=" projectImage rounded-[20px]  object-cover object-center rounded"
                 src={Granue}
               />
-              <div className="">
+              <div style={{width:'70%'}}>
                 <div className="project_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -259,7 +259,7 @@ export default function Project() {
                 className=" projectImage rounded-[20px]  object-cover object-center rounded"
                 src={Pheonix}
               />
-              <div className="">
+              <div style={{width:'70%'}}>
               <div className="project_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -386,8 +386,8 @@ export default function Project() {
                 className=" projectImage rounded-[20px] shadow-[0_4px_4px_-3px_rgba(0,135,225,0.25)] object-cover object-center rounded"
                 src={Wago}
               />
-              <div className="shadow-[0px_4px_4px_-3px_rgba(0,135,255,0.25)]">
-              <div className="project_content_body ">
+              <div style={{width:'70%'}} >
+              <div className="project_wago_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="project_blue_head uppercase text-[#0087FF]"

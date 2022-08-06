@@ -52,7 +52,7 @@ export default function First() {
       </div>
 
       <div className="row">
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img1" alt="hero" src={img1} />
         </div>
         <div className="col-lg-6">
@@ -116,7 +116,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/project">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {t("Home_section4_button1")}
                 </button>
               </Link>
@@ -130,7 +130,7 @@ export default function First() {
         id="foot_Assest"
         style={{ marginTop: "120px", textAlign: "left" }}
       >
-        <div className="col-lg-6">
+        <div className="col-lg-6" >
           <div
             style={{ textAlign: "left" }}
             className="for_bld_owners_content_box2"
@@ -201,7 +201,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/mannhiem">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Take a look at our Trio Mannheim project */}
                   {t("Home_section5_button1")}
                 </button>
@@ -210,7 +210,7 @@ export default function First() {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img2" alt="hero" src={img2} />
         </div>
       </div>
@@ -220,7 +220,7 @@ export default function First() {
         id="foot_Building"
         style={{ marginTop: "120px", textAlign: "left" }}
       >
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img3" alt="hero" src={img3} />
         </div>
         <div className="col-lg-6">
@@ -281,6 +281,8 @@ export default function First() {
                     {t("Home_section6_contentList3")}
                   </p>
                 </li>
+               {t('model_service_contact') === "Contact us" ? 
+
                 <li className="flex space-x-3">
                   <img className="h-fit" alt="Armchair" src={Armchair} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
@@ -288,11 +290,23 @@ export default function First() {
                     {t("Home_section6_contentList4")}
                   </p>
                 </li>
+
+                :
+
+                <li className="flex space-x-3" style={{display:'none'}}>
+                  <img className="h-fit" alt="Armchair" src={Armchair} />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Anticipate upcoming operating conditions of each room{" "} */}
+                    {t("Home_section6_contentList4")}
+                  </p>
+                </li>
+
+              }
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/wago">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Know more about our proactive control project */}
                   {t("Home_section6_button1")}
                 </button>
@@ -385,7 +399,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/granue">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Take a look at our project with Vattenfall */}
                   {t('Home_section7_button1')}
                 </button>
@@ -394,7 +408,7 @@ export default function First() {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img4" alt="hero" src={img4} />
         </div>
       </div>
@@ -404,7 +418,7 @@ export default function First() {
         id="foot_Architects"
         style={{ marginTop: "120px", textAlign: "left" }}
       >
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img5" alt="hero" src={img5} />
         </div>
         <div className="col-lg-6 ">
@@ -468,7 +482,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/project">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Our success stories */}
                   {t('Home_section8_button1')}
                 </button>

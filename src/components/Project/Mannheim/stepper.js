@@ -104,7 +104,7 @@ export default function VerticalLinearStepper() {
               <a
                 className="nav-link active"
                 id="home-tab"
-                onClick={() => window.scrollTo(0, 1500)}
+                onClick={() => window.scrollTo(0, 1600)}
                 data-toggle="pill"
                 style={{ marginTop: "-10px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#home"
@@ -119,7 +119,7 @@ export default function VerticalLinearStepper() {
               <a
                 className="nav-link"
                 id="profile-tab"
-                onClick={() => window.scrollTo(0, 1500)}
+                onClick={() => window.scrollTo(0, 1600)}
                 data-toggle="pill"
                 style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#profile"
@@ -134,7 +134,7 @@ export default function VerticalLinearStepper() {
               <a
                 className="nav-link"
                 id="messages-tab"
-                onClick={() => window.scrollTo(0, 1500)}
+                onClick={() => window.scrollTo(0, 1600)}
                 data-toggle="pill"
                 style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#messages"
@@ -149,7 +149,7 @@ export default function VerticalLinearStepper() {
               <a
                 className="nav-link"
                 id="settings-tab"
-                onClick={() => window.scrollTo(0, 1500)}
+                onClick={() => window.scrollTo(0, 1600)}
                 data-toggle="pill"
                 style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#settings"
@@ -164,7 +164,7 @@ export default function VerticalLinearStepper() {
               <a
                 className="nav-link"
                 id="office-tab"
-                onClick={() => window.scrollTo(0, 1500)}
+                onClick={() => window.scrollTo(0, 1600)}
                 data-toggle="pill"
                 style={{ marginTop: "48px", fontSize: "24px", fontFamily: "NunitoSans-Regular" }}
                 href="#office"
@@ -270,7 +270,7 @@ export default function VerticalLinearStepper() {
                 <b>{t('mann_project_stephead5')}</b>
               </h1>
               <p className="stepper_desc_p" style={{ fontWeight: "400",fontFamily: "NunitoSans-Regular" }}>
-              {t('mann_project_stepdesc6')}
+              {t('mann_project_stepdesc5')}
               </p>
               <img className="stepper_desc_img" src={m4} alt="home" />
             </div>

@@ -106,7 +106,7 @@ export default function VerticalLinearStepper() {
 
    <div className="allsteper">
     <div className="stepLabel">
-         <div className="step completed">
+         <div className="step completed" style={{marginLeft: "20px"}}>
       {/* <div className="v-stepper">
         <div className="circle"></div>
         <div className="line"></div>
@@ -136,7 +136,7 @@ export default function VerticalLinearStepper() {
         </a> */}
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div style={{display:'flex', alignItems: 'center'}}>
-          <div className="circle" style={{marginLeft: '-2px', width:'28px', height:'24px'}}></div>
+          <div className="circle" style={{marginLeft: '-1px', width:'21px', height:'21px'}}></div>
           {t('control_service_stephead1')}
         </div>
 
@@ -145,7 +145,7 @@ export default function VerticalLinearStepper() {
         <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '48px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
           <div style={{display:'flex', alignItems: 'center'}}>
           
-        <div className="circle" style={{marginLeft: '2px', width:'28px', height:'24px'}}></div>
+        <div className="circle" style={{marginLeft: '-1px', width:'21px', height:'21px'}}></div>
           {t('control_service_stephead2')}
         </div>
           <div className="line"></div>

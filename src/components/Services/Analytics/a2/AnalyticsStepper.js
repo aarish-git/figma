@@ -15,7 +15,7 @@ import Typography from '@mui/material/Typography';
 import solar from "../../../../assest/Images/services/Analytics/step1.png";
 import sunshine from "../../../../assest/Images/services/Analytics/step2.jpg";
 
-import shading from "../../../../assest/Images/services/Analytics/step3.gif";
+import shading from "../../../../assest/Images/services/Analytics/analytics_shading_analysis_02.gif";
 import daylight from "../../../../assest/Images/services/Analytics/step4.svg";
 import summer from "../../../../assest/Images/services/Analytics/step5.jpg";
 import cooling from "../../../../assest/Images/services/Analytics/step6.png";
@@ -100,10 +100,10 @@ export default function VerticalLinearStepper() {
   // };
 
   return (
-  <div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
+  <div className="row service service_row" style={{textAlign: 'left', marginTop:'120px'}}>
   <div className="allsteper">
     <div className="stepLabel">
-         <div className="step completed">
+         <div className="step completed" style={{marginLeft: "20px"}}>
          {/* <div className="step completed">
       <div className="v-stepper">
         <div className="circle"></div>

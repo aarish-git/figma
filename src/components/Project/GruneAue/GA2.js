@@ -26,15 +26,15 @@ export default function GA2() {
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">
                 <h2
-                  style={{ fontFamily: "Exo2-Bold" }}
+                  style={{ fontFamily: "Exo2-Bold", marginLeft:'0px'  }}
                   className="single_project_desc_head"
                 >
                    {t('grune_project_desc_head')}
                 </h2>
-                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
+                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px', marginLeft:'0px' }}>
                 {t('grune_project_desc_p1')}
                 </p>
-                <p  style={{ fontFamily: "NunitoSans-Regular" , marginBottom: '40px'}}
+                <p  style={{ fontFamily: "NunitoSans-Regular" , marginBottom: '40px', marginLeft:'0px' }}
                   className="single_project_desc_p">
                    {t('grune_project_desc_p2')}
                 </p>

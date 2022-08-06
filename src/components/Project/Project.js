@@ -8,13 +8,13 @@ import Project1 from "./Projects/project1";
 export default function Project() {
   return (
     <div className="App" >
-      <Header />
       <div className="container">
-        <ProjH />
+        <Header />
+         <ProjH />
         <Project1 />
         <ProjF />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

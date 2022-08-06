@@ -5,11 +5,11 @@ import Index from "./Conindex";
 export default function Contact() {
   return (
     <div className="App" >
-    < Header />
      <div className="container">
+      < Header />
       <Index />
-    </div>  
       <Footer />
+      </div>  
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function man1() {
 
   return (
     <div className="row">
-      <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+      <div className="row" style={{marginTop:'75px', height: '533px', marginLeft:'10px', background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
           <div  className="mx-auto flex  md:flex-row flex-col ">
             <div  style={{textAlign:'left', marginTop:'72px'}}>
               <h1
@@ -29,7 +29,7 @@ export default function man1() {
               >
                 {t('mann_project_location_head')}
               </p>
-              <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed single_project_content" >
+              <p style={{fontFamily:"NunitoSans-Regular"}} className="mb-8 leading-relaxed mann_project_content" >
               {t('mann_project_content')}
               </p>
               <div className="flex ">

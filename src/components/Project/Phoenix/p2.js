@@ -31,15 +31,15 @@ export default function p2() {
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">
                 <h2
-                  style={{ fontFamily: "Exo2-Bold", marginTop:'8px' }}
+                  style={{ fontFamily: "Exo2-Bold", marginLeft:'0px', marginTop:'8px' }}
                   className="single_project_desc_head"
                 >
                   {t('phoenix_project_desc_head')}
                 </h2>
-                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
+                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginLeft:'0px', marginBottom: '16px'}}>
                 {t('phoenix_project_desc_p1')}
                 </p>
-                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
+                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginLeft:'0px', marginBottom: '16px'}}>
                 {t('phoenix_project_desc_p2')}
                 </p>
                 <p className="text-[20px] font-[400] ">{t('phoenix_project_desc_p3')}</p>

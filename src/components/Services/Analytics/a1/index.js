@@ -8,9 +8,9 @@ export default function services1() {
 
   return (
     <div className="row">
-    <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="row" style={{marginTop:'75px', height: '533px' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
         <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{textAlign:'left', marginTop:'72px', marginLeft: '-10px'}}>
+          <div  style={{textAlign:'left', marginTop:'72px', marginLeft: '15px'}}>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="single_project_blue_head text-[#0087FF]"
@@ -18,7 +18,7 @@ export default function services1() {
               {t('analytics_service_blue_head')}
               </h1>
 
-              {t('analytics_service_contact') === "Contact us" ?
+              {t('model_service_contact') === "Contact us" ?
               <h1
                 style={{ fontFamily: "Exo2-Bold" }}
                 className="single_project_main_head"
@@ -54,12 +54,14 @@ export default function services1() {
            
             <div>
             <a href="/contact" >
-              <button
-                style={{ fontFamily: "NunitoSans-Regular", fontSize:'20px' }}
-                className="inline-flex py-2 px-6 rounded-[20px] text-lg text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
-              >
+            <button
+              style={{
+                fontFamily: "NunitoSans-Regular",
+              }}
+              className="contact_us"
+            >
               {t('model_service_contact')}
-              </button>
+            </button>
               </a>
             </div>
           </div>

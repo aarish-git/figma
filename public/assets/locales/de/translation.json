@@ -14,8 +14,8 @@
       "Home_section3a":"Wandeln Sie Ihren Gebäudebestand hin zu",
       "Home_section3b":" Null-Emissionen mit unseren Datendiensten",
       "Home_section3_content":"Die Einrichtung des Digitalen Zwilling basiert auf einer Reihe standardisierter und automatisierter Prozesse, die die Modellierung, energetische Analysen und die Gebäudesteuerung umfassen. Neben einem schnellen Setup bieten wir maximale Datengenauigkeit um maßgeschneiderte Datenlösungen für Ihre spezifischen Anforderungen zu schaffen.",
-       "Home_section3_serviceHead":"",
-       "Home_section3_service1":"Digitalisierung",
+      "Home_section3_serviceHead":"",
+      "Home_section3_service1":"Digitalisierung",
       "Home_section3_service1_content":"Starten Sie die Reise zur Digitalisierung Ihres Gebäudebestands mit unseren Services für die 3D-Modellierung Ihrer Gebäude.",
       "Home_section3_service2":"Analysen",
       "Home_section3_service2_content":"Verschaffen Sie sich einen ganzheitlichen Überblick über die Energieplanung und -leistung Ihres Gebäudes mit unseren hochpräzisen Analyseleistungen.",
@@ -332,7 +332,8 @@
 
 
       "model_service_blue_head" : "Digitalisierung",
-      "model_service_main_head" : "Digitales Modell zur Erfassung Ihres Gebäudes und dessen Umgebung",
+      "model_service_main_head1" : "Digitales Modell zur Erfassung Ihres",
+      "model_service_main_head2" : "Gebäudes und dessen Umgebung",
       "model_service_content1" : "Die Modellierung in 3D ist der erste Schritt zur Digitalisierung Ihrer Immobilie.",
       "model_service_content2" : "Geben Sie einfach den Standort Ihres Gebäudes an, und wir erstellen das 3D-Modell Ihres Gebäudes.",
       "model_service_content3" : " Hier finden Sie einen Überblick über unsere Modellierungsdienste.",
@@ -394,7 +395,8 @@
 
 
       "control_service_blue_head" : "Steuerung",
-      "control_service_main_head" : "Mit unseren Steuerdaten sind Sie dem Wetter stets einen Schritt voraus",
+      "control_service_main_head1" : "Mit unseren Steuerdaten sind Sie dem",
+      "control_service_main_head2" : "Wetter stets einen Schritt voraus",
       "control_service_content1" : "Kombinieren Sie unsere Bewertungsergebnisse mit Wettervorhersagedaten, lokalen Sensordaten und weiteren Datenpunkten, um modellbasierte Steuerungsdaten zu generieren die zur Verbesserung der Energieeffizienz und des Komforts beitragen. ",
       "control_service_content2" : "Hier ein Blick auf unsere Steuerungsdienste.",
 

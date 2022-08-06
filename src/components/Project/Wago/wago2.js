@@ -24,7 +24,7 @@ export default function wago2() {
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">
               <h2
-                  style={{ fontFamily: "Exo2-Bold" }}
+                  style={{ fontFamily: "Exo2-Bold", marginLeft:'0px' }}
                   className="single_project_desc_head"
                 >
                    {t('wago_project_desc_head')}

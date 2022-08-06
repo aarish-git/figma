@@ -105,7 +105,7 @@ export default function VerticalLinearStepper() {
 <div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
     <div className="allsteper">
     <div className="stepLabel">
-    <div className="step completed" style={{marginLeft: "-20px"}}>
+    <div className="step completed" style={{marginLeft: "20px"}}>
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
         <div className="circle" style={{marginLeft: '0px'}}></div>

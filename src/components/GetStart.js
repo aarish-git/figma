@@ -19,9 +19,18 @@ export default function GetStart() {
             </p>
             <div className="flex">
               <Link style={{all:"unset"}} to="/contact">
-              <button style={{marginTop:'64px', fontSize:'20px'}} className="inline-flex text-white py-2 px-6 focus:outline-none bg-[#0087FF] shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] text-lg">
+              <button
+                      style={{
+                        fontFamily: "NunitoSans-Regular",
+                        marginTop:'64px'
+                      }}
+                      className="contact_us"
+                    >
+                      {t('model_service_contact')}
+                    </button>
+              {/* <button style={{marginTop:'64px', fontSize:'20px'}} className="inline-flex text-white py-2 px-6 focus:outline-none bg-[#0087FF] shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] text-lg">
               {t('model_service_contact')}
-              </button>
+              </button> */}
               </Link>
             </div>
           </div>

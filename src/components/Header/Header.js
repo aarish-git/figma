@@ -2,6 +2,7 @@ import React, { useState, useEffect,useLayoutEffect } from "react";
 import MenuSharpIcon from "@mui/icons-material/MenuSharp";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import Downarrow from "../../assest/Icons/chevron.png"
+import logo from "../../assest/Images/LEAFTECH.svg"
 import "./Header.css";
 import { Outlet, NavLink,Link } from "react-router-dom";
 import $ from "jquery";
@@ -23,12 +24,21 @@ export default function Header({ history }) {
       var url = window.location.href;
 
       // passes on every "Navlink" tag
-      $("#sub-header Navlink").each(function () {
+      $("#arunUL Navlink").each(function () {
         // checks if its the same on the address bar
         if (url == this.href) {
           $(this).closest("li").addClass("active");
         }
       });
+
+      // $("#langContent").each(function () {
+      //   // checks if its the same on the address bar
+      //   if (url == this.href) {
+      //     $(this).closest("li").addClass("active");
+      //   }
+      // });
+
+
     });
   }, []);
 
@@ -42,20 +52,21 @@ export default function Header({ history }) {
           <h1 style={{ fontFamily: "Exo2-Regular" }} className="uppercase font-bold tracking-wide">
             LeafTech
           </h1>
+          {/* <img src={logo} alt="logo" style={{width:'104px', height:'18px'}}/> */}
         </div>
         {showMenu == false ? (
           <div className="arun_menuList" id="sub-header">
-            <ul>
+            <ul className="arunUL"  id="arunUL">
               <li>
-                <NavLink style={{textDecoration:"unset",color:"unset", fontFamily: "NunitoSans-Regular"}} className="navFont" to="/" >
+                <NavLink id="dd_link" style={{textDecoration:"unset",color:"unset", fontFamily: "NunitoSans-Regular"}} className="navFont" to="/" >
                   {/* Home */}
-                  {t('Home_text')}
+                  <b>{t('Home_text')}</b>
                 </NavLink>
               </li>
               <li>
-                <NavLink style={{textDecoration:"unset",color:"unset", fontFamily: "NunitoSans-Regular" }} className="navFont" to="/Project">
+                <NavLink id="dd_link" style={{textDecoration:"unset",color:"unset", fontFamily: "NunitoSans-Regular" }} className="navFont" to="/Project">
                   {/* Project */}
-                  {t('Project_text')}
+                  <b>{t('Project_text')}</b>
                 </NavLink>{" "}
               </li>
               <li>
@@ -63,30 +74,44 @@ export default function Header({ history }) {
                 <div class="dropdown">
                   <button class="dropbtn"> <p class="navFont" style={{ fontFamily: "NunitoSans-Regular"}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div class="dropdown-content">
-                    <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    <NavLink className="navFont"  style={{ fontFamily: "NunitoSans-Regular"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                     {t('Home_section3_service1')}
                     </NavLink>
-                    <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/building-analytics" activeClassName="active-link">
+                    <NavLink className="navFont"  style={{ fontFamily: "NunitoSans-Regular"}} to="/building-analytics" activeClassName="active-link">
                     {t('Home_section3_service2')}
                     </NavLink>
-                    <NavLink className="navFont" style={{ fontFamily: "NunitoSans-Regular"}} to="/smart-building-control" activeClassName="active-link">
+                    <NavLink className="navFont"  style={{ fontFamily: "NunitoSans-Regular"}} to="/smart-building-control" activeClassName="active-link">
                     {t('Home_section3_service3')}
                     </NavLink>
                   </div>
                 </div>
               </li>
               <div className="contactandLanguage">
-                <ul style={{ gap: "2rem" }}>
+                <ul className="arunUL" style={{ gap: "64px" }}>
                   <li className="">
                     <NavLink style={{all:"unset"}} to="/contact" activeClassName="active-link">
                       <button className="Contact_btn" type="button" style={{ fontFamily: "NunitoSans-Regular"}} >{t('Contact_text')}</button>
                     </NavLink>
                   </li>
-                  <li classNam>
-                    <button onClick={()=>i18next.changeLanguage("en")} style={{ fontFamily: "NunitoSans-Regular"}} className="navFont">EN</button>
+                  {/* <li className="lang_options">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" onClick={()=>i18next.changeLanguage("en")}>
+                        <a class="nav-link active"  id="pills-home-tab"  data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        EN
+                        </a>
+                      </li>
+                      <li class="nav-item" onClick={()=>i18next.changeLanguage("de")}>
+                        <a class="nav-link" id="pills-profile-tab" style={{marginLeft:'24px'}}  data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        DE
+                        </a>
+                      </li>
+                    </ul>
+                  </li>   */}
+                  <li className="lang_options">
+                    <button id="langContent" onClick={()=>i18next.changeLanguage("en")} style={{ fontFamily: "NunitoSans-Regular"}} className="navFont">EN</button>
                   </li>
                   <li>
-                    <button onClick={()=>i18next.changeLanguage("de")} style={{ fontFamily: "NunitoSans-Regular"}} className="navFont">DE</button>
+                    <button id="langContent" onClick={()=>i18next.changeLanguage("de")} style={{ fontFamily: "NunitoSans-Regular", marginTop:'0px'}} className="navFont">DE</button>
                   </li>
                 </ul>
               </div>

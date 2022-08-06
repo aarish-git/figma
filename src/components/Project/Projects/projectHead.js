@@ -54,19 +54,20 @@ export default function Index() {
             <div className="flex">
               <a style={{all:"unset"}} href="/contact">
               <button
-                style={{ fontFamily: "NunitoSans-Regular", marginLeft:'-10px' }}
-                className="inline-flex  py-2 px-6  rounded-[20px] text-[20px] text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
-              >
-                {/* Contact us */}
-                {t('model_service_contact')}
-              </button>
+                      style={{
+                        fontFamily: "NunitoSans-Regular",
+                      }}
+                      className="contact_us"
+                    >
+                      {t('model_service_contact')}
+                    </button>
               </a>
             </div>
           </div>
           <div className="col-lg-6 ">
             <img
               className="object-cover object-center rounded"
-              style={{marginLeft:'170px' }}
+              style={{float: 'right'}}
               alt="hero"
               src={Building}
             />

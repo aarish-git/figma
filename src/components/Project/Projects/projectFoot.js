@@ -16,9 +16,14 @@ export default function ProjectFoot() {
             </p>
           </div>
           <a style={{all:"unset"}} href="/contact">
-          <button style={{marginTop:'64px', marginBottom:'120px'}} className=" text-gray-600 body-font text-white bg-[#0087FF]  py-2 px-8 rounded-[20px] shadow-[0_4px_4px_rgba(0,135,225,0.25)]  text-lg">
-          
-          {t('model_service_contact')}
+          <button
+            style={{
+              fontFamily: "NunitoSans-Regular",
+              marginTop:'64px', marginBottom:'120px'
+            }}
+            className="contact_us"
+          >
+            {t('model_service_contact')}
           </button>
           </a>
       </div>
