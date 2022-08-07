@@ -43,7 +43,7 @@ export default function index() {
                 </p>
               </li>
               :
-              <li className="flex space-x-5" style={{marginTop:'40px'}}>
+              <li className="flex space-x-5" style={{marginTop:'20px'}}>
               <img className="h-fit project_icons" alt="service" src={BatteryCharging} />
               <p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>
               {t('analytics_service_icon_text3')}
@@ -59,7 +59,7 @@ export default function index() {
                   </p>
                 </li>
               :
-                <li className="flex space-x-5" style={{marginTop:'40px'}}>
+                <li className="flex space-x-5" style={{marginTop:'20px'}}>
                   <img className="h-fit project_icons" alt="service" src={Tree} />
                   <p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>
                   {t('analytics_service_icon_text4')}

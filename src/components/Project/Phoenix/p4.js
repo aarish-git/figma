@@ -40,7 +40,7 @@ export default function p4() {
                 {t('model_service_contact') === "Contact us" ?
                   <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text5')}</p> </li>
                   :
-                  <li className="flex space-x-5" style={{marginTop:'40px'}}><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text5')}</p> </li>
+                  <li className="flex space-x-5" style={{marginTop:'20px'}}><img className="h-fit project_icons" alt="Project" src ={LockOpen} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text5')}</p> </li>
                 }
                 <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={LineSegments} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text6')}</p></li>
               </ul>

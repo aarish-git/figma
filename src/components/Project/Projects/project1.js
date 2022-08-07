@@ -412,7 +412,7 @@ export default function Project() {
                 <div className="flex mt-6 items-center pb-5  border-gray-100 mb-5">
                   <div className="flex  items-center">
                     <div className="relative">
-                      <ul className="space-y-8">
+                      <ul className="space-y-5">
                         <li className="flex space-x-5">
                           <img className="project_icons h-fit" alt="Project" src={User} />
                           <p

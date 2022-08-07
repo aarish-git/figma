@@ -29,7 +29,7 @@ export default function GA4() {
             </p>
             <div className="flex flex-col space-y-5">
             <p style={{fontFamily:"Exo2-Regular"}} className="results_benefits_subhead">{t('grune_project_results_benefits_subhead')}</p>
-              <ul className="space-y-3">
+              <ul className="space-y-5">
                 <li className="flex space-x-5"><img className="h-fit" alt="Line" src={Line} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text1')}</p> </li>
                 <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text2')}</p> </li>
                 <li className="flex space-x-5"><img className="h-fit" alt="Coin" src={Coin} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('grune_project_icon_text3')}</p></li>
