@@ -47,7 +47,7 @@ export default function index() {
                 </p>
               </li>
               :
-              <li className="flex space-x-5" style={{marginTop:'30px'}}>
+              <li className="flex space-x-5" style={{marginTop:'22px'}}>
                 <img className="h-fit project_icons" alt="control" src={Tree} />
                 <p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>
                 {t('control_service_icon_text4')}

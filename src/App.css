@@ -11,7 +11,7 @@ a:hover {
 .container {
   width: 100%;
   /* max-width: 100%; */
-  max-width: 1500px;
+  max-width: 1440px;
   padding: 0px;
 }
 
@@ -42,6 +42,26 @@ a:hover {
   flex-grow: 0;
 }
 
+.contact_us:hover { 
+  height: 54px;
+  padding: 0px 24px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #2F2F2F;
+  box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+  border-radius: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #2F2F2F;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .contact_us2 {
   /* width: 127px; */
   height: 54px;
@@ -61,6 +81,28 @@ a:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.contact_us2:hover, .whats_in_buttons:hover {
+  /* width: 100%; */
+  height: 54px;
+  background: #0087FF;
+  box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+  border-radius: 20px;
+  padding: 0px 24px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 54px;
+
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border: none;
 }
 
 .whats_in_buttons {
@@ -119,6 +161,92 @@ a:hover {
   height: 135px;
   margin-top: 45px;
 }
+.slick-slide .phoenix_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 25px !important;
+}
+
+.slick-slide .hosh_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 25px !important;
+}
+
+.slick-slide .bauer_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 20px !important;
+}
+
+.slick-slide .bim_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 15px !important;
+}
+
+.slick-slide .lubbing_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 10px !important;
+}
+
+.slick-slide .wago_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 10px !important;
+}
+
+.slick-slide .selve_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: 10px !important;
+}
+
+.slick-slide .vatten_a{
+  width: 128px !important;
+  display: inline-block !important;
+  margin-left: -80px !important;
+}
+
+
+
+.slick-slide .volks_a{
+  margin-left: -50px !important;
+}
+
+.slick-slide .vono_a{
+  margin-left: -60px !important;
+}
+
+.slick-slide .bvg_a{
+  margin-left: -20px !important;
+}
+
+.slick-slide .fugitsu_a{
+  margin-left: -65px !important;
+}
+
+.slick-slide .gfr_a{
+  margin-left: -50px !important;
+}
+
+.slick-slide .hermos_a{
+  margin-left: -110px !important;
+}
+
+.slick-slide .lae_a{
+  margin-left: -110px !important;
+}
+
+
+.slick-slide .trio_a{
+  margin-left: -120px !important;
+}
+
+.slick-slide .trio_a{
+  margin-left: -120px !important;
+}
 
 .slick-slider {
   height: 100%;
@@ -134,29 +262,31 @@ a:hover {
   width: 84.85px !important;
   height: 38px;
   cursor: pointer;
-  margin-left: 178px;
+  /* margin-left: 178px; */
   margin-top: 22px;
 }
 
 .build_twins:hover {
   -ms-transform: scale(50); 
   -webkit-transform: scale(50); 
-  transform: scale(2.0, 2.5) !important;
+  transform: scale(2.0, 2.0) !important;
   /* height: 109px; */
 }
 
 .build_twins_horn_a{ 
   display: flex;
   align-items: center;
-  margin-right: 75px;
+  /* margin-right: 75px; */
+  width: 146px !important;
+  margin-left: -32px !important;
 }
 
 
 .build_twins_horn{
-  width: 125% !important;
-  height: 20px;
+  width: 140px !important;
+  height: 16px;
   cursor: pointer;
-  margin-left: 165px;
+  /* margin-left: 178px; */
   margin-top: 32px;
 }
 
@@ -164,7 +294,7 @@ a:hover {
 .build_twins_horn:hover{
   -ms-transform: scale(10); 
   -webkit-transform: scale(10); 
-  transform: scale(1.3, 1.7) !important;
+  transform: scale(1.5, 1.5) !important;
   /* height: 130px; */
 }
 
@@ -183,7 +313,8 @@ a:hover {
 }
 
 .gfr {
-  height: 40px;
+  height: 48px;
+  width: 45px !important;
 }
 
 .vatten {
@@ -194,7 +325,7 @@ a:hover {
 .vatten:hover{
   -ms-transform: scale(10); 
   -webkit-transform: scale(10); 
-  transform: scale(1.3, 1.7) !important;
+  transform: scale(1.5, 1.5) !important;
   /* height: 130px; */
 }
 
@@ -779,7 +910,7 @@ color: #2F2F2F;
   line-height: 32px;
   margin-left: 15px;
   /* height: 64px; */
-  width: 98% !important;
+  width: 99% !important;
   color: #2F2F2F;
   /* margin-bottom: 40px; */
 }

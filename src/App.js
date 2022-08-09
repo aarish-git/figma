@@ -12,8 +12,8 @@ import Getstart from "./components/GetStart";
 function App() {
   return (
     <div className="App" >
-      <Header />
        <div className="container">
+      <Header />
       <Count />
       <Wecreate />
       <Services />
@@ -21,9 +21,8 @@ function App() {
       {/* <Contact /> */}
       <Getstart />
       <Clients />
-       </div>
       <Footer />
-
+      </div>
     </div>
   );
 }
