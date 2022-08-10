@@ -8,7 +8,7 @@ import Project1 from "./Projects/project1";
 export default function Project() {
   return (
     <div className="App" >
-      <div className="">
+      <div className="project__wrapper">
         <Header />
         <ProjH />
         <Project1 />

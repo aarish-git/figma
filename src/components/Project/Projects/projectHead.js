@@ -23,7 +23,7 @@ export default function Index() {
             {t('model_service_contact') === "Contact us" ?
               <h1
                 style={{ fontFamily: "Exo2-Bold", marginBottom: '32px', marginTop:'16px' }}
-                className="text-[#2F2F2F] text-[58px] "
+                className="text-[#2F2F2F] text-[58px] project-leading-header"
               >
               {/* Our success stories */}
               {t('Project_section1_head2')}
@@ -31,7 +31,7 @@ export default function Index() {
             :
             <h1
                 style={{ fontFamily: "Exo2-Bold", marginBottom: '32px', marginTop:'16px', width:'750px' }}
-                className="text-[#2F2F2F] text-[58px] "
+                className="text-[#2F2F2F] text-[58px] project-leading-header"
               >
               {/* Our success stories */}
               {t('Project_section1_head2')}
@@ -39,14 +39,14 @@ export default function Index() {
             }
 
             {t('model_service_contact') === "Contact us" ?
-              <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'775px'}} className="text-[20px] leading-relaxed">
+              <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'775px'}} className="text-[20px] leading-relaxed project-leading-relaxed">
                 {/* We have gained experience working with a wide range of industry
                 partners. Take a glance at our project portfolio to learn more
                 about the value we created for our clients and their buildings. */}
                 {t('project_section1_content')}
               </p>
               :
-              <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'780px'}} className="text-[20px] leading-relaxed">
+              <p style={{fontFamily: "NunitoSans-Regular", marginBottom:'64px', width:'780px'}} className="text-[20px] leading-relaxed project-leading-relaxed">
               {/* We have gained experience working with a wide range of industry
               partners. Take a glance at our project portfolio to learn more
               about the value we created for our clients and their buildings. */}

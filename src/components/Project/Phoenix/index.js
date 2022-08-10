@@ -10,7 +10,7 @@ import P6 from "./p6";
 export default function index() {
   return (
     <div className="App" >
-      <div className="">
+      <div className="phoenix">
        <Header />
         <P1 />
         <P2 />

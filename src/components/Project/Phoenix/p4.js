@@ -24,14 +24,14 @@ export default function p4() {
               src={pImage}
             />
           </div>
-          <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center" style={{marginLeft: '32px'}}>
+          <div className="Clientbenefits result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center" style={{marginLeft: '32px'}}>
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
             {t('phoenix_project_results_benefits_head')}
             </h1>
             <p  style={{ fontFamily: "NunitoSans-Regular"}} className="results_benefits_content" >
             {t('phoenix_project_results_benefits_content')}
             </p>
-            <div className="flex flex-col space-y-5" >
+            <div className="flex flex-col space-y-5 Clientbenefits" >
             <p style={{fontFamily:"Exo2-Regular", marginBottom:'0px', width:'573px'}} className="results_benefits_subhead">{t('phoenix_project_results_benefits_subhead')}</p>
               <ul className="space-y-5">
                 <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={Battery} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text1')} </p></li>

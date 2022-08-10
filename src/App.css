@@ -1697,6 +1697,12 @@ visibility: visible;
     width: auto;
     margin-left: 0;
   }
+  .project__wrapper .project-leading-relaxed{
+    width: 475px !important;
+  }
+  .project-leading-header{
+    width: 540px !important;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1250px){
@@ -1710,5 +1716,11 @@ visibility: visible;
     width: 450px !important;
     top: 32% !important;
     left: 55%;
+  }
+  .single_project_desc_image, .mann_project_desc_image{
+    width: 300px !important;
+  }
+  .phoenix .Clientbenefits{
+    width: 400px;
   }
 }
