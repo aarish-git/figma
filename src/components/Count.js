@@ -8,7 +8,7 @@ export default function Count() {
   return (
           <div className="container">
           <div className="row " >
-            <div className=" " style={{marginTop: '100px'}}>
+            <div className=" home__count" style={{marginTop: '100px'}}>
 
             {/* <div className="home_first_row">  */}
               {/* <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12"> */}
@@ -80,7 +80,7 @@ export default function Count() {
                    </div>
                     }
                    
-                    <div style={{width:'189px', height:'74px', margin: '0px 76px 0px 76px'}}>
+                    <div className="count__numbers--served" style={{width:'189px', height:'74px', margin: '0px 76px 0px 76px'}}>
                       <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
                         500,000+
                       </h2>
