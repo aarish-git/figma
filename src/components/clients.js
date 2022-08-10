@@ -14,6 +14,8 @@ export default function Clients() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
+
     <div style={{margin: '184px 175px 200px 175px'}}>
     
           <div className="flex flex-col text-center w-full" style={{marginBottom:'28px'}}>
@@ -72,6 +74,7 @@ export default function Clients() {
               <img className=" h-fit" alt="h-fit" src={C8} />
             </div> */}
           </div>
+        </div>
         </div>
     
   );

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';//translator
 export default function ProjectFoot() {
   const { t, i18n } = useTranslation();//translator
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font" style={{textAlign:'center'}}>
           <div className="flex flex-wrap w-full flex-col text-gray-600 body-font items-center text-center">
@@ -27,6 +28,7 @@ export default function ProjectFoot() {
           </button>
           </a>
       </div>
+    </div>
     </div>
   );
 }

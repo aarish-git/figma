@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"; //translator
 export default function Services() {
   const { t, i18n } = useTranslation(); //translator
   return (
+    <div className="container">
     <div className="row">
       <div style={{ marginTop: "120px" }}>
         <h1
@@ -153,6 +154,7 @@ export default function Services() {
               </Link>
             </div>
       </div>
+    </div>
     </div>
   );
 }

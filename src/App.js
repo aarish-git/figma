@@ -12,7 +12,7 @@ import Getstart from "./components/GetStart";
 function App() {
   return (
     <div className="App" >
-       <div className="container">
+       <div className="">
       <Header />
       <Count />
       <Wecreate />

@@ -17,6 +17,7 @@ export default function Project() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="project_home" style={{width:'97%'}}>
       <div className=" text-gray-600" style={{marginTop:'32px', textAlign:'left'}}>
         <Link style={{ all: "unset", cursor: 'pointer' }} to="/mannhiem">
@@ -493,6 +494,7 @@ export default function Project() {
             </div>
         </Link>
       </div>
+    </div>
     </div>
   );
 }

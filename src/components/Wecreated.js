@@ -76,6 +76,7 @@ export default function Wecreated() {
 
   return (
     <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px', marginTop:'80px'}}>
+      <div className="container">
         <h1
           style={{ fontFamily: "Exo2-Bold" }}
           className="weCreatedHead"
@@ -196,6 +197,7 @@ export default function Wecreated() {
                </div>
           </div>
         </div> */}
+        </div>
     </div>
   );
 }

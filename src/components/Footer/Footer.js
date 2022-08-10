@@ -10,8 +10,9 @@ export default function Footer() {
   const { t, i18n } = useTranslation();//translator
 
   return (
-    <div>
-      <footer className="text-gray-600 bg-[#FAFBFC] body-font">
+    <div className="text-gray-600 bg-[#FAFBFC] body-font">
+      <footer >
+      <div className="container">
         <div className="px-5 py-24 mx-auto" style={{paddingTop:'40px', paddingBottom:'48px'}}>
           <div className="flex flex-wrap md:text-left text-left -mb-10 -mx-4">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4" style={{marginTop:'-10px'}}>
@@ -242,6 +243,7 @@ export default function Footer() {
             </span>
           </div>
         </div> */}
+        </div>
         <div className="bg-gray-900 ">
           <div className="footer_last_section">
             <p className="text-gray-500 text-sm text-center " style={{ fontFamily: "NunitoSans-Regular" }}>
@@ -259,7 +261,9 @@ export default function Footer() {
             </span> */}
           </div>
         </div>
+
       </footer>
     </div>
+
   );
 }

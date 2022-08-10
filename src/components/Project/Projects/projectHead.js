@@ -7,8 +7,10 @@ export default function Index() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div style={{ background: "linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="container">
     <div className="row">
-      <div className="text-gray-600 body-font project_first_content_block" style={{ background: "linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}} >
+      <div className="text-gray-600 body-font project_first_content_block"  >
         <div className="row md:flex-row flex-col items-center" style={{ marginTop: "21px" }}>
           <div className="col-lg-6 items-center">
             <span
@@ -74,6 +76,8 @@ export default function Index() {
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }

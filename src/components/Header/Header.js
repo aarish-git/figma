@@ -54,7 +54,9 @@ export default function Header({ history }) {
   
   return (
     <div>
+
       <div className="arun_container">
+        <div className="container container-flex-display">
         <div className="arun_logo">
           {/* <h1 style={{ fontFamily: "Exo2-Regular" }} className="uppercase font-bold tracking-wide">
             LeafTech
@@ -160,7 +162,10 @@ export default function Header({ history }) {
             <CloseSharpIcon onClick={handleMobile} />
           )}
         </div>
+        </div>
       </div>
+
+
       <Outlet />
     </div>
   );

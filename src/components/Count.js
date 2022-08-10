@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 export default function Count() {
   const { t, i18n } = useTranslation();//translator
   return (
+          <div className="container">
           <div className="row " >
             <div className=" " style={{marginTop: '100px'}}>
 
@@ -132,6 +133,7 @@ export default function Count() {
             {/* </div> */}
             </div>
          
+          </div>
           </div>
   );
 }

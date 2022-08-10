@@ -38,6 +38,7 @@ export default function First() {
   const { t, i18n } = useTranslation(); //translator
 
   return (
+    <div className="container">
     <div className="row">
       <div
         className="row"
@@ -498,6 +499,7 @@ export default function First() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
