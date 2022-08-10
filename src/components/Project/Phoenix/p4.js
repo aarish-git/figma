@@ -1,11 +1,11 @@
 import React from "react";
 import pImage from "../../../assest/Images/project/Chart.png";
-import Battery from "../../../assest/Icons/BatteryCharging.png";
-import CircleHalf from "../../../assest/Icons/CircleHalf.png";
-import Line from "../../../assest/Icons/ChartLine.png";
-import HardDrive from "../../../assest/Icons/HardDrive.png";
-import LockOpen from "../../../assest/Icons/LockOpen.png";
-import LineSegments from "../../../assest/Icons/LineSegments.png";
+import Battery from "../../../assest/Icons2/battery.svg";
+import CircleHalf from "../../../assest/Icons2/circle.svg";
+import Line from "../../../assest/Icons2/chart_01.svg";
+import HardDrive from "../../../assest/Icons2/sensor.svg";
+import LockOpen from "../../../assest/Icons2/unlock.svg";
+import LineSegments from "../../../assest/Icons2/chart_03.svg";
 import { useTranslation } from 'react-i18next';//translator
 
 

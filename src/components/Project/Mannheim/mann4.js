@@ -1,9 +1,9 @@
 import React from "react";
 import Trio2 from "../../../assest/Images/project/Trio2.jpg";
-import Slider from "../../../assest/Icons/Sliders.png"
-import Stamp from "../../../assest/Icons/Stamp.png"
-import Coins from "../../../assest/Icons/Coins.png"
-import Armchair from "../../../assest/Icons/Armchair.png"
+import Slider from "../../../assest/Icons2/control.svg"
+import Stamp from "../../../assest/Icons2/stamp.svg"
+import Coins from "../../../assest/Icons2/coins.svg"
+import Armchair from "../../../assest/Icons2/sofa.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 export default function mann4() {

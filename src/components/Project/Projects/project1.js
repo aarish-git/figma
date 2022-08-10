@@ -5,10 +5,12 @@ import Granue from "../../../assest/Images/project/project2.jpg";
 import Pheonix from "../../../assest/Images/project/phoenix.svg";
 import Wago from "../../../assest/Images/project/wago.svg";
 
-import Sun from "../../../assest/Icons/Sun.png";
-import Wrench from "../../../assest/Icons/Wrench.png";
-import User from "../../../assest/Icons/User.png";
-import Default from "../../../assest/Icons/Default.png";
+import Sun from "../../../assest/Icons2/sun.svg";
+import Wrench from "../../../assest/Icons2/wrench.svg";
+import User from "../../../assest/Icons2/customer.svg";
+import Default from "../../../assest/Icons2/buildings.svg";
+
+
 import { margin } from "@mui/system";
 import { useTranslation } from 'react-i18next';//translator
 

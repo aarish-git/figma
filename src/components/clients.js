@@ -25,22 +25,22 @@ export default function Clients() {
           <div className=" grid grid-cols-1 gap-y-10 gap-x-4 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
             <div className="flex clientImageBox  grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
               {/* <img className=" h-fit	" src={C1} alt="h-fit" /> */}
-              <a href="https://smartgreen-accelerator.de/" >
+              <a target="_blank" rel='noreferrer' href="https://smartgreen-accelerator.de/" >
               <img id="colorImage" className=" h-fit	" alt="h-fit" src={C1} />
               </a>
             </div>
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-            <a href="https://www.dena.de/" >
+            <a target="_blank" rel='noreferrer' href="https://www.dena.de/" >
               <img className=" h-fit" alt="h-fit" src={C2} />
             </a>
             </div>
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a href="http://www.mujinzo-labs.com/en/" >
+             <a target="_blank" rel='noreferrer' href="http://www.mujinzo-labs.com/en/" >
               <img className=" h-fit" alt="h-fit" src={C8} />
              </a>
             </div>
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a href="https://www.climate-kic.org/" >
+             <a target="_blank" rel='noreferrer' href="https://www.climate-kic.org/" >
               <img className=" h-fit" alt="h-fit" src={C3} />
              </a>
             </div>
@@ -49,22 +49,22 @@ export default function Clients() {
           <br />
           <div style={{marginTop:'0px'}} className=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a href="https://telekomhilft.telekom.de/t5/TechBoost/ct-p/techboost" >
+             <a target="_blank" rel='noreferrer' href="https://telekomhilft.telekom.de/t5/TechBoost/ct-p/techboost" >
               <img className=" h-fit" alt="h-fit" src={C4} />
              </a>
             </div>
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a href="https://www.dreso.com/" >
+             <a target="_blank" rel='noreferrer' href="https://www.dreso.com/" >
               <img className=" h-fit" alt="h-fit" src={C5} />
              </a>
             </div>
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a href="https://www.ibb.de/de/startseite/startseite.html" >
+             <a target="_blank" rel='noreferrer' href="https://www.ibb.de/de/startseite/startseite.html" >
               <img className=" h-fit" alt="h-fit" src={C6} />
              </a>
             </div>
             <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a href="https://deneff.org/" >
+             <a target="_blank" rel='noreferrer' href="https://deneff.org/" >
               <img className=" h-fit" alt="h-fit" src={C7} />
              </a>
             </div>

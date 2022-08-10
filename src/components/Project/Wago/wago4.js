@@ -1,9 +1,9 @@
 import React from "react";
 import LC from "../../../assest/Images/project/Linechart.jpg"
-import Arrow from '../../../assest/Icons/ArrowDownLeft.png'
-import CircleHalf from '../../../assest/Icons/CircleHalf.png'
-import CheckSquare from '../../../assest/Icons/CheckSquare.png'
-import LineSegments from '../../../assest/Icons/LineSegments.png'
+import Arrow from '../../../assest/Icons2/arrow_down.svg'
+import CircleHalf from '../../../assest/Icons2/circle.svg'
+import CheckSquare from '../../../assest/Icons2/check.svg'
+import LineSegments from '../../../assest/Icons2/chart_03.svg'
 import { useTranslation } from 'react-i18next';//translator
 
 

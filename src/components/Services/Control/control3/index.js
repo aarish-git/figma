@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.css";
-import Slider from "../../../../assest/Icons/HardDrive.png";
-import ChartPie from "../../../../assest/Icons/ChartLine.png";
-import BatteryCharging from "../../../../assest/Icons/CheckSquare.png";
-import Tree from "../../../../assest/Icons/Default.png";
-import GlobeHemisphereEast from "../../../../assest/Icons/CircleHalf.png";
-import ClockAfternoon from "../../../../assest/Icons/ClockAfternoon.png";
+import Slider from "../../../../assest/Icons2/sensor.svg";
+import ChartPie from "../../../../assest/Icons2/chart_01.svg";
+import BatteryCharging from "../../../../assest/Icons2/check.svg";
+import Tree from "../../../../assest/Icons2/buildings.svg";
+import GlobeHemisphereEast from "../../../../assest/Icons2/circle.svg";
+import ClockAfternoon from "../../../../assest/Icons2/clock.svg";
 import Mac from "../../../../assest/Images/services/Control/control_laptop.gif";
 import { useTranslation } from 'react-i18next';//translator
 

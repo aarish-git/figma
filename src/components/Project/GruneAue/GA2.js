@@ -1,8 +1,7 @@
 import React from "react";
 import Grananue from "../../../assest/Images/project/GruneAue1.jpg";
-import Sun from "../../../assest/Icons/Sun.png"
-
-import ChartLine from "../../../assest/Icons/ChartLine.png"
+import Sun from "../../../assest/Icons2/sun.svg"
+import ChartLine from "../../../assest/Icons2/chart_01.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 

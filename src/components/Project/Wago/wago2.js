@@ -1,7 +1,7 @@
 import React from "react";
 import wago from "../../../assest/Images/project/project4.jpg";
-import Sun from "../../../assest/Icons/Sun.png"
-import Circle from "../../../assest/Icons/CircleHalf.png"
+import Sun from "../../../assest/Icons2/sun.svg"
+import Circle from "../../../assest/Icons2/circle.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 export default function wago2() {

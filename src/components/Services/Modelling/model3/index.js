@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
-import Cube from "../../../../assest/Icons/Cube.png";
-import Cursor from "../../../../assest/Icons/Cursor.png";
-import ArrowSquareIn from "../../../../assest/Icons/ArrowSquareIn.png";
-import Tree from "../../../../assest/Icons/Tree.png";
-import ChartTv from "../../../../assest/Icons/ChartTv.png";
+import Cube from "../../../../assest/Icons2/cube.svg";
+import Cursor from "../../../../assest/Icons2/arrow.svg";
+import ArrowSquareIn from "../../../../assest/Icons2/box_arrow.svg";
+import Tree from "../../../../assest/Icons2/tree.svg";
+import ChartTv from "../../../../assest/Icons2/presentation.svg";
 import Mac from "../../../../assest/Images/services/Model/model3.gif"
 import { useTranslation } from 'react-i18next';//translator
 

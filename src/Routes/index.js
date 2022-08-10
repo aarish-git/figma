@@ -4,8 +4,11 @@ import AServices from "../components/Services/Analytics/ServicesAnalytis";
 import CServices from "../components/Services/Control/ServicesControl";
 import MServices from "../components/Services/Modelling/ServicesModeling";
 import Home from "../App";
+import LegalInformation from "../components/legalInformation/index";
 import Project from "../components/Project/Project";
 import Contact from "../components/Contact/Contact";
+// eslint-disable-next-line no-unused-vars
+// import legalInformation from "../components/legalInformation/legalInformation";
 import Mannhiem from "../components/Project/Mannheim/index";
 import Granue from "../components/Project/GruneAue/indexs";
 import Wago from "../components/Project/Wago/index";
@@ -18,6 +21,7 @@ export default function index() {
           {/* <Route path="/" element={<Layout />} /> */}
           <Route path="/" exact element={<Home />} />
           <Route path="Project" element={<Project />} />
+          <Route path="legalInformation" element={<LegalInformation />} />
 
           <Route path="/mannhiem" element={<Mannhiem />} />
           <Route path="/granue" element={<Granue />} />

@@ -1,8 +1,8 @@
 import React from "react";
 import Grananue2 from "../../../assest/Images/project/GruneAue2.jpg";
-import Line from "../../../assest/Icons/ChartLine.png";
-import Slider  from "../../../assest/Icons/Sliders.png"
-import Coin from "../../../assest/Icons/Coins.png"
+import Line from "../../../assest/Icons2/chart_01.svg";
+import Slider  from "../../../assest/Icons2/control.svg"
+import Coin from "../../../assest/Icons2/coins.svg"
 import { useTranslation } from 'react-i18next';//translator
 
  
