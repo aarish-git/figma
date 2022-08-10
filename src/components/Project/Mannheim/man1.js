@@ -7,8 +7,10 @@ export default function man1() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="container">
     <div className="row">
-      <div className="row" style={{marginTop:'75px', height: '533px', marginLeft:'10px', background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+      <div className="row" style={{marginTop:'75px', height: '533px', marginLeft:'10px'}}>
           <div  className="mx-auto flex  md:flex-row flex-col ">
             <div  style={{textAlign:'left', marginTop:'72px'}}>
               <h1
@@ -65,6 +67,8 @@ export default function man1() {
       </div> */}
           </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }

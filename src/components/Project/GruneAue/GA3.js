@@ -63,6 +63,7 @@ export default function VerticalLinearStepper() {
   // }
 
   return (
+    <div className="container">
     <div className="row" style={{textAlign: 'left', marginTop:'120px'}}>
     <h2
         style={{ fontFamily: "Exo2-Bold" }}
@@ -153,6 +154,7 @@ export default function VerticalLinearStepper() {
         </div>
       </div>
     </div>
+   </div>
    </div>
    </div>
   );

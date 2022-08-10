@@ -1,8 +1,8 @@
 import React from "react";
 import Grananue2 from "../../../assest/Images/project/GruneAue2.jpg";
-import Line from "../../../assest/Icons/ChartLine.png";
-import Slider  from "../../../assest/Icons/Sliders.png"
-import Coin from "../../../assest/Icons/Coins.png"
+import Line from "../../../assest/Icons2/chart_01.svg";
+import Slider  from "../../../assest/Icons2/control.svg"
+import Coin from "../../../assest/Icons2/coins.svg"
 import { useTranslation } from 'react-i18next';//translator
 
  
@@ -10,6 +10,7 @@ export default function GA4() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
@@ -38,6 +39,7 @@ export default function GA4() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

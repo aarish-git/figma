@@ -6,6 +6,7 @@ export default function p2() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t, i18n } = useTranslation();//translator
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
     <div className="text-gray-600 body-font">
       <div className="flex flex-wrap">
@@ -91,6 +92,7 @@ export default function p2() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

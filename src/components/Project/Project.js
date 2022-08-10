@@ -10,7 +10,7 @@ export default function Project() {
     <div className="App" >
       <div className="">
         <Header />
-         <ProjH />
+        <ProjH />
         <Project1 />
         <ProjF />
         <Footer />

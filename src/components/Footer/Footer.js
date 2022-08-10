@@ -118,7 +118,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <span style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</span>
+                  <Link to="/legalInformation" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</Link>
+                  {/* <span style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</span> */}
                 </li>
                 <li>
                   <div style={{display:'flex', alignItems:'center'}}>

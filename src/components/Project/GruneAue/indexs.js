@@ -11,7 +11,7 @@ import Grune6 from "./GA6";
 export default function indexs() {
   return (
     <div className="App" >
-    <div className="container">
+    <div className="">
       <Header />
       <Grune1 />
       <Grune2 />

@@ -5,7 +5,7 @@ import Index from "./Conindex";
 export default function Contact() {
   return (
     <div className="App" >
-     <div className="container">
+     <div className="">
       < Header />
       <Index />
       <Footer />

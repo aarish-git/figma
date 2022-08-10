@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
-import Slider from "../../../../assest/Icons/Sliders.png";
-import ChartPie from "../../../../assest/Icons/ChartPie.png";
-import BatteryCharging from "../../../../assest/Icons/BatteryCharging.png";
-import Tree from "../../../../assest/Icons/Tree.png";
-import GlobeHemisphereEast from "../../../../assest/Icons/GlobeHemisphereEast.png";
+import Slider from "../../../../assest/Icons2/control.svg";
+import ChartPie from "../../../../assest/Icons2/chart.svg";
+import BatteryCharging from "../../../../assest/Icons2/battery.svg";
+import Tree from "../../../../assest/Icons2/tree.svg";
+import GlobeHemisphereEast from "../../../../assest/Icons2/globe.svg";
 import Mac from "../../../../assest/Images/services/Analytics/analytics_laptop.gif"
 import { useTranslation } from 'react-i18next';//translator
 
@@ -14,6 +14,7 @@ export default function index() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
     <div className="text-gray-600 body-font">
       <div className=" mx-auto flex  md:flex-row flex-col items-center" style={{justifyContent:'space-between'}}>
@@ -123,6 +124,7 @@ export default function index() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Stepper from "./stepper";
 
 function mann3() {
   return (
-    <div>
+    <div className="container">
       <div className="text-gray-600 body-font">
             <div className="steeper">
               <Stepper />

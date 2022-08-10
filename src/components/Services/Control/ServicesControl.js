@@ -14,7 +14,7 @@ import "../../../App.css";
 export default function services() {
   return (
     <div className="App" >
-    <div className="container">
+    <div className="">
         <Header />
         <Services1 />
         <Services2 />

@@ -1,8 +1,7 @@
 import React from "react";
 import Grananue from "../../../assest/Images/project/GruneAue1.jpg";
-import Sun from "../../../assest/Icons/Sun.png"
-
-import ChartLine from "../../../assest/Icons/ChartLine.png"
+import Sun from "../../../assest/Icons2/sun.svg"
+import ChartLine from "../../../assest/Icons2/chart_01.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -11,6 +10,7 @@ export default function GA2() {
 
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font">
         <div className="flex flex-wrap">
@@ -69,6 +69,7 @@ export default function GA2() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

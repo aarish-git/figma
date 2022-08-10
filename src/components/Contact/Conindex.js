@@ -87,8 +87,10 @@ export default function Index() {
 
 
   return (
+    <div  style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="container">
     <div className="row">
-    <div className="row" style={{marginTop:'75px', height:'1153px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="row" style={{marginTop:'75px', height:'1153px', maxWidth: '104%', width: '103%'}}>
         <div  className="mx-auto flex  md:flex-row flex-col ">
           <div  style={{width:'666px', height:'506px', textAlign:'left', marginTop:'45px', marginLeft: '15px'}}>
             <h1
@@ -525,5 +527,7 @@ export default function Index() {
         </div>
       </div>
     </div>
+    </div>
+</div>
   );
 }

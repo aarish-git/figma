@@ -4,7 +4,7 @@ import leftArrow from "../../../assest/Icons/ArrowCircleLeft.png";
 import rightArrow from "../../../assest/Icons/ArrowCircleRight.png";
 export default function wago6() {
   return (
-    <div>
+    <div className="container">
       {/* <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
