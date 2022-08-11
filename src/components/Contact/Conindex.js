@@ -258,7 +258,34 @@ export default function Index() {
 
 
   const submitContactInfo = async () => {
+
+    var name = $("#name").val();
+    var job_title = $("#job_title").val();  
+    var email =  $("#email").val();
+
+    if($("#name").val() === '') {
+      $("#name").css('border', '1px solid #EA0069')
+      $("#name_error_text").css('display', 'block')
+    } else {
+      $("#name_error_text").css('display', 'none')
+    }
+
+    if($("#job_title").val() === '') {
+      $("#job_title").css('border', '1px solid #EA0069')
+      $("#job_error_text").css('display', 'block')
+    } else {
+      $("#job_error_text").css('display', 'none')
+    }
+
+    if($("#email").val() === '') {
+      $("#email").css('border', '1px solid #EA0069')
+      $("#email_error_text").css('display', 'block')
+    } else {
+      $("#email_error_text").css('display', 'none')
+    }
     setIsLoading(true);
+
+    if(name && job_title && email) {
     try {
       const response = await fetch('https://website_api.leaftech-products.com/create_contact/', {
         method: 'POST',
@@ -299,6 +326,9 @@ export default function Index() {
       setErr(err.message);
     } finally {
       setIsLoading(false);
+    }
+    } else {
+      alert('Please fill all mandatory values')
     }
   };
 
@@ -458,6 +488,7 @@ export default function Index() {
                 placeholder="Your name"
                 className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
+              <p id="name_error_text" style={{display:'none', fontFamily: "NunitoSans-Regular"}}>Required</p>
             </div>
             <div className="relative text-left">
               <label for="job_title" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
@@ -470,6 +501,7 @@ export default function Index() {
                 placeholder="Role"
                 className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
+              <p id="job_error_text" style={{display:'none', fontFamily: "NunitoSans-Regular"}}>Required</p>
             </div>
             <div className="flex space-x-4">
               <div className="relative text-left">
@@ -483,6 +515,7 @@ export default function Index() {
                   placeholder="your@company.com"
                   className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
+               <p id="email_error_text" style={{display:'none', fontFamily: "NunitoSans-Regular"}}>Please enter a valid email address</p>
               </div>
               <div className="relative text-left">
                 <label for="company" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
