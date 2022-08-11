@@ -241,7 +241,7 @@ export default function Index() {
                 Go Back
               </button> */}
                <ReCAPTCHA
-                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                sitekey="6LfMumghAAAAAHZ9tUZyvHqMxQlPGKawhAYLlqEt"
                 onChange={handleContact}
               />
             </div>
