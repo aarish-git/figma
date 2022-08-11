@@ -1723,4 +1723,57 @@ visibility: visible;
   .phoenix .Clientbenefits{
     width: 400px;
   }
+  .phoenix .results_benefits_subhead{
+    width: 400px !important;
+  }
+  .container .clientImageBox{
+    width: 165px;
+  }
+  .home__leaf .access_your_head{
+    height: auto;
+  }
+
+  .contact__leaf .contact__leaf__info{
+    width: 400px !important;
+  }
+
+  .contact__leaf .contact__leaf__info .contact_head{
+    width: 400px;
+  }
+
+  .contact__leaf .contact__leaf__info .contact_subhead_buttons_text{
+    font-size: 12px;
+    width: 140px;
+    display: inline-block;
+    word-break: break-word;
+    height: auto;
+  }
+  .contact__leaf .contact__leaf__info .contact_content{
+    font-size: 16px;
+  }
+  /* .contact__leaf .contact__leaf__form{
+    width: 400px !important;
+  } */
+
+  /* .contact__leaf .contact__leaf__form .contact_form_longInput, .contact_form_shortnote{
+    width: 350px !important;
+  } */
+  .contact_form_Iagree_div{
+    width: 350px !important;
+  }
+  /* .contact__leaf .contact__leaf__form .contact_form_shortInput{
+    width: 150px;
+  } */
+  .contact__leaf .contact__leaf__form .contact_form_Iagree{
+    width: 300px;
+    z-index: 2;
+  }
+  .contact__leaf .contact__leaf__form .captcha{
+    z-index: 2;
+  }
+  .contact__leaf .contact__leaf-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 }

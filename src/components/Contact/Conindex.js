@@ -91,8 +91,8 @@ export default function Index() {
     <div className="container">
     <div className="row">
     <div className="row" style={{marginTop:'75px', height:'1153px', maxWidth: '104%', width: '103%'}}>
-        <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{width:'666px', height:'506px', textAlign:'left', marginTop:'45px', marginLeft: '15px'}}>
+        <div  className="mx-auto flex  md:flex-row flex-col contact__leaf-wrapper">
+          <div className="contact__leaf__info" style={{width:'666px', height:'506px', textAlign:'left', marginTop:'45px', marginLeft: '15px'}}>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="contact_head"
@@ -204,7 +204,7 @@ export default function Index() {
                   }
             </div>
           </div>
-          <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0" style={{width: '520px', height:'763px'}}>
+          <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 contact__leaf__form" style={{width: '520px', height:'763px'}}>
             <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'35px'}}>
               <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>{t('contact_form_meeting')}</p>
               <div style={{display:'flex', alignItems:'center'}}>
@@ -323,7 +323,7 @@ export default function Index() {
               {t('contact_note_iagree')}
               </p>
             </div>
-            <div className=" flex space-x-4" style={{marginTop:'20px'}}>
+            <div className=" flex space-x-4 captcha" style={{marginTop:'20px'}}>
               {/* <button className="w-1/3 text-black bg-slate-50	 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Go Back
               </button> */}
