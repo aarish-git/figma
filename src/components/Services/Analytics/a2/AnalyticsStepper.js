@@ -14,14 +14,12 @@ import Typography from '@mui/material/Typography';
 // import m4 from "../../../assest/Images/project/manheim/Graph_Trio.png";
 import solar from "../../../../assest/Images/services/Analytics/step1.png";
 import sunshine from "../../../../assest/Images/services/Analytics/step2.jpg";
-
 import shading from "../../../../assest/Images/services/Analytics/analytics_shading_analysis_02.gif";
 import daylight from "../../../../assest/Images/services/Analytics/step4.svg";
-import summer from "../../../../assest/Images/services/Analytics/step5.jpg";
-import cooling from "../../../../assest/Images/services/Analytics/step6.png";
-import assessment from "../../../../assest/Images/services/Analytics/step7.jpg";
+import summer from "../../../../assest/Images/services/Analytics/analytics_SummerHeatProduction.svg";
+import cooling from "../../../../assest/Images/services/Analytics/analytics_CoolingHeating.svg";
+import assessment from "../../../../assest/Images/services/Analytics/analytics_photovoltaic.svg";
 import weather from "../../../../assest/Images/services/Analytics/step8.jpg";
-
 import build from "../../../../assest/Images/services/Analytics/step9.GIF";
 import { useTranslation } from 'react-i18next';//translator
 

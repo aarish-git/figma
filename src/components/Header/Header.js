@@ -70,13 +70,13 @@ export default function Header({ history }) {
           <div className="arun_menuList" id="sub-header">
             <ul className="arunUL"  id="arunUL">
               <li>
-                <NavLink id="dd_link" onClick={handleClick} style={{textDecoration:"nonw", fontFamily: "NunitoSans-SemiBold"}} className="navFont" to="/" >
+                <NavLink id="dd_link" onClick={handleClick} style={{textDecoration:"none", fontFamily: "NunitoSans-SemiBold"}} className="navFont" to="/" >
                   {/* Home */}
                   <b>{t('Home_text')}</b>
                 </NavLink>
               </li>
               <li>
-                <NavLink id="dd_link" onClick={handleClick} style={{textDecoration:"nonw", fontFamily: "NunitoSans-SemiBold" }} className="navFont" to="/Project">
+                <NavLink id="dd_link" onClick={handleClick} style={{textDecoration:"none", fontFamily: "NunitoSans-SemiBold" }} className="navFont" to="/Project">
                   {/* Project */}
                   <b>{t('Project_text')}</b>
                 </NavLink>{" "}

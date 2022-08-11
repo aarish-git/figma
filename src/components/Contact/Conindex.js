@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Conindex.css";
 // import Countryflag from "./countryFlag";
-import relaxed from "../../assest/Images/contact/contact1.png";
-import building from "../../assest/Images/contact/contact2.png";
+import relaxed from "../../assest/Images/contact/contact_01.svg";
+import building from "../../assest/Images/contact/contact_02.svg";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from 'react-i18next';//translator
 import $ from "jquery";
@@ -71,7 +71,7 @@ export default function Index() {
       list_of_interest.push(text);
       // setIsIntrested(list_of_interest);
       // setIsIntrested([...list_of_interest, `Entry ${list_of_interest.length}`]);
-      this.setState({ list_of_interest: [...this.state.list_of_interest, ...[1,2,3] ] }) //another array
+      this.setState({ myArray: [...this.state.myArray, ...[1,2,3] ] }) //another array
     }
 
     console.log(list_of_interest,'list_of_interest')
@@ -93,7 +93,7 @@ export default function Index() {
       list_of_interest.push(text);
       // setIsIntrested(list_of_interest);
       // setIsIntrested([...list_of_interest, `Entry ${list_of_interest.length}`]);
-      this.setState({ list_of_interest: [...this.state.list_of_interest, ...[1,2,3] ] }) //another array
+      this.setState({ myArray: [...this.state.myArray, ...[1,2,3] ] }) //another array
 
     }
 

@@ -22,9 +22,9 @@ import * as React from 'react';
 // import assessment from "../../../../assest/Images/services/Analytics/step7.jpg";
 
 // import solar from "../../../../assest/Images/services/Analytics/step.jpg";
-import control from "../../../../assest/Images/services/Control/control1.jpg";
-import cloud from "../../../../assest/Images/services/Control/control2.jpg";
-import energy from "../../../../assest/Images/services/Control/control3.jpg";
+import control from "../../../../assest/Images/services/Control/control_01.svg";
+import cloud from "../../../../assest/Images/services/Control/control_02.svg";
+import energy from "../../../../assest/Images/services/Control/control_03.svg";
 import { useTranslation } from 'react-i18next';//translator
 
 

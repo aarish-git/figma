@@ -45,7 +45,7 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Building owners */}
                     {t('Footer_Lista1')}
                  </Link>
@@ -247,7 +247,7 @@ export default function Footer() {
         </div>
         <div className="bg-gray-900 ">
           <div className="footer_last_section">
-            <p className="text-gray-500 text-sm text-center " style={{ fontFamily: "NunitoSans-Regular" }}>
+            <p className="text-center " style={{ fontFamily: "NunitoSans-Regular" }}>
               © 2020 Leaftech — All rights reserved
               {/* <a
                 className="text-gray-600 ml-1"
