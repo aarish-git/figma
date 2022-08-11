@@ -1,9 +1,9 @@
 import React from "react";
 import Trio2 from "../../../assest/Images/project/Trio2.jpg";
-import Slider from "../../../assest/Icons/Sliders.png"
-import Stamp from "../../../assest/Icons/Stamp.png"
-import Coins from "../../../assest/Icons/Coins.png"
-import Armchair from "../../../assest/Icons/Armchair.png"
+import Slider from "../../../assest/Icons2/control.svg"
+import Stamp from "../../../assest/Icons2/stamp.svg"
+import Coins from "../../../assest/Icons2/coins.svg"
+import Armchair from "../../../assest/Icons2/sofa.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 export default function mann4() {
@@ -11,10 +11,11 @@ export default function mann4() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
-          <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '-15px'}}>
+          <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'45%'}}>
             <img
               className="object-cover object-center rounded"
               alt="hero"
@@ -31,15 +32,16 @@ export default function mann4() {
             <div className="flex flex-col space-y-5">
               <p style={{fontFamily:"Exo2-Regular"}} className="results_benefits_subhead">{t('mann_project_results_benefits_subhead')}</p>
               <ul className="space-y-5">
-                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text1')}</p></li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Stamp" src={Stamp} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text2')}</p></li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Coins" src={Coins} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text3')}</p></li>
-                <li className="flex space-x-5"><img className="h-fit" alt="Armchair" src={Armchair} /><p style={{fontfamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text4')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Slider" src={Slider} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text1')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Stamp" src={Stamp} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text2')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Coins" src={Coins} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text3')}</p></li>
+                <li className="flex space-x-5"><img className="h-fit" alt="Armchair" src={Armchair} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('mann_project_icon_text4')}</p></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

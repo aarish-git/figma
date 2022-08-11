@@ -5,25 +5,32 @@ import img3 from "../assest/Images/home/three.svg";
 import img4 from "../assest/Images/home/four.svg";
 import img5 from "../assest/Images/home/five.svg";
 // import img1 from "../assest/Images/home/one.jpg"
-import Tree from "../assest/Icons/Tree.png";
-import ChartLine from "../assest/Icons/ChartLine.png";
-import Medal from "../assest/Icons/Medal.png";
-import ChartBar from "../assest/Icons/ChartBar.png";
-import Coins from "../assest/Icons/Coins.png";
+import a1 from "../assest/Icons2/house.svg";
+import a2 from "../assest/Icons2/chart_01.svg";
+import a3 from "../assest/Icons2/tree.svg";
+import a4 from "../assest/Icons2/certify.svg";
 
-import BatteryCharging from "../assest/Icons/BatteryCharging.png";
-import Default from "../assest/Icons/Default.png";
-import CircleHalf from "../assest/Icons/CircleHalf.png";
-import ClockAfternoon from "../assest/Icons/ClockAfternoon.png";
-import Armchair from "../assest/Icons/Armchair.png";
+import b1 from "../assest/Icons2/chart_02.svg";
+import b2 from "../assest/Icons2/coins.svg";
+import b3 from "../assest/Icons2/battery.svg";
+import b4 from "../assest/Icons2/certify.svg";
 
-import Thermometer from "../assest/Icons/Thermometer.png";
-import Recycle from "../assest/Icons/Recycle.png";
+import c1 from "../assest/Icons2/buildings.svg";
+import c2 from "../assest/Icons2/circle.svg";
+import c3 from "../assest/Icons2/clock.svg";
+import c4 from "../assest/Icons2/sofa.svg";
 
-import CloudSun from "../assest/Icons/CloudSun.png";
-import PresentationChart from "../assest/Icons/PresentationChart.png";
-import CheckSquare from "../assest/Icons/CheckSquare.png";
-import Home from "../assest/Icons/Home.png";
+import d1 from "../assest/Icons2/chart_01.svg";
+import d2 from "../assest/Icons2/temperature_cold.svg";
+import d3 from "../assest/Icons2/triangle_arrows.svg";
+import d4 from "../assest/Icons2/battery.svg";
+import d5 from "../assest/Icons2/cloudy_sun.svg";
+
+import e1 from "../assest/Icons2/temperature_cold.svg";
+import e2 from "../assest/Icons2/check.svg";
+import e3 from "../assest/Icons2/presentation.svg";
+
+
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"; //translator
 
@@ -31,6 +38,7 @@ export default function First() {
   const { t, i18n } = useTranslation(); //translator
 
   return (
+    <div className="container">
     <div className="row">
       <div
         className="row"
@@ -52,7 +60,7 @@ export default function First() {
       </div>
 
       <div className="row">
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img1" alt="hero" src={img1} />
         </div>
         <div className="col-lg-6">
@@ -88,26 +96,26 @@ export default function First() {
             <div className="flex">
               <ul className="space-y-5">
                 <li className="flex space-x-3">
-                  <img className="h-fit	" alt="home" src={Home} />
+                  <img className="h-fit	" alt="home" src={a1} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {t("Home_section4_contentList1")}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit	" alt="ChartLine" src={ChartLine} />
+                  <img className="h-fit	" alt="ChartLine" src={a2} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {" "}
                     {t("Home_section4_contentList2")}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Tree" src={Tree} />
+                  <img className="h-fit" alt="Tree" src={a3} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {t("Home_section4_contentList3")}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit	" alt="Girl in a Medal" src={Medal} />
+                  <img className="h-fit	" alt="Girl in a Medal" src={a4} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {t("Home_section4_contentList4")}
                   </p>
@@ -116,7 +124,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/project">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {t("Home_section4_button1")}
                 </button>
               </Link>
@@ -130,7 +138,7 @@ export default function First() {
         id="foot_Assest"
         style={{ marginTop: "120px", textAlign: "left" }}
       >
-        <div className="col-lg-6">
+        <div className="col-lg-6" >
           <div
             style={{ textAlign: "left" }}
             className="for_bld_owners_content_box2"
@@ -166,14 +174,14 @@ export default function First() {
             <div className="flex">
               <ul className="space-y-5">
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="ChartBar" src={ChartBar} />
+                  <img className="h-fit" alt="ChartBar" src={b1} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Make decisions using analytic data */}
                     {t("Home_section5_contentList1")}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Coins" src={Coins} />
+                  <img className="h-fit" alt="Coins" src={b2} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Reduce building operating expenses */}
                     {t("Home_section5_contentList2")}
@@ -183,7 +191,7 @@ export default function First() {
                   <img
                     className="h-fit"
                     alt="BatteryCharging"
-                    src={BatteryCharging}
+                    src={b3}
                   />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Mitigate energy design risks */}
@@ -191,7 +199,7 @@ export default function First() {
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Medal" src={Medal} />
+                  <img className="h-fit" alt="Medal" src={b4} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Data for energy performance certificates{" "} */}
                     {t("Home_section5_contentList4")}
@@ -201,7 +209,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/mannhiem">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Take a look at our Trio Mannheim project */}
                   {t("Home_section5_button1")}
                 </button>
@@ -210,7 +218,7 @@ export default function First() {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img2" alt="hero" src={img2} />
         </div>
       </div>
@@ -220,7 +228,7 @@ export default function First() {
         id="foot_Building"
         style={{ marginTop: "120px", textAlign: "left" }}
       >
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img3" alt="hero" src={img3} />
         </div>
         <div className="col-lg-6">
@@ -256,7 +264,7 @@ export default function First() {
             <div className="flex">
               <ul className="space-y-5">
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Default" src={Default} />
+                  <img className="h-fit" alt="Default" src={c1} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Digital Twin based system design and layout */}
                     
@@ -264,7 +272,7 @@ export default function First() {
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="CircleHalf" src={CircleHalf} />
+                  <img className="h-fit" alt="CircleHalf" src={c2} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Best-in-class data services for shading automation{" "} */}
                     {t("Home_section6_contentList2")}
@@ -274,25 +282,39 @@ export default function First() {
                   <img
                     className="h-fit"
                     alt="ClockAfternoon"
-                    src={ClockAfternoon}
+                    src={c3}
                   />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Data-driven predictive maintenance */}
                     {t("Home_section6_contentList3")}
                   </p>
                 </li>
+               {t('model_service_contact') === "Contact us" ? 
+
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Armchair" src={Armchair} />
+                  <img className="h-fit" alt="Armchair" src={c4} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Anticipate upcoming operating conditions of each room{" "} */}
                     {t("Home_section6_contentList4")}
                   </p>
                 </li>
+
+                :
+
+                <li className="flex space-x-3" style={{display:'none'}}>
+                  <img className="h-fit" alt="Armchair" src={c4} />
+                  <p style={{ fontFamily: "NunitoSans-Regular" }}>
+                    {/* Anticipate upcoming operating conditions of each room{" "} */}
+                    {t("Home_section6_contentList4")}
+                  </p>
+                </li>
+
+              }
               </ul>
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/wago">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Know more about our proactive control project */}
                   {t("Home_section6_button1")}
                 </button>
@@ -343,21 +365,21 @@ export default function First() {
             <div className="flex">
               <ul className="space-y-5">
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="ChartLine" src={ChartLine} />
+                  <img className="h-fit" alt="ChartLine" src={d1} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Offer analytic insights to your clients */}
                     {t('Home_section7_contentList1')}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Thermometer" src={Thermometer} />
+                  <img className="h-fit" alt="Thermometer" src={d2} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Assess local cooling and heating load{" "} */}
                     {t('Home_section7_contentList2')}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Recycle" src={Recycle} />
+                  <img className="h-fit" alt="Recycle" src={d3} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Assess onsite renewable energy generation potential */}
                     {t('Home_section7_contentList3')}
@@ -367,7 +389,7 @@ export default function First() {
                   <img
                     className="h-fit"
                     alt="BatteryCharging"
-                    src={BatteryCharging}
+                    src={d4}
                   />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Design integrated low-impact energy systems{" "} */}
@@ -375,7 +397,7 @@ export default function First() {
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="CloudSun" src={CloudSun} />
+                  <img className="h-fit" alt="CloudSun" src={d5} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Forecast data to increase building’s energy efficiency */}
                     {t('Home_section7_contentList5')}
@@ -385,7 +407,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/granue">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Take a look at our project with Vattenfall */}
                   {t('Home_section7_button1')}
                 </button>
@@ -394,7 +416,7 @@ export default function First() {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img4" alt="hero" src={img4} />
         </div>
       </div>
@@ -404,7 +426,7 @@ export default function First() {
         id="foot_Architects"
         style={{ marginTop: "120px", textAlign: "left" }}
       >
-        <div className="col-lg-6">
+        <div className="col-lg-6" style={{display:'flex', justifyContent:'center'}}>
           <img className="for_bld_owners_img5" alt="hero" src={img5} />
         </div>
         <div className="col-lg-6 ">
@@ -440,14 +462,14 @@ export default function First() {
             <div className="flex">
               <ul className="space-y-5">
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="Thermometer" src={Thermometer} />
+                  <img className="h-fit" alt="Thermometer" src={e1} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Building site analysis, climate analysis{" "} */}
                     {t('Home_section8_contentList1')}
                   </p>
                 </li>
                 <li className="flex space-x-3">
-                  <img className="h-fit" alt="CheckSquare" src={CheckSquare} />
+                  <img className="h-fit" alt="CheckSquare" src={e2} />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Verify your design assumptions{" "} */}
                     {t('Home_section8_contentList2')}
@@ -457,7 +479,7 @@ export default function First() {
                   <img
                     className="h-fit"
                     alt="PresentationChart"
-                    src={PresentationChart}
+                    src={e3}
                   />
                   <p style={{ fontFamily: "NunitoSans-Regular" }}>
                     {/* Data for Energy design{" "} */}
@@ -468,7 +490,7 @@ export default function First() {
             </div>
             <div className="flex mt-5" style={{ justifyContent: "center" }}>
               <Link style={{ all: "unset" }} to="/project">
-                <button className="inline-flex self-end shadow-[0px_4px_4px_rgba(0,135,225,0.25)] text-[#2F2F2F] border-1 border-solid border-[#2F2F2F] py-2 px-8 rounded-[20px] text-lg">
+                <button className="whats_in_buttons" style={{fontFamily: "NunitoSans-Regular"}}>
                   {/* Our success stories */}
                   {t('Home_section8_button1')}
                 </button>
@@ -477,6 +499,7 @@ export default function First() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -40,6 +40,21 @@ code {
   src: url("../src/assest/font/Nunito_Sans/NunitoSans-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url("../src/assest/font/Nunito_Sans/NunitoSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSans-SemiBold";
+  src: url("../src/assest/font/Nunito_Sans/NunitoSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSans-ExtraBold";
+  src: url("../src/assest/font/Nunito_Sans/NunitoSans-ExtraBold.ttf") format("truetype");
+}
+
 
  @font-face {
   font-family: "Exo2-SemiBold";

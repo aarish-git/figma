@@ -1,7 +1,7 @@
 import React from "react";
 import wago from "../../../assest/Images/project/project4.jpg";
-import Sun from "../../../assest/Icons/Sun.png"
-import Circle from "../../../assest/Icons/CircleHalf.png"
+import Sun from "../../../assest/Icons2/sun.svg"
+import Circle from "../../../assest/Icons2/circle.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 export default function wago2() {
@@ -9,6 +9,7 @@ export default function wago2() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
     <div className="text-gray-600 body-font">
       <div className="flex flex-wrap">
@@ -24,7 +25,7 @@ export default function wago2() {
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">
               <h2
-                  style={{ fontFamily: "Exo2-Bold" }}
+                  style={{ fontFamily: "Exo2-Bold", marginLeft:'0px' }}
                   className="single_project_desc_head"
                 >
                    {t('wago_project_desc_head')}
@@ -65,6 +66,7 @@ export default function wago2() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

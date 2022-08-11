@@ -5,10 +5,12 @@ import Granue from "../../../assest/Images/project/project2.jpg";
 import Pheonix from "../../../assest/Images/project/phoenix.svg";
 import Wago from "../../../assest/Images/project/wago.svg";
 
-import Sun from "../../../assest/Icons/Sun.png";
-import Wrench from "../../../assest/Icons/Wrench.png";
-import User from "../../../assest/Icons/User.png";
-import Default from "../../../assest/Icons/Default.png";
+import Sun from "../../../assest/Icons2/sun.svg";
+import Wrench from "../../../assest/Icons2/wrench.svg";
+import User from "../../../assest/Icons2/customer.svg";
+import Default from "../../../assest/Icons2/buildings.svg";
+
+
 import { margin } from "@mui/system";
 import { useTranslation } from 'react-i18next';//translator
 
@@ -17,7 +19,8 @@ export default function Project() {
   const { t, i18n } = useTranslation();//translator
 
   return (
-    <div className="project_home" style={{width:'1280px'}}>
+    <div className="container">
+    <div className="project_home" style={{width:'97%'}}>
       <div className=" text-gray-600" style={{marginTop:'32px', textAlign:'left'}}>
         <Link style={{ all: "unset", cursor: 'pointer' }} to="/mannhiem">
             <div className="project_outline ">
@@ -26,7 +29,7 @@ export default function Project() {
                 className=" projectImage rounded-[20px]  object-cover object-center rounded"
                 src={Trio}
               />
-              <div className="">
+              <div style={{width:'70%'}}>
               <div className="project_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -147,7 +150,7 @@ export default function Project() {
                 className=" projectImage rounded-[20px]  object-cover object-center rounded"
                 src={Granue}
               />
-              <div className="">
+              <div style={{width:'70%'}}>
                 <div className="project_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -259,7 +262,7 @@ export default function Project() {
                 className=" projectImage rounded-[20px]  object-cover object-center rounded"
                 src={Pheonix}
               />
-              <div className="">
+              <div style={{width:'70%'}}>
               <div className="project_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
@@ -386,8 +389,8 @@ export default function Project() {
                 className=" projectImage rounded-[20px] shadow-[0_4px_4px_-3px_rgba(0,135,225,0.25)] object-cover object-center rounded"
                 src={Wago}
               />
-              <div className="shadow-[0px_4px_4px_-3px_rgba(0,135,255,0.25)]">
-              <div className="project_content_body ">
+              <div style={{width:'70%'}} >
+              <div className="project_wago_content_body ">
                 <h2
                   style={{ fontFamily: "Exo2-Regular" }}
                   className="project_blue_head uppercase text-[#0087FF]"
@@ -412,7 +415,7 @@ export default function Project() {
                 <div className="flex mt-6 items-center pb-5  border-gray-100 mb-5">
                   <div className="flex  items-center">
                     <div className="relative">
-                      <ul className="space-y-8">
+                      <ul className="space-y-5">
                         <li className="flex space-x-5">
                           <img className="project_icons h-fit" alt="Project" src={User} />
                           <p
@@ -493,6 +496,7 @@ export default function Project() {
             </div>
         </Link>
       </div>
+    </div>
     </div>
   );
 }

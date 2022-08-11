@@ -9,7 +9,7 @@ export default function wago5() {
   return (
     <div className="row">
       <div className=" body-font bg-[#FAFBFC]">
-        <div className="container mx-auto flex px-5 py-5 items-center justify-center flex-col">
+        <div className=" mx-auto flex px-5 py-5 items-center justify-center flex-col">
           {/* <img
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
@@ -21,9 +21,15 @@ export default function wago5() {
             </h1>
             <div className="flex justify-center">
             <a href="/contact" >
-              <button style={{fontFamily:"NunitoSans-Regular"}} className="inline-flex text-white py-2 px-6 text-white bg-[#0087FF] rounded-[20px] shadow-[0_4px_4px_rgba(0,135,225,0.25)] rounded-[20px] text-lg">
-              {t('wago_project_discover_how_contact')}
-              </button>
+            <button
+            style={{
+              fontFamily: "NunitoSans-Regular",
+              marginTop:'64px', marginBottom:'120px'
+            }}
+            className="contact_us"
+          >
+            {t('model_service_contact')}
+          </button>
               </a>
             </div>
           </div>

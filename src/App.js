@@ -12,17 +12,17 @@ import Getstart from "./components/GetStart";
 function App() {
   return (
     <div className="App" >
+       <div className="home__leaf">
       <Header />
-       <div className="container">
-       <Count />
+      <Count />
       <Wecreate />
       <Services />
       <First />
       {/* <Contact /> */}
       <Getstart />
       <Clients />
-       </div>
       <Footer />
+      </div>
     </div>
   );
 }

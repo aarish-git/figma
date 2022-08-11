@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';//translator
 export default function ProjectFoot() {
   const { t, i18n } = useTranslation();//translator
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font" style={{textAlign:'center'}}>
           <div className="flex flex-wrap w-full flex-col text-gray-600 body-font items-center text-center">
@@ -16,12 +17,18 @@ export default function ProjectFoot() {
             </p>
           </div>
           <a style={{all:"unset"}} href="/contact">
-          <button style={{marginTop:'64px', marginBottom:'120px'}} className=" text-gray-600 body-font text-white bg-[#0087FF]  py-2 px-8 rounded-[20px] shadow-[0_4px_4px_rgba(0,135,225,0.25)]  text-lg">
-          
-          {t('model_service_contact')}
+          <button
+            style={{
+              fontFamily: "NunitoSans-Regular",
+              marginTop:'64px', marginBottom:'120px'
+            }}
+            className="contact_us"
+          >
+            {t('model_service_contact')}
           </button>
           </a>
       </div>
+    </div>
     </div>
   );
 }

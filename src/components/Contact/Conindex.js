@@ -5,10 +5,11 @@ import relaxed from "../../assest/Images/contact/contact1.png";
 import building from "../../assest/Images/contact/contact2.png";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from 'react-i18next';//translator
+import $ from "jquery";
 
 export default function Index() {
   const { t, i18n } = useTranslation();//translator
-  console.log(t, 'ttttt')
+  // console.log(t, 'ttttt')
 
   const [verified, setverified] = useState(false);
 
@@ -16,11 +17,313 @@ export default function Index() {
     console.log("Captcha value:", value);
     setverified(true);
   }
+
+  // $(document).ready(function(){
+    // $(".contact_subhead_buttons_text").click(function(){
+      // $(".contact_subhead_buttons_text").toggleClass("main");
+    // });
+  // });
+
+  const [isActive1, setActive1] = useState(false);
+  const [isActive2, setActive2] = useState(false);
+  const [isActive3, setActive3] = useState(false);
+  const [isActive4, setActive4] = useState(false);
+  const [isActive5, setActive5] = useState(false);
+  const [isActive6, setActive6] = useState(false);
+  const [isActive7, setActive7] = useState(false);
+  const [isActive8, setActive8] = useState(false);
+  const [isActive9, setActive9] = useState(false);
+  const [isActive10, setActive10] = useState(false);
+  const [isActive11, setActive11] = useState(false);
+
+  const [isIntrested, setIsIntrested] = useState([]);
+
+  // const [isActive12, setActive11] = useState(false);
+
+ 
+  const list_of_interest = [];
+  const list_of_groups = [];
+
+  function removeA(arr) {
+    var what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while ((ax= arr.indexOf(what)) !== -1) {
+            arr.splice(ax, 1);
+        }
+    }
+    setIsIntrested(arr);
+    return arr;
+  }
+
+  
+
+  const toggleClass1 = (e) => {
+    setActive1(!isActive1);
+    var text = e.target.innerHTML;
+    console.log(text,'text')
+
+    if(isActive1) {
+      console.log(isActive1,'true')
+      removeA(list_of_interest, text);
+    } else {
+      console.log(isActive1,'false')
+      list_of_interest.push(text);
+      // setIsIntrested(list_of_interest);
+      // setIsIntrested([...list_of_interest, `Entry ${list_of_interest.length}`]);
+      this.setState({ list_of_interest: [...this.state.list_of_interest, ...[1,2,3] ] }) //another array
+    }
+
+    console.log(list_of_interest,'list_of_interest')
+
+  };
+
+
+
+  const toggleClass2 = (e) => {
+    setActive2(!isActive2);
+
+     var text = e.target.innerHTML;
+    
+    if(isActive2) {
+      console.log(isActive2,'true')
+      removeA(list_of_interest, text);
+    } else {
+      console.log(isActive2,'false')
+      list_of_interest.push(text);
+      // setIsIntrested(list_of_interest);
+      // setIsIntrested([...list_of_interest, `Entry ${list_of_interest.length}`]);
+      this.setState({ list_of_interest: [...this.state.list_of_interest, ...[1,2,3] ] }) //another array
+
+    }
+
+    console.log(list_of_interest,'list_of_interest')
+  };
+
+  console.log(isIntrested,'isIntrested')
+ 
+
+  const toggleClass3 = (e) => {
+    setActive3(!isActive3);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive3) {
+      console.log(isActive3,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive3,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass4 = (e) => {
+    setActive4(!isActive4);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive4) {
+      console.log(isActive4,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive4,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass5 = (e) => {
+    setActive5(!isActive5);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive5) {
+      console.log(isActive5,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive5,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass6 = (e) => {
+    setActive6(!isActive6);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive6) {
+      console.log(isActive6,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive6,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass7 = (e) => {
+    setActive7(!isActive7);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive7) {
+      console.log(isActive7,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive7,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass8 = (e) => {
+    setActive8(!isActive8);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive8) {
+      console.log(isActive8,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive8,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass9 = (e) => {
+    setActive9(!isActive9);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive9) {
+      console.log(isActive9,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive9,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  const toggleClass10 = (e) => {
+    setActive10(!isActive10);
+    
+    var text = e.target.innerHTML;
+    
+    if(isActive10) {
+      console.log(isActive10,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive10,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+  
+  const toggleClass11 = (e) => {
+    setActive11(!isActive11);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive11) {
+      console.log(isActive11,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive11,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
+  };
+
+  // const toggleClass12 = () => {
+  //   setActive12(!isActive11);
+  // };
+
+  
+  const [data, setData] = useState();
+  const [isLoading, setIsLoading] = useState(false);
+  const [err, setErr] = useState('');
+
+
+  const submitContactInfo = async () => {
+    setIsLoading(true);
+    try {
+      const response = await fetch('https://website_api.leaftech-products.com/create_contact/', {
+        method: 'POST',
+        body: JSON.stringify({
+          name : $("#name").val(),
+          job_title : $("#job_title").val(),
+          company : $("#company").val(),
+          email : $("#email").val(),
+          phone_no : $("#phone_no").val(),
+          short_note : $("#short_note").val(),
+          // language : $("#language").val(),
+          list_of_interest : list_of_interest,
+          list_of_groups : list_of_groups,
+          language : "en",
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      });
+
+      console.log('response: ', response);
+
+
+      if (!response.ok) {
+        alert('fail')
+        throw new Error(`Error! status: ${response.status}`);
+      } else {
+        alert('success')
+      }
+
+      const result = await response.json();
+
+      console.log('result is: ', JSON.stringify(result, null, 4));
+
+      setData(result);
+    } catch (err) {
+      setErr(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // console.log(data);
+
+      // console.log(
+    //   'name-', name,
+    //   'job_title-', job_title,
+    //   'company-', company,
+    //   'email-', email,
+    //   'phone_no-', phone_no,
+    //   'short_note-', short_note,
+    //   'language-', language,
+    // )
+
+ 
+
+
   return (
+    <div  style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="container">
     <div className="row">
-    <div className="row" style={{marginTop:'75px', height:'1153px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
-        <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{width:'666px', height:'506px', textAlign:'left', marginTop:'147px', marginLeft: '-10px'}}>
+    <div className="row" style={{marginTop:'75px', height:'1153px', maxWidth: '104%', width: '103%'}}>
+        <div  className="mx-auto flex  md:flex-row flex-col contact__leaf-wrapper">
+          <div className="contact__leaf__info" style={{width:'666px', height:'506px', textAlign:'left', marginTop:'45px', marginLeft: '15px'}}>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="contact_head"
@@ -33,11 +336,17 @@ export default function Index() {
             <div className="my-5  text-left">
               <div className="space-y-3">
                 <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>{t('contact_subhead1')}</p>
-                <div className="space-x-4">
-                <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                <div className="flex space-x-3">
+                <button style={{ fontFamily: "Exo2-Regular" }}
+                 className={isActive1 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass1}  
+                //   className={isActive ? 'main': 'contact_subhead_buttons_text'} 
+                //  onClick={toggleClass}  
+                 >
                 {t('contact_subhead_buttons_text11')}
                   </button>
-                  <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                  <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive2 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass2}  >
                   {t('contact_subhead_buttons_text12')}
                   </button>
                 </div>
@@ -46,40 +355,49 @@ export default function Index() {
                 <p className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>{t('contact_subhead2')}</p>
                 <div className="space-x-4 space-y-4">
                   <div className="flex space-x-3">
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)]">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive11 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass11}>
                     {t('contact_subhead_buttons_text1')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive3 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass3}  >
                     {t('contact_subhead_buttons_text2')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive4 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass4}  >
                     {t('contact_subhead_buttons_text3')}
                     </button>
                   </div>
 
                   <div className="flex space-x-3" style={{marginLeft: '0px'}}>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive5 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass5}  >
                     {t('contact_subhead_buttons_text4')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] ">
+                    <button style={{ fontFamily: "Exo2-Regular" }}  className={isActive6 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass6}  >
                     {t('contact_subhead_buttons_text5')}
                     </button>
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular", zIndex:'10' }} className={isActive7 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass7} >
                     {t('contact_subhead_buttons_text6')}
                     </button>
                   </div>
 
                   <div className="flex space-x-3"  style={{marginLeft: '0px'}}>
                    
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive8 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass8}>
                     {t('contact_subhead_buttons_text7')}
                     </button>
                     
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive9 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass9}>
                     {t('contact_subhead_buttons_text8')}
                     </button>
 
-                    <button style={{ fontFamily: "Exo2-Regular" }} className="contact_subhead_buttons_text p-2 border-1 border-[#2F2F2F] shadow-[0_4px_4px_rgba(0,135,255,0.25)] tracking-widest">
+                    <button style={{ fontFamily: "Exo2-Regular" }} className={isActive10 ? 'main': 'contact_subhead_buttons_text'} 
+                 onClick={toggleClass10}>
                     {t('contact_subhead_buttons_text9')}
                     </button>
                   </div>
@@ -117,40 +435,40 @@ export default function Index() {
                   }
             </div>
           </div>
-          <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0" style={{width: '500px', height:'763px'}}>
-            <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'138px'}}>
+          <div className="rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 contact__leaf__form" style={{width: '520px', height:'763px'}}>
+            <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'35px'}}>
               <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>{t('contact_form_meeting')}</p>
               <div style={{display:'flex', alignItems:'center'}}>
-                <input className="contact_form_checkbox" type="checkbox" />
+                <input className="contact_form_checkbox" id="language"  type="checkbox" />
                 <label className="contact_form_lang_font">English</label>
               </div>
               <div style={{display:'flex', alignItems:'center'}}>
-                <input className="contact_form_checkbox" type="checkbox" />
+                <input className="contact_form_checkbox" id="language" type="checkbox" />
                 <label className="contact_form_lang_font">German</label>
               </div>
             </div>
             <div className="relative text-left">
-              <label for="full-name" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="name" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
                 Name*
               </label>
               <input
                 type="text"
-                id="full-name"
-                name="full-name"
+                id="name"
+                name="name"
                 placeholder="Your name"
-                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
-              <label for="text" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="job_title" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
               {t('contact_subhead_position')}
               </label>
               <input
                 type="text"
-                id="text"
+                id="job_title"
                 name="Job Title"
                 placeholder="Role"
-                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="flex space-x-4">
@@ -163,63 +481,42 @@ export default function Index() {
                   id="email"
                   name="email"
                   placeholder="your@company.com"
-                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
               <div className="relative text-left">
-                <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+                <label for="company" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
                 {t('contact_subhead_company')}
                 </label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="company"
+                  name="company"
                   placeholder="The name of your company"
-                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            {/* <div className=" flex space-x-4 text-left">
-             
-            </div>
-            <div className="relative mb-4 ">
-                <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
-                  Phone
-                </label><br />
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="+46"
-                  className=" drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1  leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div> */}
             <div className="relative text-left"  style={{ display: 'flex', flexDirection: 'column' }}>
-              <label for="text" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="phone_no" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
               {t('contact_subhead_number')}
               </label>
               <input
-                type="tel"
-                id="phone"
-                name="phone"
+                type="number"
+                id="phone_no"
+                name="phone_no"
                 placeholder="+49"
-                className="contact_form_phoneInput drop-shadow-sm bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="contact_form_phoneInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
-              <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="short_note" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
               {t('contact_subhead_note')}
               </label>
-              {/* <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-white rounded-[10px] border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              /> */}
               <textarea
-                className="contact_form_shortnote rop-shadow-md rounded-[10px] p-1 w-[-webkit-fill-available]"
-                id="w3review"
-                name="w3review"
+                className="contact_form_shortnote"
+                id="short_note"
+                name="short_note"
                 rows="4"
                 cols="50"
                 placeholder={t('contact_note_text')}
@@ -230,13 +527,13 @@ export default function Index() {
                 type="checkbox"
                 id="email"
                 name="email"
-                className="contact_form_checkbox bg-white drop-shadow-sm rounded-[2px] w-[26px] h-[26px]  border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
+                className="contact_form_checkbox bg-white drop-shadow-sm rounded-[2px] w-[26px] h-[26px]   text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
               />
-              <p className="text-[12px] contact_form_Iagree">
+              <p className="text-[12px] contact_form_Iagree" style={{fontFamily:"NunitoSans-Regular"}}>
               {t('contact_note_iagree')}
               </p>
             </div>
-            <div className=" flex space-x-4" style={{marginTop:'20px'}}>
+            <div className=" flex space-x-4 captcha" style={{marginTop:'20px'}}>
               {/* <button className="w-1/3 text-black bg-slate-50	 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Go Back
               </button> */}
@@ -247,8 +544,10 @@ export default function Index() {
             </div>
             <div className=" flex space-x-4 justify-center">
               <button
-                disabled={!verified}
+                // disabled={!verified}
                 className="contact_form_submitButton"
+                style={{fontFamily:"NunitoSans-Regular"}}
+                onClick={submitContactInfo}
               >
                 {t('contact_submit_button')}
               </button>
@@ -291,7 +590,7 @@ export default function Index() {
                     type="text"
                     id="full-name"
                     name="full-name"
-                    className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
                 <div className="relative mb-4">
@@ -302,7 +601,7 @@ export default function Index() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
                 <div className="flex space-x-4">
@@ -314,7 +613,7 @@ export default function Index() {
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
                   <div className="relative mb-4">
@@ -325,7 +624,7 @@ export default function Index() {
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full drop-shadow-sm bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className="w-full drop-shadow-sm bg-white rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>
                 </div>
@@ -335,7 +634,7 @@ export default function Index() {
                       type="radio"
                       id="email"
                       name="email"
-                      className=" bg-white drop-shadow-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className=" bg-white drop-shadow-sm rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     <label for="email" className="leading-7 text-sm text-gray-600">
                       Digital twin service
@@ -347,7 +646,7 @@ export default function Index() {
                       type="radio"
                       id="email"
                       name="email"
-                      className=" bg-white drop-shadow-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      className=" bg-white drop-shadow-sm rounded border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                     <label for="email" className="leading-7 text-sm text-gray-600">
                       Future Information
@@ -371,7 +670,7 @@ export default function Index() {
                     type="checkbox"
                     id="email"
                     name="email"
-                    className="bg-white drop-shadow-sm rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
+                    className="bg-white drop-shadow-sm rounded border  text-gray-700 py-1 px-3  transition-colors duration-200 ease-in-out"
                   />
                   <p className="text-xs text-gray-500 ">
                     Literally you probably haven't heard of them jean shorts.
@@ -439,5 +738,7 @@ export default function Index() {
         </div>
       </div>
     </div>
+    </div>
+</div>
   );
 }

@@ -25,7 +25,7 @@ import Typography from '@mui/material/Typography';
 
 import target from "../../../../assest/Images/services/Model/model1st.gif";
 import context from "../../../../assest/Images/services/Model/model2.jpg";
-import access from "../../../../assest/Images/services/Model/model3.gif";
+// import access from "../../../../assest/Images/services/Model/model3.gif";
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -105,7 +105,7 @@ export default function VerticalLinearStepper() {
 <div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
     <div className="allsteper">
     <div className="stepLabel">
-    <div className="step completed" style={{marginLeft: "-20px"}}>
+    <div className="step completed" style={{marginLeft: "20px"}}>
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
         <div className="circle" style={{marginLeft: '0px'}}></div>
@@ -124,6 +124,8 @@ export default function VerticalLinearStepper() {
     </div>
    </div>
    </div>
+
+   {t('model_service_contact') === "Contact us" ?
 
     <div className="tab-content" id="tabContent" style={{width:'70%'}}>
       <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -150,10 +152,43 @@ export default function VerticalLinearStepper() {
           <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
           {t('model_service_stepdesc3')}
           </p>
-          <img className="stepperService_desc_img" src={access} alt="access" />
+          {/* <img className="stepperService_desc_img" src={access} alt="access" /> */}
         </div>
       </div>
     </div>
+
+    :
+
+    <div className="tab-content" id="tabContent" style={{width:'70%'}}>
+      <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead1')}</b></h1>
+          <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
+          {t('model_service_stepdesc1')}
+          </p>
+          <img className="stepperService_desc_img" src={target} alt="target" />
+        </div>
+      </div>
+      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+         <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead2')}</b></h1>
+          <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
+          {t('model_service_stepdesc2')}
+          </p>
+          <img className="stepperService_desc_img" src={context} alt="context" />
+        </div>
+      </div>
+      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+         <div className="subcontent">
+          <h1 className="stepper_desc_head" style={{ fontFamily: "NunitoSans-Regular" }}><b>{t('model_service_stephead3')}</b></h1>
+          <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
+          {t('model_service_stepdesc3')}
+          </p>
+          {/* <img className="stepperService_desc_img" src={access} alt="access" /> */}
+        </div>
+      </div>
+    </div>
+    }
    </div>
    </div>
    

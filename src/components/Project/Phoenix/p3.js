@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';//translator
 // import Selve from "../assest/Images/home/weCreate2/Selve Original.svg";
 
 import PImage from "../../../assest/Images/project/trio/p1.png";
-import PImage1 from "../../../assest/Images/project/trio/p2.png"
+import PImage1 from "../../../assest/Images/project/trio/p22.svg"
 
 
 const steps = [
@@ -60,6 +60,7 @@ export default function VerticalLinearStepper() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="row" style={{textAlign: 'left',  marginTop:'120px'}}>
     <h2
         style={{ fontFamily: "Exo2-Bold" }}
@@ -89,22 +90,22 @@ export default function VerticalLinearStepper() {
         <div className="circle"></div>
       </div> */}
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1700)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div className="circle"></div>
           {t('phoenix_project_stephead1')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 1700)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
           <div className="circle"></div>
           {t('phoenix_project_stephead2')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 1700)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
           <div className="circle"></div>
           {t('phoenix_project_stephead3')}
           <div className="line"></div>
         </a>
-        <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1550)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+        <a className="nav-link" id="settings-tab" onClick={() => window.scrollTo(0, 1700)} data-toggle="pill" style={{marginTop: '48px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#settings" role="tab" aria-controls="settings" aria-selected="false">
           <div className="circle"></div>
           {t('phoenix_project_stephead4')}
         </a>
@@ -150,6 +151,7 @@ export default function VerticalLinearStepper() {
      
     </div>
    </div>
+     </div>
      </div>
   );
 }

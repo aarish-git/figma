@@ -5,9 +5,9 @@ import rightArrow from "../../../assest/Icons/ArrowCircleRight.png";
 
 export default function mann6() {
   return (
-    <div>
+    <div className="container">
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 w-1/2 text-left">
               <Link

@@ -1,8 +1,8 @@
 import React from "react";
 import Trio1 from "../../../assest/Images/project/Trio1.jpg";
-import sun from "../../../assest/Icons/Sun.png"
-import Wind from "../../../assest/Icons/Wind.png"
-import Battery from "../../../assest/Icons/BatteryCharging.png"
+import sun from "../../../assest/Icons2/sun.svg"
+import Wind from "../../../assest/Icons2/wind.svg"
+import Battery from "../../../assest/Icons2/battery.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 export default function man2() {
@@ -10,6 +10,7 @@ export default function man2() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font">
         <div className="flex flex-wrap">
@@ -75,6 +76,7 @@ export default function man2() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -8,10 +8,12 @@ export default function gran() {
 
 
   return (
+    <div  style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="container">
     <div className="row">
-    <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div  style={{marginTop:'75px', height: '533px'}}>
         <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{textAlign:'left', marginTop:'72px'}}>
+          <div  style={{textAlign:'left', marginTop:'72px' , marginLeft:'15px' }}>
             <h1
               style={{ fontFamily: "Exo2-SemiBold" }}
               className="single_project_blue_head text-[#0087FF]"
@@ -74,6 +76,8 @@ export default function gran() {
     </div> */}
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }

@@ -1,28 +1,42 @@
-import React, { useEffect } from "react";
-import slick from "slick-carousel";
-import $ from "jquery";
+// import React, { useEffect } from "react";
+// import slick from "slick-carousel";
+// import $ from "jquery";
 import Horn from "../assest/Images/home/weCreate/Horn_colour.svg";
 import Phoenix from "../assest/Images/home/weCreate/Phoenix_Contact_Logo_Original.svg";
 import Hosch from "../assest/Images/home/weCreate/hosch_logo Original.svg";
-import Bauer from "../assest/Images/home/weCreate/bauer-logo Original.svg";
+import Bauer from "../assest/Images/home/weCreate/bauer-logo 3.png";
 import Bim from "../assest/Images/home/weCreate/Berliner_Immobilienmanagement_Original.svg";
 import Lubbing from "../assest/Images/home/weCreate/LÜBBING REMADE Original Colour.svg";
 import Wago from "../assest/Images/home/weCreate/Logo_WAGO_2020 Original.svg";
 import Selve from "../assest/Images/home/weCreate/Selve Original.svg";
 import bvg from "../assest/Images/home/weCreate/Bvg-logo_original.svg";
-import dabbel from "../assest/Images/home/weCreate/Dabbel.jpg";
+// import dabbel from "../assest/Images/home/weCreate/Dabbel.jpg";
 import fujitsu from "../assest/Images/home/weCreate/Fujitsu-Logo_original.svg";
-import gfr from "../assest/Images/home/weCreate/GFR-Gesellschaft-fuer-Regelungstechnik-und-Energieeinsparung-mbH.jpg";
+import gfr from "../assest/Images/home/weCreate/gfr-logo.png";
+// import gfr from "../assest/Images/home/weCreate/GFR-Gesellschaft-fuer-Regelungstechnik-und-Energieeinsparung-mbH.jpg";
 import hermos from "../assest/Images/home/weCreate/hermosAG.png";
-import lae from "../assest/Images/home/weCreate/Logo_LAE_original.svg";
+import lae from "../assest/Images/home/weCreate/LAE Remake.svg";
 import trio from "../assest/Images/home/weCreate/Trio Mannheim original.svg";
 import vatten from "../assest/Images/home/weCreate/Vattenfall_logo_Original.svg";
 import volks from "../assest/Images/home/weCreate/Volksbank_original.svg";
 import vono from "../assest/Images/home/weCreate/Vonovia_Logo_original.svg";
 import { useTranslation } from 'react-i18next';//translator
-
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 export default function Wecreated() {
-  const { t, i18n } = useTranslation();//translator
+  const { t } = useTranslation();//translator
+  const settings = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+
+
+  };
   // useEffect(() => {
   //   $("#mycenter")
   //     .not(".slick-initialized")
@@ -58,73 +72,131 @@ export default function Wecreated() {
   //     });
   // }, []);
 
+ 
+
   return (
-    <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px'}}>
+    <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px', marginTop:'80px'}}>
+      <div className="container">
         <h1
           style={{ fontFamily: "Exo2-Bold" }}
           className="weCreatedHead"
         >
          {t('Home_section2')}
         </h1>
-        <div className="mx-auto" style={{marginTop:'32px'}}>
-          <div id="mycenter inner" style={{overflow: 'hidden'}} >
-               <div id="platform" className="flex text-center">
-               <a href="" className="build_twins_horn_a">
-              <img  alt="Horn"  className="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
+        <div>
+        <Slider {...settings}>
+              <a target="blank" rel='noreferrer' href="/" className="build_twins_horn_a">
+              <img  alt="Horn" style={{width:'125% !important'}}  className="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
+              {/* <img  alt="Horn"  className="build_twins grayscale hover:grayscale-0" src={Horn} /> */}
               </a>
-              <a href="https://www.phoenixcontact.com/" >
+              <a target="_blank" rel='noreferrer' href="https://www.phoenixcontact.com/" className="phoenix_a">
               <img  alt="Phoenix"  className="build_twins grayscale hover:grayscale-0" src={Phoenix} />
               </a>
-              <a href="https://www.hosch-ga.de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.hosch-ga.de/" className="hosh_a">
               <img  alt="Hosch"  className="build_twins grayscale hover:grayscale-0" src={Hosch} />
               </a>
-              <a href="https://www.bauer-netz.de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.bauer-netz.de/" className="bauer_a">
               <img  alt="Bauer"  className="build_twins grayscale hover:grayscale-0" src={Bauer} />
               </a>
-              <a href="https://www.bim-berlin.de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.bim-berlin.de/" className="bim_a">
               <img  alt="Bim"  className="build_twins grayscale hover:grayscale-0" src={Bim} />
               </a>
-              <a href="https://www.luebbing.de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.luebbing.de/" className="lubbing_a" >
               <img  alt="Lubbing"  className="build_twins grayscale hover:grayscale-0" src={Lubbing} />
               </a>
-              <a href="https://www.wago.com/global/country-selection" >
+              <a target="_blank" rel='noreferrer' href="https://www.wago.com/global/country-selection" className="wago_a">
               <img  alt="Wago"  className="build_twins grayscale hover:grayscale-0" src={Wago} />
               </a>
-              <a href="https://www.selve.de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.selve.de/" className="selve_a">
               <img  alt="Selve"  className="build_twins grayscale hover:grayscale-0" src={Selve} />
               </a>
-              <a href="https://www.bvg.de/en" >
+              <a target="_blank" rel='noreferrer' href="https://www.bvg.de/en" className="bvg_a">
               <img  alt="bvg"  className="build_twins bvg grayscale hover:grayscale-0" src={bvg} />
               </a>
-              {/* <a href="https://www.dabbel.eu/" >
-              <img  alt="dabbel"  className="build_twins dabbel grayscale hover:grayscale-0" src={dabbel} />
-              </a> */}
-              <a href="https://www.fujitsu.com/de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.fujitsu.com/de/" className="fugitsu_a">
               <img  alt="fujitsu"  className="build_twins grayscale hover:grayscale-0" src={fujitsu} />
               </a>
-              <a href="https://www.boschbuildingsolutions.com/" >
+              <a target="_blank" rel='noreferrer' href="https://www.boschbuildingsolutions.com/"  className="gfr_a">
               <img  alt="gfr"  className="build_twins gfr grayscale hover:grayscale-0" src={gfr} />
               </a>
-              <a href="http://www.hermos.com/en/" >
+              <a target="_blank" rel='noreferrer' href="http://www.hermos.com/en/" className="hermos_a">
               <img  alt="hermos"  className="build_twins grayscale hover:grayscale-0" src={hermos} />
               </a>
-              <a href="https://lae.eu/?lang=en" >
+              <a target="_blank" rel='noreferrer' href="https://lae.eu/?lang=en" className="lae_a">
               <img  alt="lae"  className="build_twins grayscale hover:grayscale-0" src={lae} />
               </a>
-              <a href="https://trio-mannheim.de/" >
+              <a target="_blank" rel='noreferrer' href="https://trio-mannheim.de/"  className="trio_a">
               <img  alt="trio"  className="build_twins grayscale hover:grayscale-0" src={trio} />
               </a>
-              <a href="https://www.vattenfall.de/" >
+              <a target="_blank" rel='noreferrer' href="https://www.vattenfall.de/" className="vatten_a">
               <img  alt="vatten"  className="build_twins vatten grayscale hover:grayscale-0" src={vatten} />
+              {/* <img  alt="vatten"  className="build_twins grayscale hover:grayscale-0" src={vatten} /> */}
               </a>
-              <a href="https://www.vr.de/privatkunden.html" >
+              <a target="_blank" rel='noreferrer' href="https://www.vr.de/privatkunden.html" className="volks_a">
               <img  alt="volks"  className="volks build_twins grayscale hover:grayscale-0" src={volks} />
               </a>
-              <a href="https://www.vonovia.de/en" >
+              <a target="_blank" rel='noreferrer' href="https://www.vonovia.de/en" className="vono_a">
+              <img  alt="vono"  className="build_twins grayscale hover:grayscale-0" src={vono} />
+              </a>
+        </Slider>
+      </div>
+        {/* <div className="mx-auto" style={{marginTop:'32px'}}>
+          <div id="mycenter inner" style={{overflow: 'hidden'}} >
+               <div id="slick-initialized" className="flex text-center">
+               <a target="_blank" rel='noreferrer' href="" className="build_twins_horn_a">
+              <img  alt="Horn"  className="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.phoenixcontact.com/" >
+              <img  alt="Phoenix"  className="build_twins grayscale hover:grayscale-0" src={Phoenix} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.hosch-ga.de/" >
+              <img  alt="Hosch"  className="build_twins grayscale hover:grayscale-0" src={Hosch} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.bauer-netz.de/" >
+              <img  alt="Bauer"  className="build_twins grayscale hover:grayscale-0" src={Bauer} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.bim-berlin.de/" >
+              <img  alt="Bim"  className="build_twins grayscale hover:grayscale-0" src={Bim} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.luebbing.de/" >
+              <img  alt="Lubbing"  className="build_twins grayscale hover:grayscale-0" src={Lubbing} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.wago.com/global/country-selection" >
+              <img  alt="Wago"  className="build_twins grayscale hover:grayscale-0" src={Wago} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.selve.de/" >
+              <img  alt="Selve"  className="build_twins grayscale hover:grayscale-0" src={Selve} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.bvg.de/en" >
+              <img  alt="bvg"  className="build_twins bvg grayscale hover:grayscale-0" src={bvg} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.fujitsu.com/de/" >
+              <img  alt="fujitsu"  className="build_twins grayscale hover:grayscale-0" src={fujitsu} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.boschbuildingsolutions.com/" >
+              <img  alt="gfr"  className="build_twins gfr grayscale hover:grayscale-0" src={gfr} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="http://www.hermos.com/en/" >
+              <img  alt="hermos"  className="build_twins grayscale hover:grayscale-0" src={hermos} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://lae.eu/?lang=en" >
+              <img  alt="lae"  className="build_twins grayscale hover:grayscale-0" src={lae} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://trio-mannheim.de/" >
+              <img  alt="trio"  className="build_twins grayscale hover:grayscale-0" src={trio} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.vattenfall.de/" >
+              <img  alt="vatten"  className="build_twins vatten grayscale hover:grayscale-0" src={vatten} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.vr.de/privatkunden.html" >
+              <img  alt="volks"  className="volks build_twins grayscale hover:grayscale-0" src={volks} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.vonovia.de/en" >
               <img  alt="vono"  className="build_twins grayscale hover:grayscale-0" src={vono} />
               </a>
                </div>
           </div>
+        </div> */}
         </div>
     </div>
   );

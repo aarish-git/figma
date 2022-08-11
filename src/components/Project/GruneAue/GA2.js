@@ -1,8 +1,7 @@
 import React from "react";
 import Grananue from "../../../assest/Images/project/GruneAue1.jpg";
-import Sun from "../../../assest/Icons/Sun.png"
-
-import ChartLine from "../../../assest/Icons/ChartLine.png"
+import Sun from "../../../assest/Icons2/sun.svg"
+import ChartLine from "../../../assest/Icons2/chart_01.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -11,6 +10,7 @@ export default function GA2() {
 
 
   return (
+    <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font">
         <div className="flex flex-wrap">
@@ -26,15 +26,15 @@ export default function GA2() {
               {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
               <div className="flex-grow">
                 <h2
-                  style={{ fontFamily: "Exo2-Bold" }}
+                  style={{ fontFamily: "Exo2-Bold", marginLeft:'0px'  }}
                   className="single_project_desc_head"
                 >
                    {t('grune_project_desc_head')}
                 </h2>
-                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px'}}>
+                <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginBottom: '16px', marginLeft:'0px' }}>
                 {t('grune_project_desc_p1')}
                 </p>
-                <p  style={{ fontFamily: "NunitoSans-Regular" , marginBottom: '40px'}}
+                <p  style={{ fontFamily: "NunitoSans-Regular" , marginBottom: '40px', marginLeft:'0px' }}
                   className="single_project_desc_p">
                    {t('grune_project_desc_p2')}
                 </p>
@@ -69,6 +69,7 @@ export default function GA2() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

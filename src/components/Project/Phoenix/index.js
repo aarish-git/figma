@@ -10,16 +10,16 @@ import P6 from "./p6";
 export default function index() {
   return (
     <div className="App" >
-      <Header />
-      <div className="container">
+      <div className="phoenix">
+       <Header />
         <P1 />
         <P2 />
         <P3 />
         <P4 />
         <P5 />
         <P6 />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

@@ -4,21 +4,28 @@ import linkindin from './../../assest/Icons/LinkedinLogo.svg'
 import twitter from './../../assest/Icons/TwitterLogo.svg'
 import { useTranslation } from 'react-i18next';//translator
 import { Link } from "react-router-dom";
+import logo from "../../assest/Images/LEAFTECH (1).svg"
 
 export default function Footer() {
   const { t, i18n } = useTranslation();//translator
 
   return (
-    <div>
-      <footer className="text-gray-600 bg-[#FAFBFC] body-font">
-        <div className="container px-5 py-24 mx-auto">
+    <div className="text-gray-600 bg-[#FAFBFC] body-font">
+      <footer >
+      <div className="container">
+        <div className="px-5 py-24 mx-auto" style={{paddingTop:'40px', paddingBottom:'48px'}}>
           <div className="flex flex-wrap md:text-left text-left -mb-10 -mx-4">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4" style={{marginTop:'-10px'}}>
-              <h2 style={{fontFamily:"Exo2-Regular"}} className="title-font font-bold text-[#0087FF] tracking-widest text-[30px] mb-3 uppercase">
+              {/* <h2 style={{fontFamily:"Exo2-Regular"}} className="title-font font-bold text-[#0087FF] tracking-widest text-[30px] mb-3 uppercase">
                 LeafTech
-              </h2>
-              <p>
-              Leaftech GmbH <br /> Am Krögel 2 <br /> 10179 Berlin <br /> contact@leaftech.eu <br /> +49 170 9529249
+              </h2> */}
+              <img src={logo} alt="logo" style={{width:'138px', height:'19px', marginBottom:'10px'}}/>
+              <p className="content_address" style={{ fontFamily: "NunitoSans-Regular", display:'flex', flexDirection:'column', alignItems:'flex-start' }}>
+                <span>Leaftech GmbH </span>
+                <span style={{marginTop:'8px'}}> Am Krögel 2 </span>
+                <span style={{marginBottom:'8px'}}> 10179 Berlin </span>
+                <span> contact@leaftech.eu </span>
+                <span> +49 170 9529249 </span>
               </p>
                 
                   {/* <p href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_address">Leaftech GmbH</p>
@@ -38,34 +45,34 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a href="#foot_building" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} class="content_subhead">
                     {/* Building owners */}
                     {t('Footer_Lista1')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Assest" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Asset managers{" "} */}
                     {t('Footer_Lista2')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Building" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Building automation{" "} */}
                     {t('Footer_Lista3')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Energy" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Energy providers */}
                     {t('Footer_Lista4')}
-                  </a>
+                 </Link>
                 </li>
                 <li>
-                  <a href="#foot_Architects" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Architects & Designers{" "} */}
                     {t('Footer_Lista5')}
-                  </a>
+                 </Link>
                 </li>
               </nav>
             </div>
@@ -111,7 +118,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <span style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</span>
+                  <Link to="/legalInformation" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</Link>
+                  {/* <span style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</span> */}
                 </li>
                 <li>
                   <div style={{display:'flex', alignItems:'center'}}>
@@ -236,25 +244,27 @@ export default function Footer() {
             </span>
           </div>
         </div> */}
+        </div>
         <div className="bg-gray-900 ">
-          <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col">
-            <p className="text-gray-500 text-sm text-center ">
-              © 2020 Leaftech —
-              <a
-                // href="https://twitter.com/knyttneve"
+          <div className="footer_last_section">
+            <p className="text-gray-500 text-sm text-center " style={{ fontFamily: "NunitoSans-Regular" }}>
+              © 2020 Leaftech — All rights reserved
+              {/* <a
                 className="text-gray-600 ml-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 All rights reserved
-              </a>
+              </a> */}
             </p>
             {/* <span className="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
               Enamel pin tousled raclette tacos irony
             </span> */}
           </div>
         </div>
+
       </footer>
     </div>
+
   );
 }

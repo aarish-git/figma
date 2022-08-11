@@ -1,14 +1,14 @@
 {
     "Home_text":"Home",
-    "Project_text": "Project",
+    "Project_text": "Projects",
       "Services_text":"Services",
       "Contact_text":"Contact",
       "Home_head1":"Make data-driven decisions.",
       "Home_head2":"Optimize building performance.",
-      "Home_content":"With Leaftech's building Digital Twin, you can access highly accurate data to understand your building's performance, make informed decisions on upgrades, and work on the required building optimization measures.",
+      "Home_content":"With the building Digital Twin from Leaftech, you can access highly accurate data to understand your building's performance, make informed decisions on upgrades, and work on the required building optimization measures.",
       "Home_number_head":"OUR GROWING IMPACT!",
       "Home_number_text1":"Digital Twin’s set-ups",
-      "Home_number_text2":"Sqm served",
+      "Home_number_text2":"Square meters served",
       "Home_number_text3":"Devices in control",
       "Home_section2":"WE CREATED BUILDING TWINS FOR",
       "Home_section3a":"Move towards a net-zero building",
@@ -19,7 +19,7 @@
       "Home_section3_service1_content":"Take the step to digitise your real estate with our unique building 3D modelling services.",
       "Home_section3_service2":"Analytics",
       "Home_section3_service2_content":"Get a holistic view of your building's design and performance with our advanced building analytics services.",
-      "Home_section3_service3":"control",
+      "Home_section3_service3":"Control",
       "Home_section3_service3_content":"Operate and optimise your building and individual systems with our accurate building control data.",
       "Home_section4_head":"What's in it for you?",
       "Home_section4_subhead1":"For Building Owners",
@@ -95,7 +95,7 @@
       "Footer_Listc1":"Project showcases",
       "Footer_Listc2":"Contact",
       "Footer_Listc3":"Customer Platform",
-      "Footer_Listc4":"Follow Us",
+      "Footer_Listc4":"Legal Information",
 
       "Project_section1_head1":"PROJECTS",
       "Project_section1_head2":"Our success stories",
@@ -332,8 +332,11 @@
 
 
       "model_service_blue_head" : "MODELING",
-      "model_service_main_head" : "Three-dimensional models to better understand your building",
-      "model_service_content" : "Our modelling services are the first steps towards digitizing your real estate. Simply provide your building's location and we will create the 3D model of your building. Here's a look at our modeling services.",
+      "model_service_main_head1" : "Three-dimensional models",
+      "model_service_main_head2" : "to better understand your building",
+      "model_service_content1" : "Our modelling services are the first steps towards digitizing your real estate. Simply provide ",
+      "model_service_content2" : "your building's location and we will create the 3D model of your building.",
+      "model_service_content3" : " Here's a look at our modeling services.",
       "model_service_contact" : "Contact us",
 
       "model_service_stephead1" : "The target building",
@@ -349,15 +352,17 @@
       "model_service_icon_text3" : "Get the inputs required to better utilise and optimise your real estate",
       "model_service_icon_text4" : "Understand your building's surroundings and their impact",
       "model_service_icon_text5" : "Use the 3D models to conduct further analysis",
+      "model_result_contact_us" : "Contact",
 
 
 
 
 
       "analytics_service_blue_head" : "Analytics",
-      "analytics_service_main_head" : "In-depth analysis to optimise your building",
-      "analytics_service_content" : "Using the 3D models with additional input data, we perform detailed and holistic building analytics using in-house developed algorithms. Here's a look at our analytics services.",
-
+      "analytics_service_main_head1" : "In-depth analysis",
+      "analytics_service_main_head2" : "to optimise your building",
+      "analytics_service_content1"  : "Using the 3D models with additional input data, we perform detailed and holistic building analytics using in-house developed algorithms.",
+      "analytics_service_content2"  : "Here's a look at our analytics services.",
       "analytics_service_stephead1" : "Solar radiation analysis",
       "analytics_service_stepdesc1" : "Our solar radiation analysis maps and analyses the sun's effects over a building's target surface to calculate the direct, diffuse, and global radiations. Understand the impact of solar radiation on your building's energy balance throughout the year and make informed decisions. Use this data service to assess your building's PV potential and glazing requirements, and accordingly, identify the optimal positions for outdoor seatings.",
       "analytics_service_stephead2" : "Sunshine hour analysis",
@@ -390,8 +395,10 @@
 
 
       "control_service_blue_head" : "Control",
-      "control_service_main_head" : "Control recommendations to keep you ahead of the weather",
-      "control_service_content" : "Combine our assessment insights with additional data layers like weather forecast data and local sensor data, to generate model-based building control data for improving your building’s energy efficiency and comfort. Here's a look at our control services.",
+      "control_service_main_head1" : "Control recommendations",
+      "control_service_main_head2" : "to keep you ahead of the weather",
+      "control_service_content1" : "Combine our assessment insights with additional data layers like weather forecast data and local sensor data, to generate model-based building control data for improving your building’s energy efficiency and comfort.",
+      "control_service_content2" : "Here's a look at our control services.",
 
       "control_service_stephead1" : "Control data for smart shading",
       "control_service_stepdesc1" : "Extend the capabilities of your local weather sensor to ensure secure, efficient, and comfortable control of your shading systems. To guarantee the highest level of system quality, we provide shading and wind correction factors for each window along with recommendations for weather sensor placement.  This solution is based on the VDI 3813/3814 and EN15232 standards.",
@@ -436,6 +443,25 @@
       "contact_note_text" : "Is there anything we’d need to know before the meeting?",
 
       "contact_note_iagree" : "I agree to the Privacy Policy and to receive other communications from Leaftech*",
-      "contact_submit_button" : "Submit"
+      "contact_submit_button" : "Submit",
+
+
+
+
+      "legal_main_head" : "Legal information",
+      "legal_subhead1" : "Liability for content",
+      "legal_subcontent11" : "As a service provider, we are responsible for our own content on these pages according to Section 7, Paragraph 1 of the German Telemedia Act (TMG). According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the point in time at which knowledge of a specific infringement of the law is known. As soon as we become aware of any violations of the law, we will remove this content immediately.",
+      "legal_subhead2" : "Liability for links",
+      "legal_subcontent22" : "Our offer contains links to external third-party websites, the content of which we have no influence on. Therefore we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, a permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. As soon as we become aware of legal violations, we will remove such links immediately.",
+      "legal_subhead3" : "Copyright",
+      "legal_subcontent33" : "The content and works on these pages created by the site operators are subject to German copyright law. The duplication, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are observed. In particular contents of third parties are marked as such. Should you nevertheless become aware of a copyright infringement, we ask that you inform us accordingly. As soon as we become aware of legal violations, we will remove such content immediately.",
+      "legal_subhead4" : "privacy",
+      "legal_subcontent41" : "Our website can usually be used without providing any personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our website, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.",
+      "legal_subcontent42" : "We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) can have security gaps. A complete protection of the data against access by third parties is not possible. The use of contact data published as part of the imprint obligation by third parties for the purpose of sending unsolicited advertising and information material is hereby expressly prohibited. The site operators expressly reserve the right to take legal action in the event of unsolicited advertising being sent, such as spam e-mails.",
+      "legal_subhead5" : "Google Analytics",
+      "legal_subcontent51" : "This website uses Google Analytics, a web analytics service provided by Google Inc. ('Google'). Google Analytics uses so-called 'cookies', text files that are stored on your computer and enable an analysis of your use of the website. The information generated by the cookie about your use of this website is usually transmitted to a Google server in the USA and stored there. If IP anonymization is activated on this website, your IP address will be shortened beforehand by Google within member states of the European Union or in other contracting states of the Agreement on the European Economic Area. Only in exceptional cases will the full IP address be sent to a Google server in the USA and shortened there. On behalf of the operator of this website, Google will use this information to evaluate your use of the website, to compile reports on website activity and to provide other services related to website activity and internet usage to the website operator. The IP address transmitted by your browser as part of Google Analytics will not be merged with other Google data. You can prevent the storage of cookies by setting your browser software accordingly; we would like to point out to you however that in this case you will if applicable not be able to use all functions of this website in full. You can also prevent the collection of the data generated by the cookie and related to your use of the website (incl. Download and install the available browser plug-in from http://tools.google.com/dlpage/gaoptout?hl=de ).",
+      "legal_subcontent52" : " For more information, see http://tools.google.com/dlpage/gaoptout?hl=de  or  http://www.google.com/intl/de/analytics/privacyoverview.html (general information about Google analytics and data protection). We would like to point out that on this website Google Analytics has been expanded to include the code 'gat._anonymizeIp();' in order to ensure that IP addresses are recorded anonymously (so-called IP masking)."
+
+
 
 }

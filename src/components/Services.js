@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"; //translator
 export default function Services() {
   const { t, i18n } = useTranslation(); //translator
   return (
+    <div className="container">
     <div className="row">
       <div style={{ marginTop: "120px" }}>
         <h1
@@ -50,7 +51,7 @@ export default function Services() {
                 {t("Home_section3_service1")}
               </h2>
               <p
-                style={{ fontFamily: "NunitoSans-Regular", marginTop: "20px" }}
+                style={{ fontFamily: "NunitoSans-Regular" }}
                 className="sub_move_towards_content leading-relaxed text-base text-center "
               >
                 {t("Home_section3_service1_content")}
@@ -65,8 +66,8 @@ export default function Services() {
                 {t("Home_section3_service1")}
               </h2>
               <p
-                style={{ fontFamily: "NunitoSans-Regular", marginTop: "20px" }}
-                className="sub_move_towards_content leading-relaxed text-base text-center "
+                style={{ fontFamily: "NunitoSans-Regular"}}
+                className="sub_move_towards_content_de leading-relaxed text-base text-center "
               >
                 {t("Home_section3_service1_content")}
               </p>
@@ -106,7 +107,7 @@ export default function Services() {
             </h2>
             <p
               style={{ fontFamily: "NunitoSans-Regular" }}
-              className="sub_move_towards_content leading-relaxed text-base text-center "
+              className="sub_move_towards_content_de leading-relaxed text-base text-center "
             >
               {t("Home_section3_service2_content")}
             </p>
@@ -144,7 +145,7 @@ export default function Services() {
                   </h2>
                   <p
                     style={{ fontFamily: "NunitoSans-Regular"}}
-                    className="sub_move_towards_content leading-relaxed text-base text-center 2xl:px-5 xl:px-5 lg:px-1"
+                    className="sub_move_towards_content_de leading-relaxed text-base text-center 2xl:px-5 xl:px-5 lg:px-1"
                   >
                   {t("Home_section3_service3_content")}
                   </p>
@@ -153,6 +154,7 @@ export default function Services() {
               </Link>
             </div>
       </div>
+    </div>
     </div>
   );
 }

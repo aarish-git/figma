@@ -5,9 +5,11 @@ import Stepper from "./AnalyticsStepper";
 
 function index() {
   return (
-    <div className="row">
-    <Stepper />
-  </div>
+    <div className="container">
+      <div className="row">
+        <Stepper />
+      </div>
+    </div>
   );
 }
 

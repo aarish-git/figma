@@ -7,33 +7,64 @@ export default function services1() {
   const { t, i18n } = useTranslation();//translator
 
   return (
+    <div  style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="container">
     <div className="row">
-    <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="row" style={{marginTop:'75px', height: '533px'}}>
         <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{textAlign:'left', marginTop:'72px', marginLeft: '-10px'}}>
+          <div  style={{textAlign:'left', marginTop:'72px', marginLeft: '15px'}}>
             <h1
               style={{ fontFamily: "Exo2-Bold" }}
               className="single_project_blue_head text-[#0087FF]"
             >
               {t('control_service_blue_head')}
               </h1>
-            <h1
+
+              {t('model_service_contact') === "Contact us" ?
+              <h1
+                style={{ fontFamily: "Exo2-Bold" }}
+                className="single_project_main_head"
+              >
+                  {t('control_service_main_head1')}
+                <br />
+                {t('control_service_main_head2')}
+              </h1>
+              :
+              <h1
               style={{ fontFamily: "Exo2-Bold" }}
-              className="single_project_main_head"
-            >
-             {t('control_service_main_head')}
-            </h1>
-            <p className="mb-8 leading-relaxed single_project_content" style={{fontFamily: "NunitoSans-Regular", width:'995px', marginBottom: '64px', marginTop:'92px'}}>
-              {t('control_service_content')}
+              className="single_project_main_head_de"
+              >
+                 {t('control_service_main_head1')}
+                <br />
+                {t('control_service_main_head2')}
+              </h1>
+            }
+
+            {t('control_service_contact') === "Contact us" ?
+               <p className="mb-8 leading-relaxed control_service_content" style={{fontFamily: "NunitoSans-Regular", width: '996px !important', marginBottom: '64px', marginTop:'92px'}}>
+               {t('control_service_content1')}
+               <br />
+               {t('control_service_content2')}
+               
+               </p>
+              :
+              <p className="mb-8 leading-relaxed control_service_content_de" style={{fontFamily: "NunitoSans-Regular", width: '1007px !important', marginBottom: '64px', marginTop:'92px'}}>
+             {t('control_service_content1')}
+               <br />
+               {t('control_service_content2')}
             </p>
+            }
+           
             <div>
             <a href="/contact" >
-              <button
-                style={{ fontFamily: "NunitoSans-Regular", fontSize:'20px' }}
-                className="inline-flex py-2 px-6 rounded-[20px] text-lg text-[#FFFFFF] shadow-[0px_4px_4px_rgba(0,135,225,0.25)] bg-[#0087FF]"
-              >
-                {t('model_service_contact')}
-              </button>
+            <button
+              style={{
+                fontFamily: "NunitoSans-Regular",
+              }}
+              className="contact_us"
+            >
+              {t('model_service_contact')}
+            </button>
               </a>
             </div>
           </div>
@@ -72,6 +103,8 @@ export default function services1() {
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }

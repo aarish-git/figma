@@ -5,9 +5,10 @@ import rightArrow from "../../../assest/Icons/ArrowCircleRight.png";
 
 export default function p6() {
   return (
-    <div>
+    <div className="container">
+    <div className="row">
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className=" px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
             <div className="p-4 w-1/2 text-left">
               <Link
@@ -32,6 +33,7 @@ export default function p6() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 }
