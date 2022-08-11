@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Footer.css";
 import linkindin from './../../assest/Icons/LinkedinLogo.svg'
 import twitter from './../../assest/Icons/TwitterLogo.svg'
@@ -8,6 +8,14 @@ import logo from "../../assest/Images/LEAFTECH (1).svg"
 
 export default function Footer() {
   const { t, i18n } = useTranslation();//translator
+
+  useEffect(()=>{
+    if(window.location.hash) {
+      setTimeout(()=>{
+        window.location.replace(`/${window.location.hash}`);
+      },200);
+    }
+  },[window.location.hash]);
 
   return (
     <div className="text-gray-600 bg-[#FAFBFC] body-font">
@@ -45,31 +53,31 @@ export default function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link  to="/#foot_building" onClick={() => window.location.replace("/#foot_building")} style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Building owners */}
                     {t('Footer_Lista1')}
                  </Link>
                 </li>
                 <li>
-                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/#foot_Assest3" onClick={() => window.location.replace("/#foot_Assest")} style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Asset managers{" "} */}
                     {t('Footer_Lista2')}
                  </Link>
                 </li>
                 <li>
-                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/#foot_Building" onClick={() => window.location.replace("/#foot_Building")} style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Building automation{" "} */}
                     {t('Footer_Lista3')}
                  </Link>
                 </li>
                 <li>
-                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/#foot_Energyt" onClick={() => window.location.replace("/#foot_Energy")} style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Energy providers */}
                     {t('Footer_Lista4')}
                  </Link>
                 </li>
                 <li>
-                  <Link to="/" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
+                  <Link to="/#foot_Architects" onClick={() => window.location.replace("/#foot_Architects")} style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">
                     {/* Architects & Designers{" "} */}
                     {t('Footer_Lista5')}
                  </Link>
