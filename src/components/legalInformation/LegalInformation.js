@@ -7,10 +7,10 @@ export default function LegalInformation() {
 
   return (
     <div className="row">
-      <div className="row" style={{marginTop:'100px', background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+      <div className="row" style={{marginTop:'100px', marginLeft:'20px' ,background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
       <div className="container">
         <div  className="mx-auto flex  md:flex-row flex-col ">
-          <div  style={{textAlign:'left', marginTop:'72px', width:'100%'}}>
+          <div  style={{textAlign:'left', marginTop:'72px', width:'100%', padding: '0px 20px'}}>
             <h1
                style={{ fontFamily: "Exo2-Bold" }}
                className="single_project_main_head "
@@ -66,7 +66,7 @@ export default function LegalInformation() {
 
       <div className="row" style={{marginTop:'70px', marginBottom:'90px', textAlign:'left'}}>
       <div className="container"> 
-      <div className="flex flex-col mb-10 lg:items-start items-center" style={{marginTop:'40px', width:'95% !important' }}>
+      <div className="flex flex-col mb-10 lg:items-start items-center" style={{marginTop:'40px', width:'95% !important', padding: '0px 20px;' }}>
               {/* <div className="w-full h-12 inline-flex items-center justify-left "></div> */}
               <div className="flex-grow">
 

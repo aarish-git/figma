@@ -9,7 +9,7 @@ import $ from "jquery";
 
 export default function Index() {
   const { t, i18n } = useTranslation();//translator
-  console.log(t, 'ttttt')
+  // console.log(t, 'ttttt')
 
   const [verified, setverified] = useState(false);
 
@@ -35,55 +35,286 @@ export default function Index() {
   const [isActive9, setActive9] = useState(false);
   const [isActive10, setActive10] = useState(false);
   const [isActive11, setActive11] = useState(false);
+
+  const [isIntrested, setIsIntrested] = useState([]);
+
   // const [isActive12, setActive11] = useState(false);
 
-  const toggleClass1 = () => {
+ 
+  const list_of_interest = [];
+  const list_of_groups = [];
+
+  function removeA(arr) {
+    var what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while ((ax= arr.indexOf(what)) !== -1) {
+            arr.splice(ax, 1);
+        }
+    }
+    setIsIntrested(arr);
+    return arr;
+  }
+
+  
+
+  const toggleClass1 = (e) => {
     setActive1(!isActive1);
+    var text = e.target.innerHTML;
+    console.log(text,'text')
+
+    if(isActive1) {
+      console.log(isActive1,'true')
+      removeA(list_of_interest, text);
+    } else {
+      console.log(isActive1,'false')
+      list_of_interest.push(text);
+      // setIsIntrested(list_of_interest);
+      // setIsIntrested([...list_of_interest, `Entry ${list_of_interest.length}`]);
+      this.setState({ list_of_interest: [...this.state.list_of_interest, ...[1,2,3] ] }) //another array
+    }
+
+    console.log(list_of_interest,'list_of_interest')
+
   };
 
-  const toggleClass2 = () => {
+
+
+  const toggleClass2 = (e) => {
     setActive2(!isActive2);
+
+     var text = e.target.innerHTML;
+    
+    if(isActive2) {
+      console.log(isActive2,'true')
+      removeA(list_of_interest, text);
+    } else {
+      console.log(isActive2,'false')
+      list_of_interest.push(text);
+      // setIsIntrested(list_of_interest);
+      // setIsIntrested([...list_of_interest, `Entry ${list_of_interest.length}`]);
+      this.setState({ list_of_interest: [...this.state.list_of_interest, ...[1,2,3] ] }) //another array
+
+    }
+
+    console.log(list_of_interest,'list_of_interest')
   };
 
-  const toggleClass3 = () => {
+  console.log(isIntrested,'isIntrested')
+ 
+
+  const toggleClass3 = (e) => {
     setActive3(!isActive3);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive3) {
+      console.log(isActive3,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive3,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass4 = () => {
+  const toggleClass4 = (e) => {
     setActive4(!isActive4);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive4) {
+      console.log(isActive4,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive4,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass5 = () => {
+  const toggleClass5 = (e) => {
     setActive5(!isActive5);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive5) {
+      console.log(isActive5,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive5,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass6 = () => {
+  const toggleClass6 = (e) => {
     setActive6(!isActive6);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive6) {
+      console.log(isActive6,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive6,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass7 = () => {
+  const toggleClass7 = (e) => {
     setActive7(!isActive7);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive7) {
+      console.log(isActive7,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive7,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass8 = () => {
+  const toggleClass8 = (e) => {
     setActive8(!isActive8);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive8) {
+      console.log(isActive8,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive8,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass9 = () => {
+  const toggleClass9 = (e) => {
     setActive9(!isActive9);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive9) {
+      console.log(isActive9,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive9,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
-  const toggleClass10 = () => {
+  const toggleClass10 = (e) => {
     setActive10(!isActive10);
+    
+    var text = e.target.innerHTML;
+    
+    if(isActive10) {
+      console.log(isActive10,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive10,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
   
-  const toggleClass11 = () => {
+  const toggleClass11 = (e) => {
     setActive11(!isActive11);
+    
+     var text = e.target.innerHTML;
+    
+    if(isActive11) {
+      console.log(isActive11,'true')
+      removeA(list_of_groups, text);
+    } else {
+      console.log(isActive11,'false')
+      list_of_groups.push(text);
+    }
+    console.log(list_of_groups,'list_of_groups')
+
   };
 
   // const toggleClass12 = () => {
   //   setActive12(!isActive11);
   // };
+
+  
+  const [data, setData] = useState();
+  const [isLoading, setIsLoading] = useState(false);
+  const [err, setErr] = useState('');
+
+
+  const submitContactInfo = async () => {
+    setIsLoading(true);
+    try {
+      const response = await fetch('https://website_api.leaftech-products.com/create_contact/', {
+        method: 'POST',
+        body: JSON.stringify({
+          name : $("#name").val(),
+          job_title : $("#job_title").val(),
+          company : $("#company").val(),
+          email : $("#email").val(),
+          phone_no : $("#phone_no").val(),
+          short_note : $("#short_note").val(),
+          // language : $("#language").val(),
+          list_of_interest : list_of_interest,
+          list_of_groups : list_of_groups,
+          language : "en",
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      });
+
+      console.log('response: ', response);
+
+
+      if (!response.ok) {
+        alert('fail')
+        throw new Error(`Error! status: ${response.status}`);
+      } else {
+        alert('success')
+      }
+
+      const result = await response.json();
+
+      console.log('result is: ', JSON.stringify(result, null, 4));
+
+      setData(result);
+    } catch (err) {
+      setErr(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  // console.log(data);
+
+      // console.log(
+    //   'name-', name,
+    //   'job_title-', job_title,
+    //   'company-', company,
+    //   'email-', email,
+    //   'phone_no-', phone_no,
+    //   'short_note-', short_note,
+    //   'language-', language,
+    // )
+
+ 
 
 
   return (
@@ -208,33 +439,33 @@ export default function Index() {
             <div className="flex justify-end text-[12px] space-x-4" style={{alignItems:'center', marginBottom:'24px', marginTop:'35px'}}>
               <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>{t('contact_form_meeting')}</p>
               <div style={{display:'flex', alignItems:'center'}}>
-                <input className="contact_form_checkbox" type="checkbox" />
+                <input className="contact_form_checkbox" id="language"  type="checkbox" />
                 <label className="contact_form_lang_font">English</label>
               </div>
               <div style={{display:'flex', alignItems:'center'}}>
-                <input className="contact_form_checkbox" type="checkbox" />
+                <input className="contact_form_checkbox" id="language" type="checkbox" />
                 <label className="contact_form_lang_font">German</label>
               </div>
             </div>
             <div className="relative text-left">
-              <label for="full-name" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="name" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
                 Name*
               </label>
               <input
                 type="text"
-                id="full-name"
-                name="full-name"
+                id="name"
+                name="name"
                 placeholder="Your name"
                 className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
-              <label for="text" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="job_title" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
               {t('contact_subhead_position')}
               </label>
               <input
                 type="text"
-                id="text"
+                id="job_title"
                 name="Job Title"
                 placeholder="Role"
                 className="contact_form_longInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -254,59 +485,38 @@ export default function Index() {
                 />
               </div>
               <div className="relative text-left">
-                <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+                <label for="company" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
                 {t('contact_subhead_company')}
                 </label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="company"
+                  name="company"
                   placeholder="The name of your company"
                   className="contact_form_shortInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
-            {/* <div className=" flex space-x-4 text-left">
-             
-            </div>
-            <div className="relative mb-4 ">
-                <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
-                  Phone
-                </label><br />
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="+46"
-                  className=" drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1  leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div> */}
             <div className="relative text-left"  style={{ display: 'flex', flexDirection: 'column' }}>
-              <label for="text" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="phone_no" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
               {t('contact_subhead_number')}
               </label>
               <input
-                type="tel"
-                id="phone"
-                name="phone"
+                type="number"
+                id="phone_no"
+                name="phone_no"
                 placeholder="+49"
                 className="contact_form_phoneInput drop-shadow-sm bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative text-left">
-              <label for="email" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
+              <label for="short_note" className="contact_subhead" style={{ fontFamily: "NunitoSans-Regular" }}>
               {t('contact_subhead_note')}
               </label>
-              {/* <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full bg-white rounded-[10px] border  text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              /> */}
               <textarea
-                className="contact_form_shortnote rop-shadow-md rounded-[10px] p-1 w-[-webkit-fill-available]"
-                id="w3review"
-                name="w3review"
+                className="contact_form_shortnote"
+                id="short_note"
+                name="short_note"
                 rows="4"
                 cols="50"
                 placeholder={t('contact_note_text')}
@@ -334,9 +544,10 @@ export default function Index() {
             </div>
             <div className=" flex space-x-4 justify-center">
               <button
-                disabled={!verified}
+                // disabled={!verified}
                 className="contact_form_submitButton"
                 style={{fontFamily:"NunitoSans-Regular"}}
+                onClick={submitContactInfo}
               >
                 {t('contact_submit_button')}
               </button>

@@ -25,7 +25,7 @@ import Typography from '@mui/material/Typography';
 
 import target from "../../../../assest/Images/services/Model/model1st.gif";
 import context from "../../../../assest/Images/services/Model/model2.jpg";
-import access from "../../../../assest/Images/services/Model/model3.gif";
+// import access from "../../../../assest/Images/services/Model/model3.gif";
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -152,7 +152,7 @@ export default function VerticalLinearStepper() {
           <p className="stepper_desc_p" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
           {t('model_service_stepdesc3')}
           </p>
-          <img className="stepperService_desc_img" src={access} alt="access" />
+          {/* <img className="stepperService_desc_img" src={access} alt="access" /> */}
         </div>
       </div>
     </div>
@@ -184,7 +184,7 @@ export default function VerticalLinearStepper() {
           <p className="stepper_desc_p_de" style={{ fontFamily: "NunitoSans-Regular", fontWeight: '400'}}>
           {t('model_service_stepdesc3')}
           </p>
-          <img className="stepperService_desc_img" src={access} alt="access" />
+          {/* <img className="stepperService_desc_img" src={access} alt="access" /> */}
         </div>
       </div>
     </div>

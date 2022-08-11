@@ -6,7 +6,7 @@ import LegalInformation from "../legalInformation/LegalInformation";
 export default function index() {
   return (
     <div className="App" >
-      <div className="">
+      <div className="container">
        <Header />
         <LegalInformation />
         <Footer />

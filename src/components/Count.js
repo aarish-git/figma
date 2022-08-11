@@ -8,7 +8,7 @@ export default function Count() {
   return (
           <div className="container">
           <div className="row " >
-            <div className=" home__count" style={{marginTop: '100px'}}>
+            <div className=" " style={{marginTop: '100px'}}>
 
             {/* <div className="home_first_row">  */}
               {/* <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12"> */}
@@ -67,39 +67,39 @@ export default function Count() {
                     {t('model_service_contact') === "Contact us" ?
                        <div style={{width:'140px', height:'74px'}}>
                        <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                         15
+                         20
                        </h2>
-                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
+                       <p style={{fontFamily:"NunitoSans-Regular"}} className="home_first_nums_p">{t('Home_number_text1')}</p>
                      </div>
                      :
                      <div style={{width:'190px', height:'74px'}}>
                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                       15
+                       20
                      </h2>
-                     <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text1')}</p>
+                     <p style={{fontFamily:"NunitoSans-Regular"}} className="home_first_nums_p">{t('Home_number_text1')}</p>
                    </div>
                     }
                    
-                    <div className="count__numbers--served" style={{width:'189px', height:'74px', margin: '0px 76px 0px 76px'}}>
+                    <div style={{width:'189px', height:'74px', margin: '0px 76px 0px 76px'}}>
                       <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
                         500,000+
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text2')}</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="home_first_nums_p">{t('Home_number_text2')}</p>
                     </div>
 
                     {t('model_service_contact') === "Contact us" ?
                        <div style={{width:'130px', height:'74px'}}>
                        <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                         1,500+
+                         3,500+
                        </h2>
-                       <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
+                       <p style={{fontFamily:"NunitoSans-Regular"}} className="home_first_nums_p">{t('Home_number_text3')} </p>
                      </div>
                      :
                      <div style={{width:'145px', height:'74px'}}>
                      <h2 style={{fontFamily:"Exo2-Bold"}} className="home_first_nums">
-                       1,500+
+                       3,500+
                      </h2>
-                     <p style={{fontFamily:"NunitoSans-Regular"}} class="home_first_nums_p">{t('Home_number_text3')} </p>
+                     <p style={{fontFamily:"NunitoSans-Regular"}} className="home_first_nums_p">{t('Home_number_text3')} </p>
                    </div>
                     }
                    

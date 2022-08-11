@@ -60,6 +60,13 @@
   flex-grow: 0;
 }
 
+.contact_subhead_buttons_text:hover {
+  background: #0087FF;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+  border: none;
+}
+
 .main {
   background: #EFF2F5;
   border-radius: 20px;
@@ -150,13 +157,14 @@
   border: 1px solid #2F2F2F !important;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 1px solid #2F2F2F !important;
   border-radius: 10px !important;
   text-decoration: none;
   box-shadow: none;
   outline: none;
 }
+
 
 .outline-none {
   outline: none !important;

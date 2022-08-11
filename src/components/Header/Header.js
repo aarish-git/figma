@@ -83,9 +83,9 @@ export default function Header({ history }) {
               </li>
               <li>
                 {/* <NavLink className="navFont" to="/service">Services</NavLink> */}
-                <div class="dropdown">
-                  <button class="dropbtn"> <p class="navFont" style={{ fontFamily: "NunitoSans-SemiBold"}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" class="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
-                  <div class="dropdown-content">
+                <div className="dropdown">
+                  <button className="dropbtn"> <p className="navFont" style={{ fontFamily: "NunitoSans-SemiBold"}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" className="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <div className="dropdown-content">
                     <NavLink id="dd_link" onClick={handleClick} className="navFont"  style={{ fontFamily: "NunitoSans-SemiBold"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                     {t('Home_section3_service1')}
                     </NavLink>
