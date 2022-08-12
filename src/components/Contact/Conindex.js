@@ -530,9 +530,9 @@ export default function Index() {
                 >
                   {t('contact_submit_button')}
                 </button>
-                <Button variant="success" onClick={initModal}>
+                {/* <Button variant="success" onClick={initModal}>
                   Open Modal
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
