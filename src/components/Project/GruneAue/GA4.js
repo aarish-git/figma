@@ -1,5 +1,6 @@
 import React from "react";
-import Grananue2 from "../../../assest/Images/project/GruneAue2.jpg";
+import Grananue2 from "../../../assest/Images/project/grune/gruneAue_result.svg";
+import Grananue3 from "../../../assest/Images/project/grune/gruneAue_german_result.svg";
 import Line from "../../../assest/Icons2/chart_01.svg";
 import Slider  from "../../../assest/Icons2/control.svg"
 import Coin from "../../../assest/Icons2/coins.svg"
@@ -15,11 +16,19 @@ export default function GA4() {
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'45%'}}>
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={Grananue2}
-            />
+                {t('model_service_contact') === "Contact us" ?
+                <img
+                  className="object-cover object-center rounded h-full w-full"
+                  alt="feature"
+                  src={Grananue2}
+                /> 
+                :
+                <img
+                className="object-cover object-center rounded h-full w-full"
+                alt="feature"
+                src={Grananue3}
+              />
+              }
           </div>
           <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center">
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">

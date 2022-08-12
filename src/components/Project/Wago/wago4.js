@@ -1,5 +1,6 @@
 import React from "react";
-import LC from "../../../assest/Images/project/Linechart.jpg"
+import LC from "../../../assest/Images/project/wago/wago_result.svg"
+import LC2 from "../../../assest/Images/project/wago/wago_german_result.svg"
 import Arrow from '../../../assest/Icons2/arrow_down.svg'
 import CircleHalf from '../../../assest/Icons2/circle.svg'
 import CheckSquare from '../../../assest/Icons2/check.svg'
@@ -17,11 +18,19 @@ export default function wago4() {
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'45%'}}>
+             {t('model_service_contact') === "Contact us" ?
             <img
-              className="object-cover object-center rounded"
-              alt="hero"
+              className="object-cover object-center rounded h-full w-full"
+              alt="feature"
               src={LC}
-            />
+            /> 
+            :
+            <img
+            className="object-cover object-center rounded h-full w-full"
+            alt="feature"
+            src={LC2}
+          />
+          }
           </div>
           <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center"  style={{marginLeft: '32px'}}>
             <h1 style={{fontFamily:"Exo2-Bold", marginBottom:'21px'}} className="results_benefits_head">

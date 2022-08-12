@@ -3,6 +3,7 @@ import "./Conindex.css";
 // import Countryflag from "./countryFlag";
 import relaxed from "../../assest/Images/contact/contact_01.svg";
 import building from "../../assest/Images/contact/contact_02.svg";
+import tower from "../../assest/Images/Berlin_TVTower.svg";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from 'react-i18next';//translator
 import $ from "jquery";
@@ -96,18 +97,15 @@ export default function Index() {
   const [isLoading, setIsLoading] = useState(false);
   const [err, setErr] = useState('');
 
-  const [show, setShow] = useState(false);
+  const [isShow, invokeModal] = React.useState(false)
 
+  
+  const initModal = () => {
+    return invokeModal(!false)
+  }
 
-  $('document').ready(function() {
-    $('#opennn').click(function() {
-      $('#successModal').modal('show');
-    });
-  });
-  const openModal= () => {
-    $('#successModal').modal('show');
-    setShow(true);
-    console.log('hii')
+  const closeModal = () => {
+    return invokeModal(!true)
   }
 
 
@@ -118,24 +116,36 @@ export default function Index() {
     var email =  $("#email").val();
 
     if($("#name").val() === '') {
-      $("#name").css('border', '1px solid #EA0069')
+      // $("#name").css('border', '1px solid #EA0069')
+      $("#name").addClass('contact_form_longInput_error')
+      $("#name").removeClass('contact_form_longInput')
       $("#name_error_text").css('display', 'block')
     } else {
       $("#name_error_text").css('display', 'none')
+      $("#name").removeClass('contact_form_longInput_error')
+      $("#name").addClass('contact_form_longInput')
     }
 
     if($("#job_title").val() === '') {
-      $("#job_title").css('border', '1px solid #EA0069')
+      // $("#job_title").css('border', '1px solid #EA0069')
+      $("#job_title").addClass('contact_form_longInput_error')
+      $("#job_title").removeClass('contact_form_longInput')
       $("#job_error_text").css('display', 'block')
     } else {
       $("#job_error_text").css('display', 'none')
+      $("#job_title").removeClass('contact_form_longInput_error')
+      $("#job_title").addClass('contact_form_longInput')
     }
 
     if($("#email").val() === '') {
-      $("#email").css('border', '1px solid #EA0069')
+      // $("#email").css('border', '1px solid #EA0069')
+      $("#email").addClass('contact_form_shortInput_error')
+      $("#email").removeClass('contact_form_shortInput')
       $("#email_error_text").css('display', 'block')
     } else {
       $("#email_error_text").css('display', 'none')
+      $("#email").removeClass('contact_form_shortInput_error')
+      $("#email").addClass('contact_form_shortInput')
     }
     
     setIsLoading(true);
@@ -167,19 +177,19 @@ export default function Index() {
     // console.log(mainintrestarray,'mainintrestarray')
     // console.log(mainrepresentarray,'mainrepresentarray')
 
-    if(mainintrestarray.length== 0) {
+    if(mainintrestarray.length === 0) {
       $("#intrested_error_text").css('display', 'block')
     } else if(interestedIN.length ){
       $("#intrested_error_text").css('display', 'none')
     }
 
-    if(mainrepresentarray.length == 0) {
+    if(mainrepresentarray.length === 0) {
       $("#represent_error_text").css('display', 'block')
     } else if(represent.length ){
       $("#represent_error_text").css('display', 'none')
     }
 
-    if(name && job_title && email) {
+    if(name && job_title && email && mainintrestarray.length !== 0 && mainrepresentarray.length !== 0) {
     try {
       const response = await fetch('https://website_api.leaftech-products.com/create_contact/', {
         method: 'POST',
@@ -206,12 +216,25 @@ export default function Index() {
 
 
       if (!response.ok) {
-        alert('fail')
+        alert('Message not sent')
         throw new Error(`Error! status: ${response.status}`);
       } else {
-        alert('success')
+        // alert('success')
+        invokeModal(!false)
         // $('#successModal').css('display', 'block')
-        
+         $("#name").val('');
+         $("#job_title").val('');
+         $("#company").val('');
+         $("#email").val('');
+         $("#phone_no").val('');
+         $("#short_note").val('');
+         mainintrestarray = [];
+         mainrepresentarray = [];
+         $('#name_error_text').css('display', 'none') 
+         $('#job_error_text').css('display', 'none') 
+         $('#email_error_text').css('display', 'none') 
+         $('#intrested_error_text').css('display', 'none') 
+         $('#represent_error_text').css('display', 'none')
       }
 
       const result = await response.json();
@@ -241,6 +264,7 @@ export default function Index() {
     //   'language-', language,
     // )
 
+   
  
 
 
@@ -506,36 +530,34 @@ export default function Index() {
                 >
                   {t('contact_submit_button')}
                 </button>
-                <button
-                  style={{fontFamily:"NunitoSans-Regular", marginTop:'20px'}}
-                  onClick={openModal}
-                  id="opennn"
-                >
-                  {t('contact_submit_button')}
-                </button>
+                <Button variant="success" onClick={initModal}>
+                  Open Modal
+                </Button>
               </div>
             </div>
           </div>
           {/* <!-- Modal --> */}
-          <div class="modal fade" show={show} id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-          </div>
+        <Modal show={isShow}>
+                <Modal.Body>
+                  <div className="modal_body">
+                    <img className="tower" alt="building" src={tower} />
+                    <div className="modal_content_2">
+                    <h1 className="modal_main_head" style={{fontFamily:"Exo2-Bold"}}>Thank you for your email</h1>
+                    <p className="modal_p" style={{fontFamily:"NunitoSans-Regular"}}>Your message has been sent!</p>
+                    <a href='/'>
+                    <button
+                      className="contact_form_submitButton"
+                      style={{fontFamily:"NunitoSans-Regular"}}
+                      // onClick={submitContactInfo}
+                    >
+                        Back to Home
+                    </button>
+                    </a>
+                    </div>
+                    <span className="modalclosebtn" onClick={closeModal}>X</span>
+                  </div>
+                </Modal.Body>
+              </Modal>
         </div>
 
         {/* tab view */}

@@ -50,7 +50,7 @@ export default function wago1() {
                       <h2
                         style={{ fontFamily: "Exo2-Bold", color:'#2F2F2F' }} className="title-font font-bold  text-[40px]"
                       >
-                        250 +
+                        540 +
                       </h2>
                       <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
                       {t('wago_project_numtext2')}

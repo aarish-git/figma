@@ -2,8 +2,10 @@ import * as React from "react";
 // import modelSetup from "../assest/Images/project/trio/Mask group.png";
 import m1 from "../../../assest/Images/project/manheim/Mask_group.png";
 import m2 from "../../../assest/Images/project/manheim/Group_1078.png";
-import m3 from "../../../assest/Images/project/manheim/Vertical_Bar_chart.png";
-import m4 from "../../../assest/Images/project/manheim/Graph_Trio.png";
+import m3 from "../../../assest/Images/project/manheim/stepper_04.svg";
+import m4 from "../../../assest/Images/project/manheim/stepper_05.svg";
+import m5 from "../../../assest/Images/project/manheim/stepper_04_german.svg";
+import m6 from "../../../assest/Images/project/manheim/stepper_05_german.svg";
 import { useTranslation } from 'react-i18next';//translator
 
 const steps = [
@@ -253,7 +255,11 @@ export default function VerticalLinearStepper() {
               <p className="stepper_desc_p" style={{ fontWeight: "400",fontFamily: "NunitoSans-Regular" }}>
               {t('mann_project_stepdesc4')}
               </p>
+              {t('model_service_contact') === "Contact us" ?
               <img className="stepper_desc_img" src={m3} alt="home" />
+              :
+              <img className="stepper_desc_img" src={m5} alt="home" />
+              }
             </div>
           </div>
           <div
@@ -272,7 +278,11 @@ export default function VerticalLinearStepper() {
               <p className="stepper_desc_p" style={{ fontWeight: "400",fontFamily: "NunitoSans-Regular" }}>
               {t('mann_project_stepdesc5')}
               </p>
+              {t('model_service_contact') === "Contact us" ?
               <img className="stepper_desc_img" src={m4} alt="home" />
+              :
+              <img className="stepper_desc_img" src={m6} alt="home" />
+              }
             </div>
           </div>
         </div>

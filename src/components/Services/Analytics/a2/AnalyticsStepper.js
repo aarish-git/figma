@@ -21,6 +21,16 @@ import cooling from "../../../../assest/Images/services/Analytics/analytics_Cool
 import assessment from "../../../../assest/Images/services/Analytics/analytics_photovoltaic.svg";
 import weather from "../../../../assest/Images/services/Analytics/step8.jpg";
 import build from "../../../../assest/Images/services/Analytics/step9.GIF";
+
+import solar2 from "../../../../assest/Images/services/Analytics/stepper_01_german.svg";
+import sunshine2 from "../../../../assest/Images/services/Analytics/stepper_02_german.svg";
+import shading2 from "../../../../assest/Images/services/Analytics/analytics_shading_analysis_02.gif";
+import daylight2 from "../../../../assest/Images/services/Analytics/stepper_04_german.svg";
+import summer2 from "../../../../assest/Images/services/Analytics/analytics_SummerHeatProduction.svg";
+import cooling2 from "../../../../assest/Images/services/Analytics/stepper_06_german.svg";
+import assessment2 from "../../../../assest/Images/services/Analytics/stepper_07_german.svg";
+import weather2 from "../../../../assest/Images/services/Analytics/stepper_08_german.svg";
+import build2 from "../../../../assest/Images/services/Analytics/stepper_09_german.svg";
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -288,7 +298,7 @@ export default function VerticalLinearStepper() {
          <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
          {t('analytics_service_stepdesc1')}
          </p>
-         <img className="stepperService_desc_img" src={solar} alt="solar" />
+         <img className="stepperService_desc_img" src={solar2} alt="solar" />
        </div>
      </div>
      <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -297,7 +307,7 @@ export default function VerticalLinearStepper() {
          <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
          {t('analytics_service_stepdesc2')}
          </p>
-         <img className="stepperService_desc_img" src={sunshine} alt="sunshine" />
+         <img className="stepperService_desc_img" src={sunshine2} alt="sunshine" />
        </div>
      </div>
      <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
@@ -316,7 +326,7 @@ export default function VerticalLinearStepper() {
          {t('analytics_service_stepdesc4')}
          </p>
          
-         <img className="stepperService_desc_img" src={daylight} alt="daylight" />
+         <img className="stepperService_desc_img" src={daylight2} alt="daylight" />
        </div>
      </div>
      <div className="tab-pane fade" id="office" role="tabpanel" aria-labelledby="office-tab">
@@ -334,7 +344,7 @@ export default function VerticalLinearStepper() {
          <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
          {t('analytics_service_stepdesc6')}
          </p>
-         <img className="stepperService_desc_img" src={cooling} alt="cooling" />
+         <img className="stepperService_desc_img" src={cooling2} alt="cooling" />
        </div>
      </div>
      <div className="tab-pane fade" id="assessment" role="tabpanel" aria-labelledby="assessment-tab">
@@ -343,7 +353,7 @@ export default function VerticalLinearStepper() {
          <p className="stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
          {t('analytics_service_stepdesc7')}
          </p>
-         <img className="stepperService_desc_img" src={assessment} alt="assessment" />
+         <img className="stepperService_desc_img" src={assessment2} alt="assessment" />
        </div>
      </div>
      <div className="tab-pane fade" id="analysis" role="tabpanel" aria-labelledby="analysis-tab">
@@ -362,7 +372,7 @@ export default function VerticalLinearStepper() {
          {t('analytics_service_stepdesc9')}
          </p>
          
-         <img className="stepperService_desc_img" src={weather} alt="weather" />
+         <img className="stepperService_desc_img" src={build2} alt="weather" />
        </div>
      </div>
    </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import Trio2 from "../../../assest/Images/project/Trio2.jpg";
+import Trio2 from "../../../assest/Images/project/manheim/Triomanheim_result.svg";
+import Trio3 from "../../../assest/Images/project/manheim/trioManheim_german_result.svg";
 import Slider from "../../../assest/Icons2/control.svg"
 import Stamp from "../../../assest/Icons2/stamp.svg"
 import Coins from "../../../assest/Icons2/coins.svg"
@@ -16,11 +17,19 @@ export default function mann4() {
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'45%'}}>
+          {t('model_service_contact') === "Contact us" ?
             <img
-              className="object-cover object-center rounded"
-              alt="hero"
+              className="object-cover object-center rounded h-full w-full"
+              alt="feature"
               src={Trio2}
-            />
+            /> 
+            :
+            <img
+            className="object-cover object-center rounded h-full w-full"
+            alt="feature"
+            src={Trio3}
+          />
+          }
           </div>
           <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center">
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">

@@ -25,6 +25,9 @@ import * as React from 'react';
 import control from "../../../../assest/Images/services/Control/control_01.svg";
 import cloud from "../../../../assest/Images/services/Control/control_02.svg";
 import energy from "../../../../assest/Images/services/Control/control_03.svg";
+import control2 from "../../../../assest/Images/services/Control/control_01_german.svg";
+import cloud2 from "../../../../assest/Images/services/Control/control_02_german.svg";
+import energy2 from "../../../../assest/Images/services/Control/control_03_german.svg";
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -119,21 +122,8 @@ export default function VerticalLinearStepper() {
         <div className="circle"></div>
       </div> */}
     
+    {t('model_service_contact') === "Contact us" ?
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-     {/* <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="false">
-          <div style={{display:'flex', alignItems: 'center'}}>
-          <div className="circle" style={{marginLeft: '0px'}}></div>
-          {t('control_service_stephead1')}
-          </div>
-          <div className="line" style={{marginLeft: '8px'}}></div>
-        </a>
-        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{marginTop: '32px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-          <div style={{display:'flex', alignItems: 'center'}}>
-          <div className="circle" style={{marginLeft: '3px'}}></div>
-          {t('control_service_stephead2')}
-          </div>
-          <div className="line"></div>
-        </a> */}
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div style={{display:'flex', alignItems: 'center'}}>
           <div className="circle" style={{marginLeft: '-1px', width:'21px', height:'21px'}}></div>
@@ -155,7 +145,31 @@ export default function VerticalLinearStepper() {
           {t('control_service_stephead3')}
         </a>
        </div>
-    </div>
+     :
+     <div className="nav step flex-column nav-pills control" id="tab" role="tablist" aria-orientation="vertical">
+        <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
+          <div style={{display:'flex', alignItems: 'center'}}>
+          <div className="circle" style={{marginLeft: '2px', width:'22px', height:'22px'}}></div>
+          {t('control_service_stephead1')}
+        </div>
+
+          <div className="line" style={{marginLeft: '9px', height:'124px', marginTop:'-27px'}}></div>
+        </a>
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '49', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+          <div style={{display:'flex', alignItems: 'center'}}>
+          
+        <div className="circle" style={{marginLeft: '2px', width:'22px', height:'22px'}}></div>
+          {t('control_service_stephead2')}
+        </div>
+          <div className="line" style={{marginLeft: '9px', height:'124px', marginTop:'-27px'}}></div>
+        </a>
+        <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'-27px' ,marginTop: '65px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+          <div className="circle" style={{marginLeft: '2px', width:'18px', height:'21px'}}></div>
+          {t('control_service_stephead3')}
+        </a>
+       </div>
+      }
+   </div>
    </div>
 
    {t('model_service_contact') === "Contact us" ?
@@ -200,7 +214,7 @@ export default function VerticalLinearStepper() {
           <p className="control_stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           {t('control_service_stepdesc1')}
           </p>
-          <img className="stepperService_desc_img" src={control} alt="control" />
+          <img className="stepperService_desc_img" src={control2} alt="control" />
         </div>
       </div>
       <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -210,7 +224,7 @@ export default function VerticalLinearStepper() {
           {t('control_service_stepdesc2')}
           </p>     
           </div>
-          <img className="stepperService_desc_img" src={cloud} alt="cloud" />
+          <img className="stepperService_desc_img" src={cloud2} alt="cloud" />
       </div>
       <div className="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
          <div className="subcontent">
@@ -218,7 +232,7 @@ export default function VerticalLinearStepper() {
           <p className="control_stepper_desc_p_de" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           {t('control_service_stepdesc3')}
           </p>
-          <img className="stepperService_desc_img" src={energy} alt="energy" />
+          <img className="stepperService_desc_img" src={energy2} alt="energy" />
         </div>
       </div>
     </div>

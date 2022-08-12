@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import Trio from "../../../assest/Images/project/Trio_Overview.svg";
+// import Granue from "../../../assest/Images/project/GruneAue_Overview.svg";
 import Trio from "../../../assest/Images/project/project1.jpg";
 import Granue from "../../../assest/Images/project/project2.jpg";
 import Pheonix from "../../../assest/Images/project/phoenix.svg";
@@ -485,7 +487,7 @@ export default function Project() {
                         <h2
                           style={{ fontFamily: "Exo2-Bold", fontSize:'24px', color:'#2F2F2F' }}
                         >
-                          250 +
+                          540+
                         </h2>
                         <p style={{ fontFamily: "NunitoSans-Regular" }} className="leading-relaxed">{t('project_section5_number2')}</p>
                       </div>

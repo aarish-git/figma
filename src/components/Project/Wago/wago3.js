@@ -15,6 +15,8 @@ import wimg1 from "../../../assest/Images/project/wago/project_wago_step3_solarA
 import wimg2 from "../../../assest/Images/project/wago/w2.png"
 import wimg3 from "../../../assest/Images/project/wago/project_wago_step5_location.svg"
 import wimg4 from "../../../assest/Images/project/wago/w4.png"
+import wimg11 from "../../../assest/Images/project/wago/stepper_05_german.svg"
+import wimg33 from "../../../assest/Images/project/wago/stepper_03_german.svg"
 import { useTranslation } from 'react-i18next';//translator
 
 
@@ -172,7 +174,11 @@ export default function VerticalLinearStepper() {
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           {t('wago_project_stepdesc3')}
           </p>
+          {t('model_service_contact') === "Contact us" ?
           <img className="stepper_desc_img" src={wimg1} alt="home" />
+          :
+          <img className="stepper_desc_img" src={wimg11} alt="home" />
+    }
         </div>
       </div>
       <div className="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
@@ -191,8 +197,11 @@ export default function VerticalLinearStepper() {
           <p className="stepper_desc_p" style={{ fontWeight: '400', fontFamily: "NunitoSans-Regular"}}>
           {t('wago_project_stepdesc5')}
           </p>
+          {t('model_service_contact') === "Contact us" ?
           <img className="stepper_desc_img" src={wimg3} alt="home" />
-
+          :
+          <img className="stepper_desc_img" src={wimg33} alt="home" />
+          }
         </div>
       </div>
       <div className="tab-pane fade" id="wind" role="tabpanel" aria-labelledby="wind-tab">

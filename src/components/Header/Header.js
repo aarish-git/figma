@@ -46,6 +46,7 @@ export default function Header({ history }) {
     setMenu(!showMenu);
   };
 
+ 
   const handleClick = event => {
     console.log(event.currentTarget, 'hi')
     event.currentTarget.style.fontFamily = 'NunitoSans-ExtraBold';

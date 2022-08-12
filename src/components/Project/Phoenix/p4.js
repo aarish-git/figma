@@ -1,5 +1,6 @@
 import React from "react";
-import pImage from "../../../assest/Images/project/Chart.png";
+import pImage from "../../../assest/Images/project/trio/pheonix_result.svg";
+import pImage2 from "../../../assest/Images/project/trio/pheonix_german_result.svg";
 import Battery from "../../../assest/Icons2/battery.svg";
 import CircleHalf from "../../../assest/Icons2/circle.svg";
 import Line from "../../../assest/Icons2/chart_01.svg";
@@ -18,11 +19,19 @@ export default function p4() {
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
           <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'47%'}}>
+          {t('model_service_contact') === "Contact us" ?
             <img
               className="object-cover object-center rounded h-full w-full"
               alt="feature"
               src={pImage}
-            />
+            /> 
+            :
+            <img
+            className="object-cover object-center rounded h-full w-full"
+            alt="feature"
+            src={pImage2}
+          />
+          }
           </div>
           <div className="Clientbenefits result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center" style={{marginLeft: '32px'}}>
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
