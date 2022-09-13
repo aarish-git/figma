@@ -8,7 +8,7 @@ export default function GetStart() {
   return (
     <div style={{ backgroundColor: ' #FAFBFC', marginTop: '120px', zIndex: '0', textAlign: 'left' }}>
       <div className="container">
-        <div className='row' >
+        <div className='row access_your_container' >
           <div className="col-lg-1"></div>
           <div className="col-lg-5">
             <h1 className="access_your_head title-font" style={{ fontFamily: "Exo2-Bold" }}>
@@ -19,7 +19,7 @@ export default function GetStart() {
 
               {t('Home_section9_content')}
             </p>
-            <div className="flex">
+            <div >
               <Link style={{ all: "unset" }} to="/contact">
                 <button
                   style={{

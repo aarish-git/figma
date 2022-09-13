@@ -32,7 +32,7 @@ export default function wago4() {
           />
           }
           </div>
-          <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center"  style={{marginLeft: '32px'}}>
+          <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left "  style={{marginLeft: '32px'}}>
             <h1 style={{fontFamily:"Exo2-Bold", marginBottom:'21px'}} className="results_benefits_head">
             {t('wago_project_results_benefits_head')}
             </h1>

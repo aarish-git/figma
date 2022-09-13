@@ -7,30 +7,26 @@ export default function Services() {
   return (
     <div className="container">
     <div className="row">
-      <div style={{ marginTop: "120px" }}>
+      <div className="service_main_container" >
         <h1
           style={{
             fontFamily: "Exo2-Bold",
-            fontSize: "40px",
-            lineHeight: "55px",
           }}
-          className="font-bold text-[40px] title-font text-center text-gray-900 "
+          className="home_service_main_head"
         >
           {t("Home_section3a")} <br /> {t("Home_section3b")}
         </h1>
         <p
           style={{
             fontFamily: "NunitoSans-Regular",
-            fontSize: "20px",
-            lineHeight: "32px",
-            fontWeight: "400",
-            color: "#2F2F2F",
           }}
-          className="xl:w-[1115px] lg:w-[1000px] md:w-1/2 font-medium text-[20px] text-center mx-auto my-4 leading-relaxed"
+          className="home_service_main_content"
         >
           {t("Home_section3_content")}
          <br />
-          <span className="font-bold"> {t("Home_section3_serviceHead")}</span>
+          <span style={{
+            fontFamily: "NunitoSans-Extrabold",
+          }}><b>{t("Home_section3_serviceHead")}</b></span>
         </p>
       </div>
 

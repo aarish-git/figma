@@ -11,7 +11,7 @@ export default function wago2() {
   return (
     <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
-    <div className="text-gray-600 body-font">
+    <div className="text-gray-600 body-font" style={{padding:'0px'}}>
       <div className="flex flex-wrap">
         <div className="single_project_desc_image rounded-lg overflow-hidden">
             <img

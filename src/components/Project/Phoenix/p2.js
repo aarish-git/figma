@@ -8,7 +8,7 @@ export default function p2() {
   return (
     <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
-    <div className="text-gray-600 body-font">
+    <div className="text-gray-600 body-font" style={{padding:'0px'}}>
       <div className="flex flex-wrap">
       {t('model_service_contact') === "Contact us" ?
         <div className="single_project_desc_image rounded-lg overflow-hidden" style={{height:'727px'}}>
@@ -43,7 +43,7 @@ export default function p2() {
                 <p className="single_project_desc_p"  style={{fontFamily: "NunitoSans-Regular", marginLeft:'0px', marginBottom: '16px'}}>
                 {t('phoenix_project_desc_p2')}
                 </p>
-                <p className="text-[20px] font-[400] ">{t('phoenix_project_desc_p3')}</p>
+                <p className="single_project_desc_p">{t('phoenix_project_desc_p3')}</p>
               </div>
             </div>
             <div className="flex flex-col mb-10 lg:items-start items-center" style={{marginTop:'40px' }}>
@@ -57,7 +57,7 @@ export default function p2() {
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular", marginBottom:'32px' }}
-                  className="leading-relaxed text-[20px] font-[400] mb-5"
+                  className="single_project_desc_p"
                 >
                  {t('phoenix_project_desc_subp1')}
                 </p>
@@ -69,7 +69,7 @@ export default function p2() {
                 </h2>
                 <p
                   style={{ fontFamily: "NunitoSans-Regular" }}
-                  className="leading-relaxed text-[20px] font-[400]"
+                  className="single_project_desc_p"
                 >
                  {t('phoenix_project_desc_subp2')}
                 </p>

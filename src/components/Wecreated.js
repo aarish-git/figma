@@ -33,9 +33,17 @@ export default function Wecreated() {
     slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1500
+  };
 
-
+  const mobileSettings = {
+    dots: false,
+    infinite: true,
+    arrows: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2500
   };
   // useEffect(() => {
   //   $("#mycenter")
@@ -75,7 +83,7 @@ export default function Wecreated() {
  
 
   return (
-    <div className='row' style={{backgroundColor:' #FAFBFC', height: '251px', marginTop:'80px'}}>
+    <div className='row slider_main_container' >
       <div className="container">
         <h1
           style={{ fontFamily: "Exo2-Bold" }}
@@ -83,7 +91,7 @@ export default function Wecreated() {
         >
          {t('Home_section2')}
         </h1>
-        <div>
+        <div className="desktop_slider">
         <Slider {...settings}>
               <a target="blank" rel='noreferrer' href="/" className="build_twins_horn_a">
               <img  alt="Horn" style={{width:'125% !important'}}  className="build_twins_horn grayscale hover:grayscale-0 horn" src={Horn} />
@@ -137,6 +145,63 @@ export default function Wecreated() {
               </a>
               <a target="_blank" rel='noreferrer' href="https://www.vonovia.de/en" className="vono_a">
               <img  alt="vono"  className="build_twins grayscale hover:grayscale-0" src={vono} />
+              </a>
+        </Slider>
+      </div>
+      <div className="mobile_slider">
+        <Slider {...mobileSettings}>
+              <a target="blank" rel='noreferrer' href="/" className="build_twins_horn_a">
+              <img  alt="Horn" style={{width:'125% !important'}}  className="build_twins_horn horn" src={Horn} />
+              {/* <img  alt="Horn"  className="build_twins grayscale hover:grayscale-0" src={Horn} /> */}
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.phoenixcontact.com/" className="phoenix_a">
+              <img  alt="Phoenix"  className="build_twins" src={Phoenix} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.hosch-ga.de/" className="hosh_a">
+              <img  alt="Hosch"  className="build_twins" src={Hosch} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.bauer-netz.de/" className="bauer_a">
+              <img  alt="Bauer"  className="build_twins" src={Bauer} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.bim-berlin.de/" className="bim_a">
+              <img  alt="Bim"  className="build_twins" src={Bim} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.luebbing.de/" className="lubbing_a" >
+              <img  alt="Lubbing"  className="build_twins" src={Lubbing} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.wago.com/global/country-selection" className="wago_a">
+              <img  alt="Wago"  className="build_twins" src={Wago} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.selve.de/" className="selve_a">
+              <img  alt="Selve"  className="build_twins" src={Selve} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.bvg.de/en" className="bvg_a">
+              <img  alt="bvg"  className="build_twins bvg" src={bvg} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.fujitsu.com/de/" className="fugitsu_a">
+              <img  alt="fujitsu"  className="build_twins" src={fujitsu} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.boschbuildingsolutions.com/"  className="gfr_a">
+              <img  alt="gfr"  className="build_twins gfr" src={gfr} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="http://www.hermos.com/en/" className="hermos_a">
+              <img  alt="hermos"  className="build_twins" src={hermos} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://lae.eu/?lang=en" className="lae_a">
+              <img  alt="lae"  className="build_twins" src={lae} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://trio-mannheim.de/"  className="trio_a">
+              <img  alt="trio"  className="build_twins" src={trio} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.vattenfall.de/" className="vatten_a">
+              <img  alt="vatten"  className="build_twins vatten" src={vatten} />
+              {/* <img  alt="vatten"  className="build_twins" src={vatten} /> */}
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.vr.de/privatkunden.html" className="volks_a">
+              <img  alt="volks"  className="volks build_twins" src={volks} />
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.vonovia.de/en" className="vono_a">
+              <img  alt="vono"  className="build_twins" src={vono} />
               </a>
         </Slider>
       </div>

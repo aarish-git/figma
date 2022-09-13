@@ -12,7 +12,7 @@ export default function GA2() {
   return (
     <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
-      <div className="text-gray-600 body-font">
+      <div className="text-gray-600 body-font" style={{padding:'0px'}}>
         <div className="flex flex-wrap">
           <div className="single_project_desc_image rounded-lg overflow-hidden">
             <img
@@ -23,7 +23,7 @@ export default function GA2() {
           </div>
           <div className="single_project_desc flex">
             <div className="flex">
-              {/* <div className="w-full h-12 inline-flex items-center justify-left uppercase"></div> */}
+              {/* <div className="w-full h-12 inline-flex  justify-left uppercase"></div> */}
               <div className="flex-grow">
                 <h2
                   style={{ fontFamily: "Exo2-Bold", marginLeft:'0px'  }}
@@ -40,8 +40,8 @@ export default function GA2() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col mb-10 lg:items-start items-center">
-              {/* <div className="w-full h-12 inline-flex items-center justify-left "></div> */}
+            <div className="flex flex-col mb-10 lg:items-start ">
+              {/* <div className="w-full h-12 inline-flex  justify-left "></div> */}
               <div className="flex-grow">
                 <h2
                   style={{ fontFamily: "Exo2-Regular", width: '665px' }}

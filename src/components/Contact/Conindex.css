@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 70px;
+  line-height: 50px;
   letter-spacing: 0.002em;
   color: #2F2F2F;
   margin-bottom: 24px;
@@ -98,6 +98,7 @@
   line-height: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .contact_form_lang_font {
@@ -123,6 +124,9 @@
   font-size: 14px;
   background: #FFFFFF;
   border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
 }
 
 .contact_form_shortInput {
@@ -131,6 +135,9 @@
   font-size: 14px;
   background: #FFFFFF;
   border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
 }
 
 .contact_form_longInput_error {
@@ -157,6 +164,9 @@
   font-size: 14px;
   background: #FFFFFF;
   border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  border: none !important;
 }
 
 .contact_form_shortnote {
@@ -189,6 +199,7 @@ input:focus, textarea:focus {
 .contact_form_Iagree_div {
   width: 490px;
 }
+
 
 .contact_form_Iagree {
   font-style: normal;
@@ -247,7 +258,7 @@ input:focus, textarea:focus {
 
 .usersit_img {
   position: absolute;
-  left: 3%;
+  /* left: 3%; */
   top: 802px;
   height: 291px;
   width: 266px;
@@ -271,7 +282,7 @@ input:focus, textarea:focus {
   width: 266px;
 }
 
-#name_error_text, #job_error_text, #email_error_text, #intrested_error_text, #represent_error_text{
+#name_error_text, #job_error_text, #email_error_text, #intrested_error_text, #represent_error_text, #mob_intrested_error_text, #mob_represent_error_text { 
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -281,6 +292,9 @@ input:focus, textarea:focus {
 
 .modal-content {
   width: 560px;
+  background: #FFFFFF;
+  box-shadow: 6px 9px 22px rgba(0, 135, 255, 0.08);
+  border-radius: 10px;
 }
 
 .modal-dialog {
@@ -338,6 +352,18 @@ input:focus, textarea:focus {
   font-weight: 600;
 }
 
+.contact_desktop_view {
+  display: block;
+}
+
+.contact_mobile_view {
+  display: none;
+}
+
+.contact_page_top_container {
+  background: linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%);
+}
+
 
 @media (max-width: 768px) {
   .contact-desk {
@@ -346,4 +372,254 @@ input:focus, textarea:focus {
   .contact-mob {
     display: block;
   }
+
+  .contact_head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    color: #2F2F2F;
+    width: 100% !important;
+  }
+
+  .contact_content {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    color: #2F2F2F;
+  }
+
+}
+
+
+@media (min-width: 200px) and (max-width: 550px) {
+
+  .contact_page_top_container {
+    background: none;
+  }
+
+  .contact_desktop_view {
+    display: none;
+  }
+
+  .contact_mobile_view {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .contact_form_longInput {
+    width: 100%;
+    background: #FAFBFC;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .contact_form_shortInput {
+    width: 100%;
+    background: #FAFBFC;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .contact_form_shortnote {
+    width: 100%;
+    background: #FAFBFC;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .contact_form_phoneInput {
+    width: 100%;
+    background: #FAFBFC;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .contact_form_longInput_error {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact_form_shortInput_error {
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  .contact_form_Iagree_div {
+    width: 100%;
+  }
+
+  .contact_subhead {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2F2F2F;
+    margin-bottom: 4px;
+    margin-top: 24px;
+  }
+  
+  .contact_subhead_buttons_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+    height: 30px;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border: 1px solid #2F2F2F;
+    box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2F2F2F;
+  }
+  
+  .contact_form_lang_font {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    color: #2F2F2F;
+    margin-bottom: 0px;
+    margin-left: 8px;
+  }
+  
+  
+  .contact_form_Iagree {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2F2F2F;
+    /* width: 501px; */
+  }
+
+  .main {
+    background: #E4E9EF;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    padding: 8px;
+    gap: 10px;
+    height: 30px;
+  }
+
+  .contact_form_shortnote {
+    height: 80px;
+  }
+
+  .building_img {
+    position:initial; 
+    left: 0%;
+    top: 0px;
+    height: 100% !important;
+    width: 26% !important;
+    z-index: 0;
+  }
+
+  .usersit_img {
+    position:initial; 
+    left: 0%;
+    top: 0px;
+    height: 100% !important;
+    width: 30% !important;
+    z-index: 0;
+    margin-top: 30px;
+  }
+
+  .contact_form_submitButton  {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    padding: 0px 16px;
+    height: 42px;
+  }
+
+  
+.modal-content {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 6px 9px 22px rgba(0, 135, 255, 0.08);
+  border-radius: 10px;
+}
+
+.modal-dialog {
+  top: 25%;
+  bottom: 50%;
+}
+
+.modal_body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_content_2 {
+  width: 100%;
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tower {
+  display: none;
+}
+
+.modal_main_head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #2F2F2F;
+}
+
+.modal_p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #2F2F2F;
+}
+
+.show {
+  background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(30px);
+}
+
+.modalclosebtn {
+  position: fixed;
+  top: 12px;
+  right: -42px;
+  color: #B4B4B4;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 }

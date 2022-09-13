@@ -102,7 +102,7 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-<div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
+<div className="row service service_stepper_container">
     <div className="allsteper">
     <div className="stepLabel">
     <div className="step completed" style={{marginLeft: "20px"}}>
@@ -189,6 +189,48 @@ export default function VerticalLinearStepper() {
       </div>
     </div>
     }
+   </div>
+
+
+
+
+
+   
+   <div className="accordian_container">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseOne"><span style={{paddingRight:'19px'}}>{t('model_service_stephead1')}</span></button>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepperService_desc_img" src={target} alt="target" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('model_service_stepdesc1')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseTwo"><span style={{paddingRight:'19px'}}>{t('model_service_stephead2')}</span></button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepperService_desc_img" src={context} alt="context" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('model_service_stepdesc2')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseThree"><span style={{paddingRight:'19px'}}>{t('model_service_stephead3')}</span></button>                     
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('model_service_stepdesc3')}</p>
+                </div>
+            </div>
+        </div>
+    </div>
    </div>
    </div>
    

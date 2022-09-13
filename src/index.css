@@ -41,6 +41,11 @@ code {
 }
 
 @font-face {
+  font-family: "NunitoSans-Light";
+  src: url("../src/assest/font/Nunito_Sans/NunitoSans-Light.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "NunitoSans-Bold";
   src: url("../src/assest/font/Nunito_Sans/NunitoSans-Bold.ttf") format("truetype");
 }

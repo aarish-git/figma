@@ -2,7 +2,7 @@
   width: 100%;
   /* max-width: 100%; */
   /* media query use below */
-  padding: 0px 0px 0px 30px; 
+  padding: 0px 15px 0px 15px; 
   margin: 0;
   display: flex;
   position: fixed;
@@ -18,7 +18,7 @@
 }
 
 .arun_logo {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin: auto 0px;
   color: #0087ff;
   /* margin-left: 20px; */
@@ -27,48 +27,71 @@
 
 .navFont {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   /* display: flex;
   align-items: center; */
-  letter-spacing: 0.0025em;
-  color: #2F2F2F;
-}
-
-.arun_menuList .arunUL {
-  display: flex;
-  gap: 3.8rem;
-  align-items: center;
-  font-size: 113%;
-  margin-left: inherit;
-  font-weight: 500;
-}
-
-
-.arun_container .arun_menuList .arunUL #dd_link{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.0025em;
   color: #2F2F2F;
   padding: 10px;
 }
 
-.arunUL .active {
-  /* background-color: rgb(248, 248, 248); */
-  font-family: "NunitoSans-Bold";
+
+
+
+.arun_menuList .arunUL {
+  display: flex;
+  gap: 3.8rem;
+  align-items: center;
+  margin-left: inherit;
+  font-weight: 500;
+}
+
+
+.arun_container .arun_menuList .arunUL .dd_link{
+  /* font-family: 'Nunito Sans', sans-serif; */
+  /* font-style: normal; */
+  /* font-weight: 300 !important; */
+  color: #2F2F2F;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  width: 85px;
+  margin-left: 7px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.leaftech_logo {
+ width: 104px;
+ height: 18px;
+ margin-left: 10px;
+}
+
+
+.dd_link:hover {
+  background-color: #F4F6F9;
+  color: #2F2F2F;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  margin-left: 7px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-weight: 700 !important;
+}
+
+.active {
   background: #FFFFFF;
   border-radius: 20px;
-  font-style: normal;
-  font-weight: 800 !important;
+  padding: 10px;
+  font-weight: 700 !important;
   font-size: 16px;
   line-height: 22px;
-  /* display: flex;
-  align-items: center; */
   letter-spacing: 0.0025em;
   color: #2F2F2F;
 }
@@ -81,6 +104,24 @@
 .lang_options .active{
   background: none;
   font-weight: 800;
+}
+
+.lang_options button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 42px;
+  letter-spacing: 1.5px;
+  color: #2F2F2F;
+}
+
+.lang_label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 38px;
+  letter-spacing: 1.5px;
+  color: #2F2F2F;
 }
 
 #langContent {
@@ -189,13 +230,15 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   /* opacity: 1.9; */
+  text-align: left;
   border-radius: 20px;
   font-family: "NunitoSans-Regular"
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: #2F2F2F;
+  font-size: 16px;
   padding: 10px 5px;
   text-decoration: none;
   display: block;
@@ -207,8 +250,8 @@
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: black;
+  background-color: #F4F6F9;
+  color: #2F2F2F;
   padding: 10px 5px;
   text-decoration: none;
   display: block;
@@ -217,6 +260,26 @@
   margin-top: 10px;
   border-radius: 15px;
   margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.dropdown-content a:active {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 800 !important;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.0025em;
+  color: #2F2F2F;
+}
+
+.desktop_logo {
+  display: block;
+}
+
+.mobile_logo {
+  display: none;
 }
 
 /* Show the dropdown menu on hover */
@@ -230,19 +293,21 @@
 } */
 
 @media (max-width: 768px) {
-  .arun_container {
+  /* .arun_container {
     width: 100%;
     padding: 0.7rem;
     margin: 0;
     display: flex;
-    position: relative;
-  }
+    background: rgba(255, 255, 255, 0.5);
+  } */
 
   
   .arun_container .mobile_menubutton {
     display: block;
-    width: inherit;
+    /* width: inherit; */
     text-align: end;
+    margin-right: 10px;
+    margin-top: -5px;
   }
 
   .arun_container .arun_menuList ul {
@@ -251,9 +316,12 @@
 
   .arun_container .arun_mobilemenuList {
     display: block;
-    height: fit-content;
+    /* min-height: 360px; */
+    max-height: 515px;
+    min-height: 636px;
     width: 100%;
-    margin: 20% 0%;
+    text-align: left;
+    /* margin: 20% 0%; */
     /* justify-content: center; */
     line-height: 50px;
   }
@@ -261,4 +329,170 @@
   .dropbtn {
     padding: 0%;
   }
+}
+
+.header_container {
+  display: flex;
+  position: relative;
+  /* flex-direction: row; */
+  width: 100%;
+  /* margin-left: 0px; */
+}
+
+@media (min-width: 1440px) { 
+  .arun_logo {
+    margin-left: 20px;
+  }
+}
+
+
+@media (min-width: 200px) and (max-width: 550px){ 
+
+  .arun_container {
+    width: 100%;
+    /* height: 100%; */
+    /* top: 15px; */
+    background: none;
+    padding: 20px 15px 0px 0px; 
+  }
+
+  .arun_logo {
+   margin: 0px;
+  }
+
+  .leaftech_logo {
+    /* width: 180px; */
+    height: 18px;
+    margin-left: 20px;
+  }
+
+  .arunUL {
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+  .arunUL li{
+    margin-top: 16px;
+  }
+
+  .desktop_logo {
+    display: block;
+    margin-top: -5px;
+  }
+
+  .mobile_logo {
+    display: block;
+    margin-left: 0px !important;
+  }
+  
+
+  .header_container {
+    display: flex;
+    width: 100%;
+    align-items:flex-start;
+    justify-content: center;
+    position:unset;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .contactandLanguage {
+    left: 0px;
+  }
+
+  .contactandLanguage .arunUL { 
+    margin-top: 0px;
+  }
+
+  .arun_mobilemenuList {
+    height: 580px;
+  }
+
+  .arun_container .arun_menuList {
+    display: block;
+    margin: 0.5rem 5rem;
+  }
+
+
+  .nav_mobile_contact {
+    margin-top: 32px;
+  }
+
+
+  .arun_container .accordion-button:active, .accordion-button:not(.collapsed), .accordion-button:focus, .accordion-button, .show {
+    background: none !important;
+    /* backdrop-filter: blur(30px) !important; */
+  } 
+
+  .arun_container .accordian_container button {
+    padding: 0px 0px 0px 15px !important;
+    height: 52px !important;
+    margin-top: 15px !important;
+    margin-left: 0px !important;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+    color: #2F2F2F;
+    background: none;
+    backdrop-filter: blur(30px);
+    border: none;
+    box-shadow: none;
+  }
+
+  .accordion-header {
+    /* background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(30px) !important; */
+  }
+
+  .arun_container .accordian_container button p {
+    margin-left: 0px;
+  }
+
+   .arun_container .accordion-button::after {
+    background-image: url('/src/assest/Icons/chevron.png') !important;
+    transform: rotate(180deg);
+    margin-left: 20px;
+    margin-top: -4px;
+    background-size: 12px;
+  }
+  .arun_container .accordion-button:not(.collapsed)::after {
+    background-image: url('/src/assest/Icons/chevron-up-solid.svg');
+    transform: rotate(0deg);
+    margin-left: 25px;
+    margin-top: 11px;
+    background-size: 12px;
+  }
+
+  
+  .arun_container .accordian_container {
+    margin-left: -13px;
+    margin-top: 10px;
+    /* background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px); */
+  }
+
+  .arun_container .accordion-item {
+    /* background: rgba(255, 255, 255, 0.5) !important; */
+    /* backdrop-filter: blur(30px); */
+   width: 55%;
+  }
+
+  .arun_container .card-body {
+    margin-top: 0px;
+    background: none;
+    /* backdrop-filter: blur(30px); */
+  }
+
+  .dd_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+    color: #2F2F2F;
+  }
+  
 }

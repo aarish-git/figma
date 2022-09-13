@@ -16,7 +16,7 @@ export default function Clients() {
   return (
     <div className="container">
 
-    <div style={{margin: '184px 175px 200px 175px'}}>
+    <div className="weSupport_mainSection" >
     
           <div className="flex flex-col text-center w-full" style={{marginBottom:'28px'}}>
             <h1 className="weSupport" style={{ fontFamily: "Exo2-Bold"}}>
@@ -24,56 +24,63 @@ export default function Clients() {
               {t('Home_section10_head')}
             </h1>
           </div>
-          <div className=" grid grid-cols-1 gap-y-10 gap-x-4 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
-            <div className="flex clientImageBox  grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-              {/* <img className=" h-fit	" src={C1} alt="h-fit" /> */}
-              <a target="_blank" rel='noreferrer' href="https://smartgreen-accelerator.de/" >
-              <img id="colorImage" className=" h-fit	" alt="h-fit" src={C1} />
+
+          <div className="weSupport_rowContainer">
+            <div className="weSupport_row1">
+              <div className="flex clientImageBox  grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
+                {/* <img className=" 	" src={C1} alt="" /> */}
+                <a target="_blank" rel='noreferrer' href="https://smartgreen-accelerator.de/" >
+                <img id="colorImage" className=" 	" alt="" src={C1} />
+                </a>
+              </div>
+              <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
+              <a target="_blank" rel='noreferrer' href="https://www.dena.de/" >
+                <img className=" " alt="" src={C2} />
               </a>
+              </div>
+              <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
+              <a target="_blank" rel='noreferrer' href="http://www.mujinzo-labs.com/en/" >
+                <img className=" " alt="" src={C8} />
+              </a>
+              </div>
+              <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
+              <a target="_blank" rel='noreferrer' href="https://www.climate-kic.org/" >
+                <img className=" " alt="" src={C3} />
+              </a>
+              </div>
             </div>
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-            <a target="_blank" rel='noreferrer' href="https://www.dena.de/" >
-              <img className=" h-fit" alt="h-fit" src={C2} />
-            </a>
-            </div>
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a target="_blank" rel='noreferrer' href="http://www.mujinzo-labs.com/en/" >
-              <img className=" h-fit" alt="h-fit" src={C8} />
-             </a>
-            </div>
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
-             <a target="_blank" rel='noreferrer' href="https://www.climate-kic.org/" >
-              <img className=" h-fit" alt="h-fit" src={C3} />
-             </a>
-            </div>
-          </div>
-          <br />
-          <br />
-          <div style={{marginTop:'0px'}} className=" grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-4 lg:grid-cols-4 xl:gap-x-1">
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
+
+            <div style={{marginTop:'0px'}} className="weSupport_row2">
+            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
              <a target="_blank" rel='noreferrer' href="https://telekomhilft.telekom.de/t5/TechBoost/ct-p/techboost" >
-              <img className=" h-fit" alt="h-fit" src={C4} />
+              <img className=" " alt="" src={C4} />
              </a>
             </div>
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
+            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
              <a target="_blank" rel='noreferrer' href="https://www.dreso.com/" >
-              <img className=" h-fit" alt="h-fit" src={C5} />
+              <img className=" " alt="" src={C5} />
              </a>
             </div>
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
+            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
              <a target="_blank" rel='noreferrer' href="https://www.ibb.de/de/startseite/startseite.html" >
-              <img className=" h-fit" alt="h-fit" src={C6} />
+              <img className=" " alt="" src={C6} />
              </a>
             </div>
-            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center p-3">
+            <div className="flex clientImageBox grayscale hover:grayscale-0 justify-center hover:shadow-[0_4px_4px_rgba(0,135,255,0.25)] rounded-[20px] items-center ">
              <a target="_blank" rel='noreferrer' href="https://deneff.org/" >
-              <img className=" h-fit" alt="h-fit" src={C7} />
+              <img className=" " alt="" src={C7} />
              </a>
             </div>
             {/* <div className="flex justify-center">
-              <img className=" h-fit" alt="h-fit" src={C8} />
+              <img className=" " alt="" src={C8} />
             </div> */}
           </div>
+          </div>
+         
+          {/* <br />
+          <br /> */}
+          
+         
         </div>
         </div>
     

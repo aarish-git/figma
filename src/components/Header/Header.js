@@ -12,6 +12,8 @@ import i18next from 'i18next';
 export default function Header({ history }) {
   const { t, i18n } = useTranslation();//translator
   const [showMenu, setMenu] = useState(false);
+  const [semi, setBold] = useState(false);
+
   console.log(history);
 
   useLayoutEffect(() => {
@@ -24,12 +26,13 @@ export default function Header({ history }) {
       var url = window.location.href;
 
       // passes on every "Navlink" tag
-      $("#arunUL Navlink").each(function () {
-        // checks if its the same on the address bar
-        if (url === this.href) {
-          $(this).closest("li").addClass("active");
-        }
-      });
+      // $("#arunUL Navlink").each(function () {
+      //   // checks if its the same on the address bar
+      //   if (url === this.href) {
+      //     $(this).closest("li").addClass("active");
+      //     setBold(!semi);
+      //   }
+      // });
 
       // $("#langContent").each(function () {
       //   // checks if its the same on the address bar
@@ -49,7 +52,7 @@ export default function Header({ history }) {
  
   const handleClick = event => {
     console.log(event.currentTarget, 'hi')
-    event.currentTarget.style.fontFamily = 'NunitoSans-ExtraBold';
+    // event.currentTarget.style.fontFamily = 'NunitoSans-ExtraBold';
   };
 
   
@@ -57,48 +60,49 @@ export default function Header({ history }) {
     <div>
 
       <div className="arun_container">
-        <div className="container container-flex-display">
+        <div className="container container-flex-display header_container">
         <div className="arun_logo">
           {/* <h1 style={{ fontFamily: "Exo2-Regular" }} className="uppercase font-bold tracking-wide">
             LeafTech
           </h1> */}
-          <NavLink id="dd_link"  to="/" >
-          <img src={logo} alt="logo" style={{width:'104px', height:'18px'}}/>
-          </NavLink>
+          <Link  to="/" >
+            <img src={logo} alt="logo" className="responsive leaftech_logo desktop_logo" />
+          </Link>
 
         </div>
         {showMenu === false ? (
           <div className="arun_menuList" id="sub-header">
             <ul className="arunUL"  id="arunUL">
               <li>
-                <NavLink id="dd_link" onClick={handleClick} style={{textDecoration:"none", fontFamily: "NunitoSans-SemiBold"}} className="navFont" to="/" >
+                <NavLink id="dd_link" onClick={handleClick} className="dd_link"  to="/" >
                   {/* Home */}
-                  <b>{t('Home_text')}</b>
+                 {t('Home_text')}
                 </NavLink>
-              </li>
-              <li>
-                <NavLink id="dd_link" onClick={handleClick} style={{textDecoration:"none", fontFamily: "NunitoSans-SemiBold" }} className="navFont" to="/Project">
+                </li>
+                <li>
+                <NavLink id="dd_link" onClick={handleClick} className="dd_link"  to="/Project">
                   {/* Project */}
-                  <b>{t('Project_text')}</b>
+                 {t('Project_text')}
                 </NavLink>{" "}
               </li>
-              <li>
                 {/* <NavLink className="navFont" to="/service">Services</NavLink> */}
+                <li>
                 <div className="dropdown">
-                  <button className="dropbtn"> <p className="navFont" style={{ fontFamily: "NunitoSans-SemiBold"}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" className="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <button className="dropbtn "> <p className="" style={{fontWeight:'500'}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" className="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
                   <div className="dropdown-content">
-                    <NavLink id="dd_link" onClick={handleClick} className="navFont"  style={{ fontFamily: "NunitoSans-SemiBold"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    <NavLink id="" onClick={handleClick} className=""  to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
                     {t('Home_section3_service1')}
                     </NavLink>
-                    <NavLink id="dd_link" onClick={handleClick} className="navFont"  style={{ fontFamily: "NunitoSans-SemiBold"}} to="/building-analytics" activeClassName="active-link">
+                    <NavLink id="" onClick={handleClick} className=""  to="/building-analytics" activeClassName="active-link">
                     {t('Home_section3_service2')}
                     </NavLink>
-                    <NavLink id="dd_link" onClick={handleClick} className="navFont"  style={{ fontFamily: "NunitoSans-SemiBold"}} to="/smart-building-control" activeClassName="active-link">
+                    <NavLink id="" onClick={handleClick} className=""  to="/smart-building-control" activeClassName="active-link">
                     {t('Home_section3_service3')}
                     </NavLink>
                   </div>
                 </div>
-              </li>
+                </li>
+
               <div className="contactandLanguage">
                 <ul className="arunUL" style={{ gap: "0px" }}>
                   <li className="">
@@ -128,41 +132,109 @@ export default function Header({ history }) {
           </div>
         ) : (
           // mobile view header
+          
           <div className="arun_mobilemenuList">
-            <ul>
+          
+             <ul className="arunUL"  id="arunUL">
               <li>
-                <NavLink to="/">Home</NavLink>{" "}
-              </li>
-
-              <li>
-                <NavLink to="/Project">Project</NavLink>{" "}
-              </li>
-              <li>
-                <div className="dropdown">
-                  <button className="dropbtn">Services</button>
-                  <div className="dropdown-content">
-                    <NavLink to="/service">Services 1</NavLink>
-                    <NavLink to="/service">Services 2</NavLink>
-                    <NavLink to="/service">Services 3</NavLink>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <NavLink to="/contact">
-                  <button>Contact</button>
+                <NavLink id="dd_link" onClick={handleClick}  style={{ fontFamily: "NunitoSans-Regular"}} className="dd_link"  to="/" >
+                  {/* Home */}
+                 {t('Home_text')}
                 </NavLink>
+                </li>
+                <li>
+                <NavLink id="dd_link" onClick={handleClick}  style={{ fontFamily: "NunitoSans-Regular"}} className="dd_link"  to="/Project">
+                  {/* Project */}
+                 {t('Project_text')}
+                </NavLink>{" "}
               </li>
+                {/* <NavLink className="navFont" to="/service">Services</NavLink> */}
+                <li>
+                <div className="accordian_container">
+                  <div className="accordion" id="myAccordion" style={{background:'rgba(255, 255, 255, 0.5) !important;' }}>
+                      <div className="accordion-item" >
+                          <h2 className="accordion-header" id="headingOne" >
+                              <button type="button"  style={{ fontFamily: "NunitoSans-Regular"}}  className="accordion-button" data-bs-toggle="collapse"  data-bs-target="#collapseOne"><p className="" style={{fontWeight:'400'}}>{t('Services_text')}</p></button>									
+                          </h2>
+                          <div id="collapseOne" className="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                              <div className="card-body">
+                              <NavLink id="" onClick={handleClick} className=""   style={{ fontFamily: "NunitoSans-Regular"}} to="/smart-building-control" activeClassName="active-link">
+                                {t('Home_section3_service3')}
+                                </NavLink>
+                             
+                                <NavLink id="" onClick={handleClick} className=""   style={{ fontFamily: "NunitoSans-Regular"}} to="/building-analytics" activeClassName="active-link">
+                                {t('Home_section3_service2')}
+                                </NavLink>
+
+                                <NavLink id="" onClick={handleClick} className=""   style={{ fontFamily: "NunitoSans-Regular"}} to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                                {t('Home_section3_service1')}
+                                </NavLink>
+                               
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                {/* <div className="dropdown">
+                  <button className="dropbtn "> <p className="" style={{fontWeight:'500'}}>{t('Services_text')}</p><img alt="Downarrow" id="dropbtnimg" className="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <div className="dropdown-content">
+                    <NavLink id="" onClick={handleClick} className=""  to="/services/3d-digital-models-of-buildings" activeClassName="active-link">
+                    {t('Home_section3_service1')}
+                    </NavLink>
+                    <NavLink id="" onClick={handleClick} className=""  to="/building-analytics" activeClassName="active-link">
+                    {t('Home_section3_service2')}
+                    </NavLink>
+                    <NavLink id="" onClick={handleClick} className=""  to="/smart-building-control" activeClassName="active-link">
+                    {t('Home_section3_service3')}
+                    </NavLink>
+                  </div>
+                </div> */}
+                </li>
+
+              <div className="contactandLanguage">
+                <ul className="arunUL" style={{ gap: "0px" }}>
+                 
+                 <li>
+                       <label className="lang_label" style={{ fontFamily: "NunitoSans-Regular"}}>Language settings</label>
+                      <div style={{display:'flex'}}> 
+                      <li className="lang_options">
+                     
+                     {t('model_service_contact') === "Contact us" ?
+                     <button id="langContent" onClick={()=>i18next.changeLanguage("en")} style={{ fontFamily: "NunitoSans-ExtraBold", marginRight: '24px' }}>English</button>
+                      :
+                     <button id="langContent" onClick={()=>i18next.changeLanguage("en")} style={{ fontFamily: "NunitoSans-SemiBold", marginRight: '24px' }}>English</button>
+                     }
+                     </li>
+                   <li>
+                     {t('model_service_contact') === "Contact us" ?
+                     <button id="langContent" onClick={()=>i18next.changeLanguage("de")} style={{ fontFamily: "NunitoSans-SemiBold", marginRight: '20px',  marginTop:'0px'}}>German</button>
+                     :
+                     <button id="langContent" onClick={()=>i18next.changeLanguage("de")} style={{ fontFamily: "NunitoSans-ExtraBold", marginRight: '20px',  marginTop:'0px'}}>German</button>
+                     }
+                   </li>
+                      </div>
+                    </li>
+
+                    <li className="">
+                    <NavLink style={{all:"unset"}} to="/contact" activeClassName="active-link">
+                      <button className="Contact_btn nav_mobile_contact" type="button" style={{ fontFamily: "NunitoSans-SemiBold", marginRight:'64px'}} >{t('Contact_text')}</button>
+                    </NavLink>
+                  </li>
+                   
+                </ul>
+              </div>
             </ul>
           </div>
         )}
 
+      
+        </div>
         <div className="mobile_menubutton">
           {showMenu === false ? (
             <MenuSharpIcon onClick={handleMobile} />
           ) : (
             <CloseSharpIcon onClick={handleMobile} />
           )}
-        </div>
         </div>
       </div>
 

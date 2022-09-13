@@ -64,14 +64,14 @@ export default function VerticalLinearStepper() {
 
   return (
     <div className="container">
-    <div className="row" style={{textAlign: 'left', marginTop:'120px'}}>
+    <div className="row solution_container">
     <h2
         style={{ fontFamily: "Exo2-Bold" }}
-        className="single_project_desc_head"
+        className="solution_desc_head"
    >
       {t('grune_project_oursolution')}
    </h2>
-    <p style={{ fontFamily: "NunitoSans-Regular" , margintop: '24px', marginBottom: '40px'}} className="single_project_desc_p">
+    <p style={{ fontFamily: "NunitoSans-Regular"}} className="solution_project_desc_p">
       {t('grune_project_oursolution_desc')}
     </p>
     <div className="allsteper">
@@ -153,6 +153,53 @@ export default function VerticalLinearStepper() {
           </p>
         </div>
       </div>
+    </div>
+   </div>
+
+   <div className="accordian_container">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseOne"><span style={{paddingRight:'19px'}}>{t('grune_project_stephead1')}</span></button>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                   <img  className="stepper_desc_img" src={G1} alt="home" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('grune_project_stepdesc1')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseTwo"><span style={{paddingRight:'19px'}}>{t('grune_project_stephead2')}</span></button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                <div class="card-body">
+                   <img  className="stepper_desc_img" src={G2} alt="home" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('grune_project_stepdesc2')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseThree"><span style={{paddingRight:'19px'}}>{t('grune_project_stephead3')}</span></button>                     
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('grune_project_stepdesc3')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseFour"><span style={{paddingRight:'19px'}}>{t('grune_project_stephead4')}</span></button>									
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('grune_project_stepdesc4')}</p>
+                </div>
+            </div>
+        </div>
     </div>
    </div>
    </div>

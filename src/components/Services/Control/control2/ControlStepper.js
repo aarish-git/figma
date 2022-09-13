@@ -105,7 +105,7 @@ export default function VerticalLinearStepper() {
   // };
 
   return (
-<div className="row service" style={{textAlign: 'left', marginTop:'120px'}}>
+  <div className="row service service_stepper_container">
 
    <div className="allsteper">
     <div className="stepLabel">
@@ -149,22 +149,22 @@ export default function VerticalLinearStepper() {
      <div className="nav step flex-column nav-pills control" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '-10px', fontSize:'24px'}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div style={{display:'flex', alignItems: 'center'}}>
-          <div className="circle" style={{marginLeft: '2px', width:'22px', height:'22px'}}></div>
+          <div className="circle" style={{marginLeft: '0px', width:'28px', height:'22px'}}></div>
           {t('control_service_stephead1')}
         </div>
 
           <div className="line" style={{marginLeft: '9px', height:'124px', marginTop:'-27px'}}></div>
         </a>
-        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '49', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+        <a className="nav-link" id="profile-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'45px' ,marginTop: '49px', fontSize:'24px'}} href="#profile" role="tab" aria-controls="profile" aria-selected="false">
           <div style={{display:'flex', alignItems: 'center'}}>
           
-        <div className="circle" style={{marginLeft: '2px', width:'22px', height:'22px'}}></div>
-          {t('control_service_stephead2')}
+        <div className="circle" style={{marginLeft: '0px', width:'28px', height:'22px'}}></div>
+          {t('control_service_stephead2')} 
         </div>
           <div className="line" style={{marginLeft: '9px', height:'124px', marginTop:'-27px'}}></div>
         </a>
         <a className="nav-link" id="messages-tab" onClick={() => window.scrollTo(0, 650)} data-toggle="pill" style={{fontFamily: "NunitoSans-Regular", marginLeft:-'-27px' ,marginTop: '65px', fontSize:'24px'}} href="#messages" role="tab" aria-controls="messages" aria-selected="false">
-          <div className="circle" style={{marginLeft: '2px', width:'18px', height:'21px'}}></div>
+          <div className="circle" style={{marginLeft: '0px', width:'22px', height:'21px'}}></div>
           {t('control_service_stephead3')}
         </a>
        </div>
@@ -238,7 +238,46 @@ export default function VerticalLinearStepper() {
     </div>
     }
    </div>
+
+   <div className="accordian_container">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseOne"><span style={{paddingRight:'19px'}}>{t('control_service_stephead1')}</span></button>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepperService_desc_img" src={control} alt="control" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('control_service_stepdesc1')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseTwo"><span style={{paddingRight:'19px'}}>{t('control_service_stephead2')}</span></button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepperService_desc_img" src={cloud} alt="cloud" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('control_service_stepdesc2')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseThree"><span style={{paddingRight:'19px'}}>{t('control_service_stephead3')}</span></button>                     
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepperService_desc_img" src={energy} alt="energy" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('control_service_stepdesc3')}</p>
+                </div>
+            </div>
+        </div>
+    </div>
    </div>
+
+  </div>
   
    
     

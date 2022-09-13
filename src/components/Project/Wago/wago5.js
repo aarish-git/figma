@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';//translator
+import { Link } from "react-router-dom";
 
 export default function wago5() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -8,30 +9,43 @@ export default function wago5() {
 
   return (
     <div className="row">
-      <div className=" body-font bg-[#FAFBFC]">
-        <div className=" mx-auto flex px-5 py-5 items-center justify-center flex-col">
-          {/* <img
-            className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
-          /> */}
-          <div className="text-center lg:w-2/3 w-full">
-            <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how tracking-widest uppercase text-[20px] font-[400] py-5 mb-2">
-            {t('wago_project_discover_how')}
+       <div className=" mx-auto flex px-5 py-5 items-center justify-center flex-col Home_section5_desktop_button1">
+        <div className="text-center w-full">
+        <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how ">
+        {t('grune_project_discover_how')}
             </h1>
-            <div className="flex justify-center">
-            <a href="/contact" >
+          <div className="flex justify-center">
+          <Link style={{ all: "unset" }} to="/contact">
             <button
             style={{
               fontFamily: "NunitoSans-Regular",
-              marginTop:'64px', marginBottom:'120px'
             }}
             className="contact_us"
           >
             {t('model_service_contact')}
           </button>
-              </a>
-            </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className=" mx-auto flex py-5 items-center justify-center flex-col Home_section5_mobile_button1">
+        <div className="text-center w-full">
+        <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how ">
+         {t('mobile_grune_project_discover_how1')}
+         <br />
+         {t('mobile_grune_project_discover_how2')}
+            </h1>
+          <div className="flex justify-center">
+          <Link style={{ all: "unset" }} to="/contact">
+            <button
+            style={{
+              fontFamily: "NunitoSans-Regular",
+            }}
+            className="contact_us"
+          >
+            {t('model_service_contact')}
+          </button>
+            </Link>
           </div>
         </div>
       </div>

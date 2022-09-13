@@ -30,7 +30,7 @@ export default function GA4() {
               />
               }
           </div>
-          <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center">
+          <div className="result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left">
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
             {t('grune_project_results_benefits_head')}
             </h1>

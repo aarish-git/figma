@@ -77,42 +77,20 @@ export default function VerticalLinearStepper() {
 
   return (
     <div className="container">
-    <div className="row" style={{textAlign: 'left',  marginTop:'120px'}}>
+    <div className="row solution_container" >
     <h2
         style={{ fontFamily: "Exo2-Bold" }}
-        className="single_project_desc_head"
+        className="solution_desc_head"
    >
             {t('wago_project_oursolution')}
         </h2>
-        <p style={{ fontFamily: "NunitoSans-Regular" , margintop: '24px', marginBottom: '40px'}} className="single_project_desc_p">
+        <p style={{ fontFamily: "NunitoSans-Regular"}} className="solution_project_desc_p">
         {t('wago_project_oursolution_desc')}
         </p>
         <div className="allsteper">
     <div className="stepLabel">
          <div className="step completed">
-      {/* <div className="v-stepper">
-        <div className="circle"></div>
-        <div className="line"></div>
-      </div>
-      <div className="v-stepper">
-        <div className="circle"></div>
-        <div className="line"></div>
-      </div>
-      <div className="v-stepper">
-        <div className="circle"></div>
-        <div className="line"></div>
-      </div>
-      <div className="v-stepper">
-        <div className="circle"></div>
-        <div className="line"></div>
-      </div>
-      <div className="v-stepper">
-        <div className="circle"></div>
-        <div className="line"></div>
-      </div>
-      <div className="v-stepper">
-        <div className="circle"></div>
-      </div> */}
+    
      <div className="nav step flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
         <a className="nav-link active" id="home-tab" onClick={() => window.scrollTo(0, 1600)} data-toggle="pill" style={{marginTop: '-10px', fontSize:'24px', fontFamily: "NunitoSans-Regular"}} href="#home" role="tab" aria-controls="home" aria-selected="true">
           <div className="circle"></div>
@@ -175,10 +153,10 @@ export default function VerticalLinearStepper() {
           {t('wago_project_stepdesc3')}
           </p>
           {t('model_service_contact') === "Contact us" ?
-          <img className="stepper_desc_img" src={wimg1} alt="home" />
-          :
-          <img className="stepper_desc_img" src={wimg11} alt="home" />
-    }
+            <img className="stepper_desc_img" src={wimg1} alt="home" />
+            :
+            <img className="stepper_desc_img" src={wimg11} alt="home" />
+          }
         </div>
       </div>
       <div className="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
@@ -188,7 +166,6 @@ export default function VerticalLinearStepper() {
           {t('wago_project_stepdesc4')}
           </p>
           <img className="stepper_desc_img" src={wimg4} alt="home" />
-
         </div>
       </div>
       <div className="tab-pane fade" id="build" role="tabpanel" aria-labelledby="build-tab">
@@ -198,9 +175,9 @@ export default function VerticalLinearStepper() {
           {t('wago_project_stepdesc5')}
           </p>
           {t('model_service_contact') === "Contact us" ?
-          <img className="stepper_desc_img" src={wimg3} alt="home" />
-          :
-          <img className="stepper_desc_img" src={wimg33} alt="home" />
+            <img className="stepper_desc_img" src={wimg3} alt="home" />
+            :
+            <img className="stepper_desc_img" src={wimg33} alt="home" />
           }
         </div>
       </div>
@@ -213,6 +190,87 @@ export default function VerticalLinearStepper() {
         </div>
       </div>
      
+    </div>
+
+
+    
+        </div>
+
+        <div className="accordian_container">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseOne"><span style={{paddingRight:'19px'}}>{t('wago_project_stephead1')}</span></button>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepper_desc_img" src={wimg} alt="home" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('wago_project_stepdesc1')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseTwo"><span style={{paddingRight:'19px'}}>{t('wago_project_stephead2')}</span></button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                <div class="card-body">
+                   <img className="stepper_desc_img" src={wimg2} alt="home" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('wago_project_stepdesc2')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseThree"><span style={{paddingRight:'19px'}}>{t('wago_project_stephead3')}</span></button>                     
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    {t('model_service_contact') === "Contact us" ?
+                      <img className="stepper_desc_img" src={wimg1} alt="home" />
+                      :
+                      <img className="stepper_desc_img" src={wimg11} alt="home" />
+                    }
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('wago_project_stepdesc3')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseFour"><span style={{paddingRight:'19px'}}>{t('wago_project_stephead4')}</span></button>									
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <img className="stepper_desc_img" src={wimg1} alt="home" />
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('wago_project_stepdesc4')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseFive"><span style={{paddingRight:'19px'}}>{t('wago_project_stephead5')}</span></button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                   {t('model_service_contact') === "Contact us" ?
+                      <img className="stepper_desc_img" src={wimg3} alt="home" />
+                      :
+                      <img className="stepper_desc_img" src={wimg33} alt="home" />
+                    }
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('wago_project_stepdesc5')}</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" style={{fontFamily: "NunitoSans-Regular"}} data-bs-target="#collapseSix"><span style={{paddingRight:'19px'}}>{t('wago_project_stephead6')}</span></button>                     
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p style={{fontFamily: "NunitoSans-Regular"}} >{t('wago_project_stepdesc6')}</p>
+                </div>
+            </div>
+        </div>
     </div>
    </div>
      </div>

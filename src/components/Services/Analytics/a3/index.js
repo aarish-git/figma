@@ -7,6 +7,7 @@ import Tree from "../../../../assest/Icons2/tree.svg";
 import GlobeHemisphereEast from "../../../../assest/Icons2/globe.svg";
 import Mac from "../../../../assest/Images/services/Analytics/analytics_laptop.gif"
 import { useTranslation } from 'react-i18next';//translator
+import { Link } from "react-router-dom";
 
 
 export default function index() {
@@ -15,10 +16,10 @@ export default function index() {
 
   return (
     <div className="container">
-    <div className="row" style={{marginTop:'120px', marginBottom: '120px'}}>
+    <div className="row service_benefits_section">
     <div className="text-gray-600 body-font">
-      <div className=" mx-auto flex  md:flex-row flex-col items-center" style={{justifyContent:'space-between'}}>
-        <div className="flex flex-col md:items-start md:text-left items-center"  style={{minWidth:'57%', maxWidth:'850px', height:'455px', marginLeft:'20px'}}>
+      <div className="service_benfits_container">
+        <div className="service_benfits_content">
             <h1 style={{fontFamily:"Exo2-Bold", maxWidth:'940px'}} className="service_3d_head">
             {t('analytics_service_results_benefits_head')}
             </h1>
@@ -75,16 +76,20 @@ export default function index() {
               </li>
             </ul>
             <div className="flex w-full md:justify-start justify-center items-end">
-              <div className="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
-              <a href="/contact" >
-                <button style={{fontFamily: "NunitoSans-Regular"}} className="contact_us2">
+              <Link style={{ all: "unset" }} to="/contact">
+                <button style={{fontFamily: "NunitoSans-Regular"}} className="contact_us2 service_bottom_contacthide">
                 {t('model_service_contact')}
                 </button>
-                </a>
-              </div>
+                </Link>
+
+                <Link style={{ all: "unset" }} to="/contact">
+                <button style={{fontFamily: "NunitoSans-Regular"}} className="service_bottom_contact_us">
+                {t('model_service_contact')}
+                </button>
+                </Link>
             </div>
           </div>
-          <div style={{width:'50%'}}>
+          <div>
             <img
               className="object-cover object-center rounded"
               alt="hero"
@@ -95,7 +100,7 @@ export default function index() {
       </div>
 
       {/* tablet */}
-      <div className="service3_t text-gray-600 body-font ">
+      {/* <div className="service3_t text-gray-600 body-font ">
         <div className="container px-3 py-5 mx-auto items-center bg-gray-100">
           <div className=" items-center text-left">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 capitalize">
@@ -123,7 +128,7 @@ export default function index() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     </div>
   );

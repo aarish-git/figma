@@ -33,7 +33,7 @@ export default function p4() {
           />
           }
           </div>
-          <div className="Clientbenefits result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left items-center" style={{marginLeft: '32px'}}>
+          <div className="Clientbenefits result_content lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left" style={{marginLeft: '32px'}}>
             <h1 style={{fontFamily:"Exo2-Bold"}} className="results_benefits_head">
             {t('phoenix_project_results_benefits_head')}
             </h1>

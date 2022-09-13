@@ -4,6 +4,7 @@ import sun from "../../../assest/Icons2/sun.svg"
 import Wind from "../../../assest/Icons2/wind.svg"
 import Battery from "../../../assest/Icons2/battery.svg"
 import { useTranslation } from 'react-i18next';//translator
+import mobTrio from "./../../../assest/mobileImages/Projects/Overview_Trio_mannheim.svg";
 
 export default function man2() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -12,14 +13,19 @@ export default function man2() {
   return (
     <div className="container">
     <div className="row" style={{marginTop:'120px'}}>
-      <div className="text-gray-600 body-font">
+      <div className="text-gray-600 body-font" style={{padding:'0px'}}>
         <div className="flex flex-wrap">
           <div className="mann_project_desc_image rounded-lg overflow-hidden">
-            <img
-              alt="feature"
-              className="object-cover object-center h-full w-full"
-              src={Trio1}
-            />
+          <img
+                  alt="ecommerce"
+                  className="projectImage project_landing_mobile_img responsive "
+                  src={mobTrio}
+                />
+                <img
+                  alt="ecommerce"
+                  className="projectImage project_landing_desktop_img responsive "
+                  src={Trio1}
+                />
           </div>
           <div className="mann_project_desc flex">
             <div className="flex">
@@ -54,9 +60,16 @@ export default function man2() {
               <div className="">
               <h2
                  style={{ fontFamily: "Exo2-Regular", width: '666px' }}
-                 className="results_benefits_subhead"
+                 className="results_benefits_subhead results_benefits_subhead_desk"
                 >
                    {t('mann_project_desc_subhead1')}
+                </h2>
+
+                <h2
+                 style={{ fontFamily: "Exo2-Regular", width: '666px' }}
+                 className="mann_project_desc_subhead"
+                >
+                   {t('mannMobile_project_desc_subhead1')}
                 </h2>
                 <ul className="space-y-5">
                   <li className="flex space-x-4"><img className="h-fit project_icons" alt="sun" src={sun} /><p style={{fontFamily:"NunitoSans-Regular"}} className="project_icon_text"> {t('mann_project_desc_subp1')}</p></li>

@@ -5,10 +5,10 @@ export default function p1() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t, i18n } = useTranslation();//translator
   return (
-    <div  style={{background:"linear-gradient(89.82deg, #FFFFFF 0.23%, rgba(255, 255, 255, 0.555775) 45.36%, rgba(228, 233, 239, 0.5) 83.29%, #E4E9EF 97.33%)"}}>
+    <div className="row single_project_container" >
     <div className="container">
     <div className="row">
-    <div className="row" style={{marginTop:'75px', height: '533px', maxWidth: '104%', width: '103%'}}>
+    <div className="row single_project_row_container" >
         <div  className="mx-auto flex  md:flex-row flex-col ">
           <div  style={{textAlign:'left', marginTop:'72px'}}>
             <h1
@@ -37,20 +37,20 @@ export default function p1() {
                   <div className=" ">
                     <div className="flex flex-wrap space-x-14 " >
                       <div className="sm:2/3 space-y-2">
-                        <h2 style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="title-font font-bold  text-[40px]">
+                        <h2 style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F'  }} className="single_project_number">
                         ~1,965 m²
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="single_project_number_text">
                       {t('phoenix_project_numtext1')}
                       </p>
                     </div>
                     <div className="sm:2/3 space-y-2">
                       <h2
-                        style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F' }} className="title-font font-bold  text-[40px]"
+                        style={{ fontFamily: "Exo2-Bold" , color:'#2F2F2F' }} className="single_project_number"
                       >
                         169
                       </h2>
-                      <p style={{fontFamily:"NunitoSans-Regular"}} className="leading-relaxed text-[14px]">{t('phoenix_project_numtext2')}</p>
+                      <p style={{fontFamily:"NunitoSans-Regular"}} className="single_project_number_text">{t('phoenix_project_numtext2')}</p>
                     </div>
                     
                     
