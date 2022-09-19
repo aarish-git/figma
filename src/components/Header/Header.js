@@ -101,6 +101,21 @@ export default function Header({ history }) {
                     </NavLink>
                   </div>
                 </div>
+            
+                </li>
+                
+                <li>
+                <div className="dropdown">
+                  <button className="dropbtn "> <p className="" style={{fontWeight:'500'}}>Company</p><img alt="Downarrow" id="dropbtnimg" className="mt-1.5 ml-2" src={Downarrow} width="15" height="30" /></button>
+                  <div className="dropdown-content">
+                    <NavLink id="" onClick={handleClick} className=""  to="/about-us" activeClassName="active-link">
+                    {t('Company_option1')}
+                    </NavLink>
+                    <NavLink id="" onClick={handleClick} className=""  to="/careers" activeClassName="active-link">
+                    {t('Company_option2')}
+                    </NavLink>
+                  </div>
+                </div>
                 </li>
 
               <div className="contactandLanguage">
@@ -170,6 +185,19 @@ export default function Header({ history }) {
                                 {t('Home_section3_service1')}
                                 </NavLink>
                                
+                              </div>
+                          </div>
+
+                          <div id="collapseTwo" className="accordion-collapse collapse " data-bs-parent="#myAccordion2">
+                              <div className="card-body">
+                              <NavLink id="" onClick={handleClick} className=""   style={{ fontFamily: "NunitoSans-Regular"}} to="/smart-building-control" activeClassName="active-link">
+                                {t('Company_option1')}
+                                </NavLink>
+                             
+                                <NavLink id="" onClick={handleClick} className=""   style={{ fontFamily: "NunitoSans-Regular"}} to="/building-analytics" activeClassName="active-link">
+                                {t('Company_option2')}
+                                </NavLink>
+
                               </div>
                           </div>
                       </div>

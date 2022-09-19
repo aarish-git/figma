@@ -13,6 +13,10 @@ import Mannhiem from "../components/Project/Mannheim/index";
 import Granue from "../components/Project/GruneAue/indexs";
 import Wago from "../components/Project/Wago/index";
 import Phoenix from "../components/Project/Phoenix/index";
+import AboutUsMain from "../components/AboutUs/AboutUsMain";
+import Careers from "../components/Careers/index";
+
+
 export default function index() {
   return (
     <div>
@@ -22,6 +26,8 @@ export default function index() {
           <Route path="/" exact element={<Home />} />
           <Route path="Project" element={<Project />} />
           <Route path="legalInformation" element={<LegalInformation />} />
+          <Route path="about-us" element={<AboutUsMain />} />
+          <Route path="careers" element={<Careers />} />
 
           <Route path="/mannhiem" element={<Mannhiem />} />
           <Route path="/granue" element={<Granue />} />

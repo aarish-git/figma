@@ -722,7 +722,7 @@ export default function Index() {
 
              <div className="rounded-lg flex flex-col md:ml-auto w-full mt-10 md:mt-0 contact__leaf__form" style={{width: '100%'}}>
                 <p className="contact_form_meeting_font tracking-widest" style={{ fontFamily: "Exo2-Regular" }}>{t('contact_form_meeting')}</p>
-                <div className="flex text-[12px] space-x-4" style={{alignItems:'left', marginBottom:'24px', marginTop:'35px'}}>
+                <div className="flex text-[12px] space-x-4 contact_form_meeting_lang_mobile" >
                   <div style={{display:'flex', alignItems:'center'}}>
                     <input className="contact_form_checkbox" checked={en} onChange={changeLangEn} id="language" value="en"  type="checkbox" />
                     <label className="contact_form_lang_font">English</label>

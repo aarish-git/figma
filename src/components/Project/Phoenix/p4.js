@@ -15,10 +15,10 @@ export default function p4() {
   const { t, i18n } = useTranslation();//translator
   return (
     <div className="container">
-    <div className="row" style={{marginTop:'114px', marginBottom: '72px'}}>
+    <div className="row resultContent_container" >
       <div className="text-gray-600 body-font">
         <div className=" mx-auto flex  md:flex-row flex-col items-center 	">
-          <div className="result_image rounded-lg overflow-hidden" style={{marginLeft: '20px', width:'47%'}}>
+          <div className="result_image rounded-lg overflow-hidden" style={{ width:'47%'}}>
           {t('model_service_contact') === "Contact us" ?
             <img
               className="object-cover object-center rounded h-full w-full"
@@ -40,7 +40,7 @@ export default function p4() {
             <p  style={{ fontFamily: "NunitoSans-Regular"}} className="results_benefits_content" >
             {t('phoenix_project_results_benefits_content')}
             </p>
-            <div className="flex flex-col space-y-5 Clientbenefits" >
+            <div className="flex flex-col  Clientbenefits" >
             <p style={{fontFamily:"Exo2-Regular", marginBottom:'0px', width:'573px'}} className="results_benefits_subhead">{t('phoenix_project_results_benefits_subhead')}</p>
               <ul className="space-y-5">
                 <li className="flex space-x-5"><img className="h-fit project_icons" alt="Project" src ={Battery} /><p className="project_icon_text" style={{fontFamily:"NunitoSans-Regular"}}>{t('phoenix_project_icon_text1')} </p></li>

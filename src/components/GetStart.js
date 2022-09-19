@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';//translator
 export default function GetStart() {
   const { t, i18n } = useTranslation();//translator
   return (
-    <div style={{ backgroundColor: ' #FAFBFC', marginTop: '120px', zIndex: '0', textAlign: 'left' }}>
+    <div style={{ backgroundColor: ' #FAFBFC', zIndex: '0', textAlign: 'left' }}>
       <div className="container">
         <div className='row access_your_container' >
           <div className="col-lg-1"></div>

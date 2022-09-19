@@ -96,6 +96,10 @@
   color: #2F2F2F;
 }
 
+ .lang_options{
+  margin-left: 10px;
+ }
+
 .lang_options ul {
   display: flex;
   align-items: center;
@@ -122,6 +126,7 @@
   line-height: 38px;
   letter-spacing: 1.5px;
   color: #2F2F2F;
+  margin-left: 10px;
 }
 
 #langContent {
@@ -307,7 +312,7 @@
     /* width: inherit; */
     text-align: end;
     margin-right: 10px;
-    margin-top: -5px;
+    margin-top: 0px;
   }
 
   .arun_container .arun_menuList ul {
@@ -324,6 +329,7 @@
     /* margin: 20% 0%; */
     /* justify-content: center; */
     line-height: 50px;
+    /* margin-left: 15px; */
   }
 
   .dropbtn {
@@ -377,7 +383,7 @@
 
   .desktop_logo {
     display: block;
-    margin-top: -5px;
+    margin-top: 0px;
   }
 
   .mobile_logo {
@@ -478,12 +484,17 @@
     /* background: rgba(255, 255, 255, 0.5) !important; */
     /* backdrop-filter: blur(30px); */
    width: 55%;
+   margin-left: 8px;
   }
 
   .arun_container .card-body {
     margin-top: 0px;
     background: none;
     /* backdrop-filter: blur(30px); */
+  }
+
+  .arun_container .card-body a{
+    padding: 10px;
   }
 
   .dd_link {
@@ -493,6 +504,26 @@
     line-height: 42px;
     letter-spacing: 1.5px;
     color: #2F2F2F;
+    padding: 10px;
+  }
+
+  .Contact_btn, .Contact_btn:hover {
+    background-color: #0087FF;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 135, 255, 0.25);
+    /* border: 1px solid rgb(29, 29, 29); */
+    padding: 0px 24px;
+    width: 106px;
+    /* position:absolute;
+    right: 2rem; */
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
   }
   
 }

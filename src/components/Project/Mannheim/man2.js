@@ -11,7 +11,7 @@ export default function man2() {
   const { t, i18n } = useTranslation();//translator
 
   return (
-    <div className="container">
+    <div className="container" style={{padding:'0px', width:'100%'}}>
     <div className="row" style={{marginTop:'120px'}}>
       <div className="text-gray-600 body-font" style={{padding:'0px'}}>
         <div className="flex flex-wrap">

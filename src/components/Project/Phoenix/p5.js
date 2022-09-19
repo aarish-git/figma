@@ -7,7 +7,7 @@ export default function p5() {
   const { t, i18n } = useTranslation();//translator
   return (
     <div className="row">
-      <div className=" mx-auto flex px-5 py-5 items-center justify-center flex-col Home_section5_desktop_button1">
+      <div className=" mx-auto flex px-5 py-5 items-center justify-center flex-col Home_section5_desktop_button1"  style={{background:'#FAFBFC'}}>
         <div className="text-center w-full">
         <h1 style={{fontFamily:"Exo2-Regular"}} className="discover_how ">
         {t('grune_project_discover_how')}

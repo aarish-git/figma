@@ -36,8 +36,7 @@ export default function gran() {
             {t('grune_project_content')}
             </p>
             <div className="flex ">
-              <div className="text-gray-900 body-font">
-                <div className="  ">
+              
                   <div className="flex flex-wrap space-x-14 ">
                     <div className="sm:2/3 space-y-2">
                       <h2
@@ -67,8 +66,7 @@ export default function gran() {
                     <p className="leading-relaxed">Products</p>
                   </div> */}
                   </div>
-                </div>
-              </div>
+            
             </div>
           </div>
           {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

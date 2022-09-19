@@ -176,17 +176,6 @@ export default function Footer() {
                     <Link to="/legalInformation" style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</Link>
                     {/* <span style={{ fontFamily: "NunitoSans-Regular" }} className="content_head">{t('Footer_Listc4')}</span> */}
                   </li>
-                  <li>
-                    <div style={{display:'flex', alignItems:'center'}}>
-                      <a href="https://twitter.com/leaftech_twitt?lang=de" className="content_head">
-                        <img src={twitter} alt="logo" />
-                      </a>
-                      <a href="https://www.linkedin.com/company/leaftech/mycompany/" style={{marginLeft:'15px'}} className="content_head">
-                        <img src={linkindin} alt="logo" />
-                      </a>
-                    </div>
-    
-                  </li>
                 </nav>
               </div>
             </div>
@@ -244,6 +233,16 @@ export default function Footer() {
                   <li>
                     <Link to="/smart-building-control" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">{t('Footer_Listb3')}</Link>
                   </li>
+                  <li>
+                    <div style={{display:'flex', alignItems:'center', marginTop:'27px'}}>
+                      <a href="https://twitter.com/leaftech_twitt?lang=de" className="content_head">
+                        <img src={twitter} alt="logo" />
+                      </a>
+                      <a href="https://www.linkedin.com/company/leaftech/mycompany/" style={{marginLeft:'15px'}} className="content_head">
+                        <img src={linkindin} alt="logo" />
+                      </a>
+                    </div>
+                  </li>
                   {/* <li>
                     <a href="" style={{ fontFamily: "NunitoSans-Regular" }} className="content_subhead">Digital twin platform</a>
                   </li> */}
@@ -257,7 +256,7 @@ export default function Footer() {
         <div className="bg-gray-900 ">
           <div className="footer_last_section">
             <p className="text-center " style={{ fontFamily: "NunitoSans-Regular" }}>
-              © 2020 Leaftech — All rights reserved
+              © 2022 Leaftech — All rights reserved
             </p>
           </div>
         </div>
